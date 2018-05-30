@@ -1,0 +1,23 @@
+# Exclude hidden OS files.
+.DS_Store
+._*
+Thumbs.db
+
+# Ignore Development tool files.
+.idea
+node_modules
+
+# Ignore binaries.
+/bin
+
+# Ignore non-custom parts of Drupal.
+/docroot/core
+/docroot/modules/contrib
+/docroot/profiles/contrib
+/docroot/themes/contrib
+/docroot/sites/*/files
+/docroot/sites/*/private
+
+
+# Ignore Composer-managed dependencies.
+vendor/
