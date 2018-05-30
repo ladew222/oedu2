@@ -1,0 +1,5 @@
+name: 'vu'
+type: module
+description: 'custom viterbo routines'
+package: Custom
+core: 8.x

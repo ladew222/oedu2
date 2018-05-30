@@ -1,0 +1,362 @@
+<?php
+
+use Drupal\Component\Utility\Color;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Block\BlockBase;
+//use Drupal\Core\Entity\EntityManagerInterface;
+use Drupal\node\NodeInterface;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Url;
+use Guzzle\Http\Client;
+use GuzzleHttp\Exception\RequestException;
+
+
+/**
+ * Returns a styled or unstyled img src URL from an image.
+ *
+ * @param EntityReferenceItem $node targetting an image from $node->get($fieldname)->first()
+ * @param String $style_name Optional style name to use. File URI returned if not
+ * @return String URI, styled or unstyled, for use as img src
+ */
+function emulsify_return_file_uri_from_entity_ref($entity_ref_item, $style_name = NULL) {
+    if ($media_entity = $entity_ref_item->get('entity')->getTarget()) {
+       // kint($media_entity->get('image')->first());
+       if ($img_entity = $media_entity->get('image')->first()) {
+             //kint($img_entity->get('entity')->getTarget()->get('uri')->first()->getString());
+            if ($file_entity = $img_entity->get('entity')->getTarget()) {
+              // kint(file_url_transform_relative(file_create_url($file_entity->get('uri')->getString())));
+                if (!empty($style_name)) {
+                    return ImageStyle::load($style_name)
+                        ->buildUrl($file_entity->get('uri')
+                            ->first()
+                            ->getString());
+                }
+                else {
+                    return file_create_url($file_entity->get('uri')->getString());
+                }
+            }
+        }
+    }
+    return NULL;
+}
+
+//this will allow us to switch to edge-to-edge
+function vu_preprocess_page(&$variables) {
+
+}
+
+
+
+function vu_preprocess_block(&$variables) {
+   // $block_bundle = $variables['content']['#block_content']->bundle();
+
+    if (isset($variables['content']['#block_content'])){
+        $bundle=$variables['content']['#block_content']->bundle();
+        ///////////////////
+        ///Tile Grid
+        ///////////////////
+        //dpm($bundle);
+        if ($bundle === 'tile_grid') {
+            // do something for this block
+            //dpm('dsfasdfadssvcxvxczvzxcvzxcvzxcvzxcvzxcvzxcv');
+            $variables['attributes']['style'][] = 'background-color:#fff;';
+            $variables['attributes']['style'][] = 'padding-bottom:24px;';
+        }
+        ///////////////////
+        ///Hero Banner
+        ///////////////////
+        if ($bundle === 'openedu_hero') {
+            $contents=$variables['content']['#block_content'];
+            if (!$contents->field_edges->isEmpty()) {
+               // kint($contents->field_edges->get(0)->getValue()['value']);
+                $variables['attributes']['class'][] = $contents->field_edges->get(0)->getValue()['value'];
+
+            }
+        }
+
+        ///////////////////
+        ///grid block section
+        ///////////////////
+        if ($bundle === 'openedu_grid_block') {
+            $contents=$variables['content']['#block_content'];
+            if($contents->get('field_hero_image')->first()) {
+                $uri = emulsify_return_file_uri_from_entity_ref($contents->get('field_hero_image')->first());
+                if (isset($uri)) {
+                    $uri = file_url_transform_relative($uri);
+                }
+            }
+            $variables['attributes']['style'][] = 'background-size: cover;';
+            if (!$contents->field_background_position->isEmpty()) {
+                $bkpos=$contents->field_background_position->get(0)->getValue()['value'];
+                $variables['attributes']['style'][] = 'background-position:' . $bkpos .';';
+            }
+            else{
+                $variables['attributes']['style'][] = 'background-position: center center;';
+            }
+            if ((!$contents->field_background_color->isEmpty())){
+                $variables['attributes']['style'][] = 'background:'. $contents->field_background_color->get(0)->getValue()['color'] .";";
+                //dpm('in');
+            }
+            if (!$contents->field_color_overlay->isEmpty()) { //has overlay
+                $ff= Color::hexToRgb($contents->field_color_overlay->get(0)->getValue()['color']);
+                $r=($ff['red']);
+                $g=($ff['green']);
+                $b=($ff['blue']);
+                $o=$contents->field_color_overlay->get(0)->getValue()['opacity'];
+                $gradient="background: linear-gradient(rgba($r,$g,$b,.45),rgba($r,$g,$b,$o))";
+                $variables['attributes']['style'][] = $gradient . ',url("' . $uri . '");';
+            }
+            else{
+                $variables['attributes']['style'][] = 'background-image: url("' . $uri . '");';
+            }
+            //extra padding class for images
+           /* if (!$contents->field_padding->isEmpty()) {
+                $variables['attributes']['class'][] = $contents->field_padding->get(0)->getValue()['value'];
+            }*/
+
+            ///paralax
+            if (!$contents->field_parallax->isEmpty()) {
+                $bkatt=$contents->field_parallax->get(0)->getValue()['value'];
+                if($bkatt==1){
+                    $variables['attributes']['style'][] = 'background-attachment: fixed;';
+                }
+                else{
+                    $variables['attributes']['style'][] = 'background-attachment: inherit;';
+                }
+            }
+            else{
+                $variables['attributes']['style'][] = 'background-attachment: inherit;';
+
+            }
+            if (!$contents->field_edges->isEmpty()) {
+                $variables['attributes']['class'][] = $contents->field_edges->get(0)->getValue()['value'];
+
+            }
+        }
+
+
+    }
+
+}
+
+function vu_preprocess_paragraph__buttons(&$variables)
+{
+
+    $paragraph = $variables['paragraph'];
+    //kint($paragraph->field_link);
+    if (isset($paragraph->field_button_type ) && (!$paragraph->field_button_type->isEmpty())){
+        //dpm($paragraph->field_type->get(0)->getValue()['value']);
+        $variables['attributes']['class'][] = $paragraph->field_button_type->get(0)->getValue()['value'];
+    }
+
+}
+
+function vu_preprocess_paragraph__grid_button(&$variables) {
+    //$paragraph = $variables['paragraph'];
+    $color_vals=preg_split("/[\s,]+/",$variables['elements']['field_background_color']['0']['#markup']);
+
+    $paragraph = $variables['paragraph'];
+    //kint($paragraph);
+
+    //kint($paragraph->get('field_image'));
+    $bg_color="";
+    if ( isset($paragraph->field_background_color) &&  (!$paragraph->field_background_color->isEmpty()))  {
+        $bg_color =  $paragraph->field_background_color->get(0)->getValue()['color'];
+        //$variables['attributes']['style'][] = 'background-color:'. $bg_color .';';
+        $ff= Color::hexToRgb($paragraph->field_background_color->get(0)->getValue()['color']);
+        $r=($ff['red']);
+        $g=($ff['green']);
+        $b=($ff['blue']);
+        $o=$paragraph->field_background_color->get(0)->getValue()['opacity'];
+        $bg_color="background: rgba($r,$g,$b,$o);";
+        $variables['attributes']['style'][] = 'background-color:'. $bg_color .';';
+    }
+
+    if ( isset($paragraph->field_text_color) && (!$paragraph->field_text_color->isEmpty())){
+        $variables['attributes']['class'][] = $paragraph->field_height->get(0)->getValue()['value'];
+        $txt_color =  $paragraph->field_text_color->get(0)->getValue()['color'];
+        $variables['attributes']['style'][] = 'color:' . $txt_color .";".$bg_color;
+
+    }
+    if ( isset($paragraph->field_height) && (!$paragraph->field_height->isEmpty())){
+        $variables['attributes']['class'][] = $paragraph->field_height->get(0)->getValue()['value'];
+    }
+    if ( isset($paragraph->field_height)  && (!$paragraph->field_width->isEmpty())){
+        $variables['attributes']['class'][] = $paragraph->field_width->get(0)->getValue()['value'];
+    }
+    if($paragraph->get('field_image')->first()!==null){
+        $img=$paragraph->get('field_image')->first();
+        if($img->get('entity')->getTarget()){
+            $tg=$img->get('entity')->getTarget();
+            $uri=file_url_transform_relative(file_create_url($tg->get('uri')->getString()));
+            $variables['attributes']['style'][] = 'background:url("' . $uri . '");background-position: center;background-size:fit';
+        }
+    }
+}
+function vu_preprocess_paragraph__grid_content(&$variables) {
+    $paragraph = $variables['paragraph'];
+    //dpm('ddd');
+
+    if ( isset($paragraph->field_background_color) &&  (!$paragraph->field_background_color->isEmpty()))  {
+        $bg_color =  $paragraph->field_background_color->get(0)->getValue()['color'];
+        //$variables['attributes']['style'][] = 'background-color:'. $bg_color .';';
+        $ff= Color::hexToRgb($paragraph->field_background_color->get(0)->getValue()['color']);
+        $r=($ff['red']);
+        $g=($ff['green']);
+        $b=($ff['blue']);
+        $o=$paragraph->field_background_color->get(0)->getValue()['opacity'];
+        $bg_color="background: rgba($r,$g,$b,$o)";
+        $variables['attributes']['style'][] = $bg_color.";";
+        $variables['attributes']['style'][] = 'padding:14px;';
+    }
+    if (isset($paragraph->field_text_color) &&  (!$paragraph->field_text_color->isEmpty()))  {
+        $txt_color =  $paragraph->field_text_color->get(0)->getValue()['color'];
+        $variables['attributes']['style'][] = 'color:' . $txt_color;
+    }
+
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Redirect taxonomy term links to filtered results.
+ */
+function vu_preprocess_field(&$variables) {
+    //dpm('p_view');
+    //kint($variables);
+    // Get a few convenient handles.
+    $field_name = $variables['element']['#field_name'];
+    /** @var \Drupal\Core\Entity\Entity $entity */
+    $entity = $variables['element']['#object'];
+    //dpm($entity->bundle());
+    //dpm($field_name);
+    ///////////////////
+    ///Hero Banner
+    ///////////////////
+    if ($entity->bundle() == 'openedu_hero' && $field_name == 'field_color_overlay') {
+        // dpm($bundle);
+        if (!$entity->field_color_overlay->isEmpty()) { //has overlay
+            $ff= Color::hexToRgb($entity->field_color_overlay->get(0)->getValue()['color']);
+            $r=($ff['red']);
+            $g=($ff['green']);
+            $b=($ff['blue']);
+            $o=$entity->field_color_overlay->get(0)->getValue()['opacity'];
+            $overlay="background: rgba($r,$g,$b,$o)";
+            $variables['attributes']['style'][] = $overlay . ';';
+        }
+
+    }
+    if ($entity->bundle() == 'openedu_hero' && $field_name == 'body') {
+         //dpm($entity->id());
+        if (!$entity->body->isEmpty()) { //has overlay
+            //$variables['node_title'] = $entity->getTitle();
+            $variables['nid']=$entity->id();
+        }
+
+    }
+    ///////////////////
+    ///End Hero Banner
+    ///////////////////
+    if ($entity->bundle() == 'course' && $field_name == 'field_program_page') {
+        foreach ($variables['items'] as $key => $item) {
+            $query = \Drupal::entityQuery('node')
+                ->condition('status', 1)
+                ->condition('type', 'program')
+                ->condition('field_program_courses', 7);
+            $result = $query->execute();
+            $release = Node::loadMultiple($result);
+            $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+            $arrayKeys = array_keys($release);
+            $val=$arrayKeys[0];
+            //$alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$release[$val]->id());
+           // kint($variables['items'][$key]['content']['#url']->getInternalPath());
+            $variables['items'][$key]['content']['#url'] =  Url::fromUri('internal:/node/'.$release[$val]->id());
+            //kint(Url::fromUri('internal:/node/'.$release[$val]->id()));
+           // dpm('ssss');
+        }
+    }
+}
+
+function vu_preprocess_node(&$variables){
+    //dpm($variables['node']->getType());
+
+    //backreferncing and catalog api
+    //dpm('pre_node');
+   //kint($variables['node']);
+   // dpm($variables['view_mode']);
+    if($variables['node']->getType()=='course' ){
+        //dpm('course look');
+        //is this a full page api call
+        if($variables['view_mode']== 'full'){
+            if (!empty($variables['node']->field_program_code)) {
+                $prog_id = $variables['node']->field_program_code->getValue()[0][value];
+            }
+            //dpm($variables['node']);
+            $prog_id .= '*2017';
+            ///webservice call
+            $html = "";
+
+            $client = \Drupal::httpClient();
+
+            try {
+                $request = $client->get("http://10.20.100.37:8081/requirements/$prog_id/");
+                $response = $request->getBody();
+                $list = json_decode($request->getBody());
+                //dpm("http://10.20.100.37:8081/requirements/$prog_id/");
+                if(empty($list) || $list==''){
+                    $html .= "<h3><i><b>Data Not Found<b></b></i></h3>";
+                }
+                foreach ($list->recordsets[0] as $record) {
+                    //dump('http://10.20.100.37:8081/courses/'. $record->ACPR_ACAD_REQMTS);
+                    $request2 = $client->get('http://10.20.100.37:8081/courses/' . $record->ACPR_ACAD_REQMTS . "/");
+                    $response2 = $request2->getBody();
+                    $list2 = json_decode($request2->getBody());
+                    $html .= "<h2>" . $record->ACPR_ACAD_REQMTS . "</h2></BR><ul>";
+                    foreach ($list2->recordsets[0] as $record2) {
+                        // dump($record2);
+                        $html .= "<li><a href='/" . $record2->CRS_NAME . "'>" . $record2->CRS_TITLE . " (" . $record2->CRS_NAME . ")" . "</a></li>";
+                        $html .= "<ul><li>" . $record2->ACRB_PRINTED_SPEC . "</li></ul>";
+                    }
+                    $html .= "</ul>";
+                }
+            } catch (RequestException $e) {
+                //watchdog_exception('my_module', $e->getMessage());
+                $html .= "<h3><i><b>Data Currently Unavailble<b></b></i></h3>";
+            }
+            $contents = $variables['content'];
+            $variables['course_details'] = ['#markup' => $html];
+            ///end web service call
+            $contents = $variables['content'];
+        }
+        elseif($variables['view_mode']== 'teaser') {
+            $variables['node']->set('body', 'this is body');
+            $query = \Drupal::entityQuery('node')
+                ->condition('status', 1)
+                ->condition('type', 'program')
+                ->condition('field_program_courses', $variables['node']->id());
+            $result = $query->execute();
+            $release = Node::loadMultiple($result);
+            $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+            $arrayKeys = array_keys($release);
+            $val = $arrayKeys[0];
+            // dpm('val:'.$val);
+            if (isset($val)) {
+                $alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/' . $release[$val]->id());
+                //dpm($alias);
+                $variables['program_path'] = $alias;
+            }
+        }
+    }
+}
+/**
+ * Implements hook_editor_js_settings_alter
+ */
+function vu_editor_js_settings_alter(array &$settings) {
+    foreach ($settings['editor']['formats'] as $name => $value) {
+        //$settings['editor']['formats'][$name]['editorSettings']['contentsLangDirection'] = 'rtl';
+        $settings['editor']['formats'][$name]['editorSettings']['coreStyles_italic'] = "{ element : 'i', overrides : 'em' }";
+    }
+}
+
