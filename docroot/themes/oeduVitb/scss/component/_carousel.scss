@@ -1,0 +1,156 @@
+.carousel {
+  @include make-container();
+
+  max-width: (map-get($container-max-widths, lg) + 60);
+  padding: 2em 50px;
+
+  .gallery-cell {
+    width: 300px;
+    padding: 0 20px;
+    margin: 0;
+    @include media-breakpoint-up(md) {
+      width:315px;
+    }
+    article {
+      position: relative;
+      padding: 5px;
+      background: #fff;
+      box-shadow: 0 2px 5px 0 rgba($gray-base, 0.2);
+      margin-bottom: 0.675em;
+      min-height: 480px;
+
+      h2 {
+        font-weight: bold;
+        margin: 0.775em auto;
+        padding: 0 5px;
+        font-size: 16px;
+        line-height: 19px;
+        color: $secondary;
+        margin-bottom: 0px;
+
+        a {
+          color: $alert-info-text;
+        }
+      }
+      .field--name-field-event-dates {
+        padding-left: 5px;
+        color: rgba($gray-darker, 0.8);
+        &:before {
+          content: '\f073';
+          font-family: fontawesome;
+          float: left;
+          padding-right: 8px;
+        }
+      }
+      .field--name-field-location-name{
+        padding-left: 5px;
+        color: rgba($gray-darker, 0.8);
+        &:before{
+          content: '\f041';
+          font-family: fontawesome;
+          float: left;
+          padding-right: 8px;
+        }
+      }
+
+      .field--name-field-story-image,.field--name-field-news-image,.field--name-field-event-image {
+        img {
+          width: 100%;
+        }
+      }
+      .storyq{
+        color: $gray-darker;
+        padding: 3%;
+        word-break:break-all;
+        border-bottom-right-radius: 160px;
+        &.quote{
+          &:before{
+            color: $gray;
+            content: "\201C";
+            font-size: 5em;
+            line-height: .1em;
+            margin-right: .05em;
+            vertical-align: -.4em;
+          }
+        }
+        .field--name-field-quote{
+          display: inline;
+        }
+      }
+      .field--name-field-external-link{
+        a {
+          text-align: center;
+          margin: auto;
+          display: table;
+          padding: 12px;
+          text-transform: uppercase;
+        }
+      }
+
+
+
+      .field--name-field-story-image img {
+        width: 100%;
+      }
+
+      .field--name-field-story-caption {
+        font-size: 0.875em;
+        padding: 0 5px;
+        color: rgba($gray-darker, 0.8);
+        margin-bottom: 30px;
+      }
+
+      .view-item-container {
+        .view-item {
+          .fa {
+            padding-left: 5px;
+          }
+          &:hover {
+            //background-color: $brand-info;
+            cursor: pointer;
+            a {
+              color: $alert-info-text;
+              text-decoration: none;
+            }
+          }
+          a {
+            text-align: center;
+            margin: auto;
+            display: table;
+            padding: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .flickity-prev-next-button {
+    opacity: 1 !important;
+    cursor: pointer;
+    border-radius: 0;
+    width: 30px;
+    height: 100px;
+    background: $gray-base;
+    background: rgba($gray-base, 0.1);
+    color: $gray-base;
+    padding: 0;
+
+    svg {
+      display: none;
+      opacity: 0;
+    }
+
+    &.previous {
+      @include icon(inherit, 'keyboard_arrow_left', 2em);
+    }
+
+    &.next {
+      @include icon(inherit, 'keyboard_arrow_right', 2em);
+    }
+
+    &:hover {
+      color: #fff;
+      background: $info;
+    }
+  }
+}

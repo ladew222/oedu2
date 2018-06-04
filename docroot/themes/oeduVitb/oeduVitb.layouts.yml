@@ -1,0 +1,19 @@
+OeduVitDept:
+  label: Viterbo Two columns with subsection header(public & priv)
+  category: 'OpenEDU'
+  path: layouts/vit_oedu_dept
+  icon: vit_oedu_dept.png
+  template: vit_oedu_dept
+  regions:
+    subsection:
+      label: Subsection
+    left:
+      label: Left
+    right:
+      label: Right Viewers
+    right_private:
+          label: Right Editing
+    right_bottom:
+          label: Right Bottom
+    bottom:
+      label: Bottom

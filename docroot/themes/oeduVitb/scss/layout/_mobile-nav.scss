@@ -1,0 +1,84 @@
+.main_navigation-block--mobile {
+  li {
+    a {
+      font-size: 1.25em;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba($white, 0.2);
+      color: $white;
+      position: relative;
+      display: block;
+
+      &:hover,
+      &:focus {
+        color: $btn-primary-bg;
+      }
+    }
+
+    &.dropdown {
+      .dropdown-toggle {
+        @include icon(inherit, 'menu', 1.5em);
+
+        &:after {
+          display: none;
+        }
+      }
+
+      // down arrow
+      .caret {
+        @include icon(transparentize($white, 0.25), 'keyboard_arrow_down', 1.5em);
+
+        position: absolute;
+        right: 0;
+        top: .5em;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        padding: 9px 13px;
+      }
+
+      &.show {
+        .dropdown-toggle {
+          &:after {
+            display: none;
+          }
+        }
+
+        // up arrow
+        .caret {
+          @include icon(transparentize($white, 0.25), 'keyboard_arrow_up', 1.5em);
+        }
+
+        .dropdown-menu {
+          position: static !important;
+          transform: none !important;
+          float: none;
+          width: auto;
+          margin-top: 0;
+          background-color: transparent;
+          border: 0;
+          box-shadow: none;
+
+          li {
+            padding: 0 15px;
+            background: rgba($white, 0.15);
+
+            a {
+              font-size: 1em;
+              padding: 0;
+
+              &:hover,
+              &:focus {
+                color: $btn-primary-bg;
+                text-decoration: none;
+              }
+            }
+
+            &:last-of-type a {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "openedu",
+  "version": "1.0.0",
+  "description": "Using Bootstrap 4 (beta) as its the only stable release at this time. Popper.js is loaded without node.",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "bootstrap": "v4.0.0",
+    "breakpoint-sass": "^2.7.0",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "grunt-sass-globbing": "^1.5.1",
+    "grunt-sass-lint": "^0.2.4",
+    "grunt-webfont": "^1.6.0",
+    "postcss": "^6.0.14",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "time-grunt": "^1.4.0"
+  }
+}

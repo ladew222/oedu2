@@ -13,7 +13,7 @@ use Drupal\system\Entity\Menu;
 
 
 /**
- * Provides a 'article' block.
+ * Provides a 'one-level menu' block.
  *
  * @Block(
  *   id = "article_block",

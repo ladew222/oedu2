@@ -1,0 +1,32 @@
+.block--openedu-grid-block,
+.block-entity-fieldnodefield-program-grid-block {
+  @include make-container();
+  @include make-container-max-widths();
+
+  margin-top: 2em;
+
+  .field--name-field-grid-label {
+    @extend h2;
+    @include underlined-title();
+
+    margin-bottom: 1em;
+    color: $primary;
+    text-align: center;
+  }
+
+  .field--name-field-grid-content {
+    @include make-row();
+
+    .img-responsive {
+      margin: auto;
+    }
+
+    & > .field--item {
+      margin-bottom: 2em;
+    }
+  }
+
+  .field--name-field-grid-cta {
+    text-align: center;
+  }
+}

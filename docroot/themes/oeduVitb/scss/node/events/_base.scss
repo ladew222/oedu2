@@ -1,0 +1,170 @@
+.panel-oedu-container {
+  #views-exposed-form-event-latest-events-block {
+    display: none;
+  }
+
+  .events-filter-datepicker {
+    .responsive-dropdown {
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+
+    .datepicker-inline {
+      @include media-breakpoint-up(md) {
+        position: relative;
+      }
+
+      &:not(.open) {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+          display: block;
+        }
+      }
+    }
+
+    .datepicker {
+      border-radius: 3px;
+      box-shadow: 0 1px 5px 1px $gray-300;
+
+      .datepicker--cell-day {
+        border-radius: 0;
+      }
+
+      .datepicker--day-name {
+        color: $gray-dark;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      text-align: right;
+    }
+  }
+
+  .block-title {
+    border-bottom: 1px solid $gray-300;
+  }
+}
+
+.page-node-type-event .region-container {
+  .block-addtoany-block {
+    border-top: 3px solid $gray-300;
+    padding-top: 1em;
+
+    label {
+      font-weight: normal;
+      padding-right: 5px;
+    }
+
+    a {
+      margin-right: 10px;
+
+      &:not(.addtoany_share_save) {
+        padding: 5px 8px 8px 8px;
+      }
+    }
+
+    .top {
+      float: right;
+      padding-top: 13px !important;
+    }
+
+    .a2a_button_facebook {
+      background-color: #3a5998;
+    }
+
+    .a2a_button_twitter {
+      background-color: #56abee;
+    }
+
+    .addtoany_share_save {
+      padding: 0;
+
+      img {
+        height: 48px;
+      }
+    }
+  }
+
+  .panel-oedu-container {
+    section {
+      margin-bottom: 2em;
+    }
+
+    .block-entity-fieldnodefield-event-directions,
+    .block-entity-fieldnodefield-event-location {
+      margin-bottom: 0;
+    }
+
+    .block-entity-fieldnodefield-events-event-map {
+      bottom: 1px;
+      position: relative;
+
+      .map-container {
+        width: 100% !important;
+        height: 300px !important;
+      }
+    }
+
+    .block-entity-fieldnodefield-events-category .block-title,
+    .block-entity-fieldnodefield-events-additional-links .block-title {
+      border: none;
+    }
+
+    .field--name-field-events-category .field--item {
+      @extend .site-tag-clr;
+    }
+
+    .field--type-link {
+      margin-left: 35px;
+
+      .field--item {
+        display: list-item;
+      }
+    }
+
+    .field--type-address {
+      border: 1px solid $gray-300;
+      padding: 15px 20px;
+      border-top: 5px solid $primary;
+
+      .address {
+        font-size: 14px;
+        font-weight: 600;
+
+        .organization {
+          color: $primary;
+          display: block;
+          font-size: 18px;
+          margin-bottom: 10px;
+
+          &:before {
+            color: $primary-lighter;
+            content: "location_on";
+            font-family: $font-family-md-icons;
+            font-size: 1.5em;
+            margin-left: -5px;
+            padding-right: 5px;
+            vertical-align: middle;
+          }
+
+          & + br {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .field--name-field-event-directions {
+      width: 100%;
+      margin: 0;
+      bottom: 1px;
+      border: 1px solid $gray-300;
+      padding: 0 20px 10px 20px;
+      position: relative;
+      border-top: 1px solid white;
+    }
+  }
+}
