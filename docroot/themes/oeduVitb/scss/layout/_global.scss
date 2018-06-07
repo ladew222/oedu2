@@ -241,3 +241,54 @@ iframe body {
   //color: white;
   margin: 10px 0;
 }
+
+.openedu-stat-small{
+  line-height: 0.95em;
+  text-align: center;
+  font-size: 30px;
+  //color: white;
+  margin: 10px 0;
+  &.pri{
+    color:$primary !important;
+  }
+  &.sec{
+    color:$secondary !important;;
+  }
+  &.wht{
+    color:#fff !important;
+  }
+
+
+}
+.openedu-stat-large{
+  line-height: 0.95em;
+  text-align: center;
+  font-size: 45px;
+  //color: white;
+  margin: 10px 0;
+  &.pri{
+    color:$primary !important;
+  }
+  &.sec{
+    color:$secondary !important;;
+  }
+  &.wht{
+    color:#fff !important;
+  }
+}
+.openedu-stat-med{
+  text-align: center;
+  line-height: 0.95em;
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0;
+  &.pri{
+    color:$primary !important;
+  }
+  &.sec{
+    color:$secondary !important;;
+  }
+  &.wht{
+    color:#fff !important;
+  }
+}

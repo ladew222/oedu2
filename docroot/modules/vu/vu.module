@@ -85,6 +85,12 @@ function vu_preprocess_block(&$variables) {
                 if (isset($uri)) {
                     $uri = file_url_transform_relative($uri);
                 }
+                else{
+                  $uri="";
+                }
+            }
+            else{
+              $uri="";
             }
             $variables['attributes']['style'][] = 'background-size: cover;';
             if (!$contents->field_background_position->isEmpty()) {

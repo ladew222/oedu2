@@ -7888,6 +7888,43 @@ iframe body {
   text-align: center;
   margin: 10px 0; }
 
+.openedu-stat-small {
+  line-height: 0.95em;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0; }
+  .openedu-stat-small.pri {
+    color: #1f2f5f !important; }
+  .openedu-stat-small.sec {
+    color: #a51d37 !important; }
+  .openedu-stat-small.wht {
+    color: #fff !important; }
+
+.openedu-stat-large {
+  line-height: 0.95em;
+  text-align: center;
+  font-size: 45px;
+  margin: 10px 0; }
+  .openedu-stat-large.pri {
+    color: #1f2f5f !important; }
+  .openedu-stat-large.sec {
+    color: #a51d37 !important; }
+  .openedu-stat-large.wht {
+    color: #fff !important; }
+
+.openedu-stat-med {
+  text-align: center;
+  line-height: 0.95em;
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0; }
+  .openedu-stat-med.pri {
+    color: #1f2f5f !important; }
+  .openedu-stat-med.sec {
+    color: #a51d37 !important; }
+  .openedu-stat-med.wht {
+    color: #fff !important; }
+
 #header {
   background-color: #1f2f5f; }
   #header .header__bar {

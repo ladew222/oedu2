@@ -17,3 +17,20 @@ OeduVitDept:
           label: Right Bottom
     bottom:
       label: Bottom
+oedu_onecol_with_subsection_5050_bottom:
+  label: Single column with subsection header and 50/50 bottom
+  category: 'OpenEDU'
+  path: layouts/oedu_onecol_with_subsection_5050_bottom
+  icon: oedu_twocol_with_subsection_5050_bottom.png
+  template: panels-oedu-onecol-with-subsection-5050-bottom
+  regions:
+    subsection:
+      label: Subsection
+    middle:
+      label: Middle column
+    bottom_left:
+      label: Bottom Left
+    bottom_right:
+      label: Bottom Right
+    bottom:
+      label: Bottom
