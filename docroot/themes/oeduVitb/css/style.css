@@ -128,7 +128,7 @@ h1, h2, .region-container .block-region-middle .block .field--label:first-of-typ
 .region-container .block-region-left .block .field--label:first-of-type, .block-entity-fieldnodefield-program-faculty .block-title,
 .block--profile-block .block-title, .block--openedu-grid-block .field--name-field-grid-label,
 .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label, .block--openedu-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title,
-.block--openedu-news-events-widget .field--name-field-stories-title, h3, h4, h5, h6 {
+.block--openedu-news-events-widget .field--name-field-stories-title, .paragraph--type--buttons .field--name-field-title, .paragraph--type--news-items .field--name-field-title, .paragraph--type--person-listing .field--name-field-title, h3, h4, .paragraph--type--file-listing .field--name-field-title, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -357,7 +357,7 @@ h1, h2, .region-container .block-region-middle .block .field--label:first-of-typ
 .region-container .block-region-left .block .field--label:first-of-type, .block-entity-fieldnodefield-program-faculty .block-title,
 .block--profile-block .block-title, .block--openedu-grid-block .field--name-field-grid-label,
 .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label, .block--openedu-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title,
-.block--openedu-news-events-widget .field--name-field-stories-title, h3, h4, h5, h6,
+.block--openedu-news-events-widget .field--name-field-stories-title, .paragraph--type--buttons .field--name-field-title, .paragraph--type--news-items .field--name-field-title, .paragraph--type--person-listing .field--name-field-title, h3, h4, .paragraph--type--file-listing .field--name-field-title, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -372,13 +372,13 @@ h2, .region-container .block-region-middle .block .field--label:first-of-type,
 .region-container .block-region-left .block .field--label:first-of-type, .block-entity-fieldnodefield-program-faculty .block-title,
 .block--profile-block .block-title, .block--openedu-grid-block .field--name-field-grid-label,
 .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label, .block--openedu-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title,
-.block--openedu-news-events-widget .field--name-field-stories-title, .h2 {
+.block--openedu-news-events-widget .field--name-field-stories-title, .paragraph--type--buttons .field--name-field-title, .paragraph--type--news-items .field--name-field-title, .paragraph--type--person-listing .field--name-field-title, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
   font-size: 1.75rem; }
 
-h4, .h4 {
+h4, .paragraph--type--file-listing .field--name-field-title, .h4 {
   font-size: 1.5rem; }
 
 h5, .h5 {
@@ -541,7 +541,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row {
+.row, .paragraph--type--news-items .content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -558,8 +558,8 @@ pre {
     padding-left: 0; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item, .block-entity-fieldnodefield-program-faculty .field--name-field-profile > .field--item,
-.block--profile-block .field--name-field-profile > .field--item, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .paragraph--type--news-items .content .image, .col-sm-4, .col-sm-5, .col-sm-6, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item, .block-entity-fieldnodefield-program-faculty .field--name-field-profile > .field--item,
+.block--profile-block .field--name-field-profile > .field--item, .col-sm-7, .col-sm-8, .col-sm-9, .paragraph--type--news-items .content .wrapper, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
@@ -756,7 +756,7 @@ pre {
     -ms-flex: 0 0 16.6666666667%;
         flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%; }
-  .col-sm-3 {
+  .col-sm-3, .paragraph--type--news-items .content .image {
     -ms-flex: 0 0 25%;
         flex: 0 0 25%;
     max-width: 25%; }
@@ -781,7 +781,7 @@ pre {
     -ms-flex: 0 0 66.6666666667%;
         flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%; }
-  .col-sm-9 {
+  .col-sm-9, .paragraph--type--news-items .content .wrapper {
     -ms-flex: 0 0 75%;
         flex: 0 0 75%;
     max-width: 75%; }
@@ -6598,6 +6598,9 @@ a.text-dark:hover, a.text-dark:focus {
   .block--openedu-stories-block .field--name-field-stories-title,
   .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title,
   .block--openedu-news-events-widget .field--name-field-stories-title,
+  .paragraph--type--buttons .field--name-field-title,
+  .paragraph--type--news-items .field--name-field-title,
+  .paragraph--type--person-listing .field--name-field-title,
   h3 {
     orphans: 3;
     widows: 3; }
@@ -6605,7 +6608,7 @@ a.text-dark:hover, a.text-dark:focus {
   .region-container .block-region-left .block .field--label:first-of-type, .block-entity-fieldnodefield-program-faculty .block-title,
   .block--profile-block .block-title, .block--openedu-grid-block .field--name-field-grid-label,
   .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label, .block--openedu-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title,
-  .block--openedu-news-events-widget .field--name-field-stories-title,
+  .block--openedu-news-events-widget .field--name-field-stories-title, .paragraph--type--buttons .field--name-field-title, .paragraph--type--news-items .field--name-field-title, .paragraph--type--person-listing .field--name-field-title,
   h3 {
     page-break-after: avoid; }
   @page {
@@ -6692,8 +6695,9 @@ a.text-dark:hover, a.text-dark:focus {
         display: inline !important;
         margin-right: 10px; }
 
-li a.btn-cta,
-.btn-cta {
+li a.btn-cta, li .paragraph--type--buttons .field.field--name-field-link .field--item a, .paragraph--type--buttons .field.field--name-field-link .field--item li a,
+.btn-cta,
+.paragraph--type--buttons .field.field--name-field-link .field--item a {
   background: #999494;
   display: inline-block;
   color: white;
@@ -6701,20 +6705,25 @@ li a.btn-cta,
   font-weight: 600;
   padding: 1em 2.5em;
   box-shadow: 0 0 0 1px #dee2e6; }
-  li a.btn-cta:hover,
-  .btn-cta:hover {
+  li a.btn-cta:hover, li .paragraph--type--buttons .field.field--name-field-link .field--item a:hover, .paragraph--type--buttons .field.field--name-field-link .field--item li a:hover,
+  .btn-cta:hover,
+  .paragraph--type--buttons .field.field--name-field-link .field--item a:hover {
     opacity: 0.9;
     text-decoration: none; }
-  li a.btn-cta.call-out, li .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link li a,
+  li a.btn-cta.call-out, li .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link li a, li .paragraph--type--buttons .field.field--name-field-link .field--item a.call-out, .paragraph--type--buttons .field.field--name-field-link .field--item li a.call-out, li .paragraph--type--buttons.call-out .field.field--name-field-link .field--item a, .paragraph--type--buttons.call-out .field.field--name-field-link .field--item li a,
   .btn-cta.call-out,
-  .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a {
+  .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a,
+  .paragraph--type--buttons .field.field--name-field-link .field--item a.call-out,
+  .paragraph--type--buttons.call-out .field.field--name-field-link .field--item a {
     padding-right: 1.2em;
     background: linear-gradient(60deg, #3283b5 65%, #2d739f 54%);
     -webkit-filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3283b5', endColorstr='#2d739f', GradientType=1);
             filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3283b5', endColorstr='#2d739f', GradientType=1); }
-    li a.btn-cta.call-out:after, li .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link li a:after,
+    li a.btn-cta.call-out:after, li .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link li a:after, li .paragraph--type--buttons .field.field--name-field-link .field--item a.call-out:after, .paragraph--type--buttons .field.field--name-field-link .field--item li a.call-out:after, li .paragraph--type--buttons.call-out .field.field--name-field-link .field--item a:after, .paragraph--type--buttons.call-out .field.field--name-field-link .field--item li a:after,
     .btn-cta.call-out:after,
-    .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after {
+    .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after,
+    .paragraph--type--buttons .field.field--name-field-link .field--item a.call-out:after,
+    .paragraph--type--buttons.call-out .field.field--name-field-link .field--item a:after {
       font-family: "Material Icons", sans-serif;
       display: inline-block;
       line-height: 1;
@@ -6723,9 +6732,11 @@ li a.btn-cta,
       font-size: 1.25em;
       vertical-align: bottom;
       float: none; }
-    li a.btn-cta.call-out:after, li .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link li a:after,
+    li a.btn-cta.call-out:after, li .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link li a:after, li .paragraph--type--buttons .field.field--name-field-link .field--item a.call-out:after, .paragraph--type--buttons .field.field--name-field-link .field--item li a.call-out:after, li .paragraph--type--buttons.call-out .field.field--name-field-link .field--item a:after, .paragraph--type--buttons.call-out .field.field--name-field-link .field--item li a:after,
     .btn-cta.call-out:after,
-    .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after {
+    .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a:after,
+    .paragraph--type--buttons .field.field--name-field-link .field--item a.call-out:after,
+    .paragraph--type--buttons.call-out .field.field--name-field-link .field--item a:after {
       padding-left: 1em; }
 
 .responsive-dropdown {
@@ -6791,7 +6802,7 @@ li a.btn-cta,
       .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
       .block-entity-fieldnodefield-program-grid-block .carousel .gallery-cell article .field--name-field-grid-label, .carousel .gallery-cell article .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .carousel .gallery-cell article .field--name-field-stories-title, .carousel .gallery-cell article .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .carousel .gallery-cell article .field--name-field-stories-title, .carousel .gallery-cell article
       .block--openedu-news-events-widget .field--name-field-stories-title,
-      .block--openedu-news-events-widget .carousel .gallery-cell article .field--name-field-stories-title {
+      .block--openedu-news-events-widget .carousel .gallery-cell article .field--name-field-stories-title, .carousel .gallery-cell article .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .carousel .gallery-cell article .field--name-field-title, .carousel .gallery-cell article .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .carousel .gallery-cell article .field--name-field-title, .carousel .gallery-cell article .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .carousel .gallery-cell article .field--name-field-title {
         font-weight: bold;
         margin: 0.775em auto;
         padding: 0 5px;
@@ -6807,7 +6818,7 @@ li a.btn-cta,
         .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
         .block-entity-fieldnodefield-program-grid-block .carousel .gallery-cell article .field--name-field-grid-label a, .carousel .gallery-cell article .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block .carousel .gallery-cell article .field--name-field-stories-title a, .carousel .gallery-cell article .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block .carousel .gallery-cell article .field--name-field-stories-title a, .carousel .gallery-cell article
         .block--openedu-news-events-widget .field--name-field-stories-title a,
-        .block--openedu-news-events-widget .carousel .gallery-cell article .field--name-field-stories-title a {
+        .block--openedu-news-events-widget .carousel .gallery-cell article .field--name-field-stories-title a, .carousel .gallery-cell article .paragraph--type--buttons .field--name-field-title a, .paragraph--type--buttons .carousel .gallery-cell article .field--name-field-title a, .carousel .gallery-cell article .paragraph--type--news-items .field--name-field-title a, .paragraph--type--news-items .carousel .gallery-cell article .field--name-field-title a, .carousel .gallery-cell article .paragraph--type--person-listing .field--name-field-title a, .paragraph--type--person-listing .carousel .gallery-cell article .field--name-field-title a {
           color: #31708f; }
       .carousel .gallery-cell article .field--name-field-event-dates {
         padding-left: 5px;
@@ -7066,7 +7077,7 @@ li a.btn-cta,
   white-space: pre;
   vertical-align: middle; }
 
-.image-widget.row {
+.image-widget.row, .paragraph--type--news-items .image-widget.content {
   overflow: hidden; }
 
 .media--type-video.media {
@@ -7859,6 +7870,24 @@ iframe body {
     .ipe-form {
       max-width: 1140px; } }
 
+.openedu-stat {
+  line-height: 0.95em;
+  text-align: center;
+  margin: 10px 0; }
+  .openedu-stat.pri {
+    color: #1f2f5f !important; }
+  .openedu-stat.suc {
+    color: #a51d37 !important; }
+  .openedu-stat.inf {
+    color: #0479a8 !important; }
+  .openedu-stat.wht {
+    color: #fff !important; }
+
+.openedu-stat-small {
+  line-height: 0.95em;
+  text-align: center;
+  margin: 10px 0; }
+
 #header {
   background-color: #1f2f5f; }
   #header .header__bar {
@@ -8162,7 +8191,7 @@ iframe body {
   .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
   .block-entity-fieldnodefield-program-grid-block .panel-oedu-1col.bottom section .field--name-field-grid-label, .panel-oedu-1col.bottom section .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .panel-oedu-1col.bottom section .field--name-field-stories-title, .panel-oedu-1col.bottom section .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .panel-oedu-1col.bottom section .field--name-field-stories-title, .panel-oedu-1col.bottom section
   .block--openedu-news-events-widget .field--name-field-stories-title,
-  .block--openedu-news-events-widget .panel-oedu-1col.bottom section .field--name-field-stories-title,
+  .block--openedu-news-events-widget .panel-oedu-1col.bottom section .field--name-field-stories-title, .panel-oedu-1col.bottom section .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .panel-oedu-1col.bottom section .field--name-field-title, .panel-oedu-1col.bottom section .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .panel-oedu-1col.bottom section .field--name-field-title, .panel-oedu-1col.bottom section .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .panel-oedu-1col.bottom section .field--name-field-title,
   .panel-oedu-1col.bottom section a,
   .panel-oedu-1col.bottom section span {
     color: white; }
@@ -8505,7 +8534,7 @@ body.path-user:not(.user-logged-in) {
   .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
   .block-entity-fieldnodefield-program-grid-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-grid-label, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item
   .block--openedu-news-events-widget .field--name-field-stories-title,
-  .block--openedu-news-events-widget .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title {
+  .block--openedu-news-events-widget .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-title, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-title, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-title {
     margin-top: 0.2em;
     font-size: 1.5em;
     color: #1f2f5f; }
@@ -8517,7 +8546,7 @@ body.path-user:not(.user-logged-in) {
     .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
     .block-entity-fieldnodefield-program-grid-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-grid-label a, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title a, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title a, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item
     .block--openedu-news-events-widget .field--name-field-stories-title a,
-    .block--openedu-news-events-widget .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title a {
+    .block--openedu-news-events-widget .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title a, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .paragraph--type--buttons .field--name-field-title a, .paragraph--type--buttons .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-title a, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .paragraph--type--news-items .field--name-field-title a, .paragraph--type--news-items .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-title a, .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .paragraph--type--person-listing .field--name-field-title a, .paragraph--type--person-listing .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-title a {
       color: #1f2f5f;
       text-decoration: none; }
 
@@ -8556,7 +8585,7 @@ body.path-user:not(.user-logged-in) {
 .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
 .block-entity-fieldnodefield-program-grid-block .search-result .field--name-field-grid-label, .search-result .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .search-result .field--name-field-stories-title, .search-result .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .search-result .field--name-field-stories-title, .search-result
 .block--openedu-news-events-widget .field--name-field-stories-title,
-.block--openedu-news-events-widget .search-result .field--name-field-stories-title {
+.block--openedu-news-events-widget .search-result .field--name-field-stories-title, .search-result .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .search-result .field--name-field-title, .search-result .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .search-result .field--name-field-title, .search-result .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .search-result .field--name-field-title {
   padding: 0;
   margin: 0 0 0.125em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -8571,7 +8600,7 @@ body.path-user:not(.user-logged-in) {
 .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
 .block-entity-fieldnodefield-program-grid-block .search-result .field--name-field-grid-label a, .search-result .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block .search-result .field--name-field-stories-title a, .search-result .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block .search-result .field--name-field-stories-title a, .search-result
 .block--openedu-news-events-widget .field--name-field-stories-title a,
-.block--openedu-news-events-widget .search-result .field--name-field-stories-title a {
+.block--openedu-news-events-widget .search-result .field--name-field-stories-title a, .search-result .paragraph--type--buttons .field--name-field-title a, .paragraph--type--buttons .search-result .field--name-field-title a, .search-result .paragraph--type--news-items .field--name-field-title a, .paragraph--type--news-items .search-result .field--name-field-title a, .search-result .paragraph--type--person-listing .field--name-field-title a, .paragraph--type--person-listing .search-result .field--name-field-title a {
   color: #4a4a4a;
   text-decoration: none; }
 
@@ -8583,7 +8612,7 @@ body.path-user:not(.user-logged-in) {
 .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a:hover,
 .block-entity-fieldnodefield-program-grid-block .search-result .field--name-field-grid-label a:hover, .search-result .block--openedu-stories-block .field--name-field-stories-title a:hover, .block--openedu-stories-block .search-result .field--name-field-stories-title a:hover, .search-result .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a:hover, .block-entity-fieldnodefield-program-stories-block .search-result .field--name-field-stories-title a:hover, .search-result
 .block--openedu-news-events-widget .field--name-field-stories-title a:hover,
-.block--openedu-news-events-widget .search-result .field--name-field-stories-title a:hover {
+.block--openedu-news-events-widget .search-result .field--name-field-stories-title a:hover, .search-result .paragraph--type--buttons .field--name-field-title a:hover, .paragraph--type--buttons .search-result .field--name-field-title a:hover, .search-result .paragraph--type--news-items .field--name-field-title a:hover, .paragraph--type--news-items .search-result .field--name-field-title a:hover, .search-result .paragraph--type--person-listing .field--name-field-title a:hover, .paragraph--type--person-listing .search-result .field--name-field-title a:hover {
   color: #0479a8; }
 
 .search-result cite {
@@ -8713,8 +8742,10 @@ body.path-user:not(.user-logged-in) {
     font-size: 0.8em;
     box-shadow: 0 1px 8px 0 #b0b0b0;
     border-bottom: 4px solid #b0b0b0; }
-    .block-entity-fieldnodefield-program-faculty article h4,
-    .block--profile-block article h4 {
+    .block-entity-fieldnodefield-program-faculty article h4, .block-entity-fieldnodefield-program-faculty article .paragraph--type--file-listing .field--name-field-title, .paragraph--type--file-listing .block-entity-fieldnodefield-program-faculty article .field--name-field-title,
+    .block--profile-block article h4,
+    .block--profile-block article .paragraph--type--file-listing .field--name-field-title, .paragraph--type--file-listing
+    .block--profile-block article .field--name-field-title {
       width: 100%;
       margin-top: 0.625rem;
       margin-bottom: 0.2em;
@@ -8722,19 +8753,25 @@ body.path-user:not(.user-logged-in) {
       font-size: 1.5em;
       font-weight: 600;
       color: #333; }
-      .block-entity-fieldnodefield-program-faculty article h4 a,
-      .block--profile-block article h4 a {
+      .block-entity-fieldnodefield-program-faculty article h4 a, .block-entity-fieldnodefield-program-faculty article .paragraph--type--file-listing .field--name-field-title a, .paragraph--type--file-listing .block-entity-fieldnodefield-program-faculty article .field--name-field-title a,
+      .block--profile-block article h4 a,
+      .block--profile-block article .paragraph--type--file-listing .field--name-field-title a, .paragraph--type--file-listing
+      .block--profile-block article .field--name-field-title a {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         color: #333; }
-        .block-entity-fieldnodefield-program-faculty article h4 a:hover,
-        .block--profile-block article h4 a:hover {
+        .block-entity-fieldnodefield-program-faculty article h4 a:hover, .block-entity-fieldnodefield-program-faculty article .paragraph--type--file-listing .field--name-field-title a:hover, .paragraph--type--file-listing .block-entity-fieldnodefield-program-faculty article .field--name-field-title a:hover,
+        .block--profile-block article h4 a:hover,
+        .block--profile-block article .paragraph--type--file-listing .field--name-field-title a:hover, .paragraph--type--file-listing
+        .block--profile-block article .field--name-field-title a:hover {
           text-decoration: none;
           color: #0479a8; }
     .block-entity-fieldnodefield-program-faculty article .profile-picture,
     .block--profile-block article .profile-picture {
       display: none; }
-      .block-entity-fieldnodefield-program-faculty article .profile-picture:hover ~ h4 a,
-      .block--profile-block article .profile-picture:hover ~ h4 a {
+      .block-entity-fieldnodefield-program-faculty article .profile-picture:hover ~ h4 a, .block-entity-fieldnodefield-program-faculty article .paragraph--type--file-listing .profile-picture:hover ~ .field--name-field-title a, .paragraph--type--file-listing .block-entity-fieldnodefield-program-faculty article .profile-picture:hover ~ .field--name-field-title a,
+      .block--profile-block article .profile-picture:hover ~ h4 a,
+      .block--profile-block article .paragraph--type--file-listing .profile-picture:hover ~ .field--name-field-title a, .paragraph--type--file-listing
+      .block--profile-block article .profile-picture:hover ~ .field--name-field-title a {
         color: #0479a8; }
     .block-entity-fieldnodefield-program-faculty article .field--name-field-profile-department,
     .block--profile-block article .field--name-field-profile-department {
@@ -8821,7 +8858,7 @@ body.path-user:not(.user-logged-in) {
     margin-bottom: 3em; }
     .block-views-blockprofile-list-profile-listing-block .pager-nav {
       text-align: center; }
-    .block-views-blockprofile-list-profile-listing-block .left h4 {
+    .block-views-blockprofile-list-profile-listing-block .left h4, .block-views-blockprofile-list-profile-listing-block .left .paragraph--type--file-listing .field--name-field-title, .paragraph--type--file-listing .block-views-blockprofile-list-profile-listing-block .left .field--name-field-title {
       margin-bottom: 0; }
     .block-views-blockprofile-list-profile-listing-block .left .field--items {
       display: inline; }
@@ -8869,7 +8906,7 @@ body.path-user:not(.user-logged-in) {
   .block-views-blockprofile-list-profile-listing-block .field--name-field-profile-email a {
     color: #0479a8;
     word-wrap: break-word; }
-  .block-views-blockprofile-list-profile-listing-block h4 {
+  .block-views-blockprofile-list-profile-listing-block h4, .block-views-blockprofile-list-profile-listing-block .paragraph--type--file-listing .field--name-field-title, .paragraph--type--file-listing .block-views-blockprofile-list-profile-listing-block .field--name-field-title {
     margin: 0.438em 0; }
   .block-views-blockprofile-list-profile-listing-block .field--name-field-profile-name {
     color: #4a4a4a;
@@ -8888,7 +8925,7 @@ body.path-user:not(.user-logged-in) {
     .block-views-blockprofile-list-profile-listing-block .field--name-field-profile-department .field--item a {
       color: #0479a8; }
 
-.path-directory .panel-oedu-2col.col-sm-3 {
+.path-directory .panel-oedu-2col.col-sm-3, .path-directory .paragraph--type--news-items .content .panel-oedu-2col.image, .paragraph--type--news-items .content .path-directory .panel-oedu-2col.image {
   margin: 1em auto; }
 
 @media (min-width: 576px) {
@@ -9081,11 +9118,11 @@ article.event.teaser-card .field--name-field-event-date {
   article.event.teaser-card .field--name-field-event-date .fa {
     padding-right: 5px; }
 
-article.event.teaser-card h4 {
+article.event.teaser-card h4, article.event.teaser-card .paragraph--type--file-listing .field--name-field-title, .paragraph--type--file-listing article.event.teaser-card .field--name-field-title {
   color: #2d3242;
   font-size: 16px;
   font-weight: 600; }
-  article.event.teaser-card h4 a {
+  article.event.teaser-card h4 a, article.event.teaser-card .paragraph--type--file-listing .field--name-field-title a, .paragraph--type--file-listing article.event.teaser-card .field--name-field-title a {
     color: #2d3242; }
 
 article.event.teaser-card .content {
@@ -9113,7 +9150,7 @@ article.event.teaser .content {
     .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
     .block-entity-fieldnodefield-program-grid-block article.event.teaser .content .wrapper .field--name-field-grid-label, article.event.teaser .content .wrapper .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title, article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title, article.event.teaser .content .wrapper
     .block--openedu-news-events-widget .field--name-field-stories-title,
-    .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title {
+    .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title, article.event.teaser .content .wrapper .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons article.event.teaser .content .wrapper .field--name-field-title, article.event.teaser .content .wrapper .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items article.event.teaser .content .wrapper .field--name-field-title, article.event.teaser .content .wrapper .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing article.event.teaser .content .wrapper .field--name-field-title {
       font-size: 18px;
       font-weight: 700;
       margin-top: 12px; }
@@ -9125,7 +9162,7 @@ article.event.teaser .content {
       .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
       .block-entity-fieldnodefield-program-grid-block article.event.teaser .content .wrapper .field--name-field-grid-label a, article.event.teaser .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a, article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a, article.event.teaser .content .wrapper
       .block--openedu-news-events-widget .field--name-field-stories-title a,
-      .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title a {
+      .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title a, article.event.teaser .content .wrapper .paragraph--type--buttons .field--name-field-title a, .paragraph--type--buttons article.event.teaser .content .wrapper .field--name-field-title a, article.event.teaser .content .wrapper .paragraph--type--news-items .field--name-field-title a, .paragraph--type--news-items article.event.teaser .content .wrapper .field--name-field-title a, article.event.teaser .content .wrapper .paragraph--type--person-listing .field--name-field-title a, .paragraph--type--person-listing article.event.teaser .content .wrapper .field--name-field-title a {
         color: #4a4a4a; }
         article.event.teaser .content .wrapper h2 a:hover, article.event.teaser .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a:hover, .region-container .block-region-middle .block article.event.teaser .content .wrapper .field--label:first-of-type a:hover, article.event.teaser .content .wrapper
         .region-container .block-region-left .block .field--label:first-of-type a:hover,
@@ -9135,7 +9172,7 @@ article.event.teaser .content {
         .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a:hover,
         .block-entity-fieldnodefield-program-grid-block article.event.teaser .content .wrapper .field--name-field-grid-label a:hover, article.event.teaser .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a:hover, .block--openedu-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a:hover, article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a:hover, .block-entity-fieldnodefield-program-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a:hover, article.event.teaser .content .wrapper
         .block--openedu-news-events-widget .field--name-field-stories-title a:hover,
-        .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title a:hover {
+        .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title a:hover, article.event.teaser .content .wrapper .paragraph--type--buttons .field--name-field-title a:hover, .paragraph--type--buttons article.event.teaser .content .wrapper .field--name-field-title a:hover, article.event.teaser .content .wrapper .paragraph--type--news-items .field--name-field-title a:hover, .paragraph--type--news-items article.event.teaser .content .wrapper .field--name-field-title a:hover, article.event.teaser .content .wrapper .paragraph--type--person-listing .field--name-field-title a:hover, .paragraph--type--person-listing article.event.teaser .content .wrapper .field--name-field-title a:hover {
           color: #0479a8;
           text-decoration: none; }
     article.event.teaser .content .wrapper .date {
@@ -9286,7 +9323,7 @@ article.event.featured-content .content > .wrapper h2, article.event.featured-co
 .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
 .block-entity-fieldnodefield-program-grid-block article.event.featured-content .content > .wrapper .field--name-field-grid-label, article.event.featured-content .content > .wrapper .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block article.event.featured-content .content > .wrapper .field--name-field-stories-title, article.event.featured-content .content > .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block article.event.featured-content .content > .wrapper .field--name-field-stories-title, article.event.featured-content .content > .wrapper
 .block--openedu-news-events-widget .field--name-field-stories-title,
-.block--openedu-news-events-widget article.event.featured-content .content > .wrapper .field--name-field-stories-title {
+.block--openedu-news-events-widget article.event.featured-content .content > .wrapper .field--name-field-stories-title, article.event.featured-content .content > .wrapper .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons article.event.featured-content .content > .wrapper .field--name-field-title, article.event.featured-content .content > .wrapper .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items article.event.featured-content .content > .wrapper .field--name-field-title, article.event.featured-content .content > .wrapper .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing article.event.featured-content .content > .wrapper .field--name-field-title {
   margin-top: 12px;
   font-size: 26px;
   font-weight: 700; }
@@ -9298,7 +9335,7 @@ article.event.featured-content .content > .wrapper h2, article.event.featured-co
   .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
   .block-entity-fieldnodefield-program-grid-block article.event.featured-content .content > .wrapper .field--name-field-grid-label a, article.event.featured-content .content > .wrapper .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block article.event.featured-content .content > .wrapper .field--name-field-stories-title a, article.event.featured-content .content > .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block article.event.featured-content .content > .wrapper .field--name-field-stories-title a, article.event.featured-content .content > .wrapper
   .block--openedu-news-events-widget .field--name-field-stories-title a,
-  .block--openedu-news-events-widget article.event.featured-content .content > .wrapper .field--name-field-stories-title a {
+  .block--openedu-news-events-widget article.event.featured-content .content > .wrapper .field--name-field-stories-title a, article.event.featured-content .content > .wrapper .paragraph--type--buttons .field--name-field-title a, .paragraph--type--buttons article.event.featured-content .content > .wrapper .field--name-field-title a, article.event.featured-content .content > .wrapper .paragraph--type--news-items .field--name-field-title a, .paragraph--type--news-items article.event.featured-content .content > .wrapper .field--name-field-title a, article.event.featured-content .content > .wrapper .paragraph--type--person-listing .field--name-field-title a, .paragraph--type--person-listing article.event.featured-content .content > .wrapper .field--name-field-title a {
     color: #4a4a4a; }
 
 article.event.featured-content .content > .wrapper .date {
@@ -9459,13 +9496,13 @@ section.subsection #views-exposed-form-event-latest-events-block .form-submit {
 section.subsection #views-exposed-form-event-latest-events-block .chosen-single {
   font-weight: 600; }
 
-article.news.teaser-card h4 {
+article.news.teaser-card h4, article.news.teaser-card .paragraph--type--file-listing .field--name-field-title, .paragraph--type--file-listing article.news.teaser-card .field--name-field-title {
   color: #2d3242;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
   padding-bottom: 0; }
-  article.news.teaser-card h4 a {
+  article.news.teaser-card h4 a, article.news.teaser-card .paragraph--type--file-listing .field--name-field-title a, .paragraph--type--file-listing article.news.teaser-card .field--name-field-title a {
     color: #2d3242; }
 
 article.news.teaser-card .field--name-field-news-date {
@@ -9545,7 +9582,7 @@ article.news.teaser-card .content {
   .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
   .block-entity-fieldnodefield-program-grid-block .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-grid-label, .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-stories-title, .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-stories-title, .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block
   .block--openedu-news-events-widget .field--name-field-stories-title,
-  .block--openedu-news-events-widget .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-stories-title {
+  .block--openedu-news-events-widget .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-stories-title, .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-title, .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-title, .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-addtoany-block .field--name-field-title {
     margin: 0 0.5em 0 0;
     font-size: 0.875em;
     font-weight: normal;
@@ -9581,7 +9618,7 @@ article.news.teaser-card .content {
       .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
       .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-grid-label, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper
       .block--openedu-news-events-widget .field--name-field-stories-title,
-      .block--openedu-news-events-widget .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title {
+      .block--openedu-news-events-widget .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-title, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-title, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-title {
         font-weight: bold;
         font-size: 1.857em; }
         .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper h2 a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .region-container .block-region-middle .block .field--label:first-of-type a, .region-container .block-region-middle .block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--label:first-of-type a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper
@@ -9592,7 +9629,7 @@ article.news.teaser-card .content {
         .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
         .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-grid-label a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper
         .block--openedu-news-events-widget .field--name-field-stories-title a,
-        .block--openedu-news-events-widget .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title a {
+        .block--openedu-news-events-widget .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .paragraph--type--buttons .field--name-field-title a, .paragraph--type--buttons .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-title a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .paragraph--type--news-items .field--name-field-title a, .paragraph--type--news-items .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-title a, .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .paragraph--type--person-listing .field--name-field-title a, .paragraph--type--person-listing .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-title a {
           color: #4a4a4a; }
       .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-news-date {
         margin-bottom: 0.6em; }
@@ -9658,7 +9695,7 @@ article.news.teaser-card .content {
         .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
         .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-grid-label, .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title, .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title, .block-views-blocknews-latest-news-block .views-row .content .wrapper
         .block--openedu-news-events-widget .field--name-field-stories-title,
-        .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title {
+        .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title {
           margin: 0 auto 5px;
           font-size: 1.375em; }
           .block-views-blocknews-latest-news-block .views-row .content .wrapper h2 a, .block-views-blocknews-latest-news-block .views-row .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a, .region-container .block-region-middle .block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--label:first-of-type a, .block-views-blocknews-latest-news-block .views-row .content .wrapper
@@ -9669,7 +9706,7 @@ article.news.teaser-card .content {
           .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
           .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-grid-label a, .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a, .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a, .block-views-blocknews-latest-news-block .views-row .content .wrapper
           .block--openedu-news-events-widget .field--name-field-stories-title a,
-          .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a {
+          .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--buttons .field--name-field-title a, .paragraph--type--buttons .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title a, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--news-items .field--name-field-title a, .paragraph--type--news-items .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title a, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--person-listing .field--name-field-title a, .paragraph--type--person-listing .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title a {
             color: #4a4a4a;
             text-decoration: none; }
             .block-views-blocknews-latest-news-block .views-row .content .wrapper h2 a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a:hover, .region-container .block-region-middle .block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--label:first-of-type a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper
@@ -9680,7 +9717,7 @@ article.news.teaser-card .content {
             .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a:hover,
             .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-grid-label a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a:hover, .block--openedu-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a:hover, .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper
             .block--openedu-news-events-widget .field--name-field-stories-title a:hover,
-            .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a:hover {
+            .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--buttons .field--name-field-title a:hover, .paragraph--type--buttons .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--news-items .field--name-field-title a:hover, .paragraph--type--news-items .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title a:hover, .block-views-blocknews-latest-news-block .views-row .content .wrapper .paragraph--type--person-listing .field--name-field-title a:hover, .paragraph--type--person-listing .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-title a:hover {
               color: #0479a8; }
         .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-news-date {
           font-style: italic;
@@ -9704,7 +9741,7 @@ article.news.teaser-card .content {
   .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
   .block-entity-fieldnodefield-program-grid-block .block--cta-section-header .field--name-field-grid-label, .block--cta-section-header .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .block--cta-section-header .field--name-field-stories-title, .block--cta-section-header .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .block--cta-section-header .field--name-field-stories-title, .block--cta-section-header
   .block--openedu-news-events-widget .field--name-field-stories-title,
-  .block--openedu-news-events-widget .block--cta-section-header .field--name-field-stories-title,
+  .block--openedu-news-events-widget .block--cta-section-header .field--name-field-stories-title, .block--cta-section-header .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .block--cta-section-header .field--name-field-title, .block--cta-section-header .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .block--cta-section-header .field--name-field-title, .block--cta-section-header .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .block--cta-section-header .field--name-field-title,
   .region-container section.block.block--cta-section-header h2, .region-container .block-region-middle section.block.block--cta-section-header .field--label:first-of-type, .region-container .block-region-left section.block.block--cta-section-header .field--label:first-of-type,
   .region-container section.block.block--cta-section-header .block-entity-fieldnodefield-program-faculty .block-title, .block-entity-fieldnodefield-program-faculty
   .region-container section.block.block--cta-section-header .block-title,
@@ -9725,7 +9762,13 @@ article.news.teaser-card .content {
   .region-container section.block.block--cta-section-header
   .block--openedu-news-events-widget .field--name-field-stories-title,
   .block--openedu-news-events-widget
-  .region-container section.block.block--cta-section-header .field--name-field-stories-title {
+  .region-container section.block.block--cta-section-header .field--name-field-stories-title,
+  .region-container section.block.block--cta-section-header .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons
+  .region-container section.block.block--cta-section-header .field--name-field-title,
+  .region-container section.block.block--cta-section-header .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items
+  .region-container section.block.block--cta-section-header .field--name-field-title,
+  .region-container section.block.block--cta-section-header .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing
+  .region-container section.block.block--cta-section-header .field--name-field-title {
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 0; }
@@ -10028,7 +10071,7 @@ footer .block-webform {
   .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
   .block-entity-fieldnodefield-program-grid-block .block-system-menu-blocknext-steps .field--name-field-grid-label, .block-system-menu-blocknext-steps .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .block-system-menu-blocknext-steps .field--name-field-stories-title, .block-system-menu-blocknext-steps .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .block-system-menu-blocknext-steps .field--name-field-stories-title, .block-system-menu-blocknext-steps
   .block--openedu-news-events-widget .field--name-field-stories-title,
-  .block--openedu-news-events-widget .block-system-menu-blocknext-steps .field--name-field-stories-title {
+  .block--openedu-news-events-widget .block-system-menu-blocknext-steps .field--name-field-stories-title, .block-system-menu-blocknext-steps .paragraph--type--buttons .field--name-field-title, .paragraph--type--buttons .block-system-menu-blocknext-steps .field--name-field-title, .block-system-menu-blocknext-steps .paragraph--type--news-items .field--name-field-title, .paragraph--type--news-items .block-system-menu-blocknext-steps .field--name-field-title, .block-system-menu-blocknext-steps .paragraph--type--person-listing .field--name-field-title, .paragraph--type--person-listing .block-system-menu-blocknext-steps .field--name-field-title {
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 1em;
@@ -10037,14 +10080,14 @@ footer .block-webform {
     padding: 1em 0;
     display: block;
     width: 100%; }
-  .block-system-menu-blocknext-steps .btn-cta {
+  .block-system-menu-blocknext-steps .btn-cta, .block-system-menu-blocknext-steps .paragraph--type--buttons .field.field--name-field-link .field--item a, .paragraph--type--buttons .field.field--name-field-link .field--item .block-system-menu-blocknext-steps a {
     display: block;
     margin: 0 0.5em;
     background-color: #2d3242;
     box-shadow: none;
     border-radius: 5px;
     padding: 1em; }
-    .block-system-menu-blocknext-steps .btn-cta.call-out, .block-system-menu-blocknext-steps .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link .block-system-menu-blocknext-steps a {
+    .block-system-menu-blocknext-steps .btn-cta.call-out, .block-system-menu-blocknext-steps .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a, .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link .block-system-menu-blocknext-steps a, .block-system-menu-blocknext-steps .paragraph--type--buttons .field.field--name-field-link .field--item a.call-out, .paragraph--type--buttons .field.field--name-field-link .field--item .block-system-menu-blocknext-steps a.call-out, .block-system-menu-blocknext-steps .paragraph--type--buttons.call-out .field.field--name-field-link .field--item a, .paragraph--type--buttons.call-out .field.field--name-field-link .field--item .block-system-menu-blocknext-steps a {
       background: #fd7e14;
       background: linear-gradient(60deg, #fd7e14 65%, rgba(253, 126, 20, 0.8) 54%);
       -webkit-filter: progid:dximagetransform.microsoft.gradient(startColorstr=$orange, endColorstr=$orange, GradientType=1);
@@ -10065,7 +10108,7 @@ footer .block-webform {
       .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label:after,
       .block-entity-fieldnodefield-program-grid-block .block-system-menu-blocknext-steps .field--name-field-grid-label:after, .block-system-menu-blocknext-steps .block--openedu-stories-block .field--name-field-stories-title:after, .block--openedu-stories-block .block-system-menu-blocknext-steps .field--name-field-stories-title:after, .block-system-menu-blocknext-steps .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title:after, .block-entity-fieldnodefield-program-stories-block .block-system-menu-blocknext-steps .field--name-field-stories-title:after, .block-system-menu-blocknext-steps
       .block--openedu-news-events-widget .field--name-field-stories-title:after,
-      .block--openedu-news-events-widget .block-system-menu-blocknext-steps .field--name-field-stories-title:after {
+      .block--openedu-news-events-widget .block-system-menu-blocknext-steps .field--name-field-stories-title:after, .block-system-menu-blocknext-steps .paragraph--type--buttons .field--name-field-title:after, .paragraph--type--buttons .block-system-menu-blocknext-steps .field--name-field-title:after, .block-system-menu-blocknext-steps .paragraph--type--news-items .field--name-field-title:after, .paragraph--type--news-items .block-system-menu-blocknext-steps .field--name-field-title:after, .block-system-menu-blocknext-steps .paragraph--type--person-listing .field--name-field-title:after, .paragraph--type--person-listing .block-system-menu-blocknext-steps .field--name-field-title:after {
         display: block;
         content: "";
         width: 100px;
@@ -10080,123 +10123,390 @@ footer .block-webform {
   @media (min-width: 992px) {
     .block-system-menu-blocknext-steps {
       padding: 4em; }
-      .block-system-menu-blocknext-steps .btn-cta {
+      .block-system-menu-blocknext-steps .btn-cta, .block-system-menu-blocknext-steps .paragraph--type--buttons .field.field--name-field-link .field--item a, .paragraph--type--buttons .field.field--name-field-link .field--item .block-system-menu-blocknext-steps a {
         padding: 1em 2.5em; }
       .block-system-menu-blocknext-steps .wrapper {
         display: inline-block;
         padding: 1em 3em; } }
 
+.block--tile-grid.Left .grid .medium_grd {
+  height: 269px; }
+
 .grid {
+  height: 600px;
   margin: calc(1.0/14*100%) calc(1.0/14*100%) calc(1.0/14*100%) calc(1.0/14*100%); }
+  .grid .field--name-field-button-item a.tile-link:hover {
+    -webkit-filter: brightness(85%);
+            filter: brightness(85%);
+    transition: all 2s ease-in-out; }
+    .grid .field--name-field-button-item a.tile-link:hover .openedu-stat, .grid .field--name-field-button-item a.tile-link:hover .open-edu-stat-large {
+      transform: scale(1.25);
+      transition: all 3s ease-in-out; }
+  .grid .field--name-field-button-item .grid-item {
+    float: left;
+    float: left;
+    transition: all 1s;
+    height: 270px;
+    background: #c09;
+    overflow: hidden;
+    padding: calc(20px); }
+    .grid .field--name-field-button-item .grid-item:hover {
+      -webkit-filter: brightness(85%);
+              filter: brightness(85%);
+      transition: all 2s ease-in-out; }
+      .grid .field--name-field-button-item .grid-item:hover .openedu-stat {
+        transform: scale(1.2);
+        transition: all 3s ease-in-out; }
+      .grid .field--name-field-button-item .grid-item:hover .openedu-stat-large {
+        transform: scale(1.1);
+        transition: all 3s ease-in-out; }
+      .grid .field--name-field-button-item .grid-item:hover .expand {
+        transform: scale(1.2);
+        transition: all 3s ease-in-out; }
+    .grid .field--name-field-button-item .grid-item .field--name-field-body .site-tag-gry a, .grid .field--name-field-button-item .grid-item .field--name-field-body .query-filter-cards .card:not(.clear) a, .query-filter-cards .grid .field--name-field-button-item .grid-item .field--name-field-body .card:not(.clear) a {
+      transform: none;
+      padding-bottom: 0px;
+      color: #ffffff; }
+    .grid .field--name-field-button-item .grid-item .field--name-field-body a {
+      text-decoration: none;
+      padding-bottom: 4px;
+      color: inherit; }
+    .grid .field--name-field-button-item .grid-item .img-responsive, .grid .field--name-field-button-item .grid-item figure.img-responsive img, figure.img-responsive .grid .field--name-field-button-item .grid-item img {
+      margin: auto; }
+    .grid .field--name-field-button-item .grid-item .node--view-mode-full-static- {
+      text-align: left; }
+    .grid .field--name-field-button-item .grid-item .openedu-stat-small {
+      color: inherit; }
+    .grid .field--name-field-button-item .grid-item .openedu-stat-med {
+      color: inherit; }
+  .grid .field--name-field-button-item .tall_grd {
+    height: 850px;
+    background: #ccc; }
+  .grid .field--name-field-button-item .medium_grd {
+    height: 270px;
+    background: #ccd; }
+  .grid .field--name-field-button-item .medium-tall_grd {
+    height: 560px;
+    background: #ccd; }
+  .grid .field--name-field-button-item .grid-item--width1 {
+    width: 300px; }
+  .grid .field--name-field-button-item .grid-item--width2 {
+    width: 620px; }
+  .grid .field--name-field-button-item .button-grid {
+    text-align: center;
+    display: table; }
+    .grid .field--name-field-button-item .button-grid .field--name-field-body {
+      display: table-cell;
+      vertical-align: middle; }
 
-/* 5 columns, percentage width */
+.grid-sizer {
+  width: 300px; }
+
 .grid-item {
+  width: 100%; }
+
+.gutter-sizer {
+  width: 20px; }
+
+.grid {
+  margin: auto;
+  max-width: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+@media screen and (max-width: 640px) {
+  .grid-sizer {
+    width: 300px; }
+  .grid-item {
+    width: 90%; }
+  .gutter-sizer {
+    width: 20px; }
+  .grid {
+    width: 100%; }
+    .grid .field--name-field-button-item .grid-item--width2 {
+      width: 300px !important; } }
+
+@media screen and (min-width: 640px) {
+  .grid {
+    max-width: 640px; } }
+
+@media screen and (min-width: 940px) {
+  .grid {
+    max-width: 960px; } }
+
+@media screen and (min-width: 1281px) {
+  .grid {
+    max-width: 1280px; } }
+
+@media screen and (min-width: 1281px) {
+  .grid {
+    margin: auto;
+    max-width: 1280px;
+    margin-top: 40px;
+    margin-bottom: 40px; } }
+
+.paragraph--type--buttons .field.field--name-field-link .field--item a {
   float: left;
-  height: 270px;
-  background: #c09;
-  overflow: hidden;
-  padding: calc(2% + 15px); }
-  .grid-item .img-responsive, .grid-item figure.img-responsive img, figure.img-responsive .grid-item img {
-    margin: auto; }
-  .grid-item a {
-    color: inherit;
-    text-decoration: none; }
-  .grid-item .node--view-mode-full-static- {
-    text-align: left; }
-  .grid-item .openedu-stat-small {
-    color: inherit; }
-  .grid-item .openedu-stat {
-    color: inherit; }
+  margin-left: 16px;
+  margin-bottom: 12px; }
 
-.ex_tall_grd {
-  height: 1055px;
-  background: #ccc; }
+.paragraph--type--buttons.extended .field.field--name-field-link .field--item a {
+  background: #a51d37; }
 
-.tall_grd {
-  height: 620px;
-  background: #ccc; }
+.paragraph--type--buttons:after {
+  content: "";
+  display: table;
+  clear: both; }
 
-.medium_grd {
-  height: 270px;
-  background: #ccd; }
+.paragraph--type--file-listing .field--name-field-title {
+  position: relative; }
+  .paragraph--type--file-listing .field--name-field-title:after {
+    content: "";
+    background: #a51d37;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    height: 6%;
+    width: 200px; }
 
-.button-grid {
-  text-align: center;
-  display: table; }
-  .button-grid .field--name-field-body {
-    display: table-cell;
-    vertical-align: middle; }
+.paragraph--type--file-listing .media {
+  margin-top: 5px; }
 
-.grid-item--width2 {
-  width: 48%; }
+.paragraph--type--file-listing .file {
+  padding-left: 20px;
+  display: inline;
+  min-height: 16px;
+  background-repeat: no-repeat;
+  background-position: left center; }
 
-@media screen and (min-width: 4px) {
+.paragraph--type--file-listing .file--package-x-generic {
+  background-image: url(/core/themes/classy/images/icons/package-x-generic.png); }
+
+.paragraph--type--file-listing .file--x-office-spreadsheet {
+  background-image: url(/core/themes/classy/images/icons/x-office-spreadsheet.png); }
+
+.paragraph--type--file-listing .file--x-office-document {
+  background-image: url(/core/themes/classy/images/icons/x-office-document.png); }
+
+.paragraph--type--file-listing .file--x-office-presentation {
+  background-image: url(/core/themes/classy/images/icons/x-office-presentation.png); }
+
+.paragraph--type--file-listing .file--text-x-script {
+  background-image: url(/core/themes/classy/images/icons/text-x-script.png); }
+
+.paragraph--type--file-listing .file--text-html {
+  background-image: url(/core/themes/classy/images/icons/text-html.png); }
+
+.paragraph--type--file-listing .file--text-plain {
+  background-image: url(/core/themes/classy/images/icons/text-plain.png); }
+
+.paragraph--type--file-listing .file--application-pdf {
+  background-image: url(/core/themes/classy/images/icons/application-pdf.png); }
+
+.paragraph--type--file-listing .file--application-x-executable {
+  background-image: url(/core/themes/classy/images/icons/application-x-executable.png); }
+
+.paragraph--type--file-listing .file--audio {
+  background-image: url(/core/themes/classy/images/icons/audio-x-generic.png); }
+
+.paragraph--type--file-listing .file--video {
+  background-image: url(/core/themes/classy/images/icons/video-x-generic.png); }
+
+.paragraph--type--file-listing .file--text {
+  background-image: url(/core/themes/classy/images/icons/text-x-generic.png); }
+
+.paragraph--type--file-listing .file--image {
+  background-image: url(/core/themes/classy/images/icons/image-x-generic.png); }
+
+.field--name-field-body-paragraph .burr .container-fluid, .field--name-field-body-paragraph .burr-flipped .container-fluid {
+  padding-bottom: 1.5em; }
+
+.paragraph--type--news-items .field--name-field-title {
+  color: #1f2f5f; }
+
+@media (min-width: 768px) {
+  .paragraph--type--news-items .content {
+    border-right: 5px solid transparent; }
+    .paragraph--type--news-items .content:hover {
+      border-right: 5px solid #0479a8; } }
+
+.paragraph--type--news-items .content .image {
+  margin-bottom: 1em; }
+  @media (min-width: 768px) {
+    .paragraph--type--news-items .content .image {
+      padding-right: 0; } }
+  .paragraph--type--news-items .content .image img {
+    width: 100%; }
+
+.paragraph--type--news-items .content .wrapper {
+  color: #fff; }
+  .paragraph--type--news-items .content .wrapper h2, .paragraph--type--news-items .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type, .region-container .block-region-middle .block .paragraph--type--news-items .content .wrapper .field--label:first-of-type, .paragraph--type--news-items .content .wrapper
+  .region-container .block-region-left .block .field--label:first-of-type,
+  .region-container .block-region-left .block .paragraph--type--news-items .content .wrapper .field--label:first-of-type, .paragraph--type--news-items .content .wrapper .block-entity-fieldnodefield-program-faculty .block-title, .block-entity-fieldnodefield-program-faculty .paragraph--type--news-items .content .wrapper .block-title, .paragraph--type--news-items .content .wrapper
+  .block--profile-block .block-title,
+  .block--profile-block .paragraph--type--news-items .content .wrapper .block-title, .paragraph--type--news-items .content .wrapper .block--openedu-grid-block .field--name-field-grid-label, .block--openedu-grid-block .paragraph--type--news-items .content .wrapper .field--name-field-grid-label, .paragraph--type--news-items .content .wrapper
+  .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
+  .block-entity-fieldnodefield-program-grid-block .paragraph--type--news-items .content .wrapper .field--name-field-grid-label, .paragraph--type--news-items .content .wrapper .block--openedu-stories-block .field--name-field-stories-title, .block--openedu-stories-block .paragraph--type--news-items .content .wrapper .field--name-field-stories-title, .paragraph--type--news-items .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, .block-entity-fieldnodefield-program-stories-block .paragraph--type--news-items .content .wrapper .field--name-field-stories-title, .paragraph--type--news-items .content .wrapper
+  .block--openedu-news-events-widget .field--name-field-stories-title,
+  .block--openedu-news-events-widget .paragraph--type--news-items .content .wrapper .field--name-field-stories-title, .paragraph--type--news-items .content .wrapper .field--name-field-title {
+    margin: 5px auto;
+    font-size: 1.375em;
+    color: #fff; }
+    .paragraph--type--news-items .content .wrapper h2 a, .paragraph--type--news-items .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a, .region-container .block-region-middle .block .paragraph--type--news-items .content .wrapper .field--label:first-of-type a, .paragraph--type--news-items .content .wrapper
+    .region-container .block-region-left .block .field--label:first-of-type a,
+    .region-container .block-region-left .block .paragraph--type--news-items .content .wrapper .field--label:first-of-type a, .paragraph--type--news-items .content .wrapper .block-entity-fieldnodefield-program-faculty .block-title a, .block-entity-fieldnodefield-program-faculty .paragraph--type--news-items .content .wrapper .block-title a, .paragraph--type--news-items .content .wrapper
+    .block--profile-block .block-title a,
+    .block--profile-block .paragraph--type--news-items .content .wrapper .block-title a, .paragraph--type--news-items .content .wrapper .block--openedu-grid-block .field--name-field-grid-label a, .block--openedu-grid-block .paragraph--type--news-items .content .wrapper .field--name-field-grid-label a, .paragraph--type--news-items .content .wrapper
+    .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+    .block-entity-fieldnodefield-program-grid-block .paragraph--type--news-items .content .wrapper .field--name-field-grid-label a, .paragraph--type--news-items .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a, .block--openedu-stories-block .paragraph--type--news-items .content .wrapper .field--name-field-stories-title a, .paragraph--type--news-items .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, .block-entity-fieldnodefield-program-stories-block .paragraph--type--news-items .content .wrapper .field--name-field-stories-title a, .paragraph--type--news-items .content .wrapper
+    .block--openedu-news-events-widget .field--name-field-stories-title a,
+    .block--openedu-news-events-widget .paragraph--type--news-items .content .wrapper .field--name-field-stories-title a, .paragraph--type--news-items .content .wrapper .field--name-field-title a {
+      color: #a51d37;
+      text-decoration: none; }
+      .paragraph--type--news-items .content .wrapper h2 a:hover, .paragraph--type--news-items .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a:hover, .region-container .block-region-middle .block .paragraph--type--news-items .content .wrapper .field--label:first-of-type a:hover, .paragraph--type--news-items .content .wrapper
+      .region-container .block-region-left .block .field--label:first-of-type a:hover,
+      .region-container .block-region-left .block .paragraph--type--news-items .content .wrapper .field--label:first-of-type a:hover, .paragraph--type--news-items .content .wrapper .block-entity-fieldnodefield-program-faculty .block-title a:hover, .block-entity-fieldnodefield-program-faculty .paragraph--type--news-items .content .wrapper .block-title a:hover, .paragraph--type--news-items .content .wrapper
+      .block--profile-block .block-title a:hover,
+      .block--profile-block .paragraph--type--news-items .content .wrapper .block-title a:hover, .paragraph--type--news-items .content .wrapper .block--openedu-grid-block .field--name-field-grid-label a:hover, .block--openedu-grid-block .paragraph--type--news-items .content .wrapper .field--name-field-grid-label a:hover, .paragraph--type--news-items .content .wrapper
+      .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a:hover,
+      .block-entity-fieldnodefield-program-grid-block .paragraph--type--news-items .content .wrapper .field--name-field-grid-label a:hover, .paragraph--type--news-items .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a:hover, .block--openedu-stories-block .paragraph--type--news-items .content .wrapper .field--name-field-stories-title a:hover, .paragraph--type--news-items .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a:hover, .block-entity-fieldnodefield-program-stories-block .paragraph--type--news-items .content .wrapper .field--name-field-stories-title a:hover, .paragraph--type--news-items .content .wrapper
+      .block--openedu-news-events-widget .field--name-field-stories-title a:hover,
+      .block--openedu-news-events-widget .paragraph--type--news-items .content .wrapper .field--name-field-stories-title a:hover, .paragraph--type--news-items .content .wrapper .field--name-field-title a:hover {
+        color: #0479a8; }
+  .paragraph--type--news-items .content .wrapper .field--name-field-news-date {
+    font-style: italic;
+    font-size: 0.875em;
+    margin-bottom: 5px; }
+  .paragraph--type--news-items .content .wrapper .field--name-body {
+    display: none; }
+    @media (min-width: 768px) {
+      .paragraph--type--news-items .content .wrapper .field--name-body {
+        display: inline-block; } }
+
+.paragraph--type--person-listing .field--name-field-person-reference > .field--item {
+  padding-bottom: 1.5em; }
+
+.paragraph--type--text figure.align-left {
+  margin: 2rem;
+  margin-left: 0px; }
+
+.paragraph--type--text figure.align-right {
+  margin: 2rem;
+  margin-left: 0px; }
+
+.block--tile-grid.Left .grid .medium_grd {
+  height: 269px; }
+
+.grid {
+  height: 600px;
+  margin: calc(1.0/14*100%) calc(1.0/14*100%) calc(1.0/14*100%) calc(1.0/14*100%); }
+  .grid .field--name-field-button-item a.tile-link:hover {
+    -webkit-filter: brightness(85%);
+            filter: brightness(85%);
+    transition: all 2s ease-in-out; }
+    .grid .field--name-field-button-item a.tile-link:hover .openedu-stat, .grid .field--name-field-button-item a.tile-link:hover .open-edu-stat-large {
+      transform: scale(1.25);
+      transition: all 3s ease-in-out; }
+  .grid .field--name-field-button-item .grid-item {
+    float: left;
+    float: left;
+    transition: all 1s;
+    height: 270px;
+    background: #c09;
+    overflow: hidden;
+    padding: calc(20px); }
+    .grid .field--name-field-button-item .grid-item:hover {
+      -webkit-filter: brightness(85%);
+              filter: brightness(85%);
+      transition: all 2s ease-in-out; }
+      .grid .field--name-field-button-item .grid-item:hover .openedu-stat {
+        transform: scale(1.2);
+        transition: all 3s ease-in-out; }
+      .grid .field--name-field-button-item .grid-item:hover .openedu-stat-large {
+        transform: scale(1.1);
+        transition: all 3s ease-in-out; }
+      .grid .field--name-field-button-item .grid-item:hover .expand {
+        transform: scale(1.2);
+        transition: all 3s ease-in-out; }
+    .grid .field--name-field-button-item .grid-item .field--name-field-body .site-tag-gry a, .grid .field--name-field-button-item .grid-item .field--name-field-body .query-filter-cards .card:not(.clear) a, .query-filter-cards .grid .field--name-field-button-item .grid-item .field--name-field-body .card:not(.clear) a {
+      transform: none;
+      padding-bottom: 0px;
+      color: #ffffff; }
+    .grid .field--name-field-button-item .grid-item .field--name-field-body a {
+      text-decoration: none;
+      padding-bottom: 4px;
+      color: inherit; }
+    .grid .field--name-field-button-item .grid-item .img-responsive, .grid .field--name-field-button-item .grid-item figure.img-responsive img, figure.img-responsive .grid .field--name-field-button-item .grid-item img {
+      margin: auto; }
+    .grid .field--name-field-button-item .grid-item .node--view-mode-full-static- {
+      text-align: left; }
+    .grid .field--name-field-button-item .grid-item .openedu-stat-small {
+      color: inherit; }
+    .grid .field--name-field-button-item .grid-item .openedu-stat-med {
+      color: inherit; }
+  .grid .field--name-field-button-item .tall_grd {
+    height: 850px;
+    background: #ccc; }
+  .grid .field--name-field-button-item .medium_grd {
+    height: 270px;
+    background: #ccd; }
+  .grid .field--name-field-button-item .medium-tall_grd {
+    height: 560px;
+    background: #ccd; }
+  .grid .field--name-field-button-item .grid-item--width1 {
+    width: 300px; }
+  .grid .field--name-field-button-item .grid-item--width2 {
+    width: 620px; }
+  .grid .field--name-field-button-item .button-grid {
+    text-align: center;
+    display: table; }
+    .grid .field--name-field-button-item .button-grid .field--name-field-body {
+      display: table-cell;
+      vertical-align: middle; }
+
+.grid-sizer {
+  width: 300px; }
+
+.grid-item {
+  width: 100%; }
+
+.gutter-sizer {
+  width: 20px; }
+
+.grid {
+  margin: auto;
+  max-width: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+@media screen and (max-width: 640px) {
   .grid-sizer {
-    width: calc(4/19*100%); }
+    width: 300px; }
   .grid-item {
-    width: calc(9/19*100%); }
-  .grid-item.grid-item--width2 {
-    width: calc(19/19*100%); }
+    width: 90%; }
   .gutter-sizer {
-    width: calc(1/19*100%); }
+    width: 20px; }
   .grid {
-    margin: calc(1.0/19*100%) calc(1.0/19*100%) calc(1.0/19*100%) calc(1.0/19*100%); }
-  .medium_grd {
-    height: 185px; } }
+    width: 100%; }
+    .grid .field--name-field-button-item .grid-item--width2 {
+      width: 300px !important; } }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .grid-sizer {
-    width: calc(4/29*100%); }
-  .grid-item {
-    width: calc(9/29*100%); }
-  .grid-item.grid-item--width2 {
-    width: calc(19/29*100%); }
-  .gutter-sizer {
-    width: calc(1/29*100%); }
+@media screen and (min-width: 640px) {
   .grid {
-    margin: calc(1.0/29*100%) calc(1.0/29*100%) calc(1.0/29*100%) calc(1.0/29*100%); }
-  .medium_grd {
-    height: 183px; } }
+    max-width: 640px; } }
 
-@media screen and (min-width: 1200px) and (max-width: 1350px) {
-  .grid-sizer {
-    width: calc(4/39*100%); }
-  .grid-item {
-    width: calc(9/39*100%); }
-  .grid-item.grid-item--width2 {
-    width: calc(19/39*100%); }
-  .gutter-sizer {
-    width: calc(1/39*100%); }
+@media screen and (min-width: 940px) {
   .grid {
-    margin: calc(1.0/39*100%) calc(1.0/39*100%) calc(1.0/39*100%) calc(1.0/39*100%); }
-  .medium_grd {
-    height: 184px; } }
+    max-width: 960px; } }
 
-@media screen and (min-width: 1350px) and (max-width: 1600px) {
-  .grid-sizer {
-    width: calc(4/39*100%); }
-  .grid-item {
-    width: calc(9/39*100%); }
-  .grid-item.grid-item--width2 {
-    width: calc(19/39*100%); }
-  .gutter-sizer {
-    width: calc(1/39*100%); }
+@media screen and (min-width: 1281px) {
   .grid {
-    margin: calc(1.0/39*100%) calc(1.0/39*100%) calc(1.0/39*100%) calc(1.0/39*100%); }
-  .medium_grd {
-    height: 183px; } }
+    max-width: 1280px; } }
 
-@media screen and (min-width: 1600px) {
-  .grid-sizer {
-    width: calc(4/39*100%); }
-  .grid-item {
-    width: calc(9/39*100%); }
-  .grid-item.grid-item--width2 {
-    width: calc(19/39*100%); }
-  .gutter-sizer {
-    width: calc(1/39*100%); }
+@media screen and (min-width: 1281px) {
   .grid {
-    margin: calc(1.0/39*100%) calc(5.0/39*100%) calc(1.0/39*100%) calc(5.0/39*100%); }
-  .medium_grd {
-    height: 183px; } }
+    margin: auto;
+    max-width: 1280px;
+    margin-top: 40px;
+    margin-bottom: 40px; } }
 /*# sourceMappingURL=style.css.map */

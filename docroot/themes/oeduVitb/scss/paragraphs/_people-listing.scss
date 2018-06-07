@@ -1,0 +1,10 @@
+.paragraph--type--person-listing{
+  .field--name-field-title{
+    @extend h2;
+  }
+  .field--name-field-person-reference{
+    >.field--item{
+      padding-bottom: 1.5em;
+    }
+  }
+}

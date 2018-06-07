@@ -1,0 +1,26 @@
+.paragraph--type--buttons{
+  .field.field--name-field-link .field--item a {
+    @extend .btn-cta;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 12px;
+  }
+  &.call-out{
+    .field.field--name-field-link .field--item a{
+      @extend .call-out
+    }
+  }
+  &.extended{
+    .field.field--name-field-link .field--item a{
+      background:$secondary;
+    }
+  }
+  .field--name-field-title{
+    @extend h2;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

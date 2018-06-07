@@ -154,7 +154,8 @@ function vu_preprocess_paragraph__buttons(&$variables)
 
 function vu_preprocess_paragraph__grid_button(&$variables) {
     //$paragraph = $variables['paragraph'];
-    $color_vals=preg_split("/[\s,]+/",$variables['elements']['field_background_color']['0']['#markup']);
+
+   // $color_vals=preg_split("/[\s,]+/",$variables['elements']['field_background_color']['0']['#markup']);
 
     $paragraph = $variables['paragraph'];
     //kint($paragraph);

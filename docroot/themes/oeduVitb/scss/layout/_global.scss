@@ -215,3 +215,29 @@ iframe body {
 
   max-width: none;
 }
+
+//ew additions
+.openedu-stat {
+  line-height: 0.95em;
+  text-align: center;
+  //color: $brand-primary-lighter;
+  margin: 10px 0;
+  &.pri{
+    color:$primary !important;
+  }
+  &.suc{
+    color:$secondary !important;;
+  }
+  &.inf{
+    color:$info !important;;
+  }
+  &.wht{
+    color:#fff !important;
+  }
+}
+.openedu-stat-small{
+  line-height: 0.95em;
+  text-align: center;
+  //color: white;
+  margin: 10px 0;
+}

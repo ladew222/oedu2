@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--onecol',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="grid">
+      <div class="gutter-sizer"></div>
+      <div class="grid-sizer"> </div>
+      {{ content.content }}
+
+    </div>
+  </div>
+{% endif %}

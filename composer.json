@@ -19,7 +19,7 @@
         "drupal/crop": "^2.0",
         "drupal/color_field": "^2.0",
         "drupal/image_widget_crop": "^2.1",
-        "drupal/weight": "^3.0",
+        "drupal/weight": "3.x-dev",
         "drupal/devel": "^1.2",
         "drupal/twig_tweak": "^2.0",
         "drupal/chosen": "^2.5",
@@ -37,7 +37,10 @@
         "drupal/features": "^3.7",
         "drupal/ldap": "^3.0",
         "drupal/externalauth": "^1.1",
-        "drupal/fontawesome": "^2.2"
+        "drupal/fontawesome": "^2.2",
+        "drupal/views_bulk_edit": "^2.1",
+        "drupal/ds": "^3.1",
+        "drupal/radix_layouts": "^4.0"
     },
     "repositories": [
         {
