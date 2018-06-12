@@ -1,0 +1,43 @@
+id: course26
+migration_tags: null
+migration_group: c11n
+label: 'Import courses'
+source:
+  plugin: csv
+  path: /Users/ericweinberg/Desktop/courses2.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: id
+    -
+      Title: ‘Title’
+    -
+      Body: ‘body’
+    -
+      Course_Number: Course_Number
+    -
+      Credits: ‘Credits’
+    -
+      Prefix: ’Prefix’
+    -
+      Department: Department
+process:
+  title: Title
+  body: Body
+  field_course_number: Course_Number
+  field_credits: Credits
+  field_course_prefix: Prefix
+  type:
+    plugin: default_value
+    default_value: class
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate

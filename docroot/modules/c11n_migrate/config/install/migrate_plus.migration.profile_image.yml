@@ -21,7 +21,7 @@ source:
   # we use the image name as unique IDs. This will ensure that every
   # image results in the creation of a unique file entity on the site.
   keys:
-    - ID
+    - FileName
   # Source field definitions.
   fields:
     Image: Name of the image file associated with the program.
@@ -33,7 +33,7 @@ source:
   # Here, we define constants which we would use to generate file paths
   # and file names for program images.
   constants:
-    file_source_uri: ''
+    file_source_uri: 'http://viterbodev.prod.acquia-sites.com/sites/default/files/directory'
     file_dest_uri: 'public://profile/image'
 # Destination.
 destination:
@@ -47,7 +47,7 @@ process:
       delimiter: /
       source:
         - constants/file_source_uri
-        - Image file
+        - FileName
     # Make sure we don't have any url-unfriendly characters.
     -
       plugin: urlencode
@@ -57,7 +57,7 @@ process:
       delimiter: /
       source:
         - constants/file_dest_uri
-        - Image file
+        - FileName
     # Make sure we don't have any url-unfriendly characters.
     -
       plugin: urlencode
@@ -65,7 +65,7 @@ process:
   #
   # Alternatively, if we wish to name them after some other
   # column, we can do it here.
-  filename: Image
+  filename: FileName
   uri:
     plugin: file_copy
     source:
