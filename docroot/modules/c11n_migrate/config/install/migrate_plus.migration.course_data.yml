@@ -10,6 +10,8 @@ source:
   header_row_count: 1
   keys:
     - id
+  constants:
+          rich: rich_text
   column_names:
     -
       id: id
@@ -27,10 +29,14 @@ source:
       Department: Department
 process:
   title: Title
-  body: Body
+  'body/value': Body
+  'body/format': constants/rich
   field_course_number: Course_Number
   field_credits: Credits
   field_course_prefix: Prefix
+  field_department:
+      plugin: entity_generate
+      source: Department
   type:
     plugin: default_value
     default_value: class
