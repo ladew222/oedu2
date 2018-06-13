@@ -44,13 +44,15 @@ source:
   header_row_count: 1
   keys:
       - id
+  constants:
+        rich: rich_text
   column_names:
     -
       id: id
     -
       Title: ‘Title’
     -
-      Body: ‘body’
+      body: ‘body’
     -
       FirstName: ’FirstName’
     -
@@ -98,7 +100,8 @@ process:
   # the usage of the plugin "get" which simply copies the source
   # property value to the destination property.
   title: Title
-  body: Body
+  'body/value': body
+  'body/format': constants/rich
   field_first_name: FirstName
   field_last_name: LastName
   field_profile_phone: Phone

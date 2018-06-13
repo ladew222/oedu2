@@ -1,0 +1,50 @@
+id: degree_data
+migration_tags: null
+migration_group: c11n
+label: 'Import Degrees'
+source:
+  plugin: csv
+  path: /Users/ericweinberg/Desktop/degrees.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  constants:
+      rich: rich_text
+  column_names:
+    -
+      id: id
+    -
+      title: ‘title’
+    -
+      body: ‘body’
+    -
+      field_degree_level: field_degree_level
+    -
+      field_degree_type: ‘field_degee_type’
+    -
+      field_cluster: ’field_cluster’
+process:
+  title: title
+  'body/value': body
+  'body/format': constants/rich
+  field_degree_level:
+    plugin: entity_generate
+    source: field_degree_level
+  field_degree_type:
+    plugin: entity_generate
+    source: field_degree_type
+  field_cluster:
+    plugin: entity_generate
+    source: field_cluster
+  type:
+    plugin: default_value
+    default_value: course
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
