@@ -1,0 +1,48 @@
+id: news_data
+migration_tags: null
+migration_group: c11n
+label: 'Import News Articles'
+source:
+  plugin: csv
+  path: /Users/ericweinberg/Desktop/news.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  constants:
+          rich: rich_text
+  column_names:
+    -
+      id: id
+    -
+      title: ‘title’
+    -
+      body: ‘body’
+    -
+      subjects: subjects
+    -
+      date: ‘date’
+process:
+  title: title
+  'body/value': body
+  'body/format': constants/rich
+  field_news_date: date
+  field_news_categories:
+    -
+      plugin: explode
+      source: subjects
+      delimiter: ,
+      limit: 10
+    -
+      plugin: entity_generate
+  type:
+    plugin: default_value
+    default_value: news
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate

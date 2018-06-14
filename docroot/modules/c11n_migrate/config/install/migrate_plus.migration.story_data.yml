@@ -1,0 +1,143 @@
+# Migration file for creating "program" nodes from CSV.
+#
+# This file contains much of the information which we
+# used to specify in the "Migration" class in Drupal 7.
+# But why write code if you can write YAML?
+# This is how we declare a Migration the Drupal 8 way.
+
+# Migration ID.
+#
+# Usually the ID indicates what we are trying to migrate.
+# In our case, we are migrating nodes of type "program".
+id: story_data
+# Human-readable name of the migration for the UI.
+label: Stories Import of Alumni
+# Migration group.
+#
+# Migration groups allow us to put related migrations under one
+# umbrella so that we can execute or reference them together.
+migration_group: c11n
+# Migration tags.
+#
+# Migration tags help us group migrations using tags. In our
+# example, we tag all migrations with an "academic program"
+# tag. That way, we can run all academic-program-related migrations
+# using one command.
+migration_tags:
+  - node
+  - academic profiles
+# Source.
+#
+# Under the source, we define the key "plugin" and other
+# configurations specific to the plugin.
+source:
+  # We will be importing from a CSV file, so we will require
+  # the migrate_source_csv module which introduces the CSV
+  # source plugin with the identifier "csv".
+  plugin: csv
+  # Specify the path to the CSV data source.
+  path: /Users/ericweinberg/Desktop/profile.csv
+  # Number of rows at the beginning which are not actual data.
+  # column names need to be in order
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+      - id
+  constants:
+        rich: rich_text
+  column_names:
+    -
+      id: id
+    -
+      title: ‘title’
+    -
+      Quote: Quote
+    -
+      Employment: Employment
+    -
+      Image: Image
+    -
+      FileName: FileName
+  # Static values for the migration.
+  #
+  # We can assign hard-coded values to certain properties using constants.
+  constants:
+    bool_0: 0
+    bool_1: 1
+    uid_root: 1
+    restricted_html: rich_text
+# Destination.
+destination:
+  # We want to import data from a CSV file, but how do we save it?
+  # This plugin will be responsible for storing the records read during
+  # the migration in to nodes. We can also store them as other entities
+  # like taxonomy terms, etc. But in this case we want nodes.
+  plugin: 'entity:node'
+  # We specify the default node type as "program" because
+  # we will only be importing nodes of type "program" in this
+  # migration.
+  default_bundle: profile
+# Mapping.
+#
+# We can create simple mappings without any changes to
+# source data or we can pass the source data through one or more
+# plugins before the processed value is assigned to the
+# destination.
+process:
+  # Here, we make a direct assignment of the "Title" column
+  # as the node title. Not specifying a plugin name results in
+  # the usage of the plugin "get" which simply copies the source
+  # property value to the destination property.
+  title: title
+  Quote: Quote
+  field_story_caption: employment
+  field_profile_image:
+    plugin: migration
+    migration: story_image
+    source: field_story_image
+  'field_profile_image/alt': title
+  # Similarly, we can define a default user for the imported nodes.
+  uid: constants/uid_root
+  # Some fields have multiple properties! For example, the "body" field
+  # can have the actual full text, a summary, etc. Values can be
+  # assigned to specific properties using the syntax used below. We
+  # wrap the destination property name in quotes to comply with YAML
+  # specifications.
+  #
+  # Unfortunately, at the time of writing this code, there is no UI or
+  # drush migrate-fields-destination. Hence, one might have to refer
+  # to the structure of various field-types for determining the properties
+  # supported by various fields.
+  #
+  # Reference: https://www.drupal.org/node/2630732
+  'field_profile_image/target_id':
+    plugin: migration
+    migration: profile_image
+    source: FileName
+  # Now that we have the images in place, we also copy the alternate text
+  # for the images to the "alt" property of "field_image". Having "alt"
+  # would help improve accessibility and SEO.
+  'field_profile_image/alt': title
+# With the migration_dependencies, as the name suggests, we can specify
+# if this migration requires some other migrations to be run first.
+#
+# For example, say we were importing articles and authors. In the migration
+# of articles, we would need to refer to the newly migrated author data so
+# as to link the author to the article. In that case, the article migration
+# would require that the author migration be run first. Thus, we could say
+# that the article migration depends on the author migration and we would have
+# had to specify a dependency here.
+#
+# In our case, we need to import tags first so that we can associate them
+# to the academic programs.
+migration_dependencies:
+  optional:
+    - profile_image
+# We specify that this migration depends on the c11n_migrate module.
+# Based on this dependency, this migration will be removed when the
+# c11n_migrate module is uninstalled.
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
