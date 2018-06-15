@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.news_related_content
+    - field.field.block_content.news_related_content.field_news_related
+  module:
+    - flickity_fields
+id: block_content.news_related_content.default
+targetEntityType: block_content
+bundle: news_related_content
+mode: default
+content:
+  field_news_related:
+    weight: 0
+    label: above
+    settings:
+      view_mode: related_content
+      link: false
+      flickity_settings: default_group
+    third_party_settings: {  }
+    type: flickity_entity_view
+    region: content
+hidden:
+  scheduled_publication: true

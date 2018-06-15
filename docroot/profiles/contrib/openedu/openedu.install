@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the OpenEDU installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function openedu_install() {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  // Since our sample content is so large, this is needed to help lower-powered
+  // installs.
+  if (PHP_SAPI !== 'cli') {
+    ini_set('memory_limit', '512M');
+  }
+
+  \Drupal::service('module_installer')->install([
+    'openedu_content',
+  ]);
+
+  $config = \Drupal::configFactory();
+
+  // Set the homepage.
+  $config->getEditable('system.site')->set('page.front', '/node/1')->save();
+  // Set the 404 page.
+  $config->getEditable('system.site')->set('page.404', '/404')->save();
+
+  // Set the child theme as the default.
+  $config
+    ->getEditable('system.theme')
+    ->set('default', 'oedu_sub')
+    ->save();
+
+  // Uninstall bartik.
+  \Drupal::service('theme_installer')->uninstall(['bartik']);
+
+}

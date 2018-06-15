@@ -1,0 +1,297 @@
+html, body {
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  font-family: "Open Sans", Helvetica, Tahoma, sans-serif, serif;
+}
+body.openedu {
+  padding-top: 60px;
+  @media #{$mobile} {
+    &.toolbar-vertical {
+      padding-top: 100px !important;
+    }
+  }
+  @media #{$tablet} {
+    padding-top: 0;
+  }
+}
+
+body.path-user {
+  .main-container {
+    margin: 3em auto 4em;
+  }
+}
+
+.region-content nav.tabs {
+  @extend .container;
+  .nav-tabs {
+    font-size: 0.875em;
+    li {
+      a {
+        padding: 5px 12px;
+      }
+    }
+  }
+}
+
+blockquote {
+  font-size: 1.2em;
+  padding: 1em 2em;
+  border: none;
+  background: url("../images/blockquote.png") no-repeat top left;
+  background-position-y: 1em;
+}
+
+// Default View Row Theming
+.views-row {
+  box-shadow: 0 2px 6px 0px rgba($gray-base, 0.2);
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+}
+
+div.region.region-sidebar-second {
+  background: url("../images/next-steps-bg.jpg");
+  background-size: 100%;
+  padding: 4.5em 0;
+  text-align: center;
+}
+
+footer.footer {
+  @extend .clearfix;
+  padding-top: 0;
+  .container-fluid {
+    background-color: $brand-primary-darker;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+  #block-vitbt-sitebrandingfooter {
+    @extend .clearfix;
+    background-color: $brand-primary;
+    color: white;
+    padding-top: 2.5em;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 300;
+    .container {
+      max-width: 1000px;
+      margin: 2.5em auto;
+      .footer-social-links {
+        margin: 1.5em 0;
+        margin-top: 4px;
+        float: left;
+        @media #{$small-device} {
+          float: none;
+        }
+        @media #{$mobile} {
+          float: none;
+        }
+      }
+      img{
+        width: 220px;
+      }
+      .fa {
+        font-size: 2.313em;
+        padding: 0 0.2em;
+      }
+      h4{
+        text-align: left;
+        @media #{$small-device} {
+          text-align: center;
+        }
+        @media #{$mobile} {
+          text-align: center;
+        }
+      }
+      a{
+        color:#fff;
+        text-decoration: none;
+      }
+      ul{
+        list-style: none;
+        text-align: left;
+        padding-left: 0px;
+        .fa{
+          font-size: 18px;
+        }
+        padding-bottom: 16px;
+        font-size: 16px;
+        @media #{$small-device} {
+          text-align: center;
+        }
+        @media #{$mobile} {
+          text-align: center;
+        }
+
+      }
+    }
+  }
+}
+
+.region-container {
+  .block-region-subsection,#dept-subsection {
+    @extend .container;
+  }
+  .block-region-middle,
+  .block-region-left {
+    .block-title {
+      color: $brand-primary;
+    }
+    .block .field--label:first-of-type {
+      @extend h2;
+      color: $brand-primary;
+    }
+  }
+}
+
+%site-tag {
+  font-size: 0.750em;
+  font-weight: 600;
+  line-height: 1.417em;
+  display: inline-block;
+  padding: 0.417em 0.833em;
+  border-radius: 1em;
+  color: white;
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.site-tag-clr {
+  @extend %site-tag;
+  background: none;
+  border: 1px solid $gray-light;
+  color: $gray-base;
+  a {
+    color: $gray-base;
+  }
+  &:hover {
+    color: white;
+    background: $brand-primary;
+    a {
+      color: white;
+    }
+  }
+}
+
+
+.site-tag-gry {
+  @extend %site-tag;
+  background-color: $gray-dark;
+}
+
+.site-tag-drk {
+  @extend %site-tag;
+  background-color: $brand-primary-dark;
+}
+
+.site-tag-med {
+  @extend %site-tag;
+  background-color: $brand-primary;
+}
+
+.flickity.flickity-enabled {
+  button {
+    transition: all 0.5s ease 0s;
+    opacity: 1;
+  }
+  &:not(:hover) {
+    .flickity-prev-next-button.previous,
+    .flickity-prev-next-button.next {
+      opacity: 0;
+    }
+  }
+}
+
+.openedu-stat {
+  line-height: 0.95em;
+  text-align: center;
+  //color: $brand-primary-lighter;
+  margin: 10px 0;
+  &.pri{
+    color:$brand-primary !important;
+  }
+  &.suc{
+    color:$brand-success !important;;
+  }
+  &.inf{
+    color:$brand-info !important;;
+  }
+  &.wht{
+    color:#fff !important;
+  }
+  &.wrn{
+    color:$brand-warning !important;
+  }
+  &.lgt{
+    color: $brand-primary-lighter !important;
+  }
+  &.drk{
+    color: $brand-primary-darker !important;
+  }
+  &.suc-drk{
+    color: $brand-success-darker !important;
+  }
+  &.suc-lgt{
+    color: $brand-success-lighter !important;
+  }
+}
+.openedu-stat-small{
+  line-height: 0.95em;
+  text-align: center;
+  //color: white;
+  margin: 10px 0;
+}
+
+.panel-1col .panel-panel {
+  width: auto !important;
+}
+
+figure.img-responsive {
+  display: inline-block;
+  img {
+    @extend .img-responsive;
+  }
+}
+
+figcaption {
+  border-top: 2px solid $brand-info;
+  background: $gray-light;
+  padding: 15px;
+  font-size: 0.875em;
+}
+
+iframe body {
+  padding: 0 !important;
+}
+
+.ipe-form {
+  max-width: none;
+  @extend .container;
+}
+.ep{
+  float: left;
+}
+
+div {
+  &.button-list {
+    li {
+      list-style: none;
+      display: inline-block;
+      text-align: center;
+      a{
+        background: gray;
+        display: inline-block;
+        padding: 10px;
+        margin: 8px;
+        width: 120px;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
+
+

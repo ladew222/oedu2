@@ -1,0 +1,40 @@
+/**
+ * $TABLES
+ */
+
+div:not(#modalContent) {
+
+}
+
+  //override UMN default
+  tr.odd {
+    border-bottom: none;
+    padding:0;
+  }
+
+  tr.even {
+    border-bottom: none;
+    padding:0;
+  }
+
+  //override UMN default
+  table tr:first-child {
+    border-bottom: none;
+    font-weight:normal;
+  }
+  //override UMN default
+  table td {
+    border:none;
+  }
+
+
+
+  table {
+    width:100%;
+    empty-cells:show;
+    margin-bottom:20px;
+    margin-top:10px;
+    color: #000;
+}
+
+

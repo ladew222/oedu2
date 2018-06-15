@@ -1,0 +1,81 @@
+.block-system-menu-blocknext-steps {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  background: linear-gradient(rgba($primary, 0.2), rgba($primary, 0.2)), url("../images/next-steps-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  .wrapper {
+    margin: auto;
+    background: rgba($primary, 0.8);
+    padding: 1em;
+  }
+
+  h2 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: white;
+  }
+
+  .nav li {
+    padding: 1em 0;
+    display: block;
+    width: 100%;
+  }
+
+  .btn-cta {
+    display: block;
+    margin: 0 0.5em;
+    background-color: $primary-darker;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 1em;
+
+    &.call-out {
+      background: $orange;
+      background: -webkit-linear-gradient(30deg, $orange 65%, rgba($orange, 0.8) 54%);
+      background: linear-gradient(60deg, $orange 65%, rgba($orange, 0.8) 54%);
+      filter: progid:dximagetransform.microsoft.gradient(startColorstr=$orange, endColorstr=$orange, GradientType=1);
+    }
+  }
+
+  .action-links {
+    padding: 0;
+  }
+
+  // DESK / LAP
+  @include media-breakpoint-up(md) {
+    padding: 4em 2em;
+
+    .wrapper {
+      display: inline-block;
+      padding: 1em 2em;
+    }
+
+    h2 {
+      @include underlined-title(#fff);
+    }
+
+    .nav li {
+      display: inline-block;
+      padding: 0;
+      width: auto;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 4em;
+
+    .btn-cta {
+      padding: 1em 2.5em;
+    }
+
+    .wrapper {
+      display: inline-block;
+      padding: 1em 3em;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+/**
+ * Implements THEME_preprocess_block.
+ */
+function vitbt_preprocess_block(&$variables) {
+  if ($variables['base_plugin_id'] == 'system_branding_block') {
+    if ($variables['content']['site_logo']['#access'] && $variables['content']['site_logo']['#uri']) {
+     // $variables['site_logo'] = str_replace('.svg', '.png', $variables['content']['site_logo']['#uri']);
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function vitbt_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+    // Add page template suggestion for panel page and nodes with panels.
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        if ($node->hasField('panelizer')) {
+            array_unshift($suggestions, 'page__panels');
+        }
+    }
+    if (\Drupal::routeMatch()->getParameter('page_manager_page')) {
+        array_unshift($suggestions, 'page__panels');
+    }
+}
+
+/**
+ * Implements THEME_preprocess_breadcrumb.
+ *
+ * Trims long page title breadcrumbs.
+ */
+function vitbt_preprocess_breadcrumb(&$variables) {
+  if (isset($variables['breadcrumb'])) {
+    // Only trim about 50 characters.
+    $last_item = end($variables['breadcrumb']);
+    if (strlen($last_item['text']) > 50) {
+      $variables['breadcrumb'][key($variables['breadcrumb'])]['text'] = t('Current page');
+    }
+  }
+}
+function vitbt_preprocess_field(&$variables) {
+
+   // if ($variables['element']['#field_name'] == 'field_hero_image') {
+        //$variables['node_title'] = $variables['element']['#object']->getTitle();
+        /*if($variables['element']['#object']->bundle()=='grid_content'){
+            //if($variables['element']['#object']->id()=='27'){
+                dpm($variables['element']['#object']);
+            //}å
+        }*/
+       // dpm($variables['element']['#object']->bundle());
+   // }
+}
+/**
+ * Implements THEME_preprocess
+ *
+ * Suggestions for custom blocks
+ */
+function vitbt_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+    if (isset($variables['elements']['content']['#block_content'])) {
+        array_splice($suggestions, 1, 0, 'block__' . $variables['elements']['content']['#block_content']->bundle());
+    }
+}

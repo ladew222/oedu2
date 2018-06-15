@@ -1,0 +1,57 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/6?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/cta_section_header"
+        }
+    },
+    "id": [
+        {
+            "value": 6
+        }
+    ],
+    "uuid": [
+        {
+            "value": "60e14c90-1021-4b1e-9aac-4d1b2fc9d1e6"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 7
+        }
+    ],
+    "type": [
+        {
+            "target_id": "cta_section_header"
+        }
+    ],
+    "info": [
+        {
+            "value": "CTA Section Header"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494367875
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1494367875
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>This is a sidebar CTA section paragraph copy example.<\/p>\n\n<div class=\"btn btn-primary\">Search<\/div>\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ]
+}

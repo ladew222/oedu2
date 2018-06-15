@@ -1,0 +1,258 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/news\/aumni-organize-promote-higher-education?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/29?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/3?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-203237_7_1.jpeg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "href": "http:\/\/default\/news\/university-open-new-campus?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/news\/faculty-groups-promote-increased-stem-research?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 18
+        }
+    ],
+    "uuid": [
+        {
+            "value": "050e140f-9e7a-4764-9d86-9940c555a667"
+        }
+    ],
+    "vid": [
+        {
+            "value": 18
+        }
+    ],
+    "type": [
+        {
+            "target_id": "news"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Aumni organize to promote higher education"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b5f0fc09-bf3f-46f2-884f-3a6bd7aa417e"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/29?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "11d8d41a-106d-47ad-a6f6-6da2ec25d75b"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/3?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "10aa186c-2817-4625-bda2-a6e4cff2f466"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-203237_7_1.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "46162fa9-fcac-4af3-9849-39d697d031b1"
+                    }
+                ],
+                "alt": "Student in Library",
+                "title": "Legislators appreciate hearing personal stories from their constituents.",
+                "width": "2500",
+                "height": "1667"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/university-open-new-campus?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "1913edce-bba1-42ea-9306-7c3547e831b7"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/faculty-groups-promote-increased-stem-research?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b8215089-cdf4-4d7d-8f12-e80c69a84f7b"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494092551
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496160829
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/aumni-organize-promote-higher-education",
+            "pid": 19
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Etiam laoreet felis eget massa viverra. Eu tempor orci vestibulum. Suspendisse potenti. Nam at ex in neque mattis scelerisque et id risus. Pellentesque suscipit metus iaculis urna iaculis, id lacinia est auctor.<\/p>\r\n\r\n<p>In vulputate blandit ullamcorper. In ligula arcu, ullamcorper sed aliquam sed, convallis quis nunc. Curabitur vel sapien pulvinar, sodales orci consequat, sollicitudin lectus. Nullam condimentum viverra lectus faucibus tempor.<\/p>\r\n\r\n<blockquote>\r\n<p>Aenean elementum fermentum scelerisque.<\/p>\r\n<\/blockquote>\r\n\r\n<h3>Nunc non quam massa. Proin lacinia placerat ligula sit amet fringilla<\/h3>\r\n\r\n<p>Suspendisse potenti. Morbi laoreet imperdiet metus, in condimentum nibh mattis vel. Ut semper fringilla libero vitae tristique. Nam ut ornare est.<\/p>\r\n\r\n<p>Vivamus laoreet odio eget dolor pretium aliquam. Mauris ultricies fringilla nunc, ac interdum magna porttitor nec. Vivamus turpis lectus, finibus a lectus sit amet, vestibulum elementum erat. Morbi at justo accumsan, fermentum orci et, consectetur purus. Morbi cursus volutpat rhoncus.<\/p>\r\n\r\n<p>Aliquam vitae quam quis augue tristique elementum. Integer nec nunc quis nisl rutrum suscipit. Phasellus tellus felis, imperdiet quis risus et, eleifend volutpat ex.<\/p>\r\n\r\n<p class=\"text-align-right\">&nbsp;<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_news_date": [
+        {
+            "value": "2016-10-25"
+        }
+    ],
+    "field_news_featured": [
+        {
+            "value": false
+        }
+    ]
+}

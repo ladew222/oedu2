@@ -1,0 +1,12 @@
+ixd_sa11y:
+  version: VERSION
+  css:
+    component:
+      css/ixd_sa11y.css: {}
+  js:
+    js/ixd_sa11y.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui.tabs
+    - core/drupal
+    - core/drupalSettings

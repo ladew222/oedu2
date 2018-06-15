@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Default theme implementation for seo dashboard tabs.
+ *
+ * Available variables:
+ * - preview: An array of rendered node variables.
+ * - keyword: The focus keyword for this node.
+ * - root: The base url of the site.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="ixd-seo-snippet">
+  <div class="snippet-title">
+    {{ preview.metaTitle }}
+  </div>
+  <div class="snippet-url">
+    <cite class="url urlBase">{{ root }}</cite>
+    <cite class="url">{{ preview.url }}</cite>
+  </div>
+  <div class="snippet-description">
+    <span>{{ preview.meta }}</span>
+  </div>
+</div>

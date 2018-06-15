@@ -11,13 +11,45 @@ node_modules
 /bin
 
 # Ignore non-custom parts of Drupal.
-/docroot/core
-/docroot/modules/contrib
-/docroot/profiles/contrib
-/docroot/themes/contrib
+#/docroot/core
+#/docroot/modules/contrib
+#/docroot/profiles/contrib
+#/docroot/themes/contrib
 /docroot/sites/*/files
 /docroot/sites/*/private
 
 
 # Ignore Composer-managed dependencies.
-vendor/
+#vendor/
+#docroot/profiles/
+#docroot/sites/default/services.yml
+#docroot/themes/vitbt/.sass-cache/
+#docroot/themes/vitbt/Gemfile
+#docroot/themes/vitbt/Gruntfile.js
+#docroot/themes/vitbt/README.md
+#docroot/themes/vitbt/VUlogo.svg
+#docroot/themes/vitbt/VUlogo2017.svg
+#docroot/themes/vitbt/assets/
+#docroot/themes/vitbt/bootstrap/
+#docroot/themes/vitbt/config.rb
+#docroot/themes/vitbt/config/
+#docroot/themes/vitbt/css/
+#docroot/themes/vitbt/favicon.ico
+#docroot/themes/vitbt/favicon.png
+#docroot/themes/vitbt/fonts/
+#docroot/themes/vitbt/grunt/
+#docroot/themes/vitbt/images/
+#docroot/themes/vitbt/img/
+#docroot/themes/vitbt/js/
+#docroot/themes/vitbt/libraries/
+#docroot/themes/vitbt/logo.svg
+#docroot/themes/vitbt/logowht.svg
+#docroot/themes/vitbt/package.json
+#docroot/themes/vitbt/screenshot.png
+#docroot/themes/vitbt/scss/
+#docroot/themes/vitbt/search-button.svg
+#docroot/themes/vitbt/templates/
+#docroot/themes/vitbt/vitbt.info.yml
+#docroot/themes/vitbt/vitbt.libraries.yml
+#docroot/themes/vitbt/vitbt.theme
+#docroot/themes/vitbt/vu_red.png

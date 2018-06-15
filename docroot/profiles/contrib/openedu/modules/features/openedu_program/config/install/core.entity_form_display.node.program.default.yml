@@ -1,0 +1,206 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.program.body
+    - field.field.node.program.field_program_course_intro
+    - field.field.node.program.field_program_courses
+    - field.field.node.program.field_program_faculty
+    - field.field.node.program.field_program_grid_block
+    - field.field.node.program.field_program_stories_block
+    - field.field.node.program.field_programs_course_link
+    - field.field.node.program.panelizer
+    - node.type.program
+  module:
+    - field_group
+    - inline_entity_form
+    - link
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_program_details:
+      children:
+        - group_program_information
+        - group_program_courses
+        - group_program_stories
+        - group_program_faculty
+      parent_name: ''
+      weight: 6
+      format_type: tabs
+      format_settings:
+        label: 'Program Details'
+        direction: vertical
+        id: ''
+        classes: ''
+      label: 'Program Details'
+    group_program_courses:
+      children:
+        - field_program_course_intro
+        - field_programs_course_link
+        - field_program_courses
+      parent_name: group_program_details
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Program Courses'
+    group_program_information:
+      children:
+        - body
+        - field_program_grid_block
+      parent_name: group_program_details
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Program Information'
+    group_program_stories:
+      children:
+        - field_program_stories_block
+      parent_name: group_program_details
+      weight: 22
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+      label: 'Program Stories'
+    group_program_faculty:
+      children:
+        - field_program_faculty
+      parent_name: group_program_details
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Program Faculty'
+id: node.program.default
+targetEntityType: node
+bundle: program
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 22
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_program_course_intro:
+    weight: 27
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_program_courses:
+    weight: 29
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_program_faculty:
+    weight: 30
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_program_grid_block:
+    weight: 24
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_program_stories_block:
+    weight: 23
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_programs_course_link:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: 'More Info'
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  panelizer: true

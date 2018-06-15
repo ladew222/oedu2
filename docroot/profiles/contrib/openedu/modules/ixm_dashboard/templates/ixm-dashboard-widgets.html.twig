@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the ixm dashboard widgets.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - displays: The displays to output
+ *
+ * @see template_preprocess_ixm_dashboard__widgets()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('display-widgets') }}>
+  {% for key, display in displays %}
+    <h4 class="widget-title mb-1">{{ display.label }}</h4>
+    <p class="mb-2 text-dark">{{ display.description }}</p>
+    <div{{ display.attributes.addClass('display-widget mb-4') }}>
+      {{ display.widget }}
+    </div>
+  {% endfor %}
+</div>

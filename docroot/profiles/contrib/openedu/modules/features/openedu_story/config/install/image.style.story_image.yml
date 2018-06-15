@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: story_image
+label: 'Story Image (185x210)'
+effects:
+  a1b74b70-1bb3-42aa-afab-cfdcfd00eaa8:
+    uuid: a1b74b70-1bb3-42aa-afab-cfdcfd00eaa8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 185
+      height: 210

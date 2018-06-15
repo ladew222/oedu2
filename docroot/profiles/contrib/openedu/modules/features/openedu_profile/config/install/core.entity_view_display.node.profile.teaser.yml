@@ -1,0 +1,130 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile.body
+    - field.field.node.profile.field_profile_courses
+    - field.field.node.profile.field_profile_cv
+    - field.field.node.profile.field_profile_department
+    - field.field.node.profile.field_profile_education
+    - field.field.node.profile.field_profile_email
+    - field.field.node.profile.field_profile_image
+    - field.field.node.profile.field_profile_job_title
+    - field.field.node.profile.field_profile_name
+    - field.field.node.profile.field_profile_office
+    - field.field.node.profile.field_profile_phone
+    - field.field.node.profile.field_profile_publications
+    - field.field.node.profile.field_profile_research_interests
+    - field.field.node.profile.field_profile_research_projects
+    - field.field.node.profile.field_profile_students
+    - field.field.node.profile.field_profile_type
+    - field.field.node.profile.panelizer
+    - image.style.profile_image
+    - node.type.profile
+  module:
+    - image
+    - name
+    - panelizer
+    - telephone
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.profile.teaser
+targetEntityType: node
+bundle: profile
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_profile_department:
+    type: entity_reference_label
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_profile_email:
+    type: email_mailto
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_profile_image:
+    type: image
+    weight: 2
+    label: hidden
+    settings:
+      image_style: profile_image
+      image_link: content
+    third_party_settings: {  }
+    region: content
+  field_profile_job_title:
+    type: string
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_profile_name:
+    type: name_default
+    weight: 3
+    label: hidden
+    settings:
+      format: short_full
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+      markup: false
+    third_party_settings: {  }
+    region: content
+  field_profile_office:
+    type: string
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_profile_phone:
+    type: telephone_link
+    weight: 7
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_profile_courses: true
+  field_profile_cv: true
+  field_profile_education: true
+  field_profile_publications: true
+  field_profile_research_interests: true
+  field_profile_research_projects: true
+  field_profile_students: true
+  field_profile_type: true
+  panelizer: true

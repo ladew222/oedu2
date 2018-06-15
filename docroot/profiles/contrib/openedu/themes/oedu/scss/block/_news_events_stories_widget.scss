@@ -1,0 +1,22 @@
+.block--openedu-stories-block,
+.block--openedu-news-events-widget {
+  padding-bottom: 35px !important;
+
+  .field--name-field-stories-title {
+    @extend h2;
+    @include underlined-title();
+
+    text-align: center;
+  }
+
+  .path-frontpage & {
+    @include angle($gray-lighter);
+
+    margin-top: 100px;
+    background: $gray-lighter;
+
+    .field--name-field-stories-title {
+      color: $primary;
+    }
+  }
+}

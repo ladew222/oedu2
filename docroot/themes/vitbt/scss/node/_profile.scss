@@ -1,0 +1,558 @@
+.page-node-type-cl {
+
+  @media #{$tablet} {
+    .panel-oedu-1col.subsection {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .region-container {
+    .panel-oedu-container {
+      margin-top: 1em;
+
+      a {
+        color: $gray-base;
+      }
+
+      .panel-oedu-2col {
+
+        @media #{$tablet} {
+          section.block {
+            padding: 0 0 1.1em 0;
+          }
+        }
+
+        section.block-entity-fieldnodefield-profile-name {
+          font-size: 1.2em;
+          font-weight: 600;
+          padding-bottom: 0.4em;
+        }
+      }
+
+      .field--name-field-profile-courses,
+      .field--name-field-profile-program {
+        .field--item {
+          display: list-item;
+          margin-left: 1.5em;
+        }
+      }
+
+      .field--name-field-profile-research-interests {
+        .field--item {
+          @extend .site-tag-clr;
+          margin: 0.3em 0;
+        }
+      }
+
+      .field--name-field-profile-courses {
+        .field__items {
+          margin-left: 1em;
+          .field--item {
+            margin-bottom: 1em;
+          }
+        }
+      }
+
+      .field--name-field-profile-department,
+      .field--name-field-profile-education {
+        .field__items {
+          margin-left: 2.5em;
+          .field--item {
+            display: list-item;
+            margin-bottom: 1em;
+          }
+        }
+        a {
+          color: $brand-info;
+        }
+      }
+
+      .field--name-field-profile-research-projects,
+      .field--name-field-profile-publications {
+        .field--label {
+          margin-bottom: 1.5em;
+        }
+        .field--item {
+          box-shadow: 1px 2px 4px 0 $gray-light;
+          padding: 0.5em 1em 1em 1em;
+          margin-bottom: 1em;
+          border-left: 1em solid $gray-light;
+          transition: border-color 0.5s;
+          &:hover {
+            border-color: $brand-success;
+          }
+        }
+      }
+      .field--name-field-profile-research-projects {
+        .field--item {
+          &:hover {
+            border-color: $brand-info;
+          }
+        }
+      }
+
+    }
+  }
+
+  .block-region-subsection {
+    section.block {
+      margin: 0;
+      padding: 0;
+    }
+    .block-entity-fieldnodefield-profile-image {
+      float: left;
+      position: relative;
+      z-index: 1;
+      .field--item {
+        padding-left: 0;
+      }
+      margin-bottom: -10px;
+      padding-bottom: 0;
+    }
+    .field--item {
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+    .field--item.field--type-name {
+      font-size: 2.5em;
+      margin-top: -0.35em;
+      margin-bottom: 0.1em;
+      font-weight: 600;
+    }
+    .block-entity-fieldnodefield-profile-job-title,
+    .block-entity-fieldnodefield-profile-department {
+      font-size: 1.125em;
+      font-style: italic;
+    }
+    .block-entity-fieldnodefield-profile-office,
+    .block-entity-fieldnodefield-profile-phone {
+      font-size: 0.875em;
+      font-weight: 600;
+    }
+    .block-entity-fieldnodefield-profile-email {
+      font-size: 0.750em;
+      font-weight: bold;
+    }
+
+    .field--name-field-profile-office {
+      margin-top: 0.5em;
+    }
+    a {
+      color: white;
+    }
+    .block.block-entity-fieldnodefield-profile-image {
+      position: relative;
+      border: none;
+      img {
+        border-radius: 5px;
+        box-shadow: 0 2px 3px 0 $gray-light;
+      }
+      padding-right: 1em;
+    }
+
+    .field--name-field-profile-department {
+      .field--item {
+        display: inline-block;
+        &:after {
+          content: ",";
+        }
+        &:last-child:after {
+          content: none;
+        }
+      }
+    }
+
+  }
+
+}
+
+.block-views-blockprofile-list-profile-listing-block {
+  border: none !important;
+
+  // Right float the "Items Per Page" filter on the profile listing page.
+  .bef-exposed-form {
+    .form--inline {
+      > .form-item-items-per-page {
+        float: right;
+      }
+    }
+  }
+  .views-row {
+    padding: 0;
+    @media #{$tablet} {
+      border-right: 4px solid transparent;
+      &:hover {
+        border-right: 4px solid $brand-info;
+      }
+    }
+  }
+
+  .profile-picture {
+    padding-left: 0;
+  }
+
+  .content {
+    font-size: 0.875em;
+    .left {
+      .field--items {
+        display: inline;
+      }
+    }
+    .right {
+      @media #{$normal} {
+        text-align: right;
+      }
+      padding-top: 10px;
+      font-weight: 600;
+      line-height: 1.571em;
+    }
+  }
+
+  a {
+    color: $gray-base;
+    &:hover {
+      text-decoration: none;
+      color: $brand-info;
+    }
+  }
+  .field--name-field-profile-email {
+    a {
+      color: $brand-info;
+    }
+  }
+  h4 {
+    margin: 0.438em 0;
+  }
+  .field--name-field-profile-name {
+    color: $gray-darker;
+    font-size: 1.375em;
+    font-weight: bold;
+    &:hover {
+      color: $brand-info;
+    }
+  }
+  .field--name-field-profile-job-title {
+    font-style: italic;
+  }
+  .field--name-field-profile-department {
+    .field--item {
+      display: inline-block;
+      &:after {
+        content: ",";
+      }
+      &:last-child:after {
+        content: none;
+      }
+      a {
+        color: $brand-info;
+      }
+    }
+  }
+
+}
+
+// Listing Page.
+.path-directory {
+  .panel-oedu-2col.col-sm-3 {
+    margin: 1em auto;
+  }
+  @media #{$small-device} {
+    .block-views-exposed-filter-blockprofile-list-profile-listing-block {
+      #edit-actions {
+        clear: both;
+        margin-top: 1em;
+        button {
+          width: 100%;
+        }
+      }
+      .form-item {
+        width: 100%;
+        margin: 1em 0 0 0;
+        float: none;
+        .select-wrapper {
+          width: 100%;
+          .chosen-container {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// Listing page subsection filters.
+.block-views-exposed-filter-blockprofile-list-profile-listing-block {
+  .form-item-field-profile-department {
+    clear: left;
+    margin-top: 1em;
+  }
+  .form-item-field-profile-research-interests {
+    clear: right;
+    margin-top: 1em;
+  }
+}
+
+.block-entity-fieldnodefield-program-faculty,
+.block--profile-block {
+  @extend .container;
+
+  .block-title {
+    @extend h2;
+    text-align: center;
+    @include underlined-title();
+  }
+  .field--name-field-profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    & > .field--item {
+      @extend .col-lg-3, .col-md-4, .col-sm-6;
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+  }
+  article {
+    position: relative;
+    height: 100%;
+    padding: 0.5em 0.5em 0.875em;
+    font-size: 0.8em;
+    box-shadow: 0 1px 8px 0 $gray;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      transition: height 0.1s;
+      background: $brand-info;
+    }
+    &:hover {
+      &::after {
+        height: 8px;
+      }
+    }
+    .content {
+      padding: 0.2em;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+    }
+    .profile-picture {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        ~ h4 {
+          a {
+            color: $brand-info;
+          }
+        }
+      }
+    }
+    h4 {
+      width: 100%;
+      margin-bottom: 0.2em;
+      font-family: $font-family-sans-serif;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: $gray-base;
+      a {
+        font-family: $font-family-sans-serif;
+        color: $gray-base;
+        &:hover {
+          text-decoration: none;
+          color: $brand-info;
+        }
+      }
+    }
+    .field--name-field-profile-department {
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 2em;
+      .field--item {
+        display: inline-block;
+        &:after {
+          content: ",";
+        }
+        &:last-child:after {
+          content: none;
+        }
+      }
+    }
+  }
+
+}
+
+// Mobile.
+@media #{$mobile} {
+
+  .node--type-profile {
+
+    .block-region-subsection {
+      padding-bottom: 2em;
+      .field--item.field--type-name {
+        margin-top: 0;
+        line-height: 1.1em;
+      }
+    }
+
+    .block-region-right {
+
+      .field--name-field-profile-research-interests {
+        .field__items {
+          text-align: center;
+        }
+      }
+
+      .block {
+        padding: 0;
+        margin: 1em auto;
+        .field {
+          .field--label {
+            cursor: pointer;
+            background: $brand-primary-lighter;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px 20px;
+            margin: 0;
+            font-size: 1em;
+            -webkit-box-shadow: 0 2px 4px 0 rgba($gray-base, 0.16);
+            -moz-box-shadow: 0 2px 4px 0 rgba($gray-base, 0.16);
+            box-shadow: 0 2px 4px 0 rgba($gray-base, 0.16);
+            &::after {
+              font-family: "FontAwesome";
+              font-weight: bold;
+              content: "\f055";
+              float: right;
+              opacity: 0.65;
+            }
+            &:hover,
+            &.active {
+              background: darken($brand-primary-lighter, 1%);
+              &::after {
+                opacity: 1;
+              }
+            }
+          }
+          .field__items {
+            display: none;
+            margin: -5px auto 0;
+            padding: 20px;
+            border: 1px solid $gray-dark;
+            border-top: none;
+            border-radius: 5px;
+            &.collapse.in,
+            &.collapsing {
+              display: block;
+            }
+            .field--item {
+              margin: 0;
+              display: block;
+            }
+          }
+          &.field--name-field-profile-research-interests {
+            .field--item {
+              margin: 1em auto;
+              max-width: 300px;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .block-views-blockprofile-list-profile-listing-block {
+    border-bottom: 2px solid $gray-light !important;
+    margin-bottom: 3em;
+
+    article.profile.teaser {
+      padding-bottom: 1em;
+    }
+    .pager-nav {
+      text-align: center;
+    }
+    .content {
+      .left {
+        h4 {
+          margin-bottom: 0;
+        }
+        .field--items {
+          display: inline;
+        }
+      }
+      .right {
+        float: none;
+        text-align: left;
+        padding-top: 10px;
+        padding-right: 5px;
+      }
+    }
+    .profile-picture {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .block-entity-fieldnodefield-program-faculty,
+  .block--profile-block {
+    .field--name-field-profile {
+      & > .field--item {
+        width: 100%;
+        padding: 0 0.5em;
+      }
+    }
+    article {
+      border-bottom: 4px solid $gray;
+      .profile-picture {
+        display: none;
+      }
+      &::after {
+        background: none;
+      }
+    }
+  }
+}
+
+// Small device
+@media #{$small-device} {
+  .node--type-profile {
+    .block-region-subsection {
+      padding-bottom: 0;
+      section.block {
+        text-align: center;
+      }
+      .block-entity-fieldnodefield-profile-image {
+        float: none;
+      }
+      .field--name-field-profile-image {
+        margin-bottom: 1em;
+        display: inline-block;
+      }
+      .field--name-field-profile-office {
+        margin-top: 2em;
+      }
+    }
+  }
+  .block-views-blockprofile-list-profile-listing-block {
+    .views-row {
+      width: 100%;
+      max-width: 250px;
+      margin: 5px auto 25px;
+    }
+    .profile-picture {
+      float: none;
+      width: 100%;
+      padding: 15px 15px 5px;
+      img {
+      }
+    }
+  }
+}

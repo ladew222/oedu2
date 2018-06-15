@@ -1,0 +1,54 @@
+.block--openedu-hero {
+  @include linearGradient(#008dc0, #024f6a);
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 50px;
+  height: 250px;
+
+  @include media-breakpoint-up(md) {
+    border-bottom: 5px solid $primary-lighter;
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+    height: 350px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 450px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 600px;
+  }
+
+  .field--name-field-hero-image img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 100vw;
+    height: 50vh;
+    min-width: 100vw;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.65;
+
+    @include media-breakpoint-up(md) {
+      height: auto;
+    }
+  }
+
+  .field--name-body {
+    @include verticalAlign(absolute);
+
+    color: #fff;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}

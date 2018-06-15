@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/21?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+        }
+    },
+    "tid": [
+        {
+            "value": 21
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f2a3a352-3b5b-451a-b3db-caf6d3b08fb0"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "interests"
+        }
+    ],
+    "name": [
+        {
+            "value": "Operations"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494269162
+        }
+    ]
+}

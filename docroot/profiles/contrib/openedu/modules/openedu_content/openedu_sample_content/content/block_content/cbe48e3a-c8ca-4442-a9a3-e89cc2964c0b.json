@@ -1,0 +1,74 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/5?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/openedu_grid_block"
+        }
+    },
+    "id": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "cbe48e3a-c8ca-4442-a9a3-e89cc2964c0b"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 5
+        }
+    ],
+    "type": [
+        {
+            "target_id": "openedu_grid_block"
+        }
+    ],
+    "info": [
+        {
+            "value": "Generic Grid Block"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496161463
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1494263333
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_grid_content": [
+        {
+            "value": "<div class=\"openedu-stat\">98%<\/div>\r\n\r\n<p class=\"text-align-center\">of our Biology graduates&nbsp;are working<br \/>\r\nin a field they&nbsp;enjoy.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<p><strong>Careers<\/strong><\/p>\r\n\r\n<p>Mauris ultricies fringilla nunc, ac interdum magna porttitor nec. Vivamus turpis lectus, finibus a lectus sit amet, vestibulum elementum erat. Morbi at justo accumsan, fermentum orci et, consectetur purus. Morbi cursus volutpat rhoncus.&nbsp;<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<p><strong>Sample Job Titles<\/strong><\/p>\r\n\r\n<ul>\r\n\t<li>Doctor<\/li>\r\n\t<li>Director<\/li>\r\n\t<li>Dentist<\/li>\r\n\t<li>Veterinarian<\/li>\r\n\t<li>Researcher<\/li>\r\n\t<li>Teacher<\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_grid_label": [
+        {
+            "value": "Biological Sciences Program"
+        }
+    ],
+    "field_grid_layout": [
+        {
+            "value": 3
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/media\/14?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/sky-clouds-garden-school_0.jpg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/sky-clouds-garden-school_0.jpg"
+            }
+        ]
+    },
+    "mid": [
+        {
+            "value": 14
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e652907c-b2a3-4cbe-9bbb-a28f8a840118"
+        }
+    ],
+    "vid": [
+        {
+            "value": 14
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "image"
+        }
+    ],
+    "name": [
+        {
+            "value": "Homepage Hero"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/sky-clouds-garden-school_0.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "7b58c9c2-9f77-463f-bcc5-71eb00d53903"
+                    }
+                ],
+                "alt": "Thumbnail",
+                "title": "Homepage Hero",
+                "width": "1920",
+                "height": "1315"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/sky-clouds-garden-school_0.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "7b58c9c2-9f77-463f-bcc5-71eb00d53903"
+                    }
+                ],
+                "alt": "",
+                "title": "",
+                "width": "1920",
+                "height": "1315"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": 1496167234
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496167234
+        }
+    ],
+    "field_media_in_library": [
+        {
+            "value": true
+        }
+    ]
+}

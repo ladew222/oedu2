@@ -1,0 +1,8 @@
+name: 'OpenEDU Sample Content'
+type: module
+core: 8.x
+package: OpenEDU
+version: '8.x-3.0'
+dependencies:
+  - default_content
+  - better_normalizers

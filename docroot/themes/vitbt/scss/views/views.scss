@@ -1,0 +1,38 @@
+.views-element-container {
+  .form-group {
+    header {
+      margin-bottom: 0;
+    }
+    .header-pager {
+      .pagination {
+        margin: 0 0 1em 0;
+      }
+    }
+    .pagination {
+      font-size: 1.2em;
+      font-weight: 600;
+      .pager__item {
+        a {
+          color: $gray;
+        }
+      }
+      .pager__item.is-active {
+        a {
+          color: $gray-base;
+        }
+      }
+      .pager__item--last {
+        display: none;
+      }
+      .pager__item--first {
+        display: none;
+      }
+      .pager__item--prev,
+      .pager__item--next {
+        a {
+          color: $brand-info;
+        }
+      }
+    }
+  }
+}

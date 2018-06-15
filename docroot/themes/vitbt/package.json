@@ -1,0 +1,22 @@
+{
+  "name": "openedu",
+  "version": "1.0.0",
+  "description": "<!-- @file Instructions on how to sub-theme the Drupal Bootstrap base theme using the CDN Starterkit. --> <!-- @defgroup subtheme_cdn --> <!-- @ingroup subtheme --> # CDN Starterkit",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "animate-sass": "^0.6.6",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.0",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-sass-globbing": "^1.5.1",
+    "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "hover.css": "^2.2.1"
+  }
+}

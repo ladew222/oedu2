@@ -1,0 +1,9 @@
+{
+  "name": "drupal/vbo_export",
+  "description": "Views bulk export operations.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "require": {
+    "phpoffice/phpexcel":"1.8.0"
+  }
+}

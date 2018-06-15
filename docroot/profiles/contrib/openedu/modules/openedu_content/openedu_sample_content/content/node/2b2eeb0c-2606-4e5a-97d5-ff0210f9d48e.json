@@ -1,0 +1,313 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "href": "http:\/\/default\/node\/110?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/node\/111?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-05\/Garreth_7_1.jpg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/19?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/21?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 24
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2b2eeb0c-2606-4e5a-97d5-ff0210f9d48e"
+        }
+    ],
+    "vid": [
+        {
+            "value": 24
+        }
+    ],
+    "type": [
+        {
+            "target_id": "profile"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "John Doe"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/110?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6446420c-f6d1-44e3-a73e-e76131b3c93a"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/111?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "63d195ab-6165-452c-87cf-e125f13bea18"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-05\/Garreth_7_1.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a39f8680-980d-4cfd-b03e-45d752fb50a3"
+                    }
+                ],
+                "alt": "John Doe",
+                "title": "",
+                "width": "360",
+                "height": "415"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/19?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "06408782-fbf4-4e2a-beb8-541350a86562"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f2a3a352-3b5b-451a-b3db-caf6d3b08fb0"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493733675
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496175425
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/profile-list\/john-doe",
+            "pid": 13
+        }
+    ],
+    "body": [
+        {
+            "value": "<blockquote>\r\n<p>John's passions in the workplace include client-oriented service, rigorous and scalable process, and top-notch documentation and contracts.<\/p>\r\n<\/blockquote>\r\n\r\n<p>John has been providing a wealth of knowledge and leadership to the ImageX team with over 20 years' experience in tech companies. Having started his career in software development in the UK, he moved to Canada as an entrepreneur in the late 90's as a partner in an internet consulting and web site development firm. Since then, he has been on the management team of CRM, Security, Recruiting and Referral Marketing SaaS product companies. His areas of oversight have been implementation services projects, training, customer and technical support, IT and hosting, HR, PMO and sales engineering.<\/p>\r\n\r\n<p>His clients have included many of the top companies in financial services, telecommunications, education, software and manufacturing.<\/p>\r\n\r\n<p>Outside the workplace, John spent 6 years in governance on the board of a not-for-profit IB school, and is active in the sport of fencing in BC. He can be found volunteering as a referee and coach, as well as competing.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_profile_courses": [
+        {
+            "value": "English 110"
+        }
+    ],
+    "field_profile_education": [
+        {
+            "value": "MA, Contemporary Writing, University of Illinois, Urbana, 1997"
+        }
+    ],
+    "field_profile_email": [
+        {
+            "value": "john@imagexmedia.com"
+        }
+    ],
+    "field_profile_job_title": [
+        {
+            "value": "Dean of the Business"
+        }
+    ],
+    "field_profile_name": [
+        {
+            "title": null,
+            "given": "John",
+            "middle": null,
+            "family": "Doe",
+            "generational": null,
+            "credentials": null
+        }
+    ],
+    "field_profile_office": [
+        {
+            "value": "163 W. Hastings Street, Suite 405, Vancouver, BC, V6B 1H5, Canada"
+        }
+    ],
+    "field_profile_phone": [
+        {
+            "value": "1.778.785.1547"
+        }
+    ],
+    "field_profile_publications": [
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Oct 1 1984<\/h3>\r\n\r\n<p>by Less Moreau&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie&nbsp;\u2013 Nov 1 2016<\/h3>\r\n\r\n<p>by Keen Lagerfield&nbsp;(Author, Contributor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Apr 8 2005<\/h3>\r\n\r\n<p>by Sid Author&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_research_projects": [
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida.<\/h3>\r\n\r\n<p><strong>Principal Investigator:<\/strong> Kedra Souza<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong> J. Cello, MD, professor of surgery.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>A randomized trial.<\/h3>\r\n\r\n<p><strong>Principal Investigator:&nbsp;<\/strong>John C Smith<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong> A-L Chang, MD, associate professor of science.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Responsible Research Practice<\/h3>\r\n\r\n<p>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> D. Green<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>True Stories Well Told<\/h3>\r\n\r\n<p>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida.&nbsp;<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> L. Green<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_students": [
+        {
+            "value": "<ul>\r\n\t<li>Les Cordell<\/li>\r\n\t<li>Yuriy Gerasimov<\/li>\r\n\t<li>Gavin Graham<\/li>\r\n\t<li>Bryan Heredia<\/li>\r\n\t<li>Erin Joyce<\/li>\r\n\t<li>Travis Ketler<\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_type": [
+        {
+            "value": "faculty"
+        }
+    ]
+}

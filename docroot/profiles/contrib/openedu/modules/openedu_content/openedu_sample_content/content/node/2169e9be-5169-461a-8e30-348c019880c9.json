@@ -1,0 +1,184 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/node\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2169e9be-5169-461a-8e30-348c019880c9"
+        }
+    ],
+    "vid": [
+        {
+            "value": 119
+        }
+    ],
+    "type": [
+        {
+            "target_id": "landing_page"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Homepage"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "15cd35da-ce0c-4061-8405-4475a5b99c9c"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "15cd35da-ce0c-4061-8405-4475a5b99c9c"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493610580
+        }
+    ],
+    "changed": [
+        {
+            "value": 1495062380
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Description<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+  "panelizer": [
+    {
+      "view_mode": "full",
+      "default": "default",
+      "panels_display": {
+        "blocks": {
+          "99985ae9-6037-4843-a6f1-53123ce8b4b4": {
+            "id": "block_content:bae2e1eb-27c1-4f48-81b5-0dfbe127efce",
+            "label": "Homepage Statistics",
+            "provider": "block_content",
+            "label_display": 0,
+            "status": true,
+            "info": "",
+            "view_mode": "full",
+            "context_mapping": [],
+            "region": "middle",
+            "uuid": "99985ae9-6037-4843-a6f1-53123ce8b4b4",
+            "weight": 2
+          },
+          "2697826c-5630-4bfc-bd4b-8b787583c3e4": {
+            "id": "block_content:f65d0bc4-dfe6-4123-810d-14a5e22afbbe",
+            "label": "Homepage Stories Block",
+            "provider": "block_content",
+            "label_display": 0,
+            "status": true,
+            "info": "",
+            "view_mode": "full",
+            "context_mapping": [],
+            "region": "middle",
+            "uuid": "2697826c-5630-4bfc-bd4b-8b787583c3e4",
+            "weight": 3
+          },
+          "533b5e9f-6ace-43bb-841a-f3aebd0901dc": {
+            "id": "block_content:f537a9b3-9ee5-4c5a-b0ed-8fb23c700d2b",
+            "label": "Hompage Hero",
+            "provider": "block_content",
+            "label_display": 0,
+            "status": true,
+            "info": "",
+            "view_mode": "full",
+            "context_mapping": [],
+            "region": "middle",
+            "uuid": "533b5e9f-6ace-43bb-841a-f3aebd0901dc",
+            "weight": 1
+          }
+        },
+        "id": "panels_variant",
+        "label": "Default",
+        "uuid": "3890da29-65ca-40a7-80e4-a91fec66fa03",
+        "weight": 0,
+        "layout": "layout_onecol",
+        "layout_settings": [],
+        "page_title": "[node:title]",
+        "storage_type": "panelizer_field",
+        "storage_id": "node:1:full:1",
+        "builder": "ipe",
+        "pattern": "panelizer",
+        "static_context": []
+      }
+    }
+  ]
+}

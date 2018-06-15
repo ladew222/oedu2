@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: news_related_thumbnail
+label: 'News Related Thumbnail (280×120)'
+effects:
+  b7ad27b1-3095-4e33-8e34-07e1fe6e6023:
+    uuid: b7ad27b1-3095-4e33-8e34-07e1fe6e6023
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 120

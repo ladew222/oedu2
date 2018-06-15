@@ -1,0 +1,21 @@
+.analytics-date-range-box {
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.analytics-date-range-title {
+	color: #b3b7b8;
+	font-size: 12px;
+}
+
+.date-selector {
+	font-size: 16px;
+	border-bottom: 1px solid;
+	color: #343a40;
+}
+
+.date-selector:hover {
+	text-decoration: none;
+}

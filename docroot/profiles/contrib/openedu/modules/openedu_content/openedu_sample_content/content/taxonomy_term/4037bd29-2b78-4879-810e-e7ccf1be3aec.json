@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/10?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+        }
+    },
+    "tid": [
+        {
+            "value": 10
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4037bd29-2b78-4879-810e-e7ccf1be3aec"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "news_categories"
+        }
+    ],
+    "name": [
+        {
+            "value": "Computer Science"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494265564
+        }
+    ]
+}

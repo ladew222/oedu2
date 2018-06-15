@@ -1,0 +1,10 @@
+name: 'IXM Dashboard Analytics'
+type: module
+description: 'Google Analaytic functions for the IXM dashboard'
+core: 8.x
+version: '8.x-3.0'
+package: Custom
+dependencies:
+  - ixm_dashboard
+  - google_analytics
+  - google_analytics_reports_api

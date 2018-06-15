@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: news_image
+label: 'News Image (600 x ?)'
+effects:
+  bc071806-e56f-43d1-ab70-9f6dee48e909:
+    uuid: bc071806-e56f-43d1-ab70-9f6dee48e909
+    id: image_scale
+    weight: 1
+    data:
+      width: 770
+      height: null
+      upscale: false

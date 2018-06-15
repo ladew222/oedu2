@@ -1,0 +1,67 @@
+//
+// Typography Overrides
+// --------------------------------------------------
+
+$font-family-md-icons: "Material Icons", sans-serif;
+$font-family-serif:     Georgia, Times, "Times New Roman", serif;
+
+$headings-font-family:  $font-family-serif !default;
+
+//
+// Base variables (bootstrap 3 variables)
+// @todo: eventually phase these out.
+//
+$gray-base:              #333 !default; //hsl(0°, 0%, 20%)
+$gray-darker:            adjust_hsl($gray-base, 0, 0, 9) !default; // #4b4b4b
+$gray-dark:              adjust_hsl($gray-base, 204, 2, 39) !default;   // #95989a
+$gray:                   adjust_hsl($gray-base, 0, 0, 49) !default; // #afafaf
+$gray-light:             adjust_hsl($gray-base, 0, 0, 69) !default; // #e4e4e4
+$gray-lighter:           adjust_hsl($gray-base, 0, 0, 76) !default; // #F6F6F6
+
+$primary:                #1f2f5f !default;
+$info:                   #ea772e !default;
+
+$alert-success-text:     #3c763d !default;
+$alert-info-text:        #31708f !default;
+$alert-warning-text:     #8a6d3b !default;
+$alert-danger-text:      #a94442 !default;
+
+$state-success-text:     #3c763d !default;
+$state-success-bg:       #dff0d8 !default;
+$state-success-border:   darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:        #31708f !default;
+$state-info-bg:          #d9edf7 !default;
+$state-info-border:      darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:     #8a6d3b !default;
+$state-warning-bg:       #fcf8e3 !default;
+$state-warning-border:   darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:      #a94442 !default;
+$state-danger-bg:        #f2dede !default;
+$state-danger-border:    darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+// OEDU Base Colours
+$primary-darker: adjust_hsl($primary, 0.38, -32.54, -2.94); // #133D57
+$primary-dark: adjust_hsl($primary, 0.77, -16.1, 2.55); // #0d4f79
+$primary-lighter: adjust_hsl($primary, -6.06, 3.31, 21.18); // #00A6E5
+$primary-light: adjust_hsl($primary, 0.24, -40.51, 11.18); // #27658B
+
+// Buttons
+$btn-primary-bg: $primary-lighter; // #00A6E5
+$btn-primary-hover: adjust_hsl($btn-primary-bg, 0.12, -2.35, 5.1); // #03B7FC
+$btn-primary-active: lighten($btn-primary-bg, 11%); // #1EC1FF
+
+$btn-secondary-bg: $primary-darker; // #133D57
+$btn-secondary-hover: adjust_hsl($btn-secondary-bg, 0.28, 0.88, 7.25); // #195276
+$btn-secondary-active: lighten($btn-secondary-bg, 17%); // #236f9e
+
+$btn-info-bg: $info; // #EA772E
+$btn-info-hover: adjust_hsl($btn-info-bg, -0.03, 18.26, 6.67); // #FF873B
+$btn-info-active: adjust_hsl($btn-info-bg, 0.014, 14.58, 13.14); // #FC9C5F
+
+//
+// Base variables (bootstrap 4 variables)
+//
+$link-color:  $info;

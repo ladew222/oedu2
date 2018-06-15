@@ -1,0 +1,14 @@
+name: 'OpenEDU Widgets'
+description: 'Provides a reusable widget to display news and events.'
+type: module
+core: 8.x
+version: '8.x-3.0'
+bundle: OpenEDU
+dependencies:
+  - block
+  - facets
+  - flickity_views
+  - openedu_events
+  - openedu_news
+  - search_api
+  - views

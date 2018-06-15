@@ -1,0 +1,91 @@
+.page-node-type-news {
+  .region-container {
+    .block-region-subsection {
+      .block-entity-fieldnodefield-news-date .field--name-field-news-date {
+        margin-top: 1em;
+      }
+
+      section.block {
+        margin: 0;
+        padding: 0;
+
+        .field--item {
+          font-size: 0.9em;
+          font-weight: 300;
+        }
+
+        .field--name-field-profile-office {
+          margin-top: 0.5em;
+        }
+
+        a {
+          color: white;
+        }
+      }
+    }
+
+    .panel-oedu-container {
+      .panel-oedu-1col {
+        @include make-container();
+        @include make-container-max-widths();
+      }
+
+      .panel-oedu-2col {
+        section.block-entity-fieldnodefield-profile-name {
+          font-size: 1.2em;
+          font-weight: 600;
+          padding-bottom: 0.4em;
+        }
+
+        .field--name-field-news-image img {
+          width: 100%;
+          height: auto;
+        }
+
+        .block-entity-fieldnodebody {
+          padding: 1em 0 0;
+        }
+
+        .field--label {
+          color: $primary;
+          font-size: 2em;
+          padding-bottom: 0.4em;
+          font-weight: normal;
+        }
+
+        .field--name-field-profile-courses,
+        .field--name-field-profile-program {
+          .field--item {
+            display: list-item;
+            margin-left: 1.5em;
+          }
+        }
+
+        .block-entity-fieldnodefield-news-categories {
+          padding-bottom: 2.75em;
+          margin-top: 1em;
+          border-bottom: 1px solid $gray-300;
+
+          .field--item {
+            @extend .site-tag-clr;
+          }
+        }
+
+        .block-addtoany-block {
+          margin: 0.875em auto 1.6em;
+
+          h2 {
+            margin: 0 0.5em 0 0;
+            font-size: 0.875em;
+            font-weight: normal;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .block-region-bottom .block:last-of-type {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: news_related_content
+label: 'Related News Content'
+revision: 1
+description: 'Add related content to a block via content reference'

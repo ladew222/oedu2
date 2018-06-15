@@ -1,0 +1,89 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/3?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/openedu_grid_block"
+        }
+    },
+    "id": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "bae2e1eb-27c1-4f48-81b5-0dfbe127efce"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3
+        }
+    ],
+    "type": [
+        {
+            "target_id": "openedu_grid_block"
+        }
+    ],
+    "info": [
+        {
+            "value": "Homepage Statistics"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1493611688
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1493611688
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_grid_content": [
+        {
+            "value": "<drupal-entity data-align=\"center\" data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-type=\"media\" data-entity-uuid=\"f474126b-c4cd-4f2d-9b68-f04806051af1\"><\/drupal-entity>\r\n\r\n<div class=\"openedu-stat\">95%<\/div>\r\n\r\n<p class=\"text-align-center\">of graduates are working<br \/>in their fields<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<drupal-entity data-align=\"center\" data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-type=\"media\" data-entity-uuid=\"8d206aec-dfeb-4892-ae2d-3f4f3b506c84\"><\/drupal-entity>\r\n\r\n<div class=\"openedu-stat\">146<\/div>\r\n\r\n<p class=\"text-align-center\">have jobs within two months of graduation<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<drupal-entity data-align=\"center\" data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-type=\"media\" data-entity-uuid=\"6cca86a4-66ba-4478-a5fb-4e5ff84defac\"><\/drupal-entity>\r\n\r\n<div class=\"openedu-stat\">78%<\/div>\r\n\r\n<p class=\"text-align-center\">of recent biology, computer science, math, education, English, and music grads are employed or in grad school.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<drupal-entity data-align=\"center\" data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-type=\"media\" data-entity-uuid=\"61950531-30c9-4821-91e9-839196d364fd\"><\/drupal-entity>\r\n\r\n<div class=\"openedu-stat\">23<\/div>\r\n\r\n<p class=\"text-align-center\">startup companies have been created by alumni.<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_grid_cta": [
+        {
+            "uri": "https:\/\/www.google.ca",
+            "title": "Read More",
+            "options": {
+              "attributes": {
+                "class": "btn btn-callout"
+              }
+            }
+        }
+    ],
+    "field_grid_label": [
+        {
+            "value": "Our Difference"
+        }
+    ],
+    "field_grid_layout": [
+        {
+            "value": 4
+        }
+    ]
+}

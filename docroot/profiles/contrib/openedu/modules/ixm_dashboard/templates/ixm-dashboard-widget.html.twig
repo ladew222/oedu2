@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a ixm dashboard widget.
+ *
+ * Available variables:
+ * - boxes: The potential boxes output by the display.
+ * - titles: A keyed array of box titles.
+ *
+ * @see template_preprocess_ixm_dashboard__widgets()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="widget-container">
+  {% for key, row in rows %}
+  <div{{ row.attributes.addClass('row') }}>
+    {% for id, col in row.cols %}
+      {% set widgetBox = col.no_widget is empty ? 'widget-box p-3 h-100' %}
+      <div{{ col.attributes.addClass('col-md widget-content mb-md-4') }}>
+        <div class="{{ widgetBox }}">
+          {% if col.title is not empty %}
+            <h2 class="title">{{ col.title }}</h2>
+          {% endif %}
+          {{ col.box }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/20?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+        }
+    },
+    "tid": [
+        {
+            "value": 20
+        }
+    ],
+    "uuid": [
+        {
+            "value": "dacdb870-5e47-4e7b-aa7a-f181e82d7467"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "interests"
+        }
+    ],
+    "name": [
+        {
+            "value": "Sales"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494269011
+        }
+    ]
+}

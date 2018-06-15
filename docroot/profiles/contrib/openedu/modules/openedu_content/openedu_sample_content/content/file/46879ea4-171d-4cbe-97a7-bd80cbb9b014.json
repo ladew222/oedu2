@@ -1,0 +1,84 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/graduation-hat_7_1.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 103
+        }
+    ],
+    "uuid": [
+        {
+            "value": "46879ea4-171d-4cbe-97a7-bd80cbb9b014"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "graduation-hat.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/graduation-hat_7_1.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 1987
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": 1494259400
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494259404
+        }
+    ],
+    "data": [
+        {
+            "value": "iVBORw0KGgoAAAANSUhEUgAAAFgAAAA8CAYAAADi8H14AAAAAXNSR0IArs4c6QAAB31JREFUeAHtmr9T40YUx3dl+64MRXpU5Likwsk\/gGjSnv+D+OZgJh1QQCbVQZU5yAymywxkMH8BvjoF5h9IfF0ObganS5Vxypxtbb5PaGG9+uGVJdnywQ5mf2r19NHbt293xVnBg10\/XHhSGr5gllvjjNcYE11X8Bbj4uz6eKdTcPEZL6KAQahRUhYfdmEAm0OdL9gzBZweavFhTx1wKqiC\/SW4WIAt\/iwKbbB8tmZkKoDTQsWE1nIZa8pJbenVmxrjFn6CJr5Cw84NcNZQg5p5W1J02JkCnhbUeYKdGvCsoRYd9kSAiwq1iLCNAc8b1KLAjgX8qUCdJewA4E8d6rRhe4DnBSrJSYC6za1eFKgsyrN0\/bjf2SnnzBPeSECsqHTn3+i6FI2W1vfPb3fTsJ8mWA+a0cHio2Nx0R0iHvQr7\/IAPylswUTnY7+yyp+v798wxu2xzz4DqFKmZ+v7dYvxU5mPivMGnxy2OCqbwCXBBWPneLBC78H6o9CxGHPwXKwEgUuVAVtaO8hE469+\/aH1fO0AOBj+WB2\/2CAEXyANbkCYjdiWI5XT3zwh2\/u0POiA2eKIKCkzphoPqC+wyVRjgteSmNKhYKveJPfF2gG99XqRN098yCSjDa5VqFA12UaP+duQ4AG1B6hOEqjQbW9+4qVh489ffuwG3LTkdkYKPhvNLpcHVZiC6jTAyycNxDHzUwCwevE8wVblJm3PHXwMVFWWWMBqw3mFrT6DAv417Lmj1hmlDaGqfRkDVi+C0d+EgIdqmVl6+mZEyjXpROVdD7AuJjm54S\/7NIknAkyTYomzC5MbRLfJH3YqqCOCi8v3xzvOSJFhBn5wNgEz7x4TLlwp06McblucbcJF3ISrmNm3DipUjLIFeBq4hcEzKsMfHhW5risGV41tkhlguhM54ojox5LZ7HSws4B6fXL\/EQteOD1CJiFTwKpEecPOGqoqe5bp3ACrQmYJm+PYnlZUkw5\/VVNVGfNKTwWwKnwGsBPbVFOo5MY9KQ82MJ8sY\/WmBL7ybO3gsD8o7yXdsZs6YEXqFDZb7UVJKxOVKVR5NXbsqlwMLqKWxTQhA34d7VaTuGszBSwfjuKJNTsFVHl\/0tw4uLKdB1\/wiy+\/\/+lr2meQ5XFxYQCrQo6FnQFU9X7QzM0ozVXbUZrauYPyLpJ1\/MaGQgJWpVZh0wIHk1wv6fBX+wtLA9prvRx2+Ax+fYtb3AHWke1ctP8OWrxrosWZAfZmd13KjPMfTrbbGXfJ6KUF+xRHVyc7WAR5oeVt2GsvYTAo26jtei1i\/mHRkjyQFgWv4hs4NzslexasK26JJdyAvEP6gl4JOPtrK1kvCXCOXhaWnwgwzaI41PtX7xDL0vrTSv8PbxWnVxY073IroCw6PCiUHRCftgUMwsQmAicKDo6m2sFTBW7Dbp1jpdXm5cFLEztlIGduTTDUO3Rup4WNpVc\/31iV\/qXbr6zgGPtQ388QFu9q14RmR9zp0BYxhZ7vyHgTnSxHNYOmN\/EyjpL4jlF95VUOG9ukicu8f\/PdtVSASSB\/9dMYK6BgbZyyNj8OS2+TrobMHzy+JWZ+ezgob+Bbiho8A9sVrHF9sr11qygsZDSG90eHmaYTbmrAUgRvjxhfoWMoLcqysJgOFOmjFeZa7WnAJniwqSsYRXWYs2pAJsG23p9sN2je4JZ1HqjXClwmXmI0NrXiyGxmgOUdMNx2AXAzaJtli9GYvoCBZre54B3XcrsfjncuR1uY52g0lSv9ZToEBVDH5EQYL3zv6mR7l+7iv4wGtHtFvyv6eweN3zTVXHl95oCpY99s4FjJHLQU6DYWXcDpUhoP1qY4NHCB\/QO+4NVNcsaGC\/XhDsj1sK+I1BcRKktE4cReRER\/XrFvY3cBulGp9GuW4NDqeNMx2h+30d6mMmiAQ3F4QO2EKgJgZ\/Bvm7pG4oU5YX3CVXPCZYgvzQWwvKUPuol80x9+dX8vd1G2mW4sLglqv19pRU20AAnzEPbWgmbDRPawnkyuS9XGg+1piqjBBOT3hQ7sJoevLlyBCfVJOwqqfBjyMsSwfCPzeqybE70+LJ+rBofdkMp8n7iDJCYUxujB3L5VxYFpFdkqtIhOLWwo0iLVjwt4SQSy502WjPW8z1mxgBgHVO93OCw58DgiA+ocVLYjG4RUzASwLoe\/2uuivKXXqXlyBWnllRSc2kdcOsr+ymsmscOFACwfYFysT0jj2ietj7a\/sqfkdjhuRMheH0RMZgqTG37xIXx7M\/qaR8A+G7K\/QUziSC\/z7bBeHJl\/BOyj8eyvhum\/fmVXK8KRUTJ\/+BGwBOz5v\/c4yTO5nUzF5X0ppZLZ4UfAQBZmf8l\/Jpzk+lGshiR2+BEwyIXZX1qcENQ0x0V0\/SNgQAizv7TyQxULcw2T2OG58oPpgfMIuv+LjaAefUKFrVf\/dtjdY9xmd8HcDs9kL+JOzgIkxu0\/RIloui\/x4E2EtwcSRTGmHOCcmOq7qgcP2PR0+I6Ynwib\/PQ2lMfpysMO\/\/z+29+ff\/MtfePxFXbvFsbR8L4HEfwNDkub49pS\/f\/mYqKgMTtjAQAAAABJRU5ErkJggg=="
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Contains functionality for the OpenEDU Hero Feature.
+ */
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ *
+ * Shows a thumbnail of the image for the hero IEF table.
+ */
+function openedu_hero_inline_entity_form_table_fields_alter(&$fields, $context) {
+  if ($context['entity_type'] == 'media' && $context['field_name'] == 'field_hero_image') {
+    $fields['thumbnail'] = [
+      'type' => 'field',
+      'label' => t('Thumbnail'),
+      'weight' => 10,
+      'display_options' => [
+        'type' => 'image',
+        'settings' => [
+          'image_style' => 'thumbnail',
+        ],
+      ],
+    ];
+  }
+}

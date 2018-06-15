@@ -1,0 +1,14 @@
+# Schema for the configuration files of the Sa11y module.
+ixm_dashboard.settings:
+  type: config_object
+  label: 'IXM Dashboard settings'
+  mapping:
+    exclude:
+      type: sequence
+      sequence:
+        type: string
+    displays:
+      type: sequence
+      label: 'Dashboard Displays'
+      sequence:
+        type: ixm_dashboard.display

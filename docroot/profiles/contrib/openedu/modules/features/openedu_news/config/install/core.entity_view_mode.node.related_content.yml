@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: 'View for content related to the current node via reference'
+id: node.related_content
+label: 'Related Content'
+targetEntityType: node
+cache: true

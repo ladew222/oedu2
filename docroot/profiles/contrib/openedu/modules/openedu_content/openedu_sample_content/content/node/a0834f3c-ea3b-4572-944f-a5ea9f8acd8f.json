@@ -1,0 +1,273 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/profile-list\/jane-doe?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "href": "http:\/\/default\/node\/111?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-05\/jane2_7_1.jpg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/25?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 60
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a0834f3c-ea3b-4572-944f-a5ea9f8acd8f"
+        }
+    ],
+    "vid": [
+        {
+            "value": 60
+        }
+    ],
+    "type": [
+        {
+            "target_id": "profile"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Jane Doe"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/111?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "63d195ab-6165-452c-87cf-e125f13bea18"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-05\/jane2_7_1.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "1b571d6c-2071-4bae-9212-37997165a90a"
+                    }
+                ],
+                "alt": "Jane Doe",
+                "title": "",
+                "width": "360",
+                "height": "415"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/25?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "7eb2e9f3-5dff-42b1-9bae-28cac076d16b"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494069660
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496174411
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/profile-list\/jane-doe",
+            "pid": 6
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Jane is the UX Designer at ImageX. As a creative professional with over 12 years of experience in web, art direction, marketing and graphic design, Jane has cultivated a user focused and creative solutions approach. Her enthusiasm for uniting people with technology, modern design and genuine experiences has led her to specialize as a User Experience and User Interface Designer at&nbsp;BCIT.<\/p>\r\n\r\n<p>After receiving her design diploma, Jane started her career at the dual brand of Best Buy Canada and Future Shop as a graphic designer and was soon promoted to Team Lead then Art Director. After 6 years, she moved to a boutique agency, where she created lifestyle and fashion campaigns and developed software systems and integration of services for users of health industry websites and non-profits. Since then she has worked with non-profit\u2019s and start-ups on an international level.<\/p>\r\n\r\n<p>Born and raised in Vancouver, BC, Jane loves hiking through the beautiful mountains to find that perfect lake to swim in. Her passion for art, history, soccer and cultural experiences has seen her travel far and wide with camera firmly in hand.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_profile_courses": [
+        {
+            "value": "English 112"
+        }
+    ],
+    "field_profile_education": [
+        {
+            "value": "Ph.D., Literature, Harvard University, Cambridge, 2005"
+        }
+    ],
+    "field_profile_email": [
+        {
+            "value": "jane@imagexmedia.com"
+        }
+    ],
+    "field_profile_job_title": [
+        {
+            "value": "Professor of Design"
+        }
+    ],
+    "field_profile_name": [
+        {
+            "title": null,
+            "given": "Jane",
+            "middle": null,
+            "family": "Doe",
+            "generational": null,
+            "credentials": null
+        }
+    ],
+    "field_profile_office": [
+        {
+            "value": "303 Secondary St."
+        }
+    ],
+    "field_profile_phone": [
+        {
+            "value": "590605298"
+        }
+    ],
+    "field_profile_publications": [
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie\u2013 Oct 1 1984<\/h3>\r\n\r\n<p>by Frank Costello&nbsp;(Author), Grant Smith&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie \u2013 May 4 2016<\/h3>\r\n\r\n<p>by James Riser (Author), Jean Smith&nbsp;RN MN NN (Editor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie&nbsp;\u2013 Nov 1 2016<\/h3>\r\n\r\n<p>by David Smith&nbsp;(Author, Contributor)<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_research_projects": [
+        {
+            "value": "<h3>Flight control, visual guidance, visual neuroscience, neuroethology, avian biomechanics, aerodynamics, wing morphing, motor control<\/h3>\r\n\r\n<p><strong>Supervisor:<\/strong> D. Smith<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Museum Education, Visitor Studies, Informal Learning, Metacognition, Science Education, Long-term Memory, Nostalgia<\/h3>\r\n\r\n<p><strong>Supervisor:<\/strong> D. James<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Responsible Research and Innovation&nbsp;in Practice<\/h3>\r\n\r\n<p>Pellentesque ipsum purus, pretium ut neque quis, tincidunt dapibus diam. Aliquam non interdum turpis. Nunc a lacinia purus. Etiam varius sagittis laoreet. Sed in ultricies ex. Sed porta nunc eget eleifend suscipit. In hac habitasse platea dictumst. Donec eget felis diam. Donec ac varius dolor, vel consectetur libero.<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> D. James<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_students": [
+        {
+            "value": "<ul>\r\n\t<li>Les Cordell<\/li>\r\n\t<li>Yuriy Gerasimov<\/li>\r\n\t<li>Gavin Graham<\/li>\r\n\t<li>Bryan Heredia<\/li>\r\n\t<li>Erin Joyce<\/li>\r\n\t<li>Travis Ketler<\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_type": [
+        {
+            "value": "faculty"
+        }
+    ]
+}

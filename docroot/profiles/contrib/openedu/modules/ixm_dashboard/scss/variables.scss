@@ -1,0 +1,12 @@
+$font-family-base: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// dashboard
+$dashboard-bp: 610px;
+
+// colours
+$orange: #eb7828;
+
+// throbber
+$duration: 2s;
+$colour-start: darken($orange, 5%);
+$colour-end: lighten($colour-start, 10%);

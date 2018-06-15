@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.program.body
+    - field.field.node.program.field_program_course_intro
+    - field.field.node.program.field_program_courses
+    - field.field.node.program.field_program_grid_block
+    - field.field.node.program.field_program_stories_block
+    - field.field.node.program.field_programs_course_link
+    - field.field.node.program.panelizer
+    - node.type.program
+  module:
+    - text
+    - user
+id: node.program.teaser
+targetEntityType: node
+bundle: program
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_program_course_intro: true
+  field_program_courses: true
+  field_program_grid_block: true
+  field_program_stories_block: true
+  field_programs_course_link: true
+  panelizer: true

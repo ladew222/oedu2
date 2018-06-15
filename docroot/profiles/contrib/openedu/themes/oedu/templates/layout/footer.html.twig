@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the themes footer.
+  */
+#}
+{% if page.footer %}
+  {% block footer %}
+    <footer class="footer" role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endblock %}
+{% endif %}

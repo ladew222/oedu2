@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Template for a one column panel layout.
+ *
+ * This template provides a very simple "one column" panel display layout.
+ *
+ * Variables:
+ * - $id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ *   panel of the layout. This layout supports the following sections:
+ *   - content.middle: The only panel in the layout.
+ */
+#}
+<section class="panel-oedu-1col subsection" {% if css_id %}{{ css_id }}{% endif %}>
+  <div class="panel-panel">
+    {{ content.subsection }}
+  </div>
+</section>
+
+<section class="panel-oedu-container container block clearfix">
+  <div class="row">
+    <aside class="panel-oedu-2col col-md-4 order-2" {% if css_id %}{{ css_id }}{% endif %}>
+      <div class="panel-panel">
+        {{ content.right }}
+      </div>
+    </aside>
+    <div class="panel-oedu-2col col-md-8 order-1" {% if css_id %}{{ css_id }}{% endif %}>
+      <div class="panel-panel">
+        {{ content.left }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel-oedu-1col bottom">
+  <div class="panel-panel">
+    {{ content.bottom }}
+  </div>
+</section>

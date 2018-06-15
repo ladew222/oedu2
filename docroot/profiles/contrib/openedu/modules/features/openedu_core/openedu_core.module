@@ -1,0 +1,99 @@
+<?php
+
+/**
+ * @file
+ * Contains core functionality for the OpenEDU distribution.
+ */
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function openedu_core_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'openedu_core/common';
+}
+
+/**
+ * Implements hook_editor_js_settings_alter().
+ */
+function openedu_core_editor_js_settings_alter(array &$settings) {
+
+  // Adds the style for statistics into our "Rich text" format.
+  if (!empty($settings['editor']['formats']['rich_text'])) {
+    $rich_text_settings = &$settings['editor']['formats']['rich_text']['editorSettings'];
+
+    // Apply custom styles.
+    $rich_text_settings['stylesSet'][] = [
+      'name' => 'Statistic',
+      'element' => 'div',
+      'attributes' => [
+        'class' => 'openedu-stat',
+      ],
+    ];
+
+    $rich_text_settings['stylesSet'][] = [
+      'name' => 'Clear Pill',
+      'element' => 'div',
+      'attributes' => [
+        'class' => 'site-tag-clr',
+      ],
+    ];
+
+    $rich_text_settings['stylesSet'][] = [
+      'name' => 'Button',
+      'element' => 'a',
+      'attributes' => [
+        'class' => 'btn',
+      ],
+    ];
+
+    $rich_text_settings['stylesSet'][] = [
+      'name' => 'Primary Button',
+      'element' => 'a',
+      'attributes' => [
+        'class' => 'btn btn-primary',
+      ],
+    ];
+
+    $rich_text_settings['stylesSet'][] = [
+      'name' => 'Secondary Button',
+      'element' => 'a',
+      'attributes' => [
+        'class' => 'btn btn-secondary',
+      ],
+    ];
+
+  }
+}
+
+/**
+ * Implements template_preprocess_block().
+ *
+ * Adds the bundle of a block to the class array.
+ */
+function openedu_core_preprocess_block(&$vars) {
+  if (!empty($vars['content']['#block_content'])) {
+    /** @var \Drupal\block_content\Entity\BlockContent $block_content */
+    $block_content = $vars['content']['#block_content'];
+    $vars['attributes']['class'][] = 'block--' . Html::cleanCssIdentifier($block_content->bundle());
+  }
+}
+
+/**
+ * Implements hook_library_info_alter().
+ *
+ * Fix to allow using packagist instead of drush to load libs.
+ */
+function openedu_core_library_info_alter(&$libraries, $extension) {
+  if ($extension == 'easychart') {
+    if (!empty($libraries['lib.highcharts'])) {
+      foreach ($libraries['lib.highcharts']['js'] as $file => $def) {
+        if (!file_exists($file)) {
+          unset($libraries['lib.highcharts']['js'][$file]);
+          $libraries['lib.highcharts']['js'][str_replace("js/", "", $file)] = $def;
+        }
+      }
+    }
+  }
+}

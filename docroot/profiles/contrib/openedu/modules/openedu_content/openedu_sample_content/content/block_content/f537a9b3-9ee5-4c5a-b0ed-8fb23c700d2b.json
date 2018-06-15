@@ -1,0 +1,81 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/openedu_hero"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/openedu_hero\/field_hero_image": [
+            {
+                "href": "http:\/\/default\/media\/14?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 2
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f537a9b3-9ee5-4c5a-b0ed-8fb23c700d2b"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2
+        }
+    ],
+    "type": [
+        {
+            "target_id": "openedu_hero"
+        }
+    ],
+    "info": [
+        {
+            "value": "Hompage Hero"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496167250
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1493659639
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "body": [
+        {
+            "value": "<h1>Explore OpenEDU<\/h1>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"test\">Read More<\/a><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/openedu_hero\/field_hero_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/14?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "e652907c-b2a3-4cbe-9bbb-a28f8a840118"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,222 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/news\/universities-search-top-research-chair-candidates?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/yale-university-landscape-universities-schools-159490_7_1.jpeg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "href": "http:\/\/default\/news\/students-assess-outcomes-one-year-point?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/news\/rare-medieval-text-found-university-archives?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 84
+        }
+    ],
+    "uuid": [
+        {
+            "value": "651854ce-f2d6-4800-9db2-8f02aa25cebd"
+        }
+    ],
+    "vid": [
+        {
+            "value": 84
+        }
+    ],
+    "type": [
+        {
+            "target_id": "news"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Universities search for top research-chair candidates"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b5f0fc09-bf3f-46f2-884f-3a6bd7aa417e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/yale-university-landscape-universities-schools-159490_7_1.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "23892c6b-2d42-4a5b-9684-cc805b1e156a"
+                    }
+                ],
+                "alt": "Old building",
+                "title": "The rules unveiled last week are the first time a penalty is being attached to missing the targets.",
+                "width": "2200",
+                "height": "1470"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/students-assess-outcomes-one-year-point?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "344ce2d2-be30-4c8b-824b-811db2be62a1"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/rare-medieval-text-found-university-archives?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "afa333d1-c758-4a78-a8bc-9a13ad85e16a"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493875645
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496160895
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/universities-search-top-research-chair-candidates",
+            "pid": 30
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>In ac posuere purus. Vivamus suscipit purus sit amet vulputate pretium. Vestibulum sit amet libero ut nisl ultrices tristique. Duis eget enim non elit eleifend lacinia. Aliquam erat volutpat. Maecenas risus justo, consequat at eros sed, imperdiet feugiat velit. Vestibulum sed orci erat.<\/p>\r\n\r\n<blockquote>\r\n<p>Vivamus dapibus efficitur odio, sit amet consequat mauris venenatis ut.<\/p>\r\n<\/blockquote>\r\n\r\n<p>Nulla consectetur nisl risus, ac feugiat erat commodo eget. Nullam eu nulla ac augue hendrerit fringilla vel a orci. Nunc sapien dolor, fringilla sed aliquet sit amet, posuere sit amet nibh. Ut dolor lacus, tempus id ex eget, varius dapibus leo.<\/p>\r\n\r\n<p>Etiam laoreet felis eget massa viverra, eu tempor orci vestibulum. Suspendisse potenti. Nam at ex in neque mattis scelerisque et id risus. Pellentesque suscipit metus iaculis urna iaculis, id lacinia est auctor. In vulputate blandit ullamcorper. In ligula arcu, ullamcorper sed aliquam sed, convallis quis nunc. Curabitur vel sapien pulvinar, sodales orci consequat, sollicitudin lectus. Nullam condimentum viverra lectus faucibus tempor.<\/p>\r\n\r\n<p>Aenean elementum fermentum scelerisque. Nunc non quam massa. Proin lacinia placerat ligula sit amet fringilla. Suspendisse potenti. Morbi laoreet imperdiet metus, in condimentum nibh mattis vel. Ut semper fringilla libero vitae tristique. Nam ut ornare est.<\/p>\r\n\r\n<p>Vivamus laoreet odio eget dolor pretium aliquam. Mauris ultricies fringilla nunc, ac interdum magna porttitor nec. Vivamus turpis lectus, finibus a lectus sit amet, vestibulum elementum erat. Morbi at justo accumsan, fermentum orci et, consectetur purus. Morbi cursus volutpat rhoncus. Aliquam vitae quam quis augue tristique elementum. Integer nec nunc quis nisl rutrum suscipit. Phasellus tellus felis, imperdiet quis risus et, eleifend volutpat ex.<\/p>\r\n\r\n<p>Aliquam sit amet ligula id nisi dapibus mollis. Phasellus quis dapibus ligula. Cras neque odio, dignissim non hendrerit id, lobortis at augue. Mauris porta ipsum vitae purus maximus auctor. Mauris a iaculis sem. Morbi sit amet ligula et quam tincidunt semper. Nunc ac purus non sapien semper condimentum. Aliquam erat volutpat.<\/p>\r\n\r\n<p class=\"text-align-right\">&nbsp;<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_news_date": [
+        {
+            "value": "2016-10-06"
+        }
+    ],
+    "field_news_featured": [
+        {
+            "value": false
+        }
+    ]
+}

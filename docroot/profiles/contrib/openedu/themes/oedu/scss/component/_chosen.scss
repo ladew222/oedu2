@@ -1,0 +1,34 @@
+.chosen-search-input {
+  color: $gray-base;
+}
+
+.select-wrapper .chosen-container-single {
+  min-width: 175px;
+
+  a.chosen-single {
+    height: 34px;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid #ccc;
+
+    span {
+      display: inline-block;
+      vertical-align: text-top;
+    }
+
+    b {
+      display: none;
+    }
+  }
+}
+
+.chosen-container-multi .chosen-choices {
+  min-height: 34px;
+  border-radius: 4px;
+  background: white;
+  border: 1px solid #ccc;
+
+  input {
+    height: 34px;
+  }
+}

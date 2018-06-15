@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: cta_section_header
+label: 'CTA Section Header'
+revision: 1
+description: 'A simple content CTA block'

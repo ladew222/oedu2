@@ -1,0 +1,13 @@
+status: true
+dependencies:
+  module:
+    - crop
+name: crop_hero_crop
+label: 'Cropped: Hero Crop'
+effects:
+  8fcd87e4-d07a-4116-8de9-12e1eb27d17f:
+    uuid: 8fcd87e4-d07a-4116-8de9-12e1eb27d17f
+    id: crop_crop
+    weight: null
+    data:
+      crop_type: hero_crop

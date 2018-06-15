@@ -1,0 +1,27 @@
+name: 'Openedu News'
+type: module
+core: 8.x
+version: '8.x-3.0'
+dependencies:
+  - addtoany
+  - block_content
+  - content_moderation
+  - datetime
+  - entity_browser
+  - field
+  - file
+  - flickity_fields
+  - flickity_views
+  - image
+  - lightning_core
+  - menu_ui
+  - node
+  - panelizer
+  - path
+  - pathauto
+  - query_filter_cards
+  - search_api
+  - taxonomy
+  - text
+  - user
+  - views

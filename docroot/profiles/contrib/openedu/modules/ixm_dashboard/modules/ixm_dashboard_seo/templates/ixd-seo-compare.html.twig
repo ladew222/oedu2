@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation for seo dashboard comparisons.
+ *
+ * Available variables:
+ * - siteCompare: percentile of site
+ * - typeCompare: percentile of type
+ *
+ * @ingroup themeable
+ */
+#}
+{% set siteStatus = siteCompare > 50 ? 'good' : 'poor' %}
+{% set siteBsClass = siteCompare > 50 ? 'success' : 'warning' %}
+{% set typeStatus = typeCompare > 50 ? 'good' : 'poor' %}
+{% set typeBsClass = typeCompare > 50 ? 'success' : 'warning' %}
+
+<div class="ixd-seo-compare">
+  <h2 class="title">{{ "Comparisons"|t }}</h2>
+  <div class="row">
+    <div class="col">
+      <div class="title">{{ "Site"|t }}</div>
+      <div class="stat">{{ siteCompare }}%</div>
+      <div class="seo-status">
+        <i class="material-icons text-{{ siteBsClass }}">brightness_1</i><span class="status">{{ siteStatus }}</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="title">{{ type }}</div>
+      <div class="stat">{{ typeCompare }}%</div>
+      <div class="seo-status">
+        <i class="material-icons text-{{ typeBsClass }}">brightness_1</i><span class="status">{{ typeStatus }}</span>
+      </div>
+    </div>
+  </div>
+</div>

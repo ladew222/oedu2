@@ -1,0 +1,118 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/node\/109?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/department\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/department\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 109
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1fe1c90f-807b-49af-8717-6c3a899c313a"
+        }
+    ],
+    "vid": [
+        {
+            "value": 112
+        }
+    ],
+    "type": [
+        {
+            "target_id": "department"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Political Science"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/department\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/department\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494452887
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494452942
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat sodales purus, suscipit viverra dolor malesuada a. Cras finibus lacus nec ex pellentesque, ac pharetra orci blandit. Curabitur sem lectus, porttitor non blandit vulputate, porttitor id augue. Etiam nec arcu non nunc consectetur scelerisque vitae quis turpis. Proin at nisl quis sem ornare rhoncus. Nunc urna diam, congue vel ipsum eu, scelerisque suscipit neque. Cras rhoncus orci at blandit tempus. Proin fringilla ligula vitae eros congue dignissim. Nullam ac accumsan ex, sed dapibus tortor. Donec maximus mauris vitae orci varius commodo. Pellentesque eget rhoncus turpis, quis feugiat metus. Morbi auctor lacus non odio ullamcorper pulvinar.<\/p>\r\n\r\n<p>Nullam ultrices massa sed magna tincidunt, non vehicula ex volutpat. Morbi in lorem in justo suscipit convallis. Nullam ac dui a lectus varius euismod eu id turpis. Pellentesque mattis felis eget metus vestibulum, vel gravida velit fringilla. Sed vel nisi faucibus, lacinia purus sit amet, luctus elit. Integer rutrum sodales mauris sit amet laoreet. Phasellus ipsum erat, congue ut turpis ut, mattis vestibulum ante. Nullam non posuere diam. Maecenas consectetur tortor et velit commodo commodo. Suspendisse potenti. Vivamus elit nibh, tristique aliquet posuere eget, ultricies vulputate nunc.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ]
+}

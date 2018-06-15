@@ -1,0 +1,147 @@
+.panel-oedu-1col {
+  &.subsection {
+    background: linear-gradient(rgba($primary, 0.85), rgba($primary, 0.85)), url("../images/subsection-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 3px solid $primary-lighter;
+    margin-bottom: 2em;
+    border-bottom: 0.313em solid $primary-lighter;
+    border-bottom-left-radius: 50% 2em;
+    border-bottom-right-radius: 50% 2em;
+    color: #fff;
+    padding-bottom: 2em;
+
+    @include media-breakpoint-up(md) {
+      border-bottom-width: 0.5em;
+    }
+
+    .page-header,
+    .block-entity-fieldnodetitle {
+      font-size: 2.2em;
+      font-family: Georgia, Times, "Times New Roman", serif;
+      line-height: 1.225em;
+      color: #fff;
+      margin: 0;
+      padding: 0.3em 0 0 0;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2em;
+      }
+    }
+
+    .form-text {
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: auto;
+      }
+    }
+
+    .form-item,
+    .btn {
+      margin: 1em 0 0;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        margin: 1em .5em 0 0;
+        width: auto;
+      }
+    }
+
+    .select-wrapper,
+    .chosen-container {
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: auto;
+      }
+    }
+
+    .breadcrumb {
+      padding: 1em 0;
+      margin: 0;
+      background: none;
+      color: white;
+      font-size: 0.75em;
+      opacity: 0.9;
+
+      a,
+      li {
+        color: white;
+      }
+
+      li + li:before {
+        padding: 0 3px 0 5px;
+        font-family: "Material Icons", sans-serif;
+        content: "keyboard_arrow_right";
+        font-size: 1.25em;
+        vertical-align: middle;
+        color: white;
+      }
+    }
+
+    .ipe-actions-block,
+    .ipe-actions {
+      background: rgba(#fff, 0.6);
+      color: $gray-base;
+    }
+  }
+
+  &:not(.subsection) .block {
+    padding: 2em 0;
+  }
+
+  .block-entity-fieldnodebody {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  // bottom sections (related content)
+  &.bottom {
+    background-color: #2e75a0;
+
+    .panel-panel {
+      @include make-container();
+      @include make-container-max-widths();
+    }
+
+    section {
+      h2,
+      a,
+      span {
+        color: white;
+      }
+    }
+  }
+
+  &.subsection {
+    @include make-container();
+
+    max-width: none;
+
+    .block-entity-fieldnodetitle {
+      margin-bottom: 0;
+      padding-bottom: 0.1em;
+    }
+
+    .field--name-field-event-date {
+      .date {
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          padding-right: 10px;
+
+          i {
+            opacity: 0.8;
+            padding-right: 10px;
+            vertical-align: bottom;
+
+            &:hover {
+              color: $primary-lighter;
+            }
+          }
+        }
+      }
+    }
+  }
+}

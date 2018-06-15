@@ -1,0 +1,222 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/news\/will-voice-universities-be-heard-brexit-election?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/10?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/people-woman-coffee-meeting_7_1.jpg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "href": "http:\/\/default\/news\/new-treatments-being-developed-student-researchers?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 62
+        }
+    ],
+    "uuid": [
+        {
+            "value": "6f415dd0-f9ec-4d44-bd91-47c39f757035"
+        }
+    ],
+    "vid": [
+        {
+            "value": 62
+        }
+    ],
+    "type": [
+        {
+            "target_id": "news"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Will voice of universities be heard in the \u2018Brexit election\u2019?"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/10?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4037bd29-2b78-4879-810e-e7ccf1be3aec"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b5f0fc09-bf3f-46f2-884f-3a6bd7aa417e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/people-woman-coffee-meeting_7_1.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "344429f6-d8e2-4352-b11d-71eb63d8d1dd"
+                    }
+                ],
+                "alt": "Students collaborating around a table",
+                "title": "Institutions\u2019 local role may be route to influence, sector experts suggest",
+                "width": "5472",
+                "height": "3648"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/new-treatments-being-developed-student-researchers?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6beb4b69-69aa-4b8e-94b3-0d5476684096"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494239364
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496160920
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/will-voice-universities-be-heard-brexit-election",
+            "pid": 32
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Vivamus dapibus efficitur odio. Sit amet consequat mauris venenatis ut.<\/p>\r\n\r\n<p>Nulla consectetur nisl risus, ac feugiat erat commodo eget. Nullam eu nulla ac augue hendrerit fringilla vel a orci. Nunc sapien dolor, fringilla sed aliquet sit amet, posuere sit amet nibh. Ut dolor lacus, tempus id ex eget, varius dapibus leo.<\/p>\r\n\r\n<blockquote>\r\n<p>Etiam laoreet felis eget massa viverra, eu tempor orci vestibulum.<\/p>\r\n<\/blockquote>\r\n\r\n<p>Suspendisse potenti. Nam at ex in neque mattis scelerisque et id risus.<\/p>\r\n\r\n<p>Pellentesque suscipit metus iaculis urna iaculis, id lacinia est auctor. In vulputate blandit ullamcorper. In ligula arcu, ullamcorper sed aliquam sed, convallis quis nunc. Curabitur vel sapien pulvinar, sodales orci consequat, sollicitudin lectus. Nullam condimentum viverra lectus faucibus tempor.<\/p>\r\n\r\n<p>Aenean elementum fermentum scelerisque. Nunc non quam massa. Proin lacinia placerat ligula sit amet fringilla. Suspendisse potenti. Morbi laoreet imperdiet metus, in condimentum nibh mattis vel. Ut semper fringilla libero vitae tristique. Nam ut ornare est. Vivamus laoreet odio eget dolor pretium aliquam. Mauris ultricies fringilla nunc, ac interdum magna porttitor nec. Vivamus turpis lectus, finibus a lectus sit amet, vestibulum elementum erat. Morbi at justo accumsan, fermentum orci et, consectetur purus. Morbi cursus volutpat rhoncus. Aliquam vitae quam quis augue tristique elementum. Integer nec nunc quis nisl rutrum suscipit. Phasellus tellus felis, imperdiet quis risus et, eleifend volutpat ex.<\/p>\r\n\r\n<p>Aliquam sit amet ligula id nisi dapibus mollis. Phasellus quis dapibus ligula. Cras neque odio, dignissim non hendrerit id, lobortis at augue. Mauris porta ipsum vitae purus maximus auctor. Mauris a iaculis sem. Morbi sit amet ligula et quam tincidunt semper. Nunc ac purus non sapien semper condimentum. Aliquam erat volutpat.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_news_date": [
+        {
+            "value": "2016-10-03"
+        }
+    ],
+    "field_news_featured": [
+        {
+            "value": false
+        }
+    ]
+}

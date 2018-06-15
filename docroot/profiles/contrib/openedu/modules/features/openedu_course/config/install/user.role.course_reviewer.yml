@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: course_reviewer
+label: 'Course reviewer'
+weight: 4
+is_admin: null

@@ -1,0 +1,9 @@
+ixm_dashboard.status:
+  route_name: ixm_dashboard.overview
+  title: 'Overview'
+  base_route: ixm_dashboard.overview
+ixm_dashboard.displays:
+  route_name: ixm_dashboard.displays
+  title: 'Displays'
+  weight: 0
+  base_route: ixm_dashboard.overview

@@ -1,0 +1,113 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+  ]
+%}
+{%
+  set title_classes = [
+    'field--label',
+    label_display == 'visually_hidden' ? 'sr-only',
+  ]
+%}
+{% if item.content!='Angles Full' %}
+  <div class="svg-overlay">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMax" viewBox="0 0 1400 85">
+      <defs>
+        <style>
+
+          @keyframes slideOver2 {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(0%);
+            }
+          }
+          @keyframes slideOver {
+            0% {
+              transform: translateX(100%);
+            }
+            50% {
+              transform: translateX(50%);
+            }
+            100% {
+              transform: translateX(0%);
+            }
+          }
+          .cls-1{
+            fill:#efab00;filter:url(#gradient-overlay-1)
+          }
+          .cls-3{
+            fill:#232c65;
+            animation: slideOver  5s linear;
+          }
+          .cls-4{
+            fill:#a51e36;
+            animation: slideOver2  5s linear;
+          }
+          .cls-1,.cls-2{
+            fill-rule:evenodd
+          }
+          .cls-2{
+            fill:#fff
+          }
+        </style>
+
+        <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+          <feImage width="1400" height="64" x="0" y="0" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQwMCIgaGVpZ2h0PSI2NCI+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeTE9IjMyIiB4Mj0iMTQwMCIgeTI9IjMyIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlZmFiMDAiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmOGViNjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg==">
+          </feImage>
+          <feComposite operator="in" in2="SourceGraphic">
+          </feComposite>
+          <feBlend in2="SourceGraphic" result="gradientFill"></feBlend>
+        </filter>
+      </defs>
+      <path d="M309.5,92L1400,10v82H550.203H309.5z"class="cls-3"/></path>
+      <path d="M11.15,15l754.27,56.092L1000.688,92H0V14L11.15,15zz"class="cls-4"></path>
+    </svg>
+  </div>
+{% else %}
+
+{% endif %}

@@ -1,0 +1,5 @@
+openedu-profile:
+  js:
+    js/profile.js: {}
+  dependencies:
+    - core/jquery

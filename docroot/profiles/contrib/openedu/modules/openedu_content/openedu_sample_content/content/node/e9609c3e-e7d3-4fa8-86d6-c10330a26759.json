@@ -1,0 +1,273 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "href": "http:\/\/default\/node\/109?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/node\/108?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-05\/medvedev_01_7_1.jpg"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 55
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e9609c3e-e7d3-4fa8-86d6-c10330a26759"
+        }
+    ],
+    "vid": [
+        {
+            "value": 55
+        }
+    ],
+    "type": [
+        {
+            "target_id": "profile"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "John Doe"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/109?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "1fe1c90f-807b-49af-8717-6c3a899c313a"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/108?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "607ab34f-48a3-463b-b184-07197b4572e3"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-05\/medvedev_01_7_1.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5237292e-994c-4551-9ee8-fa0da7f257c2"
+                    }
+                ],
+                "alt": "John Doe",
+                "title": "",
+                "width": "360",
+                "height": "415"
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494155298
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496174681
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/profile-list\/john-doe",
+            "pid": 7
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Oleksandr is one of our Drupal Developers. His interest in high technologies has its roots in childhood. He decided to major Computer Science at the age of 16 and he hasn\u2019t stopped continually evaluating and upgrading his skills so that he stays at the cutting edge of web development. His interest grew into profession. Oleksandr has master degree in Computer Science and proven wide range of experience in working with modern technologies for building the best solutions for our customers.&nbsp;<\/p>\r\n\r\n<p>He is working with Drupal from 2011. In order to increase his knowledge and keep his skills up to date he regularly visits DrupalCamp and DrupalCafe where he discusses and shares his experience with other members of community. In 2015 he became Acquia Certified Developer.&nbsp;<\/p>\r\n\r\n<p>As a member of a team he took part in large and complex projects from various business fields (chemicals and pharmaceutical industries, production of building materials and international construction companies, luxury cosmetics and fashion brands, education projects). All these projects were high-loaded and included very unique types of content structuring and presentation. He developed the architecture and content migration for the projects with a large amount of data.<\/p>\r\n\r\n<p>Oleksandr is a good team player and can perform a wide range of tasks. In his work he is customer-oriented. He likes challenges and solving complex problems. He is interested in mastering innovative tools for problem resolution. His aim is to find optimal solutions that are easy to support in future and convenient to use for the customer.<\/p>\r\n\r\n<p>When Oleksandr is not programming he likes traveling, playing table-tennis and other outdoor activities. He is always opened to everything new in work and in daily life.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_profile_courses": [
+        {
+            "value": "Post-Modern Literature 110"
+        }
+    ],
+    "field_profile_education": [
+        {
+            "value": "Ph.D., Literature, Harvard University, Cambridge, 2005"
+        }
+    ],
+    "field_profile_email": [
+        {
+            "value": "johnm@imagexmedia.com"
+        }
+    ],
+    "field_profile_job_title": [
+        {
+            "value": "Professor of Development"
+        }
+    ],
+    "field_profile_name": [
+        {
+            "title": null,
+            "given": "John",
+            "middle": null,
+            "family": "Doe",
+            "generational": null,
+            "credentials": null
+        }
+    ],
+    "field_profile_office": [
+        {
+            "value": "123 Main St."
+        }
+    ],
+    "field_profile_phone": [
+        {
+            "value": "998244953"
+        }
+    ],
+    "field_profile_publications": [
+        {
+            "value": "<h3>Pellentesque ipsum purus, pretium ut neque quis&nbsp;\u2013 Nov 1 2016<\/h3>\r\n\r\n<p>by Neil Smith&nbsp;(Author, Contributor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Pellentesque ipsum purus, pretium ut neque quis&nbsp;\u2013 Oct 1 1984<\/h3>\r\n\r\n<p>by Suzy Miller&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Pellentesque ipsum purus, pretium ut neque quis&nbsp;\u2013 Apr 8 2005<\/h3>\r\n\r\n<p>by Tony Sotto&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_research_projects": [
+        {
+            "value": "<h3>Development and clinical testing of a procedure&nbsp;patients in Smith.<\/h3>\r\n\r\n<p><strong>Principal Investigator:<\/strong> Linda Cooper<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong> J. Chang, MD, professor of anthropology.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Responsible Research in Practice<\/h3>\r\n\r\n<p>Nulla mauris ex, sodales at facilisis iaculis, rhoncus non turpis. Etiam consequat leo ex, id elementum felis congue vitae. In tortor mauris, volutpat eu vehicula ut, volutpat eget lorem. Sed efficitur risus eget urna aliquam finibus feugiat vel tellus. Ut ultrices gravida neque, et aliquam enim efficitur a. Proin nisi enim, vulputate eu fermentum eget, tincidunt ut lectus.&nbsp;<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> D. Green<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Pellentesque ipsum purus, pretium ut neque quis.<\/h3>\r\n\r\n<p><strong>Principal Investigator:&nbsp;<\/strong>Judy Smith<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong>&nbsp;Henry Lee, MD, associate professor of dermatology.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>True Stories Well Told<\/h3>\r\n\r\n<p>Nulla mauris ex, sodales at facilisis iaculis, rhoncus non turpis. Etiam consequat leo ex, id elementum felis congue vitae. In tortor mauris, volutpat eu vehicula ut, volutpat eget lorem. Sed efficitur risus eget urna aliquam finibus feugiat vel tellus. Ut ultrices gravida neque, et aliquam enim efficitur a. Proin nisi enim, vulputate eu fermentum eget, tincidunt ut lectus.<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> L. Green<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_students": [
+        {
+            "value": "<ul>\r\n\t<li>Les Cordell<\/li>\r\n\t<li>Yuriy Gerasimov<\/li>\r\n\t<li>Gavin Graham<\/li>\r\n\t<li>Bryan Heredia<\/li>\r\n\t<li>Erin Joyce<\/li>\r\n\t<li>Travis Ketler<\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_type": [
+        {
+            "value": "faculty"
+        }
+    ]
+}

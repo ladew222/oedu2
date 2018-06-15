@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: openedu_hero
+label: 'Hero Banner'
+revision: 1
+description: 'Adds a custom background image and text element'

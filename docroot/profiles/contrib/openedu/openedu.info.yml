@@ -1,0 +1,43 @@
+name: OpenEDU
+type: profile
+description: 'A Drupal distribution based on Lightning.'
+core: 8.x
+version: '8.x-3.0'
+distribution:
+  name: OpenEDU
+'base profile':
+  name: lightning
+  excluded_dependencies: [lightning_contact_form]
+dependencies:
+  - diff
+  - admin_toolbar
+  - admin_toolbar_tools
+  - entity_browser_entity_form
+  - lightning_core
+  - lightning_page
+  - lightning_layout
+  - lightning_media
+  - pathauto
+  - link_attributes
+  - obfuscate_email
+  - simple_sitemap
+  - google_analytics
+  - ixm_dashboard_user
+  - ixm_dashboard_analytics
+  - ixm_dashboard_seo
+  - openedu_core
+  - openedu_grid_block
+  - openedu_course
+  - openedu_program
+  - openedu_news
+  - openedu_profile
+  - openedu_story
+  - openedu_events
+  - openedu_widget
+  - openedu_hero
+  - openedu_search
+  - openedu_widget
+  - openedu_sample_content
+themes:
+  - oedu_sub
+  - seven

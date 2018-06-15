@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ * Custom settings for the profile feature.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_form_alter().
+ */
+function openedu_profile_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  if (strpos($form['#id'], 'views-exposed-form-profile-list') !== FALSE) {
+    // Add the module js.
+    $form['#attached']['library'][] = 'openedu_profile/openedu-profile';
+
+    // @todo this is not intented as a permenent solution, use better exposed filters when select dropdown is ported.
+    // Transform the following entity filter fields into selects.
+    $transform_node_select = [
+      [
+        'field name' => 'field_profile_department',
+        'node type' => 'department',
+        'placeholder' => 'Department',
+      ],
+    ];
+
+    foreach ($transform_node_select as $field) {
+      $field_name = $field['field name'];
+      $node_type = $field['node type'];
+      $placeholder = $field['placeholder'];
+      if (isset($form[$field_name])) {
+        $form[$field_name]['#type'] = 'select';
+        $form[$field_name]['#size'] = 0;
+        $form[$field_name]['#empty_option'] = $placeholder;
+        $form[$field_name]['#empty_value'] = '';
+        $form[$field_name]['#default_value'] = '';
+        $nids = \Drupal::entityQuery('node')
+          ->condition('type', $node_type)
+          ->execute();
+        foreach ($nids as $nid) {
+          $node = Node::load($nid);
+          $form[$field_name]['#options'][$nid] = $node->getTitle();
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Redirect taxonomy term links to filtered results.
+ */
+function openedu_profile_preprocess_field(&$variables) {
+
+  // Get a few convenient handles.
+  $field_name = $variables['element']['#field_name'];
+  /** @var \Drupal\Core\Entity\Entity $entity */
+  $entity = $variables['element']['#object'];
+
+  if ($entity->bundle() == 'profile' && $field_name == 'field_profile_research_interests') {
+    foreach ($variables['items'] as $key => $item) {
+      /** @var Drupal\taxonomy\Entity\Term $term */
+      $term = $item['content']['#options']['entity'];
+      $variables['items'][$key]['content']['#url'] = Url::fromRoute(
+        'entity.node.canonical',
+        ['node' => 117],
+        [
+          'query' =>
+            ['field_profile_research_interests' => $term->id()],
+        ]
+      );
+    }
+  }
+}

@@ -1,0 +1,19 @@
+name: 'OpenEDU Search'
+description: 'Provides content types and related configuration.'
+type: module
+core: 8.x
+version: '8.x-3.0'
+dependencies:
+  - views_block_filter_block
+  - better_exposed_filters
+  - openedu_core
+  - openedu_events
+  - openedu_news
+  - openedu_profile
+  - node
+  - query_filter_cards
+  - search_api
+  - search_api_db
+  - search_api_autocomplete
+  - views
+package: OpenEDU

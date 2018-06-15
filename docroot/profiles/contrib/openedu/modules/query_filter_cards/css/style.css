@@ -1,0 +1,23 @@
+.query-filter-cards .card:not(.clear) {
+  font-size: 11px;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background: #808080;
+  margin: 0 0.2em;
+}
+
+.query-filter-cards .card:not(.clear) a {
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 0.5em;
+  line-height: 1em;
+}
+
+.query-filter-cards .card.clear a {
+  font-size: 0.8em;
+  color: #808080;
+  font-style: italic;
+  text-decoration: underline;
+}

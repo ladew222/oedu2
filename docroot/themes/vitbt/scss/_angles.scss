@@ -1,0 +1,89 @@
+// mixin
+@mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null){
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  &::before,
+  &::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    transition: ease all .5s;
+  }
+
+  @if $pos-top{
+    &::before{
+      @if $pos-top == 'topleft'{
+        top: 0;
+        transform-origin: right top;
+        transform: skewY($angle-top);
+      }
+      @if $pos-top == 'topright' {
+        top: 0;
+        transform-origin: left top;
+        transform: skewY(-$angle-top);
+      }
+    }
+  }
+
+  @if $pos-btm{
+    &::after{
+      @if $pos-btm == 'bottomleft' {
+        bottom: 0;
+        transform-origin: right bottom;
+        transform: skewY(-$angle-btm);
+
+      }
+
+      @if $pos-btm == 'bottomright' {
+        bottom: 0;
+        transform-origin: left bottom;
+        transform: skewY($angle-btm);
+      }
+    }
+  }
+}
+
+// slanted edges here css clip path maker
+.edge--bottom {
+  -webkit-clip-path: polygon(0 calc(15px + 3vw), 1600px 0, 1600px 91%, 0 91%);
+  clip-path: polygon(0 0, 24000px calc(15px + 3vw), 2400px 91%, 0 91%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.edge--bottom--reverse {
+  clip-path: polygon(0 0, 100% 0, 100% calc(91% - .5vw), 0 100%);
+  padding-bottom: 26px;
+}
+
+.edge--top {
+  @include angle-edge(topleft, 3deg);
+}
+
+.edge--top--reverse {
+  @include angle(before, true);
+}
+
+.edge--both {
+  -webkit-clip-path: polygon(0 calc(15px + 3vw), 100vw 0, 100vw 91%, 0 100%);
+  clip-path: polygon(0 0, 2400px calc(15px + 3vw), 2400px 91%, 0 100%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.edge--both--reverse {
+  -webkit-clip-path: polygon(0 calc(15px + 3vw), 100% 0, 100% 100%, 0 91%);
+  clip-path: polygon(0 calc(15px + 3vw), 100% 0, 2400px 100%, 0 calc(91% - 1.5vw));
+  padding-top: 40px;
+  padding-bottom: calc(130px - 3vw);
+}
+.rounded--bottom{
+  border-bottom: 5px solid $brand-primary-lighter;
+  border-bottom-left-radius: 50% 50px;
+  border-bottom-right-radius: 50% 50px;
+  height: 350px;
+}

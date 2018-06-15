@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.openedu_grid_block
+    - field.storage.block_content.field_grid_content
+  module:
+    - text
+id: block_content.openedu_grid_block.field_grid_content
+field_name: field_grid_content
+entity_type: block_content
+bundle: openedu_grid_block
+label: 'Grid Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

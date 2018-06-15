@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: course_creator
+label: 'Course creator'
+weight: 3
+is_admin: null

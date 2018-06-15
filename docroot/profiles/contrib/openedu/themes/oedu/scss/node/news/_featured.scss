@@ -1,0 +1,51 @@
+.block-views-blocknews-featured-news-block {
+  margin-bottom: 1.25em;
+  padding: 0 0 2em;
+  border-bottom: 3px solid lighten($gray-darker, 20%);
+  border-bottom: 3px solid rgba($gray-darker, 0.2);
+
+  .block-title {
+    font-size: 2.286em;
+    font-weight: normal;
+    margin: 0 auto 1em;
+    padding: 0.2em 0;
+    color: $primary;
+  }
+
+  .flickity-viewport {
+    font-size: 1.2em;
+
+    .gallery-cell article.news {
+      .image {
+        border-bottom: 5px solid $info;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .wrapper {
+        color: $gray-darker;
+
+        h2 {
+          font-weight: bold;
+          font-size: 1.857em;
+
+          a {
+            color: $gray-darker;
+          }
+        }
+
+        .field--name-field-news-date {
+          margin-bottom: 0.6em;
+        }
+      }
+    }
+  }
+
+  .flickity-prev-next-button {
+    @include media-breakpoint-down(xs) {
+      top: 25%;
+    }
+  }
+}

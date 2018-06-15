@@ -1,0 +1,161 @@
+.page-node-type-profile {
+  .panel-oedu-1col.subsection {
+    padding-bottom: 1em;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: .25em;
+    }
+  }
+
+  .subsection {
+    .field--item {
+      font-size: 1.1em;
+      font-weight: 300;
+
+      &.field--type-name {
+        font-size: 2.5em;
+        margin-bottom: 0.1em;
+        font-weight: 600;
+
+        @include media-breakpoint-up(md) {
+          margin-top: -0.35em;
+        }
+      }
+    }
+
+    section.block.block-entity-fieldnodefield-profile-image img {
+      border-radius: 5px;
+      box-shadow: 0 2px 3px 0 $gray-300;
+    }
+
+    .block-entity-fieldnodefield-profile-job-title,
+    .block-entity-fieldnodefield-profile-department {
+      font-size: 1.125em;
+      font-style: italic;
+    }
+
+    .block-entity-fieldnodefield-profile-office,
+    .block-entity-fieldnodefield-profile-phone {
+      font-size: 0.875em;
+      font-weight: 600;
+    }
+
+    .block-entity-fieldnodefield-profile-email {
+      font-size: 0.75em;
+      font-weight: bold;
+    }
+
+    .field--name-field-profile-office {
+      margin-top: 0.5em;
+    }
+
+    a {
+      color: $white;
+    }
+
+    .field--name-field-profile-department .field--item {
+      display: inline-block;
+
+      &:after {
+        content: ",";
+      }
+
+      &:last-child:after {
+        content: none;
+      }
+    }
+  }
+
+  .region-container {
+    .panel-oedu-container {
+      margin-top: 1em;
+
+      a {
+        color: $gray-base;
+      }
+
+      .panel-oedu-2col {
+        @include media-breakpoint-up(md) {
+          section.block {
+            padding: 0 0 1.1em 0;
+          }
+        }
+
+        section.block-entity-fieldnodefield-profile-name {
+          font-size: 1.2em;
+          font-weight: 600;
+          padding-bottom: 0.4em;
+        }
+      }
+
+      .field--name-field-profile-research-interests .field--item {
+        @extend .site-tag-clr;
+
+        margin: 0.3em 0;
+      }
+
+      .field--name-field-profile-courses,
+      .field--name-field-profile-program {
+        .field--item {
+          display: list-item;
+          margin-left: 1.5em;
+        }
+      }
+
+      .field--name-field-profile-research-projects,
+      .field--name-field-profile-publications {
+        .field--label {
+          margin-bottom: 1em;
+        }
+
+        .field--item {
+          box-shadow: 1px 2px 4px 0 $gray-300;
+          padding: 0.5em 1em 1em 1em;
+          margin-bottom: 1em;
+          border-left: 1em solid $gray-300;
+          transition: border-color 0.5s;
+
+          &:hover {
+            border-color: $success;
+          }
+        }
+
+        h3 {
+          margin: 1em 0;
+          font-size: 1.25em;
+        }
+      }
+
+      .field--name-field-profile-courses .field__items {
+        padding-left: 1.25em;
+
+        .field--item {
+          margin-bottom: 1em;
+        }
+      }
+
+      .field--name-field-profile-department,
+      .field--name-field-profile-education {
+        .field__items {
+          padding-left: 2.5em;
+          width: 100%;
+
+          .field--item {
+            display: list-item;
+            margin-bottom: 1em;
+            list-style-position: inside;
+          }
+        }
+
+        a {
+          color: $info;
+        }
+      }
+
+      .field--name-field-profile-research-projects .field--item:hover {
+        border-color: $info;
+      }
+    }
+  }
+}

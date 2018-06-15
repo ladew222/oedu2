@@ -1,0 +1,95 @@
+.date-calendar .datepicker {
+	border-radius: 0;
+	font-size: 1rem;
+	border: none;
+}
+
+/* datepicker header (month) */
+.date-calendar .datepicker--nav {
+	padding: 0.5em 1em;
+	background-color: #EEEEEE;
+}
+
+.date-calendar .datepicker .datepicker--nav-title,
+.date-calendar .datepicker .datepicker--nav-title i {
+	color: #343434;
+	font-weight: normal;
+}
+
+/* datepicker days (mon - fri) */
+.date-calendar .datepicker--day-name {
+	color: #373737;
+}
+
+.date-calendar .datepicker--content {
+	padding: 0;
+}
+
+.date-calendar .datepicker--days-names {
+	background: #E0E0E0;
+	padding: 0.5em 0;
+	margin: 0;
+}
+
+/* selected cell colours */
+.date-calendar .datepicker .datepicker--cell-day {
+	border: none;
+	background: none;
+	font-size: 0.875em;
+}
+
+.date-calendar .datepicker--cell.-selected-,
+.date-calendar .datepicker--cell.-in-range-,
+.date-calendar .datepicker--cell.-current-.-in-range-,
+.date-calendar .datepicker--cell.-in-range-.-focus-,
+.date-calendar .datepicker--cell.-selected-.-focus-,
+.date-calendar .datepicker--cell.-selected-.-current-,
+.date-calendar .datepicker--cell.-selected-.-range-from-,
+.date-calendar .datepicker--cell.-selected-.-range-from-:hover,
+.date-calendar .datepicker--cell.-selected-.-range-to-,
+.date-calendar .datepicker--cell.-selected-.-range-to-:hover {
+	color: #fff;
+	background: #ea772e;
+	border: none;
+}
+
+.date-calendar .datepicker--cell.-current- {
+	color: #ea772e;
+}
+
+.date-calendar .datepicker--cell.-range-from- {
+	border-radius: 50px 0 0 50px;
+}
+
+.date-calendar .datepicker--cell.-range-to- {
+	border-radius: 0 50px 50px 0;
+}
+
+.date-calendar .datepicker--cell.-range-to-:hover {
+	background-color: rgba(234,119,46,.5);
+}
+
+/* months height fix */
+.date-calendar .datepicker--cells-months,
+.date-calendar .datepicker--cells-years,
+.date-calendar .datepicker--years {
+	height: auto;
+}
+
+/* clear button */
+.date-calendar .datepicker--buttons {
+	border: none;
+}
+
+.date-calendar .datepicker--button {
+	color: #fff;
+	-ms-flex: 0;
+	flex: 0;
+	height: auto;
+}
+
+.date-calendar .datepicker--button:hover {
+	color: #fff;
+	background: #c847ca;
+	border-color: #c847ca;
+}

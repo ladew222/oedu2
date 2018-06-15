@@ -1,0 +1,196 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/search?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 122
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a4628392-236a-4e7c-89f9-5668dad5e213"
+        }
+    ],
+    "vid": [
+        {
+            "value": 178
+        }
+    ],
+    "type": [
+        {
+            "target_id": "landing_page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2017-12-13T22:16:38+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03b617db-5546-4b5e-8e9c-8a2b22604426"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03b617db-5546-4b5e-8e9c-8a2b22604426"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Site Search"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-12-13T21:38:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-12-13T22:16:38+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "pathauto": 0,
+            "alias": "\/search",
+            "pid": 44
+        }
+    ],
+    "panelizer": [
+        {
+            "view_mode": "full",
+            "default": "__bundle_default__",
+            "panels_display": {
+                "blocks": {
+                    "62df6289-ddbc-4f01-8390-d189b09415a4": {
+                        "id": "views_exposed_filter_block:openedu_search-block_1",
+                        "label": "",
+                        "provider": "views",
+                        "label_display": 0,
+                        "views_label": "",
+                        "context_mapping": [],
+                        "region": "subsection",
+                        "uuid": "62df6289-ddbc-4f01-8390-d189b09415a4",
+                        "weight": 2
+                    },
+                    "83f50b15-075d-4ae6-8959-9b4c22f0f390": {
+                        "id": "views_block:openedu_search-block_1",
+                        "label": "",
+                        "provider": "views",
+                        "label_display": 0,
+                        "views_label": "",
+                        "items_per_page": "none",
+                        "context_mapping": [],
+                        "region": "right",
+                        "uuid": "83f50b15-075d-4ae6-8959-9b4c22f0f390",
+                        "weight": 1
+                    },
+                    "97a117c3-6b70-4f17-8d6f-46afb35b2cf8": {
+                        "id": "page_title_block",
+                        "label": "Page title",
+                        "provider": "core",
+                        "label_display": 0,
+                        "context_mapping": [],
+                        "region": "subsection",
+                        "uuid": "97a117c3-6b70-4f17-8d6f-46afb35b2cf8",
+                        "weight": 1
+                    },
+                    "a65cc031-c81b-4a3a-8aee-b75eb84c9d0a": {
+                        "id": "facet_block:type",
+                        "label": "Filter By:",
+                        "provider": "facets",
+                        "label_display": "visible",
+                        "context_mapping": [],
+                        "region": "left",
+                        "uuid": "a65cc031-c81b-4a3a-8aee-b75eb84c9d0a",
+                        "weight": 1
+                    }
+                },
+                "id": "panels_variant",
+                "uuid": "1a312aa0-75a2-4467-8421-33670a7bd039",
+                "label": "Single Column",
+                "weight": 0,
+                "layout": "oedu_twocol_with_subsection_left",
+                "layout_settings": [],
+                "page_title": "[node:title]",
+                "storage_type": "panelizer_field",
+                "storage_id": "node:122:full",
+                "pattern": "panelizer",
+                "builder": "ipe",
+                "static_context": []
+            }
+        }
+    ]
+}

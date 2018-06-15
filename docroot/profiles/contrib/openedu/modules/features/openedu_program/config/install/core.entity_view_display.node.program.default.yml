@@ -1,0 +1,283 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.program.body
+    - field.field.node.program.field_program_course_intro
+    - field.field.node.program.field_program_courses
+    - field.field.node.program.field_program_faculty
+    - field.field.node.program.field_program_grid_block
+    - field.field.node.program.field_program_stories_block
+    - field.field.node.program.field_programs_course_link
+    - field.field.node.program.panelizer
+    - node.type.program
+  module:
+    - field_group
+    - link
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          68cafcbb-1490-4f85-87fa-88046ba83e77:
+            id: 'entity_field:node:field_program_courses'
+            label: 'Courses List'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: teaser
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 68cafcbb-1490-4f85-87fa-88046ba83e77
+          ed5e71d6-5bd9-4053-832e-89b092786661:
+            id: 'entity_field:node:field_program_course_intro'
+            label: Courses
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: ed5e71d6-5bd9-4053-832e-89b092786661
+          112a6ead-5e6e-4d56-813c-eb2deae5de87:
+            id: 'entity_field:node:field_program_grid_block'
+            label: 'Program Grid Block'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                link: true
+                view_mode: default
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -4
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 112a6ead-5e6e-4d56-813c-eb2deae5de87
+          735d8006-b9d5-45b6-85c5-ff8b0b2fae52:
+            id: 'entity_field:node:title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: subsection
+            weight: -2
+            uuid: 735d8006-b9d5-45b6-85c5-ff8b0b2fae52
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          8beb0daa-0604-47b3-b2b8-63909f5d4dd1:
+            id: 'entity_field:node:field_program_stories_block'
+            label: 'Stories Block'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: default
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 0
+            uuid: 8beb0daa-0604-47b3-b2b8-63909f5d4dd1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          4f50aa1e-199a-4553-bf5a-14c6492831e9:
+            id: system_breadcrumb_block
+            label: Breadcrumbs
+            provider: system
+            label_display: '0'
+            region: subsection
+            weight: -3
+            uuid: 4f50aa1e-199a-4553-bf5a-14c6492831e9
+            context_mapping: {  }
+          c9dad269-3698-4cf2-8f18-df24c0e86c20:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_summary_or_trimmed
+              settings:
+                trim_length: 350
+              third_party_settings: {  }
+              weight: 0
+            region: subsection
+            weight: -1
+            uuid: c9dad269-3698-4cf2-8f18-df24c0e86c20
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          1798d4b3-7491-4aa7-89c0-7481935c075a:
+            id: 'entity_field:node:field_programs_course_link'
+            label: 'Course Link'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: link
+              settings:
+                trim_length: 80
+                url_only: false
+                url_plain: false
+                rel: '0'
+                target: '0'
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -1
+            uuid: 1798d4b3-7491-4aa7-89c0-7481935c075a
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          dd3670a5-03e1-49a5-b29f-1fa73e34be9e:
+            id: 'entity_field:node:field_program_faculty'
+            label: Faculty
+            provider: ctools_block
+            label_display: '1'
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: default
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 1
+            uuid: dd3670a5-03e1-49a5-b29f-1fa73e34be9e
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        label: Default
+        uuid: 327ec5a1-19b2-4bc2-93d9-e2596e337c72
+        weight: 0
+        layout: oedu_onecol_with_subsection
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:program:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+  field_group:
+    group_program_courses:
+      children:
+        - field_program_course_intro
+        - field_program_courses
+        - field_programs_course_link
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        label: Courses
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: program-courses
+        classes: ''
+      label: Courses
+id: node.program.default
+targetEntityType: node
+bundle: program
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_program_course_intro:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_program_courses:
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_program_faculty:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_program_grid_block:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_program_stories_block:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_programs_course_link:
+    weight: 8
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  panelizer: true
+  scheduled_publication: true

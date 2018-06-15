@@ -1,0 +1,73 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/18\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
+        }
+    },
+    "id": [
+        {
+            "value": 18
+        }
+    ],
+    "uuid": [
+        {
+            "value": "3808b304-31b4-4283-b934-20a625ca1cf7"
+        }
+    ],
+    "bundle": [
+        {
+            "value": "menu_link_content"
+        }
+    ],
+    "title": [
+        {
+            "value": "Events"
+        }
+    ],
+    "menu_name": [
+        {
+            "value": "utility-navigation"
+        }
+    ],
+    "link": [
+        {
+            "uri": "internal:\/events",
+            "title": "",
+            "options": []
+        }
+    ],
+    "external": [
+        {
+            "value": false
+        }
+    ],
+    "rediscover": [
+        {
+            "value": true
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "expanded": [
+        {
+            "value": false
+        }
+    ],
+    "enabled": [
+        {
+            "value": true
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-11-28T00:03:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+administer ixm dashboard:
+    title: 'Administer IXM Dashboard.'
+    description: 'Configure the IXM Dashboard settings.'
+access ixm dashboard:
+    title: 'Access the IXM Dashboard.'
+    description: 'Allows access to view the IXM Dashboard.'

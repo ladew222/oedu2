@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the ixm dashboard.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - dashboard_attributes: HTML attributes to apply to the toolbar.
+ * - items: List menu items for the toolbar.
+ * - tray: The ixm tray bar used to display plugins.
+ *
+ * @see template_preprocess_ixm_dashboard()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('ixm-dashboard') }}>
+  <nav{{ navbar_attributes.addClass('ixm-dashboard-bar') }}>
+    {% for key, item in items %}
+      <div{{ item.attributes.addClass('dashboard-bar-link') }}>
+        {{ item.link }}
+      </div>
+    {% endfor %}
+  </nav>
+</div>
+
+<div id="ixm-dashboard-tray">
+  <a href="#" class="close-tray" title="{{ "Close Tray"|t }}"><i class="material-icons">close</i></a>
+  <div class="tray-loading">
+    <svg class="progress-throbber" viewBox="0 0 50 50">
+      <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+    </svg>
+  </div>
+  <div class="tray-content">
+  </div>
+</div>

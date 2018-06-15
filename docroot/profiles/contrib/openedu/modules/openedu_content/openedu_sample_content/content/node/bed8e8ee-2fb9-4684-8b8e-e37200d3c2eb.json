@@ -1,0 +1,311 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "href": "http:\/\/default\/node\/110?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-05\/john-doe_7_1.png"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/23?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/24?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 38
+        }
+    ],
+    "uuid": [
+        {
+            "value": "bed8e8ee-2fb9-4684-8b8e-e37200d3c2eb"
+        }
+    ],
+    "vid": [
+        {
+            "value": 38
+        }
+    ],
+    "type": [
+        {
+            "target_id": "profile"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "John Doe"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/110?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6446420c-f6d1-44e3-a73e-e76131b3c93a"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-05\/john-doe_7_1.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "10597a86-f515-4096-997a-1224157ef7d3"
+                    }
+                ],
+                "alt": "John Doe",
+                "title": "",
+                "width": "319",
+                "height": "450"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/23?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "cc2779d0-6f83-498f-b773-882d4ec68564"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/24?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bd9654b1-e234-4015-a6bf-49d38d2c9c6a"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493682463
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496174459
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/profile-list\/john-doe",
+            "pid": 5
+        }
+    ],
+    "body": [
+        {
+            "value": "<blockquote>\r\n<p>If there\u2019s a bug, I\u2019ll find it\u2026<\/p>\r\n<\/blockquote>\r\n\r\n<p>John has been elbows-deep in Drupal projects since early 2007, after making the transition from the world of telecommunications (and Three-Letter Acronyms) where he passed the time as senior engineer.<\/p>\r\n\r\n<p>As a developer, his focus is to ensure client satisfaction by being perceptive to overall goals, effectively communicating and exceeding expectations. Comfortable with both front- and back-end development, John tends to find himself doing the heavy lifting, digging around under the hood.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_profile_courses": [
+        {
+            "value": "English 110"
+        }
+    ],
+    "field_profile_education": [
+        {
+            "value": "MA, Contemporary Writing, University of Illinois, Urbana, 1997"
+        }
+    ],
+    "field_profile_email": [
+        {
+            "value": "faculty.name@oedu.com"
+        }
+    ],
+    "field_profile_job_title": [
+        {
+            "value": "Professor of Development"
+        }
+    ],
+    "field_profile_name": [
+        {
+            "title": null,
+            "given": "John",
+            "middle": null,
+            "family": "Doe",
+            "generational": null,
+            "credentials": null
+        }
+    ],
+    "field_profile_office": [
+        {
+            "value": "22 Omega Ave."
+        }
+    ],
+    "field_profile_phone": [
+        {
+            "value": "404232121"
+        }
+    ],
+    "field_profile_publications": [
+        {
+            "value": "<h3>Aenean consequat lacus tellus&nbsp;\u2013 May 4 2016<\/h3>\r\n\r\n<p>by Joe M. Smith&nbsp;(Author), Jeannete Smith RN MN NN (Editor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Aenean consequat lacus tellus&nbsp;\u2013 Oct 1 1984<\/h3>\r\n\r\n<p>by Joe M. Smith&nbsp;(Author), Jeannete Smith RN MN NN (Editor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Aenean consequat tellus&nbsp;\u2013 Oct 1 1984<\/h3>\r\n\r\n<p>by Linda&nbsp;M. Smith&nbsp;(Author), Jeannete Smith RN MN NN (Editor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Curabitur egestas fringilla nulla, vestibulum consectetur<\/h3>\r\n\r\n<p>by Jordan Smith&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie<\/h3>\r\n\r\n<p>by Neil Degrasse (Author)<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_research_projects": [
+        {
+            "value": "<h3>Flight control, visual guidance, visual neuroscience, neuroethology, avian biomechanics, aerodynamics, wing morphing, motor control<\/h3>\r\n\r\n<p><strong>Supervisor:<\/strong> D. Smith<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Museum Education, Visitor Studies, Informal Learning, Metacognition, Science Education, Long-term Memory, Nostalgia<\/h3>\r\n\r\n<p><strong>Supervisor:<\/strong> D. Clarke<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Development and clinical testing of a novel low-cost hand splint for burn scar contracture patients in Nepal.<\/h3>\r\n\r\n<p><strong>Principal Investigator:<\/strong> Kimberly Souza<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong> J. Chang, MD, professor of surgery.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>A randomized, double-blinded, placebo-controlled crossover trial of levocarnitine for vismodegib-associated muscle spasms.<\/h3>\r\n\r\n<p><strong>Principal Investigator:&nbsp;<\/strong>John Cannon<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong> A-L Chang, MD, associate professor of dermatology.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Responsible Research and Innovation (RRI) in Practice<\/h3>\r\n\r\n<p>RRI-Practice is a 3-year project under the European Commission\u2019s Horizon 2020 research program. Its aim is to understand the barriers and drivers to the successful implementation of Responsible Research and Innovation (RRI) in a collection of national contexts; to promote reflection on organizational structures and cultures of research conducting and research funding organizations; and to identify and support best practices to facilitate the uptake of RRI in organizations and research programs.&nbsp;<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> D. Guston<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>True Stories Well Told: Using Narrative to Search For Harmonies Between Science and Religion.<\/h3>\r\n\r\n<p>Nulla mauris ex, sodales at facilisis iaculis, rhoncus non turpis. Etiam consequat leo ex, id elementum felis congue vitae. In tortor mauris, volutpat eu vehicula ut, volutpat eget lorem. Sed efficitur risus eget urna aliquam finibus feugiat vel tellus. Ut ultrices gravida neque, et aliquam enim efficitur a. Proin nisi enim, vulputate eu fermentum eget, tincidunt ut lectus.<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> L. Green<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_students": [
+        {
+            "value": "<ul>\r\n\t<li>Les Cordell<\/li>\r\n\t<li>Yuriy Gerasimov<\/li>\r\n\t<li>Gavin Graham<\/li>\r\n\t<li>Bryan Heredia<\/li>\r\n\t<li>Erin Joyce<\/li>\r\n\t<li>Travis Ketler<\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_type": [
+        {
+            "value": "faculty"
+        }
+    ]
+}

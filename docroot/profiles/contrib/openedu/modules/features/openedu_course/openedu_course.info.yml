@@ -1,0 +1,14 @@
+name: 'OpenEDU Course'
+description: 'Provides Course content type and related configuration.'
+type: module
+core: 8.x
+version: '8.x-3.0'
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - panelizer
+  - path
+  - text
+  - user
+package: OpenEDU

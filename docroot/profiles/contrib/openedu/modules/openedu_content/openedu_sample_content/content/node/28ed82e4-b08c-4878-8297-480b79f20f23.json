@@ -1,0 +1,309 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "href": "http:\/\/default\/node\/110?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/programs\/biological-sciences?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-05\/john-edited-headshot_7_1.jpg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/19?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/20?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 27
+        }
+    ],
+    "uuid": [
+        {
+            "value": "28ed82e4-b08c-4878-8297-480b79f20f23"
+        }
+    ],
+    "vid": [
+        {
+            "value": 27
+        }
+    ],
+    "type": [
+        {
+            "target_id": "profile"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "John Doe"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/110?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6446420c-f6d1-44e3-a73e-e76131b3c93a"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/programs\/biological-sciences?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/program"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "e08917b9-173d-4dc8-bcc3-1f027d2405d3"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-05\/john-edited-headshot_7_1.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dd371b27-59b6-45cf-bcf7-75b889af81ed"
+                    }
+                ],
+                "alt": "John Doe",
+                "title": "",
+                "width": "360",
+                "height": "415"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_research_interests": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/19?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "06408782-fbf4-4e2a-beb8-541350a86562"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/20?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dacdb870-5e47-4e7b-aa7a-f181e82d7467"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493955485
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496176173
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/profile-list\/john-doe",
+            "pid": 38
+        }
+    ],
+    "body": [
+        {
+            "value": "<blockquote>\r\n<p><strong><em>John previously held senior leadership positions with two different marketing technology start-ups, playing a key role in taking both companies to market and growing them into industry leaders in their respective spaces.<\/em><\/strong><\/p>\r\n<\/blockquote>\r\n\r\n<p>John Doe is the VP of Business Development at ImageX and leads all company business development strategies to drive continued growth into our core verticals. A customer centric, business strategist at heart, John is devoted to client success and works unreservedly to ensure the optimal solution is delivered to clients. He graduated from the University of the Fraser Valley with a B.A. in Business Administration and has an extensive background in marketing strategy, web application design and business development.<\/p>\r\n\r\n<p>He is a passionate technology and marketing enthusiast, and in his previous roles has designed digital customer acquisition initiatives for clients such as Royal Bank, Nestle,&nbsp;WWE,&nbsp;CIBC, TD Bank and&nbsp;BBVA&nbsp;Compass Bank.<\/p>\r\n\r\n<p>A devoted family man, John spends all of his free time enjoying the abundance of outdoor activities Vancouver has to offer with his wife and two young daughters. When not camping, he can usually be found in the gym, rollerblading, hiking the Grouse Grind, playing tennis or boating with his family.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_profile_courses": [
+        {
+            "value": "English 110"
+        }
+    ],
+    "field_profile_education": [
+        {
+            "value": "MA, Contemporary Writing, University of Illinois, Urbana, 1997"
+        }
+    ],
+    "field_profile_email": [
+        {
+            "value": "john@imagexmedia.com"
+        }
+    ],
+    "field_profile_job_title": [
+        {
+            "value": "Professor of Business"
+        }
+    ],
+    "field_profile_name": [
+        {
+            "title": null,
+            "given": "John",
+            "middle": null,
+            "family": "Doe",
+            "generational": null,
+            "credentials": null
+        }
+    ],
+    "field_profile_office": [
+        {
+            "value": "163 W. Hastings Street, Suite 405, Vancouver, BC, V6B 1H5, Canada"
+        }
+    ],
+    "field_profile_phone": [
+        {
+            "value": "1.778.785.1547"
+        }
+    ],
+    "field_profile_publications": [
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Oct 1 1984<\/h3>\r\n\r\n<p>by Hedley Smith&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Nov 1 2016<\/h3>\r\n\r\n<p>by Dirk Mathers&nbsp;(Author, Contributor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Apr 8 2005<\/h3>\r\n\r\n<p>by Hardeep Singh (Author)<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_research_projects": [
+        {
+            "value": "<h3>Development and clinical testing<\/h3>\r\n\r\n<h3><strong>Principal Investigator:<\/strong> Ned Souza<\/h3>\r\n\r\n<p><strong>Supervisor:<\/strong> Francine&nbsp;Chang, MD, professor of surgery.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida<\/h3>\r\n\r\n<p><strong>Supervisor:<\/strong> D. Anderson<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Responsible Research in Practice<\/h3>\r\n\r\n<p>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> D. Green<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_students": [
+        {
+            "value": "<ul>\r\n\t<li>Les Cordell<\/li>\r\n\t<li>Yuriy Gerasimov<\/li>\r\n\t<li>Gavin Graham<\/li>\r\n\t<li>Bryan Heredia<\/li>\r\n\t<li>Erin Joyce<\/li>\r\n\t<li>Travis Ketler<\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_type": [
+        {
+            "value": "faculty"
+        }
+    ]
+}

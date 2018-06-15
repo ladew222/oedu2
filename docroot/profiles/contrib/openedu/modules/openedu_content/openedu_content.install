@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the OpenEDU installation profile.
+ */
+
+/**
+ * Adds tab block if not already existing, was missing in 8.1.0.
+ */
+function openedu_content_update_8001() {
+  $tab_config = \Drupal::configFactory()->getEditable('block.block.tabs');
+  if (!$tab_config->get('id')) {
+    $tab_config
+      ->set('langcode', 'en')
+      ->set('status', TRUE)
+      ->set('dependencies', [
+        'theme' => [
+          'oedu_sub',
+        ],
+      ])
+      ->set('id', 'tabs')
+      ->set('theme', 'oedu_sub')
+      ->set('region', 'content')
+      ->set('weight', 0)
+      ->set('provider', NULL)
+      ->set('plugin', 'local_tasks_block')
+      ->set('settings', [
+        'id' => 'local_tasks_block',
+        'label' => 'Tabs',
+        'provider' => 'core',
+        'label_display' => FALSE,
+        'primary' => TRUE,
+        'secondary' => TRUE,
+      ])
+      ->set('visibility', [])
+      ->save(TRUE);
+  }
+}

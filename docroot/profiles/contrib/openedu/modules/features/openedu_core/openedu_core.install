@@ -1,0 +1,104 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for OpenEDU Core.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * @TODO: break these into separate functions.
+ */
+function openedu_core_install() {
+
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  $config = Drupal::configFactory();
+
+  // Config overrides.
+  $openedu_config = \Drupal::config('openedu_core.settings');
+
+  // Override Page default display.
+  $page_display = $config->getEditable('core.entity_view_display.node.page.default');
+  $dependencies = array_merge($page_display->get('dependencies'), $openedu_config->get('page_display_default.dependencies'));
+  $third_party_settings = $openedu_config->get('page_display_default.third_party_settings');
+
+  $page_display
+    ->set('dependencies', $dependencies)
+    ->set('third_party_settings', $third_party_settings)
+    ->save();
+
+  // Flickety.
+  $flickity = $config->getEditable('flickity.group.default_group');
+  $flickity_settings = array_merge($flickity->get('settings'), $openedu_config->get('flickity_default.settings'));
+  $flickity->set('settings', $flickity_settings)->save();
+
+  // Flexible Layout.
+  $flexible_layout = $config->getEditable('flexible_layout.settings');
+  $flexible_layout_settings = array_merge($flexible_layout->get('bootstrap'), $openedu_config->get('flexible_layout.bootstrap'));
+  $flexible_layout->set('bootstrap', $flexible_layout_settings)->save();
+
+  // Sets the "styles" button on ckeditor for "Rich Text" format.
+  $rich_text_format = $config
+    ->getEditable('editor.editor.rich_text');
+  $toolbar_rows = $rich_text_format->get('settings.toolbar.rows');
+
+  foreach ($toolbar_rows[0] as $key => $row) {
+    if ($row['name'] == 'Formatting') {
+      $toolbar_rows[0][$key]['items'][] = 'JustifyLeft';
+      $toolbar_rows[0][$key]['items'][] = 'JustifyCenter';
+      $toolbar_rows[0][$key]['items'][] = 'JustifyRight';
+    }
+    elseif ($row['name'] == 'Block Formatting') {
+      $toolbar_rows[0][$key]['items'][] = 'Styles';
+    }
+  }
+  $rich_text_format
+    ->set('settings.toolbar.rows', $toolbar_rows)
+    ->save();
+
+  // Sets needed classes and ckeditor setup for "Rich Text" format.
+  $rich_text_settings = $config
+    ->getEditable('filter.format.rich_text');
+  $allowed_html = '<a href hreflang> <strong> <cite> <blockquote cite> <code> <ul type class> <ol start type class> <li class data-*> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <br> <h1> <pre> <drupal-entity data-* title alt> <div class> <a href hreflang class data-*> <p class> <i class>';
+  $rich_text_settings
+    ->set('filters.filter_html.settings.allowed_html', $allowed_html)
+    ->save();
+
+  // Simple sitemap settings.
+  $simple_sitemap = $config->getEditable('simple_sitemap.settings');
+  $simple_sitemap_settings = array_merge($simple_sitemap->get(), $openedu_config->get('simple_sitemap.settings'));
+  $simple_sitemap->setData($simple_sitemap_settings)->save();
+
+  // Simple sitemap custom.
+  $simple_sitemap = $config->getEditable('simple_sitemap.custom');
+  $simple_sitemap_custom = array_merge($simple_sitemap->get(), $openedu_config->get('simple_sitemap.custom'));
+  $simple_sitemap->setData($simple_sitemap_custom)->save();
+
+  // Sa11y.
+  $sa11y = $config->getEditable('sa11y.settings');
+  $sa11y_settings = array_merge($sa11y->get(), $openedu_config->get('sa11y'));
+  $sa11y->setData($sa11y_settings)->save();
+
+  // user.role.anonymous.
+  $anon_perms = $config->getEditable('user.role.anonymous');
+  $anon_settings = array_merge($anon_perms->get(), $openedu_config->get('user_role_anonymous'));
+  $anon_perms->setData($anon_settings)->save();
+
+}
+
+/**
+ * Implements hook_update_N().
+ *
+ * Turn on Color module.
+ */
+function openedu_core_update_8001(&$sandbox) {
+  /** @var \Drupal\Core\Extension\ModuleInstallerInterface $service */
+  $service = \Drupal::service('module_installer');
+
+  $service->install(['color'], TRUE);
+}

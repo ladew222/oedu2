@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for OpenEDU news.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function openedu_news_install() {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  // Add to any setup.
+  Drupal::configFactory()
+    ->getEditable('addtoany.settings')
+    ->set('additional_html', '<a class="a2a_button_facebook a2a_counter"></a><a class="a2a_button_twitter"></a>')
+    ->save();
+
+}

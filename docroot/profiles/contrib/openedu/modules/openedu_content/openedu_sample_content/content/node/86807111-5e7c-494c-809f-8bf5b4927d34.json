@@ -1,0 +1,267 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "href": "http:\/\/default\/node\/111?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-05\/John_Daoust_Headshot_7_1.jpg"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 43
+        }
+    ],
+    "uuid": [
+        {
+            "value": "86807111-5e7c-494c-809f-8bf5b4927d34"
+        }
+    ],
+    "vid": [
+        {
+            "value": 43
+        }
+    ],
+    "type": [
+        {
+            "target_id": "profile"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "John Doe"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_department": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/111?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "63d195ab-6165-452c-87cf-e125f13bea18"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/profile\/field_profile_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-05\/John_Daoust_Headshot_7_1.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4b6e3555-ac69-4084-b8de-14d1569129d1"
+                    }
+                ],
+                "alt": "John Doe",
+                "title": "",
+                "width": "900",
+                "height": "900"
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493958335
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496175247
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/profile-list\/john-doe",
+            "pid": 10
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>\r\n\r\n<blockquote>\r\n<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim.<\/p>\r\n<\/blockquote>\r\n\r\n<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_profile_courses": [
+        {
+            "value": "English 110"
+        }
+    ],
+    "field_profile_education": [
+        {
+            "value": "Ph.D., Literature, Harvard University, Cambridge, 2005"
+        }
+    ],
+    "field_profile_email": [
+        {
+            "value": "faculty.name@oedu.com"
+        }
+    ],
+    "field_profile_job_title": [
+        {
+            "value": "Professor of Project Management"
+        }
+    ],
+    "field_profile_name": [
+        {
+            "title": null,
+            "given": "John",
+            "middle": null,
+            "family": "Doe",
+            "generational": null,
+            "credentials": null
+        }
+    ],
+    "field_profile_office": [
+        {
+            "value": "22 Omega Ave."
+        }
+    ],
+    "field_profile_phone": [
+        {
+            "value": "544393544"
+        }
+    ],
+    "field_profile_publications": [
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Nov 1 2016<\/h3>\r\n\r\n<p>by Smith Jones&nbsp;(Author, Contributor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Apr 8 2005<\/h3>\r\n\r\n<p>by Cedric Smith&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 May 2 2017<\/h3>\r\n\r\n<p>by Tony O'Hara&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida \u2013 May 4 2016<\/h3>\r\n\r\n<p>by Gary Lynn (Editor)<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida&nbsp;\u2013 Oct 1 1984<\/h3>\r\n\r\n<p>by Nancy Smith&nbsp;(Author)<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_research_projects": [
+        {
+            "value": "<h3>True Stories Well Told<\/h3>\r\n\r\n<p>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida.&nbsp;<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> L. Green<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Responsible Research in Practice<\/h3>\r\n\r\n<p>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida.&nbsp;<\/p>\r\n\r\n<p><strong>Principal Investigator:<\/strong> D. Green<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida<\/h3>\r\n\r\n<p><strong>Principal Investigator:&nbsp;<\/strong>John C. Smith<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong>&nbsp;Ned Chang, MD, associate professor of science.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida.<\/h3>\r\n\r\n<p><strong>Principal Investigator:<\/strong> Lin Souza<\/p>\r\n\r\n<p><strong>Supervisor:<\/strong>&nbsp;Joe Chang, MD, professor of surgery.<\/p>\r\n",
+            "format": "rich_text"
+        },
+        {
+            "value": "<h3>Vestibulum pharetra ante non nisi molestie, ut tempus quam gravida<\/h3>\r\n\r\n<p><strong>Supervisor:<\/strong> D. Anderson<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_students": [
+        {
+            "value": "<ul>\r\n\t<li>Les Cordell<\/li>\r\n\t<li>Yuriy Gerasimov<\/li>\r\n\t<li>Gavin Graham<\/li>\r\n\t<li>Bryan Heredia<\/li>\r\n\t<li>Erin Joyce<\/li>\r\n\t<li>Travis Ketler<\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_profile_type": [
+        {
+            "value": "faculty"
+        }
+    ]
+}

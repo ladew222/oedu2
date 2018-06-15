@@ -1,0 +1,10 @@
+status: true
+dependencies: {  }
+label: 'Hero Crop'
+id: hero_crop
+description: 'Cropping for hero images.'
+aspect_ratio: '11:6'
+soft_limit_width: 1600
+soft_limit_height: 873
+hard_limit_width: 1100
+hard_limit_height: 600

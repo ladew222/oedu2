@@ -1,0 +1,62 @@
+#block-vitbt-openedu-newsletter {
+  background: $brand-primary-light;
+  text-align: center;
+  padding: 1.429em;
+  .block-title {
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1em;
+    @media #{$tablet} {
+      margin: 0 10px 0 0;
+      display: inline-block;
+      line-height: 40px;
+      vertical-align: top;
+    }
+  }
+  form {
+    position: relative;
+    @media #{$tablet} {
+      display: inline-block;
+      width: 250px;
+    }
+    .form-group {
+      margin: 0 auto;
+    }
+    label {
+      display: none;
+    }
+    .form-email {
+      height: 40px;
+      border-radius: 0;
+      background: #000;
+      background: rgba(0, 0, 0, 0.17);
+      border: 1px solid $gray-dark;
+      border-color: rgba($gray-dark, 0.17);
+      color: #fff;
+      &::placeholder {
+        font-weight: 100;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+    div.form-item-mail {
+      line-height: 40px;
+      text-align: left;
+      &.form-type-item {
+        padding: 0 10px;
+        background: $gray-dark;
+        font-style: italic;
+      }
+    }
+    button.form-submit {
+      font-size: 0.875em;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 5px 15px;
+      margin: 0;
+      border: none;
+      background: $brand-primary-darker;
+    }
+  }
+}

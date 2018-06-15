@@ -1,0 +1,12 @@
+.paragraph--type--text{
+  figure{
+    &.align-left{
+      margin: 2rem;
+      margin-left: 0px;
+    }
+    &.align-right{
+      margin: 2rem;
+      margin-left: 0px;
+    }
+  }
+}

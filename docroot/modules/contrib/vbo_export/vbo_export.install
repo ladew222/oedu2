@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the vbo_export module.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_requirements().
+ */
+function vbo_export_requirements($phase) {
+  $requirements = array();
+
+  if ($phase == 'runtime') {
+    $requirements['PHPExcel'] = [
+      'title' => t('PHPExcel library'),
+    ];
+    if ($version = _vbo_export_load_library('\PHPExcel', '/libraries/PHPExcel', TRUE)) {
+      $requirements['PHPExcel']['description'] = t('Installed version: @version.', ['@version' => $version]);
+      $requirements['PHPExcel']['severity'] = REQUIREMENT_OK;
+    }
+    else {
+      $url = Url::fromUri('https://github.com/PHPOffice/PHPExcel/releases');
+      $requirements['PHPExcel']['description'] = t('PHPExcel library is missing. To properly use export to xlsx operation, please @download and place the library files in the %directory directory or use composer: `composer require phpoffice/phpexcel`.', [
+        '@download' => \Drupal::l(t('download PHPExcel library'), $url),
+        '%directory' => '/libraries/PHPExcel',
+      ]);
+      $requirements['PHPExcel']['severity'] = REQUIREMENT_WARNING;
+    }
+  }
+
+  return $requirements;
+}

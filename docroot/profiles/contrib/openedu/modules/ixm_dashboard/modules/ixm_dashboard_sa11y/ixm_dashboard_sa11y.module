@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains ixm_dashboard_sa11y.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function ixm_dashboard_sa11y_theme($existing, $type, $theme, $path) {
+  return [
+    'ixd_sa11y_results' => [
+      'variables' => [
+        'report' => [],
+        'violations' => [],
+        'form' => [],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Adds a class to our local task for sa11y to allow hiding it.
+ */
+function ixm_dashboard_sa11y_preprocess_menu_local_tasks(&$variables) {
+  if (isset($variables['primary']['entity.node.sa11y'])) {
+
+    /** @var \Drupal\ixm_dashboard\Utility\DisplayHelper $display_helper */
+    $display_helper = \Drupal::service('ixm_dashboard.display_helper');
+    $sa11y_display = $display_helper->getDisplays('sa11y');
+
+    if ($sa11y_display->getStatus()) {
+      $variables['primary']['entity.node.sa11y']['#attributes']['class'][] = 'ixd-sa11y-tab';
+    }
+  }
+}

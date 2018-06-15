@@ -1,0 +1,28 @@
+.datepicker {
+  .datepicker--nav {
+    border-bottom: none;
+  }
+
+  .datepicker--nav-title {
+    color: $gray-darker;
+    font-weight: 600;
+
+    i {
+      font-weight: 400;
+    }
+  }
+
+  .datepicker--day-name {
+    text-transform: capitalize;
+  }
+
+  .datepicker--days-names {
+    margin-top: 0;
+  }
+
+  .datepicker--cell-day {
+    border: 1px solid white;
+    font-size: 12px;
+    background-color: $gray-lighter;
+  }
+}

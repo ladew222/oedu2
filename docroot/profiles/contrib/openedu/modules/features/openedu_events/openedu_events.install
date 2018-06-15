@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * openedu_events.install
+ */
+
+/**
+ * Implements hook_install().
+ */
+function openedu_events_install() {
+
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  // Override addtoany default settings settings.
+  $config = \Drupal::configFactory()->getEditable('addtoany.settings');
+  $settings = [
+    'additional_html' => '<a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a>',
+    'custom_universal_button' => '/profiles/contrib/openedu/themes/oedu/images/addtoany-universal.png',
+    'universal_button' => 'custom',
+    'universal_button_placement' => 'after',
+  ];
+  foreach ($settings as $key => $setting) {
+    $config->set($key, $setting);
+  }
+  $config->save(TRUE);
+
+}

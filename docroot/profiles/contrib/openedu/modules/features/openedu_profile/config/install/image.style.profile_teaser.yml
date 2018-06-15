@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: profile_teaser
+label: 'Profile Teaser (220x130)'
+effects:
+  cf19974e-85a6-4712-bae3-c59bb0241fc1:
+    uuid: cf19974e-85a6-4712-bae3-c59bb0241fc1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 130

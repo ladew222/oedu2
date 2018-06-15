@@ -1,0 +1,118 @@
+.block-entity-fieldnodefield-program-stories-block {
+  @extend .block--openedu-stories-block;
+
+  @include angle();
+
+  margin-top: 100px;
+}
+
+.block-views-blockfaculty-block-1 {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+.page-node-type-program {
+  .block-entity-fieldnodebody {
+    padding: 0;
+    font-style: italic;
+  }
+
+  .block-entity-fieldnodefield-program-stories-block {
+    background: $primary;
+    color: #fff;
+
+    .field--name-field-stories-title {
+      @include underlined-title(#fff);
+    }
+
+    .carousel .flickity-prev-next-button {
+      background: $gray-base;
+      background: rgba($gray-base, 0.2);
+      color: #fff;
+
+      &:hover {
+        color: $gray-base;
+        background: #fff;
+        background: rgba(#fff, 0.6);
+      }
+    }
+  }
+
+  .block-entity-fieldnodefield-program-course-intro {
+    @include make-container();
+    @include make-container-max-widths();
+
+    .block-title {
+      color: $primary;
+      text-align: center;
+      margin: 2em auto 1em auto;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .field--name-field-program-course-intro {
+      color: $gray-dark;
+      font-size: 1.571em;
+      text-align: center;
+    }
+  }
+
+  .block-entity-fieldnodefield-programs-course-link {
+    @include make-container();
+    @include make-container-max-widths();
+
+    .field--name-field-programs-course-link {
+      text-align: center;
+
+      a {
+        @extend .btn-cta.call-out, .btn;
+
+        color: #fff;
+        background: $info;
+        background: -webkit-linear-gradient(30deg, $info 65%, rgba($info, 0.8) 54%);
+        background: linear-gradient(60deg, $info 65%, rgba($info, 0.8) 54%);
+        filter: progid:dximagetransform.microsoft.gradient(startColorstr=$info, endColorstr=$info, GradientType=1);
+
+        &:hover {
+          opacity: 0.8;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .block-entity-fieldnodefield-program-courses {
+    @include make-container();
+    @include make-container-max-widths();
+
+    .field--name-field-program-courses {
+      @extend %row-eq-height;
+
+      > .field--item {
+        @extend .col-sm-6;
+
+        article {
+          padding: 20px;
+          box-shadow: 1px 2px 4px 0 $gray-300;
+          border-left: 1em solid $gray-300;
+          transition: border-color 0.5s;
+
+          &:hover {
+            border-color: $primary;
+          }
+        }
+
+        h2 {
+          margin-top: 0.2em;
+          font-size: 1.5em;
+          color: $primary;
+
+          a {
+            color: $primary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

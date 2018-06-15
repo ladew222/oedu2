@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains functionality for the OpenEDU Grid Block.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Adds a custom class to the field's class attribute
+ * according to the grid layout field.
+ */
+function openedu_grid_block_preprocess_field(&$variables) {
+
+  // Get a few convenient handles.
+  $field_name = $variables['element']['#field_name'];
+  /** @var \Drupal\Core\Entity\Entity $entity */
+  $entity = $variables['element']['#object'];
+
+  if ($entity->bundle() == 'openedu_grid_block' && $field_name == 'field_grid_content') {
+
+    // Layout options are 1-4, but are relative to a Bootstrap 12 grid system.
+    $layout_option = $entity->get('field_grid_layout')->getString();
+    $layout_class = 'col-md-' . (12 / $layout_option);
+
+    foreach ($variables['items'] as $delta => $element) {
+      /** @var Drupal\Core\Template\Attribute $attributes */
+      $attributes = $element['attributes'];
+      $attributes->addClass($layout_class);
+    }
+  }
+}

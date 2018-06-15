@@ -1,0 +1,25 @@
+// BASE: #024B77
+$brand-primary-darker: adjust_hsl($brand-primary, 0.38, -32.54, -2.94); // #133D57
+$brand-primary-dark: adjust_hsl($brand-primary, 0.77, -16.10, 2.55); // #0d4f79
+$brand-primary-light: adjust_hsl($brand-primary, 0.24, -40.51, 11.18); // #27658B
+$brand-primary-lighter: adjust_hsl($brand-primary, -6.06, 3.31, 21.18); // #00A6E5
+
+$brand-success-darker: adjust_hsl($brand-success, 0.28, -32.54, -2.94); //
+$brand-success-lighter: adjust_hsl($brand-success, -6.06, 3.31, 21.18); //
+
+
+// Buttons
+$btn-primary-bg: $brand-primary-lighter; // #00A6E5
+$btn-primary-hover: adjust_hsl($btn-primary-bg, 0.12, -2.35, 5.1); // #03B7FC
+$btn-primary-active: lighten($btn-primary-bg, 11%); // #1EC1FF
+
+$btn-secondary-bg: $brand-primary-darker; // #133D57
+$btn-secondary-hover: adjust_hsl($btn-secondary-bg, 0.28, 0.88, 7.25); // #195276
+$btn-secondary-active: lighten($btn-secondary-bg, 17%); // #236f9e
+
+$btn-info-bg: $brand-info; // #EA772E
+$btn-info-hover: adjust_hsl($btn-info-bg, -0.03, 18.26, 6.67); // #FF873B
+$btn-info-active: adjust_hsl($btn-info-bg, 0.014, 14.58, 13.14); // #FC9C5F
+
+// FontAwesome override
+$fa-font-path: "../scss/font-awesome/fonts" !default;

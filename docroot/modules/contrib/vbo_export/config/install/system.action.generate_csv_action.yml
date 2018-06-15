@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - vbo_export
+id: vbo_export_generate_csv_action
+label: 'Generate csv from selected results'
+type: node
+plugin: vbo_export_generate_csv_action
+configuration: {  }

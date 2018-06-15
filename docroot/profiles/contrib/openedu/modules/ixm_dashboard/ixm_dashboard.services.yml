@@ -1,0 +1,7 @@
+services:
+  plugin.manager.ixm_dashboard.display:
+    class: Drupal\ixm_dashboard\DisplayManager
+    parent: default_plugin_manager
+  ixm_dashboard.display_helper:
+    class: Drupal\ixm_dashboard\Utility\DisplayHelper
+    arguments: ['@config.factory', '@plugin.manager.ixm_dashboard.display']

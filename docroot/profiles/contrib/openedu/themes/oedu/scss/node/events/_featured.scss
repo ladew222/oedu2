@@ -1,0 +1,50 @@
+.block-views-blockevent-featured-events-block,
+.block-views-blockevents-featured-events-block {
+  margin-bottom: 3em;
+
+  .field--name-field-event-image img {
+    width: 100%;
+    border-bottom: 0.3em solid $info;
+  }
+
+  .block-title {
+    margin-top: 0;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 24px;
+    }
+  }
+}
+
+article.event.featured-content {
+  .content {
+    > .wrapper {
+      h2 {
+        margin-top: 12px;
+        font-size: 26px;
+        font-weight: 700;
+
+        a {
+          color: $gray-darker;
+        }
+      }
+
+      .date {
+        font-size: 14px;
+        color: $gray-darker;
+        font-weight: 600;
+
+        span {
+          padding-right: 0.5em;
+        }
+
+        i {
+          color: $gray;
+          padding-right: 0.4em;
+          vertical-align: bottom;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

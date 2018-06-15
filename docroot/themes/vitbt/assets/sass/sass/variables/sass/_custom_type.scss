@@ -1,0 +1,10 @@
+.jumbotron {
+    font-weight: 300;
+    font-family: Rokkitt;
+    @include breakpoint (960px, true){
+    	@include adjust-font-size-to(150%);
+  }
+  @include breakpoint (480px, true){
+    @include adjust-font-size-to(120%);
+  }
+}

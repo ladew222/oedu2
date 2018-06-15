@@ -1,0 +1,13 @@
+ixd_analytics:
+  version: VERSION
+  css:
+    component:
+      css/ixd_analytics.css: {}
+      css/ixd_datepicker.css: {}
+  js:
+    js/ixd_analytics.js: {}
+    //www.gstatic.com/charts/loader.js: {external: true}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

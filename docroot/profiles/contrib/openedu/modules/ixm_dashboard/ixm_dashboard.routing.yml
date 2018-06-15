@@ -1,0 +1,47 @@
+ixm_dashboard.overview:
+  path: '/admin/config/user-interface/ixm-dashboard'
+  defaults:
+    _controller: '\Drupal\ixm_dashboard\Controller\IxmDashboardController::overview'
+    _title: 'IXM Dashboard'
+  requirements:
+    _permission: 'administer ixm dashboard'
+ixm_dashboard.displays:
+  path: '/admin/config/user-interface/ixm-dashboard/displays'
+  defaults:
+    _form: 'Drupal\ixm_dashboard\Form\IxmDashboardDisplayForm'
+    _title: 'Manage Dashboard Displays'
+  requirements:
+    _permission: 'administer ixm dashboard'
+ixm_dashboard.plugin.edit:
+  path: '/admin/config/user-interface/ixm-dashboard/display/{id}/edit'
+  defaults:
+    _form: '\Drupal\ixm_dashboard\Form\IxmDashboardDisplayEditForm'
+    _title: 'Edit Dashboard Display'
+  requirements:
+    _permission: 'administer ixm dashboard'
+ixm_dashboard.display.toggle:
+  path: '/admin/config/user-interface/ixm-dashboard/display/{id}/toggle'
+  defaults:
+    _controller: '\Drupal\ixm_dashboard\Controller\IxmDashboardController::toggleDisplay'
+    _title: 'IXM Dashboard'
+  requirements:
+    _permission: 'administer ixm dashboard'
+    _csrf_token: 'TRUE'
+
+ixm_dashboard.displayPage:
+  path: '/ixm/display/{id}'
+  defaults:
+    _controller: '\Drupal\ixm_dashboard\Controller\IxmDashboardController::displayPage'
+    _title: 'IXM Dashboard'
+  requirements:
+    _permission: 'access ixm dashboard'
+ixm_dashboard.displayAjax:
+  path: '/ixm/ajax/{id}'
+  defaults:
+    _controller: '\Drupal\ixm_dashboard\Controller\IxmDashboardController::displayAjax'
+    _title: 'IXM Dashboard'
+  requirements:
+    _permission: 'access ixm dashboard'
+
+route_callbacks:
+  - '\Drupal\ixm_dashboard\Routing\IxmDashboardRoutes::routes'

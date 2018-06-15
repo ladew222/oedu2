@@ -1,0 +1,71 @@
+#widget-seo .item-list ul {
+	list-style: none;
+}
+
+#widget-seo .item-list ul li {
+	margin-left: 0;
+}
+
+#widget-seo .title {
+	margin-bottom: 1em;
+}
+
+.seo-status i {
+  margin-right: 0.25em;
+  font-size: 1.5em;
+  vertical-align: sub;
+}
+.seo-status .status {
+  text-transform: uppercase;
+}
+
+.type-title {
+  font-size: 14px;
+}
+
+.ixd-seo-snippet {
+  border: 1px solid #f7f7f7;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 1em;
+}
+.ixd-seo-snippet .snippet-title {
+  color: #1e0fbe;
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0;
+}
+.ixd-seo-snippet .snippet-url,
+.ixd-seo-snippet .snippet-description {
+  font-size: 13px;
+  line-height: 1.4;
+}
+.ixd-seo-snippet .snippet-url {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #006621;
+  font-style: normal;
+}
+.ixd-seo-snippet .snippet-url .urlBase {
+  float: left;
+}
+.ixd-seo-snippet .snippet-description {
+  color: #333;
+}
+.focus-keyword-container .focus-keyword {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px rgba(255,255,255,0.8) solid;
+  padding: 0.25em 0;
+  margin-bottom: 0.5em;
+}
+.focus-keyword-container .focus-desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}

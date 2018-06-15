@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Interests
+vid: interests
+description: 'Research Interests that can be used with profiles or other content types'
+hierarchy: 0
+weight: 0

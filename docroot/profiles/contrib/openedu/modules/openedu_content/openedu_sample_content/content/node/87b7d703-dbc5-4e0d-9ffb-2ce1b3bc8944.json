@@ -1,0 +1,161 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/story\/growing-soil?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/field_story_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-61100_1.jpeg"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "87b7d703-dbc5-4e0d-9ffb-2ce1b3bc8944"
+        }
+    ],
+    "vid": [
+        {
+            "value": 5
+        }
+    ],
+    "type": [
+        {
+            "target_id": "story"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Growing in the soil"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/field_story_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-61100_1.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4f716eb2-b745-4e4d-8ddd-43e74b26aa31"
+                    }
+                ],
+                "alt": "D. Cochran",
+                "title": "",
+                "width": "1920",
+                "height": "1280"
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493014136
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496099067
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/story\/growing-soil",
+            "pid": 23
+        }
+    ],
+    "body": [
+        {
+            "value": "<p><em>Cras scelerisque orci quis vestibulum sagittis. Praesent interdum sem vitae tincidunt sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin erat nulla, aliquet et auctor at, semper at ipsum. Donec sit amet sagittis nisl, tincidunt imperdiet arcu. Etiam efficitur dolor vitae vehicula lacinia. <\/em><\/p>\r\n\r\n<p><em>Donec scelerisque, ante nec facilisis varius, dolor leo bibendum purus, sit amet rutrum sapien felis vel arcu. Donec ultrices orci a nibh cursus aliquam at a ligula. Curabitur ac dui diam.<\/em><\/p>\r\n\r\n<p><em>Pellentesque consectetur euismod massa sed interdum. In non egestas ligula. Aliquam non arcu et libero malesuada efficitur. Etiam eu lectus dolor. Proin commodo, tellus ac tristique efficitur, nulla diam suscipit ex, vitae maximus felis nulla id metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque fringilla feugiat leo, vel lacinia ante sodales in. <\/em><\/p>\r\n\r\n<p><em>Ut in erat iaculis, feugiat risus at, tincidunt nulla. Phasellus a mi diam. Vestibulum iaculis lobortis lorem, eget vestibulum est iaculis sit amet. Aliquam erat volutpat. Nullam at arcu eu velit tristique fringilla.<\/em><\/p>\r\n\r\n<blockquote>\r\n<p>\u201cVestibulum iaculis lobortis lorem, eget vestibulum est,\" she said.<\/p>\r\n<\/blockquote>\r\n\r\n<p>Sed pretium felis erat, quis consectetur leo rhoncus id. Quisque fermentum pellentesque auctor. Nunc justo est, aliquet sed libero vitae, eleifend congue mauris. Fusce in sem sit amet nulla pharetra venenatis ut ac eros. Suspendisse in bibendum sapien, in facilisis sapien. Etiam mollis tempus tellus vel scelerisque. Nam sit amet imperdiet mauris.<\/p>\r\n\r\n<h3>Vivamus varius dapibus lacus, a suscipit lacus sodales vitae<\/h3>\r\n\r\n<p>Morbi in volutpat metus, vitae sollicitudin turpis. Nunc fermentum quam elit, a sagittis elit convallis quis. Aliquam erat volutpat. Morbi sit amet odio eu mauris malesuada porttitor. Etiam posuere nisl accumsan scelerisque ultrices. Maecenas malesuada sagittis vestibulum. Donec facilisis convallis eros eget aliquet.<\/p>\r\n\r\n<p>Sed sodales condimentum arcu. Curabitur ornare tincidunt pellentesque. Pellentesque dapibus nisi eros, eu vehicula lectus dapibus vel. Mauris nisl urna, suscipit ac velit at, porttitor volutpat nibh. Phasellus vestibulum ante massa, non auctor velit ultrices quis. Quisque dolor elit, venenatis sed erat id, lobortis lacinia sem.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_story_caption": [
+        {
+            "value": "<p>IXU Research Project.<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_story_subtitle": [
+        {
+            "value": "D. Cochran, in the project space."
+        }
+    ]
+}

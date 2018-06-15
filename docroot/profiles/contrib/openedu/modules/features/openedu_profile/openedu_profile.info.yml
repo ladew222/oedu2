@@ -1,0 +1,31 @@
+name: 'OpenEDU Profile'
+description: 'Provides Profile content type and related configuration. '
+type: module
+core: 8.x
+version: '8.x-3.0'
+dependencies:
+  - block_content
+  - facets
+  - field
+  - file
+  - image
+  - lightning_core
+  - menu_ui
+  - name
+  - node
+  - openedu_course
+  - openedu_department
+  - openedu_program
+  - options
+  - panelizer
+  - panels
+  - path
+  - pathauto
+  - query_filter_cards
+  - system
+  - taxonomy
+  - telephone
+  - text
+  - twig_field_value
+  - user
+package: OpenEDU
