@@ -36,7 +36,7 @@ source:
   # source plugin with the identifier "csv".
   plugin: csv
   # Specify the path to the CSV data source.
-  path: /Users/ericweinberg/Desktop/profile.csv
+  path: /Users/ericweinberg/Desktop/alumni.csv
   # Number of rows at the beginning which are not actual data.
   # column names need to be in order
   delimiter: ','
@@ -77,7 +77,7 @@ destination:
   # We specify the default node type as "program" because
   # we will only be importing nodes of type "program" in this
   # migration.
-  default_bundle: profile
+  default_bundle: story
 # Mapping.
 #
 # We can create simple mappings without any changes to
@@ -90,35 +90,19 @@ process:
   # the usage of the plugin "get" which simply copies the source
   # property value to the destination property.
   title: title
+  uid: constants/uid_root
   Quote: Quote
   field_story_caption: employment
-  field_profile_image:
+  'field_story_image/target_id':
     plugin: migration
     migration: story_image
-    source: field_story_image
-  'field_profile_image/alt': title
-  # Similarly, we can define a default user for the imported nodes.
-  uid: constants/uid_root
-  # Some fields have multiple properties! For example, the "body" field
-  # can have the actual full text, a summary, etc. Values can be
-  # assigned to specific properties using the syntax used below. We
-  # wrap the destination property name in quotes to comply with YAML
-  # specifications.
-  #
-  # Unfortunately, at the time of writing this code, there is no UI or
-  # drush migrate-fields-destination. Hence, one might have to refer
-  # to the structure of various field-types for determining the properties
-  # supported by various fields.
-  #
-  # Reference: https://www.drupal.org/node/2630732
-  'field_profile_image/target_id':
-    plugin: migration
-    migration: profile_image
     source: FileName
+  'field_story_image/alt': title
+  # Similarly, we can define a default user for the imported nodes.
+
   # Now that we have the images in place, we also copy the alternate text
   # for the images to the "alt" property of "field_image". Having "alt"
   # would help improve accessibility and SEO.
-  'field_profile_image/alt': title
 # With the migration_dependencies, as the name suggests, we can specify
 # if this migration requires some other migrations to be run first.
 #
