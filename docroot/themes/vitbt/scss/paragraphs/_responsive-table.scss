@@ -1,0 +1,44 @@
+.paragraph--type--responsive-table{
+  .field--name-field-title{
+    @extend h2;
+  }
+  .paragraph--type--column{
+    float:left;
+    display: block;
+    padding:12px;
+    .paragraph--type--text{
+      padding-bottom: 18px;
+      &:nth-child(even) {
+        background: red;
+      }
+    }
+  }
+  .paragraph--type--file-listing{
+    float: left;
+    display:block;
+    margin: 18px;
+    .field--name-field-media{
+      .field--name-field-document{
+        .file-link{
+          width: fit-content;
+        }
+        .file-icon{
+          display: inline;
+          border:0px;
+
+        }
+        .file > span {
+          border:0px;
+
+        }
+      }
+    }
+
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}

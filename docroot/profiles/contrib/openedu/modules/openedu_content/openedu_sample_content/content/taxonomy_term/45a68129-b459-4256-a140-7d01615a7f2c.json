@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/22?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+        }
+    },
+    "tid": [
+        {
+            "value": 22
+        }
+    ],
+    "uuid": [
+        {
+            "value": "45a68129-b459-4256-a140-7d01615a7f2c"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "interests"
+        }
+    ],
+    "name": [
+        {
+            "value": "Finance"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494269298
+        }
+    ]
+}

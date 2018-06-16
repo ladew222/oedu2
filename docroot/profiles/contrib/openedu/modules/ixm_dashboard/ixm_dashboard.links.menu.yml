@@ -1,0 +1,5 @@
+ixm_dashboard.overview:
+  title: 'IXM Dashboard'
+  description: 'Configure IXM Dashboard'
+  route_name: ixm_dashboard.overview
+  parent: system.admin_config_ui

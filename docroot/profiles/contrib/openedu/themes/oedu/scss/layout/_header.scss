@@ -1,0 +1,235 @@
+// Top Header Navbar.
+#header {
+  background-color: $primary;
+
+  .header__bar {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  // Resources Dropdown.
+  .menu--resources {
+    .dropdown-toggle {
+      @include border-radius(0);
+
+      outline: none;
+      border: none;
+      background: rgba($gray-base, 0.35);
+      color: $white;
+      font-style: italic;
+      line-height: 1.75;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      width: 100%;
+
+      .dropdown-item {
+        font-size: 14px;
+        color: $gray-darker;
+        border-bottom: 1px solid rgba($gray-dark, 0.35);
+        display: block;
+        padding: 15px;
+
+        &:last-of-type {
+          border: none;
+        }
+
+        &:hover {
+          background: $primary-lighter;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  // Utility Navigation.
+  .menu--utility-navigation {
+    margin: 7.5px 0;
+    position: relative;
+
+    ul {
+      a {
+        font-size: 1em;
+        color: rgba(#fff, 0.75);
+        padding: .25em 0;
+        display: block;
+
+        &:hover,
+        &:focus {
+          color: $btn-primary-bg;
+          text-decoration: none;
+        }
+
+        // apply button
+        &.apply {
+          font-size: .75em;
+          padding: 8px 12px;
+          box-shadow: none;
+          color: $white;
+
+          &:hover {
+            background: $btn-primary-hover;
+            color: $white;
+          }
+        }
+
+        // @todo: find out if you can parse a value from the class (ie. flex-[sm]-column)
+        // to pass into the breakpoint mixin below
+        @include media-breakpoint-up(md) {
+          margin: 0 1em 0 0;
+          font-size: 0.75em;
+
+          &.apply {
+            margin: 0;
+            padding: 3px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Search Button Toggler.
+.search_bar--btn {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+/**
+* Search Bar Navbar.
+*/
+.search_bar {
+  background-color: lighten($primary, 10%);
+
+  .form--inline {
+    align-items: stretch !important;
+    height: 45px;
+
+    .form-item {
+      position: relative;
+      float: none;
+      margin: 0;
+      width: calc(100% - 75px);
+    }
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form-control,
+  .form-submit {
+    height: 100%;
+    border-bottom: 4px solid $primary;
+    border-radius: 0;
+  }
+
+  .form-control,
+  .form-control:focus {
+    float: none;
+    width: 100%;
+    border: none;
+    background-color: $gray-lighter;
+    border-bottom: 4px solid $primary;
+    box-shadow: none;
+    background-image: none !important;
+  }
+
+  .form-control::placeholder {
+    font-style: italic;
+  }
+
+  .progress-throbber {
+    right: 10px;
+  }
+
+  .form-actions {
+    min-width: 75px;
+  }
+
+  .form-submit {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .ui-autocomplete {
+    border-radius: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    form {
+      width: auto;
+    }
+
+    .form-control {
+      min-width: 21.75em;
+    }
+  }
+}
+
+/**
+* Main Header Navbar.
+*/
+#navbar {
+  @include make-container();
+  @include make-container-max-widths();
+
+  .nav .dropdown {
+    .dropdown-toggle {
+      &.active {
+        color: #555;
+        background-color: #e7e7e7;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    // main nav > dropdown
+    .dropdown-menu {
+      border-radius: 0;
+
+      a {
+        font-size: .875rem;
+        color: $gray-darker;
+        display: block;
+      }
+
+      li:hover,
+      li.active,
+      li:active {
+        background: $primary-lighter;
+
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+
+      li.active,
+      li:active {
+        background: $primary-light;
+      }
+    }
+
+    // show subnav on hover
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+}

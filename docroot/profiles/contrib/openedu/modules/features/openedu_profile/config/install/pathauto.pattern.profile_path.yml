@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: profile_path
+label: 'Profile Path '
+type: 'canonical_entities:node'
+pattern: 'profile-list/[node:title]'
+selection_criteria:
+  fa9319e4-67b1-462e-a661-9dc63ddb7dce:
+    id: node_type
+    bundles:
+      profile: profile
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fa9319e4-67b1-462e-a661-9dc63ddb7dce
+selection_logic: and
+weight: -5
+relationships: {  }

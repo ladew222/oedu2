@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+ROOT_DIR="$(pwd)"
+PHPCS_BIN=$ROOT_DIR/bin/phpcs
+
+echo "Executing .git/hooks/pre-commit..."
+$PHPCS_BIN --config-set installed_paths $ROOT_DIR/vendor/drupal/coder/coder_sniffer
+
+$PHPCS_BIN --standard=Drupal --ignore=node_modules,*.css,*.md,*.txt,*.info.yml $ROOT_DIR/modules/ $ROOT_DIR/themes/
+
+# Return the status of the last run command.
+exit $?
+

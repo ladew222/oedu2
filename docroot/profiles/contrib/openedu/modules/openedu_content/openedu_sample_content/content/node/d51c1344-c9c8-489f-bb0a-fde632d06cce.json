@@ -1,0 +1,240 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/news\/choices-expand-higher-education-despite-reduced-class-sizes?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/28?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-267885_7_1.jpeg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "href": "http:\/\/default\/news\/aumni-organize-promote-higher-education?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/news\/faculty-groups-promote-increased-stem-research?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 44
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d51c1344-c9c8-489f-bb0a-fde632d06cce"
+        }
+    ],
+    "vid": [
+        {
+            "value": 44
+        }
+    ],
+    "type": [
+        {
+            "target_id": "news"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Choices expand in higher education despite reduced class sizes"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/28?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d843e4ef-fd99-4045-81d9-5033ec516ecf"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b5f0fc09-bf3f-46f2-884f-3a6bd7aa417e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-267885_7_1.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "941db4ac-58cf-44fc-b389-72c1bd600784"
+                    }
+                ],
+                "alt": "Students throwing graduation caps.",
+                "title": "Todd will be merging with Anderson JC, Tampines JC will be merging with Meridian JC, Innova JC will be merging with Yishun JC, and Jurong JC will be merging",
+                "width": "3000",
+                "height": "2000"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/aumni-organize-promote-higher-education?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "050e140f-9e7a-4764-9d86-9940c555a667"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/faculty-groups-promote-increased-stem-research?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b8215089-cdf4-4d7d-8f12-e80c69a84f7b"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493661466
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496160974
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/choices-expand-higher-education-despite-reduced-class-sizes",
+            "pid": 27
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Aliquam sit amet ligula id nisi dapibus mollis. Phasellus quis dapibus ligula. Cras neque odio, dignissim non hendrerit id, lobortis at augue. Mauris porta ipsum vitae purus maximus auctor. Mauris a iaculis sem. Morbi sit amet ligula et quam tincidunt semper. Nunc ac purus non sapien semper condimentum.<\/p>\r\n\r\n<blockquote>\r\n<p>Aliquam erat volutpat.<\/p>\r\n<\/blockquote>\r\n\r\n<p>Phasellus eu imperdiet tellus, ut tempus leo. Etiam hendrerit, odio vitae finibus ultrices, ipsum dolor pulvinar risus, id malesuada risus mi ut lacus. Pellentesque tincidunt gravida nunc sit amet dapibus. Nulla gravida accumsan neque, et dignissim libero egestas ac.<\/p>\r\n\r\n<p>Integer augue neque, lacinia et tincidunt in, aliquam ut urna. Duis commodo neque eget nisi gravida mollis. Fusce dapibus eros nec urna rutrum, id varius felis laoreet. Duis sed suscipit risus. Sed blandit porta metus, blandit efficitur nunc faucibus quis. Nulla id euismod dolor, sit amet tincidunt est. Donec eget cursus sem. Cras et faucibus nulla. Aliquam eget iaculis lacus, ac lacinia diam. Pellentesque luctus aliquam pulvinar. Praesent vel dignissim massa, vitae ullamcorper felis. Donec at risus non tortor condimentum posuere quis pulvinar velit.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_news_date": [
+        {
+            "value": "2016-09-22"
+        }
+    ],
+    "field_news_featured": [
+        {
+            "value": false
+        }
+    ]
+}

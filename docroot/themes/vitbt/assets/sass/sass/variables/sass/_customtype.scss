@@ -1,0 +1,23 @@
+@import "compass/typography/vertical_rhythm";
+.jumbotron h1, .jumbotron h2 {
+    font-weight: 300;
+    font-family: Rokkitt;
+    @include breakpoint (480px, true){
+    	@include adjust-font-size-to(280%);
+    }
+    @include breakpoint (960px, true){
+    	@include adjust-font-size-to(600%);
+  }
+
+}
+.jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
+    font-weight: 300;
+    font-family: Rokkitt;
+    @include breakpoint (480px, true){
+    	@include adjust-font-size-to(140%);
+    }
+    @include breakpoint (960px, true){
+    	@include adjust-font-size-to(300%);
+    }
+
+}

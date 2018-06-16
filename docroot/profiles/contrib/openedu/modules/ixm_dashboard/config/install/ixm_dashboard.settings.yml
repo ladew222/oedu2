@@ -1,0 +1,7 @@
+exclude: {}
+displays:
+  user:
+    status: true
+    widget: true
+    weight: 10
+    settings: {  }

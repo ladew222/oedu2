@@ -1,0 +1,12 @@
+ixd_seo:
+  version: VERSION
+  css:
+    component:
+      css/ixd_seo.css: {}
+  js:
+    js/ixd_seo.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - yoast_seo/analytics_core

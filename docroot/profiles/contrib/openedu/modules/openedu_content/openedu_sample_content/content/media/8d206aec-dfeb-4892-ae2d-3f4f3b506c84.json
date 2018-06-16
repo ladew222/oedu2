@@ -1,0 +1,153 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/media\/3?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/flag_7_1.png"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/flag_7_1.png"
+            }
+        ]
+    },
+    "mid": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8d206aec-dfeb-4892-ae2d-3f4f3b506c84"
+        }
+    ],
+    "vid": [
+        {
+            "value": 3
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "image"
+        }
+    ],
+    "name": [
+        {
+            "value": "Flag"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/flag_7_1.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ad8cd4ad-d8ab-497e-a9e5-02ecc1470064"
+                    }
+                ],
+                "alt": "Thumbnail",
+                "title": "Flag",
+                "width": "70",
+                "height": "67"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/image\/image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/flag_7_1.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ad8cd4ad-d8ab-497e-a9e5-02ecc1470064"
+                    }
+                ],
+                "alt": "",
+                "title": "",
+                "width": "70",
+                "height": "67"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": 1494259366
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494259366
+        }
+    ],
+    "field_media_in_library": [
+        {
+            "value": true
+        }
+    ]
+}

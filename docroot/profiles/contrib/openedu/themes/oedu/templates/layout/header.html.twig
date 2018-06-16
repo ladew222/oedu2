@@ -1,0 +1,112 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the themes header.
+  */
+#}
+{% set container = 'container-fluid' %}
+<header class="site-header">
+  <div {{ attributes.addClass(container) }}>
+    <div class="row">
+
+      <!-- logo & nav -->
+      {% if page.navigation %}
+        {% set logo_nav_classes = [
+        'col-12 order-1',
+        breakpoint ? 'order-' ~ breakpoint|clean_class ~ '-3' : '',
+        theme.settings.navbar_colour ? theme.settings.navbar_colour|clean_class : '',
+        ]
+        %}
+        <div{{ navbar_colour.addClass(logo_nav_classes) }}>
+          {% block navbar %}
+            {% set navbar_classes = [
+            'navbar py-2 align-items-end',
+            breakpoint ? 'navbar-expand-' ~ breakpoint|clean_class : '',
+            theme.settings.navbar_position ? theme.settings.navbar_position|clean_class : container,
+            breakpoint ? 'py-' ~ breakpoint|clean_class ~ '-3' : '',
+            ]
+            %}
+            <nav{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="navigation">
+              {{ page.navigation }}
+              <a class="navbar-toggler search_bar--btn text-muted" data-toggle="collapse" data-target="#search_bar" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle search bar.">
+                <i class="material-icons" data-text-alter="close">search</i>
+              </a>
+              <a class="navbar-toggler text-muted" data-toggle="collapse" data-target="#header" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation.">
+                <i class="material-icons" data-text-alter="close">menu</i>
+              </a>
+            </nav>
+          {% endblock %}
+        </div>
+      {% endif %}
+      <!-- / logo & nav -->
+
+      <!-- search bar -->
+      {% if page.search_bar %}
+        {% set search_bar_attributes = create_attribute() %}
+        {% set search_bar_classes = [
+        'search_bar col-12 order-2 collapse',
+        breakpoint ? 'order-' ~ breakpoint|clean_class ~ '-2' : '',
+
+        ]
+        %}
+        <div{{ search_bar_attributes.addClass(search_bar_classes) }} id="search_bar">
+          {% block search_bar %}
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  {{ page.search_bar }}
+                </div>
+              </div>
+            </div>
+          {% endblock %}
+        </div>
+      {% endif %}
+      <!-- / search bar -->
+
+      <!-- page header -->
+      {% if page.header_bar %}
+        {% set header_attributes = create_attribute() %}
+        {% set header_classes = [
+        'collapse col-12 order-3',
+        breakpoint ? 'order-' ~ breakpoint|clean_class ~ '-1' : '',
+        breakpoint ? 'd-' ~ breakpoint|clean_class ~ '-block' : '',
+        breakpoint ? 'navbar-expand-' ~ breakpoint|clean_class : '',
+        ]
+        %}
+        <div{{ header_attributes.addClass(header_classes) }} id="header">
+          {% set header__bar_attributes = create_attribute() %}
+          {% set header__bar_classes = [
+          'header__bar p-3',
+          breakpoint ? 'py-' ~ breakpoint|clean_class ~ '-0' : '',
+          ]
+          %}
+          <div{{ header__bar_attributes.addClass(header__bar_classes) }} role="banner">
+            {% block header_bar %}
+              {% set header__bar_flex_attributes = create_attribute() %}
+              {% set header__bar_flex_classes = [
+              'd-block',
+              breakpoint ? 'd-' ~ breakpoint|clean_class ~ '-flex' : '',
+              breakpoint ? 'justify-content-' ~ breakpoint|clean_class ~ '-end' : '',
+              ]
+              %}
+              <div{{ header__bar_flex_attributes.addClass(header__bar_flex_classes) }}>
+                {{ page.header_bar }}
+                {% set search_bar_attributes = create_attribute() %}
+                {% set search_bar_classes = [
+                'navbar-toggler search_bar--btn py-2 pl-3 text-light d-none',
+                breakpoint ? 'd-' ~ breakpoint|clean_class ~ '-flex' : '',
+                ]
+                %}
+                <a {{ search_bar_attributes.addClass(search_bar_classes) }} data-toggle="collapse" data-target="#search_bar" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle search bar.">
+                  <i class="material-icons" data-text-alter="close">search</i>
+                </a>
+              </div>
+            {% endblock %}
+          </div>
+        </div>
+      {% endif %}
+      <!-- / page header -->
+
+    </div>
+  </div>
+</header>

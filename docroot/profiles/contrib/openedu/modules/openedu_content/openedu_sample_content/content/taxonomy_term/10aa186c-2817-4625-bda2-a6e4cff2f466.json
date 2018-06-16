@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/3?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+        }
+    },
+    "tid": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "10aa186c-2817-4625-bda2-a6e4cff2f466"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "news_categories"
+        }
+    ],
+    "name": [
+        {
+            "value": "Literature"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494265564
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+// Lists
+// -------------------------
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+ol .popover &:last-child,
+ul .popover &:last-child {
+  margin-bottom: 0;
+}
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-base / 2);
+
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+.list-unstyled {
+  @include list-unstyled;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: $line-height-base;
+}
+
+dt,
+dd {
+  line-height: $line-height-base;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+}

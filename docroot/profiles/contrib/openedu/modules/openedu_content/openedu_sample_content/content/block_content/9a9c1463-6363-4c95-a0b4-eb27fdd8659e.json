@@ -1,0 +1,64 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/12?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 12
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9a9c1463-6363-4c95-a0b4-eb27fdd8659e"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 35
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "info": [
+        {
+            "value": "Outstanding Faculty"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-12-11T21:28:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2017-12-11T22:29:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Maecenas id iaculis nulla, vitae ullamcorper nisi. Duis ut ligula sed diam dictum scelerisque vel vitae eros. Nullam eu rutrum dolor. Aliquam pretium, eros in ullamcorper blandit, libero lacus ultrices nibh, et venenatis ipsum magna eu magna. Etiam imperdiet scelerisque efficitur. Ut porttitor, risus a luctus condimentum, nisi sapien iaculis metus, ac mattis turpis arcu a neque. Aliquam dictum elit est, vitae tincidunt turpis iaculis vel. Fusce ut commodo augue. Etiam consectetur, ex quis rutrum commodo, tortor justo scelerisque odio, et malesuada nunc ex eget urna.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\">Button<\/a><\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ]
+}

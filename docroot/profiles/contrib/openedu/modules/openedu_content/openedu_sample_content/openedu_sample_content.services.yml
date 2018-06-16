@@ -1,0 +1,5 @@
+services:
+  openedu_sample_content.subscriber:
+    class: Drupal\openedu_sample_content\EventSubscriber\OpeneduSampleContentSubscriber
+    tags:
+      - { name: event_subscriber }

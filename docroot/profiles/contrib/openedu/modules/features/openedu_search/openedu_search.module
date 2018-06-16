@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains news-specific functionality for the OpenEDU distribution.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function openedu_search_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form['#id'] === 'views-exposed-form-openedu-search-block-1') {
+    $form['#action'] = '/search';
+    $form['keywords']['#attributes']['placeholder'] = t("Search...");
+    $form['keywords']['#attributes']['class'][] = 'form-control';
+  }
+}

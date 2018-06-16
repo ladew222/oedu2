@@ -1,0 +1,23 @@
+name: 'OpenEDU Story'
+description: 'Provides Story content type and related configuration. '
+type: module
+core: 8.x
+version: '8.x-3.0'
+dependencies:
+  - block_content
+  - entity_browser
+  - field
+  - file
+  - flickity_fields
+  - flickity_views
+  - image
+  - menu_ui
+  - node
+  - openedu_news
+  - panelizer
+  - path
+  - pathauto
+  - text
+  - user
+  - views
+package: OpenEDU

@@ -1,0 +1,13 @@
+name: 'OpenEDU Hero'
+description: 'Custom block type for Hero Banners'
+type: module
+core: 8.x
+version: '8.x-3.0'
+package: OpenEDU
+dependencies:
+  - block_content
+  - field
+  - text
+  - crop
+  - image_widget_crop
+  - inline_entity_form

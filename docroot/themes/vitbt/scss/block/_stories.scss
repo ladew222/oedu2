@@ -1,0 +1,140 @@
+.block--openedu-stories-block {
+
+  padding-bottom: 35px !important;
+
+  .path-frontpage & {
+    margin-top: 40px;
+   /* background: #f7f7f7;
+    @include angle(#f7f7f7);
+    .field--name-field-stories-title {
+      color: $brand-primary;
+    }*/
+  }
+
+  .field--name-field-stories-title {
+    @extend h2;
+    @include underlined-title();
+    text-align: center;
+  }
+
+  .carousel {
+    @extend .container-fluid;
+    max-width: 1080px;
+    padding: 2em 50px;
+    .gallery-cell {
+      width:420px;
+      @media #{$tablet} {
+        width: 320px;
+      }
+      padding: 0 20px;
+      margin: 0;
+
+      article {
+        position: relative;
+        padding: 5px;
+        background: #fff;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba($gray-base, 0.2);
+        -moz-box-shadow: 0px 2px 5px 0px rgba($gray-base, 0.2);
+        box-shadow: 0px 2px 5px 0px rgba($gray-base, 0.2);
+        margin-bottom: 0.675em;
+        min-height: 480px;
+
+        h2 {
+          font-weight: bold;
+          margin: 0.775em auto;
+          padding: 0 5px;
+          font-size: 16px;
+          line-height: 19px;
+          color: $gray-darker;
+          margin-bottom: 0px;
+
+          a {
+            color: $gray-darker;
+          }
+        }
+
+        .field--name-field-story-image {
+          img {
+            width: 100%;
+          }
+        }
+        .storyq{
+          color: $gray-darker;
+          padding: 3%;
+        }
+
+        .field--name-field-story-caption {
+          font-size: 0.875em;
+          padding: 0 5px;
+          color: rgba($gray-darker, 0.8);
+          //margin-bottom: 30px;
+        }
+
+        .view-item-container {
+          position: absolute;
+          text-align: right;
+          bottom: 5px;
+          right: 5px;
+          .view-item {
+            position: relative;
+            bottom: -5px;
+            right: -5px;
+            font-size: 0.8em;
+            display: inline-block;
+            border: 1px solid $brand-primary;
+            border-top: none;
+            border-bottom: none;
+            /* padding: 5px 10px; */
+            width: 0;
+            height: 0;
+            border-bottom: 100px solid #101d43;
+            border-left: 100px solid transparent;
+            .fa {
+              padding-left: 5px;
+            }
+            &:hover {
+              //background-color: $brand-info;
+              cursor: pointer;
+              a {
+                color: $brand-info;
+                text-decoration: none;
+              }
+            }
+            a {
+              color: white;
+              position: relative;
+              left: -35px;
+              top: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .flickity-prev-next-button {
+      opacity: 1 !important;
+      cursor: pointer;
+      border-radius: 0;
+      width: 30px;
+      height: 150px;
+      background: $gray-base;
+      background: rgba($gray-base, 0.1);
+      color: $gray-base;
+      svg {
+        display: none;
+        opacity: 0;
+      }
+      &.previous {
+        @extend .fa, .fa-long-arrow-left;
+      }
+      &.next {
+        @extend .fa, .fa-long-arrow-right;
+      }
+      &:hover {
+        color: #fff;
+        background: $brand-info;
+      }
+    }
+  }
+
+}

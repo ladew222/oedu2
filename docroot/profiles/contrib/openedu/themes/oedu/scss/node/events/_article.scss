@@ -1,0 +1,93 @@
+article.event.teaser-card {
+  .event-picture {
+    position: relative;
+  }
+
+  .field--name-field-event-date {
+    top: 73px;
+    color: white;
+    right: 0;
+    bottom: 0;
+    padding: 0 10px;
+    position: absolute;
+    background: #9dcc56;
+
+    .fa {
+      padding-right: 5px;
+    }
+  }
+
+  h4 {
+    color: $primary-darker;
+    font-size: 16px;
+    font-weight: 600;
+
+    a {
+      color: $primary-darker;
+    }
+  }
+
+  .content {
+    font-size: 14px;
+    color: $gray-dark;
+  }
+}
+
+article.event.teaser {
+  &:hover {
+    box-shadow: inset -5px 0 0 0 $info;
+  }
+
+  .content {
+    padding: 0.2em;
+
+    > .image {
+      float: left;
+      width: 25%;
+    }
+
+    .wrapper {
+      float: left;
+      width: 75%;
+      font-size: 14px;
+      padding: 0 2em;
+
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 12px;
+
+        a {
+          color: $gray-darker;
+
+          &:hover {
+            color: $info;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .date {
+        font-size: 12px;
+        color: $gray-darker;
+        font-weight: 600;
+
+        span {
+          font-weight: 700;
+          padding-right: 0.4em;
+        }
+
+        i {
+          color: $gray;
+          padding-right: 0.5em;
+          vertical-align: bottom;
+          font-size: 1.5em;
+        }
+      }
+
+      .field--name-body {
+        margin-top: 10px;
+      }
+    }
+  }
+}

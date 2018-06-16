@@ -1,0 +1,18 @@
+.block-views-blockdegree-list-degree-listing-block{
+  .view-id-degree_list{
+    ul{
+      list-style: none;
+    }
+
+  }
+}
+//degrees search page
+.path-degrees{
+  .col-sm-4{
+    .block-views-blockdegree-list-degree-listing-block{
+      .view-content{
+        display: none;
+      }
+    }
+  }
+}

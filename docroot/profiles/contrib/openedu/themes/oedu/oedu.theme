@@ -1,0 +1,275 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the OpenEDU theme.
+ */
+
+use Drupal\Core\Link;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements THEME_preprocess().
+ */
+function oedu_preprocess(&$variables, $hook) {
+  // Allow twig to pickup base path for search results page.
+  $variables['http_host'] = $_SERVER['HTTP_HOST'];
+}
+
+/**
+ * Implements theme_preprocess_HOOK() for html.html.twig.
+ */
+function oedu_preprocess_html(array &$variables) {
+
+  $variables['theme_name'] = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+
+  // SEO Information.
+  $http_equiv = [
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => [
+      'http-equiv' => 'x-ua-compatible',
+      'content' => 'ie=edge',
+    ],
+  ];
+  $variables['page']['#attached']['html_head'][] = [$http_equiv, 'http-equiv'];
+
+  // Add the node's ID to the body class.
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['attributes']['class'][] = 'page-node-' . $node->id();
+  }
+
+  // Set breakpoint classes.
+  $variables['breakpoint'] = theme_get_setting('navbar_toggle');
+
+  // Define navigation position.
+  switch (theme_get_setting('navbar_position')) {
+    case 'sticky-top':
+      $variables['navbar_attributes']['class'][] = 'sticky-top';
+      break;
+
+    case 'fixed-top':
+      $variables['navbar_attributes']['class'][] = 'fixed-top';
+      break;
+
+    case 'fixed-bottom':
+      $variables['navbar_attributes']['class'][] = 'fixed-bottom';
+      break;
+  }
+
+  // Declare navbar position classes.
+  $variables['navbar_attributes'] = new Attribute(isset($variables['navbar_attributes']) ? $variables['navbar_attributes'] : []);
+
+  // Define navigation colour.
+  switch (theme_get_setting('navbar_colour')) {
+    case 'light':
+      $variables['navbar_colour']['class'][] = 'navbar-light bg-light';
+      break;
+
+    case 'dark':
+      $variables['navbar_colour']['class'][] = 'navbar-dark bg-dark';
+      break;
+
+    default:
+      $variables['navbar_colour']['class'][] = 'navbar-light';
+      break;
+  }
+
+  // Declare navbar colour classes.
+  $variables['navbar_colour'] = new Attribute($variables['navbar_colour']);
+}
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function oedu_preprocess_page(array &$variables) {
+
+  // Allow us to print the logo in our page.html.twig files.
+  $variables['relative_logo_url'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+
+}
+
+/**
+ * Implements THEME_preprocess_block.
+ */
+function oedu_preprocess_block(&$variables) {
+  $variables['breakpoint'] = theme_get_setting('navbar_toggle');
+  $variables['theme_name'] = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function oedu_theme_suggestions_html_alter(array &$suggestions, array $variables) {
+  if (in_array('html__user__login', $suggestions)
+    || in_array('html__user__register', $suggestions)
+    || in_array('html__user__password', $suggestions)) {
+    $suggestions[] = 'html__user__login';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function oedu_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Add page template suggestion for panel page and nodes with panels.
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if ($node->hasField('panelizer')) {
+      array_unshift($suggestions, 'page__panels');
+    }
+  }
+  if (\Drupal::routeMatch()->getParameter('page_manager_page')) {
+    array_unshift($suggestions, 'page__panels');
+  }
+  if (in_array('page__user__register', $suggestions)
+    || in_array('page__user__register', $suggestions)
+    || in_array('page__user__password', $suggestions)) {
+    $suggestions[] = 'page__user__login';
+  }
+}
+
+/**
+ * Implements THEME_preprocess_breadcrumb.
+ *
+ * Trims long page title breadcrumbs.
+ */
+function oedu_preprocess_breadcrumb(&$variables) {
+  if (($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']) {
+    // Adding the title of the current page in the breadcrumb trail.
+    $variables['breadcrumb'][] = [
+      'text' => $node->getTitle(),
+    ];
+  }
+  if (isset($variables['breadcrumb'])) {
+    // Only trim about 50 characters.
+    $last_item = end($variables['breadcrumb']);
+    if (strlen($last_item['text']) > 50) {
+      $variables['breadcrumb'][key($variables['breadcrumb'])]['text'] = t('Current page');
+    }
+  }
+}
+
+/**
+ * Implements THEME_preprocess_node().
+ */
+function oedu_preprocess_node(&$variables) {
+  if ($variables['node']->getType() == 'event') {
+    // Determine if the event is on the same day so we can show stop time.
+    $variables['event_same_day'] = FALSE;
+    $event_date_field = $variables['node']->get('field_event_date');
+    $start_date = $event_date_field->start_date;
+    $end_date = $event_date_field->end_date;
+    if ($start_date->format('Ymd') == $end_date->format('Ymd')) {
+      $variables['event_same_day'] = TRUE;
+    }
+    // Format the start and end time according to timezone.
+    $variables['start_time'] = \Drupal::service('date.formatter')->format($start_date->format('U'), 'custom', 'ga');
+    $variables['end_time'] = \Drupal::service('date.formatter')->format($end_date->format('U'), 'custom', 'ga');
+  }
+}
+
+/**
+ * Implements THEME_preprocess_field().
+ */
+function oedu_preprocess_field(&$variables) {
+  /* For pre-processing event dates, pass a 3date object for template
+   * formatting, and provide variable to show if the event is on the same
+   * day not when using a range */
+  if ($variables['element']['#field_name'] == 'field_event_date') {
+    foreach ($variables['element'] as $idx => $item) {
+      if (is_numeric($idx)) {
+        $event_date = $variables['element'][$idx];
+
+        // @todo: Theres something wonky happening with dates when viewing the node.
+        // looks like its probably this date_create function.
+        $start_date = !empty($event_date['start_date']) ? date_create($event_date['start_date']['#plain_text']) : '';
+        $end_date = !empty($event_date['end_date']) ? date_create($event_date['end_date']['#plain_text']) : '';
+        // Add a clause here to catch events that are on the same date.
+        if (empty($start_date) && !empty($event_date['#plain_text'])) {
+          $start_date = date_create($event_date['#plain_text']);
+          $end_date = $start_date;
+        }
+        if (date_format($start_date, 'Ymd') == date_format($end_date, 'Ymd')) {
+          $variables['items'][$idx]['event_same_day'] = TRUE;
+        }
+        $variables['items'][$idx]['content']['start_date']['date'] = $start_date;
+        $variables['items'][$idx]['content']['end_date']['date'] = $end_date;
+        $variables['view_mode'] = $variables['element']['#view_mode'];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu.html.twig.
+ */
+function oedu_preprocess_menu(&$variables) {
+  $variables['breakpoint'] = theme_get_setting('navbar_toggle');
+  if ($variables['menu_name'] === 'main') {
+    // Respect Expanded not being checked for main menu.
+    foreach ($variables['items'] as $path => $link) {
+      /** @var Drupal\core\menu\MenuLinkBase $original */
+      $original = $link['original_link'];
+      $definition = $original->getPluginDefinition();
+
+      if ($link['is_expanded'] && !$definition['expanded']) {
+        $variables['items'][$path]['is_expanded'] = FALSE;
+      }
+    }
+  }
+  if ($variables['menu_name'] === 'utility-navigation') {
+    $variables['attributes']['class'][] = 'flex-column';
+    $variables['attributes']['class'][] = 'flex-' . $variables['breakpoint'] . '-row';
+  }
+}
+
+/**
+ * Implements hook_preprocess_menu_local_task().
+ */
+function oedu_preprocess_menu_local_task(array &$variables) {
+  $variables['breakpoint'] = theme_get_setting('navbar_toggle');
+  $link = $variables['element']['#link'];
+  $url = $link['url'];
+  $options = $url->getOptions();
+  $url->setOptions($options + $link['localized_options']);
+  $variables['item'] = Link::fromTextAndUrl($link['title'], $url);
+}
+
+/**
+ * Implements hook_preprocess_input().
+ *
+ * Adds classes to inputs.
+ */
+function oedu_preprocess_input(&$variables) {
+  if ($variables['element']['#type'] == 'submit') {
+
+    if ($variables['element']['#value'] == "Preview") {
+      $variables['attributes']['class'][] = 'btn-secondary';
+    }
+
+    if (empty(array_intersect([
+      'btn-primary',
+      'btn-secondary',
+      'btn-success',
+      'btn-warning',
+      'btn-danger',
+      'btn-link',
+      'btn-info',
+    ], $variables['attributes']['class']))) {
+      $variables['attributes']['class'][] = 'btn-primary';
+    }
+    if (!in_array('btn', $variables['attributes']['class'])) {
+      $variables['attributes']['class'][] = 'btn';
+    }
+    else {
+      $variables['attributes']['class'][] = 'btn';
+      $variables['attributes']['class'][] = 'btn-primary';
+      $variables['attributes'] = new Attribute($variables['attributes']);
+    }
+  }
+  if ($variables['element']['#type'] == 'textfield'
+    || $variables['element']['#type'] == 'email'
+    || $variables['element']['#type'] == 'password') {
+    $variables['attributes']['class'][] = 'form-control';
+  }
+}

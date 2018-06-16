@@ -1,0 +1,13 @@
+name: Date Recur
+type: module
+description: Recurring date field.
+# core: 8.x
+package: Custom
+dependencies:
+- 'datetime_range'
+
+# Information added by Drupal.org packaging script on 2017-12-24
+version: '8.x-1.0-alpha5'
+core: '8.x'
+project: 'date_recur'
+datestamp: 1514115796

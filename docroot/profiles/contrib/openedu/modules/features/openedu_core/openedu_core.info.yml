@@ -1,0 +1,33 @@
+name: 'OpenEDU Core'
+description: 'Provides the core functions needed for OpenEdu'
+type: module
+core: 8.x
+package: OpenEDU
+version: '8.x-3.0'
+dependencies:
+  - block
+  - block_content
+  - ckeditor
+  - editor
+  - entity_block
+  - field
+  - file
+  - filter
+  - flickity
+  - flexible_layout
+  - lightning_core
+  - lightning_page
+  - lightning_layout
+  - lightning_media
+  - metatag
+  - node
+  - obfuscate_email
+  - pathauto
+  - panelizer
+  - system
+  - text
+  - user
+  - views
+  - webform_ui
+  - webform_bootstrap
+  - simple_sitemap

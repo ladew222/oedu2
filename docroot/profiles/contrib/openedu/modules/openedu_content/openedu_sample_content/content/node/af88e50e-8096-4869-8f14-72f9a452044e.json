@@ -1,0 +1,198 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/events\/test-event?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/event"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/event\/field_events_related_events": [
+            {
+                "href": "http:\/\/default\/events\/featured-test-event?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/events\/example-event?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/event\/field_event_department": [
+            {
+                "href": "http:\/\/default\/node\/110?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/event\/field_event_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/library-la-trobe-study-students-159775_0.jpeg"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 125
+        }
+    ],
+    "uuid": [
+        {
+            "value": "af88e50e-8096-4869-8f14-72f9a452044e"
+        }
+    ],
+    "vid": [
+        {
+            "value": 125
+        }
+    ],
+    "type": [
+        {
+            "target_id": "event"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2018-02-27T15:29:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/event\/field_events_related_events": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/events\/featured-test-event?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/event"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b3e04ada-8a07-4fca-a6d5-99d655f59698"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/events\/example-event?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/event"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2f7a3cd5-9a9a-4df6-9e65-fec1dd56c806"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/event\/field_event_department": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/110?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/department"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6446420c-f6d1-44e3-a73e-e76131b3c93a"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/event\/field_event_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/library-la-trobe-study-students-159775_0.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dd1f1aad-f057-41be-a701-c33724d13e9e"
+                    }
+                ],
+                "alt": "Library",
+                "title": "",
+                "width": "5184",
+                "height": "3456"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Test Event"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-02-10T00:55:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-02-27T15:29:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_event_date": [
+        {
+            "value": "2018-03-01T02:00:00",
+            "end_value": "2018-05-01T02:00:00"
+        }
+    ],
+    "field_event_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_event_location": [
+        {
+            "langcode": "",
+            "country_code": "AU",
+            "administrative_area": "VIC",
+            "locality": "Melbourne",
+            "dependent_locality": null,
+            "postal_code": "3000",
+            "sorting_code": null,
+            "address_line1": "111 Spring St",
+            "address_line2": "",
+            "organization": "Sample Company",
+            "given_name": null,
+            "additional_name": null,
+            "family_name": null
+        }
+    ]
+}

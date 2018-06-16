@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_event_map
+    - node.type.event
+  module:
+    - google_map_field
+id: node.event.field_events_event_map
+field_name: field_events_event_map
+entity_type: node
+bundle: event
+label: 'Event Map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

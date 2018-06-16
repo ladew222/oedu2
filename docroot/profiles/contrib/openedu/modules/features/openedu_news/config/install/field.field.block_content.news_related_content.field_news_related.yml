@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.news_related_content
+    - field.storage.block_content.field_news_related
+    - node.type.news
+id: block_content.news_related_content.field_news_related
+field_name: field_news_related
+entity_type: block_content
+bundle: news_related_content
+label: 'Related News'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

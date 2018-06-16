@@ -1,0 +1,297 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/example-layout?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
+        }
+    },
+    "nid": [
+        {
+            "value": 121
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2ddc46c3-5459-4c0c-af6c-0a2086e34a35"
+        }
+    ],
+    "vid": [
+        {
+            "value": 170
+        }
+    ],
+    "type": [
+        {
+            "target_id": "landing_page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2017-12-11T23:14:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Example Layout"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-12-11T21:13:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-12-11T23:14:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/example-layout",
+            "pid": 44
+        }
+    ],
+    "panelizer": [
+        {
+            "view_mode": "full",
+            "default": "__bundle_default__",
+            "panels_display": {
+                "blocks": {
+                    "93426c36-f4a3-4f8b-ad2d-1566777ac4c2": {
+                        "id": "block_content:f537a9b3-9ee5-4c5a-b0ed-8fb23c700d2b",
+                        "label": "Hompage Hero",
+                        "provider": "block_content",
+                        "label_display": 0,
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
+                        "context_mapping": [],
+                        "region": "column_1",
+                        "uuid": "93426c36-f4a3-4f8b-ad2d-1566777ac4c2",
+                        "weight": 1
+                    },
+                    "ee1fff79-7b7d-493c-9378-23d6e26e58a3": {
+                        "id": "block_content:9a9c1463-6363-4c95-a0b4-eb27fdd8659e",
+                        "label": "Outstanding Faculty",
+                        "provider": "block_content",
+                        "label_display": "visible",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
+                        "context_mapping": [],
+                        "region": "column_3",
+                        "uuid": "ee1fff79-7b7d-493c-9378-23d6e26e58a3",
+                        "weight": 1
+                    },
+                    "ba05a8b5-bef7-446d-a6b3-c9446ae36074": {
+                        "id": "block_content:9a9c1463-6363-4c95-a0b4-eb27fdd8659e",
+                        "label": "Outstanding Faculty",
+                        "provider": "block_content",
+                        "label_display": "visible",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
+                        "context_mapping": [],
+                        "region": "column_6",
+                        "uuid": "ba05a8b5-bef7-446d-a6b3-c9446ae36074",
+                        "weight": 1
+                    },
+                    "b6e45164-399e-43b6-b926-8ce19a70111e": {
+                        "id": "block_content:9a9c1463-6363-4c95-a0b4-eb27fdd8659e",
+                        "label": "Outstanding Faculty",
+                        "provider": "block_content",
+                        "label_display": "visible",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
+                        "context_mapping": [],
+                        "region": "column_7",
+                        "uuid": "b6e45164-399e-43b6-b926-8ce19a70111e",
+                        "weight": 1
+                    },
+                    "05f27354-9a53-42ee-93d1-e3763f9f554a": {
+                        "id": "block_content:9a9c1463-6363-4c95-a0b4-eb27fdd8659e",
+                        "label": "Outstanding Faculty",
+                        "provider": "block_content",
+                        "label_display": "visible",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
+                        "context_mapping": [],
+                        "region": "column_10",
+                        "uuid": "05f27354-9a53-42ee-93d1-e3763f9f554a",
+                        "weight": 1
+                    }
+                },
+                "id": "panels_variant",
+                "uuid": "1a312aa0-75a2-4467-8421-33670a7bd039",
+                "label": "Single Column",
+                "weight": 0,
+                "layout": "flexible_layout",
+                "layout_settings": {
+                    "layout": {
+                        "flexible_layout": {
+                            "name": "Wrapper",
+                            "classes": "",
+                            "children": {
+                                "row_1": {
+                                    "name": "Header",
+                                    "classes": "",
+                                    "children": {
+                                        "column_1": {
+                                            "name": "Hero",
+                                            "classes": "",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        }
+                                    },
+                                    "type": "row",
+                                    "wrap": []
+                                },
+                                "row_2": {
+                                    "name": "Layout 1",
+                                    "classes": "row",
+                                    "children": {
+                                        "column_3": {
+                                            "name": "Description 1",
+                                            "classes": "col-md-8",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        },
+                                        "column_4": {
+                                            "name": "Media 1",
+                                            "classes": "col-md-4",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        }
+                                    },
+                                    "type": "row",
+                                    "wrap": {
+                                        "enabled": "1",
+                                        "container": "container"
+                                    }
+                                },
+                                "row_3": {
+                                    "name": "Layout 2",
+                                    "classes": "row",
+                                    "children": {
+                                        "column_5": {
+                                            "name": "Media 2",
+                                            "classes": "col-md-3",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        },
+                                        "column_6": {
+                                            "name": "Description 2",
+                                            "classes": "col-md-9",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        }
+                                    },
+                                    "type": "row",
+                                    "wrap": {
+                                        "enabled": "1",
+                                        "container": "container"
+                                    }
+                                },
+                                "row_4": {
+                                    "name": "Layout 3",
+                                    "classes": "row",
+                                    "children": {
+                                        "column_7": {
+                                            "name": "Description 3",
+                                            "classes": "col-md-8",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        },
+                                        "column_8": {
+                                            "name": "Media 3",
+                                            "classes": "col-md-4",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        }
+                                    },
+                                    "type": "row",
+                                    "wrap": {
+                                        "enabled": "1",
+                                        "container": "container"
+                                    }
+                                },
+                                "row_5": {
+                                    "name": "Layout 4",
+                                    "classes": "row",
+                                    "children": {
+                                        "column_9": {
+                                            "name": "Media 4",
+                                            "classes": "col-md-4",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        },
+                                        "column_10": {
+                                            "name": "Description 4",
+                                            "classes": "col-md-8",
+                                            "children": [],
+                                            "type": "column",
+                                            "wrap": []
+                                        }
+                                    },
+                                    "type": "row",
+                                    "wrap": {
+                                        "enabled": "1",
+                                        "container": "container"
+                                    }
+                                }
+                            },
+                            "type": "column",
+                            "wrap": []
+                        }
+                    }
+                },
+                "page_title": "[node:title]",
+                "storage_type": "panelizer_field",
+                "storage_id": "node:121:full:167",
+                "pattern": "panelizer",
+                "builder": "ipe",
+                "static_context": []
+            }
+        }
+    ]
+}

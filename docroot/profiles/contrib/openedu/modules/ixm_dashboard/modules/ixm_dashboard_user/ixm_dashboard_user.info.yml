@@ -1,0 +1,9 @@
+name: 'IXM Dashboard User'
+type: module
+description: 'Some basic user functions for the IXM dashboard'
+core: 8.x
+version: '8.x-3.0'
+package: Custom
+dependencies:
+  - user
+  - ixm_dashboard

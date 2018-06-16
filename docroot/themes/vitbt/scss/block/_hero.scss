@@ -1,0 +1,100 @@
+.block--openedu-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 0px;
+  @include linearGradient(#008dc0, #024f6a);
+  height: 350px;
+  &.margin__enabled{
+    .field--name-body{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+  }
+
+  .field--name-field-color-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media #{$tablet} {
+    .svg-overlay {
+      display: none;
+    }
+
+  }
+  @media #{$normal} {
+    height: 470px;
+    .svg-overlay {
+      position: absolute;
+      display: block;
+      top: calc(480px - 3.12vw);
+      left:0;
+      right:0;
+      text-align: center;
+      webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+  @media #{$wide} {
+    height: 600px;
+    .svg-overlay {
+      position: absolute;
+      display: block;
+      top: calc(610px - 3.1vw);
+      left:0;
+      right:0;
+      text-align: center;
+      webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+    }
+  }
+
+  .field--name-field-hero-image {
+    img {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      max-width: 100vw;
+      height: 50vh;
+      min-width: 100vw;
+      object-fit: cover;
+      width: 100%;
+      opacity: 0.65;
+      @media #{$tablet} {
+        height: auto;
+      }
+    }
+  }
+
+  .field--name-body {
+    padding: 0 20px;
+    @include verticalAlign(absolute);
+    top:30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff; //ew temp
+    .path-frontpage & {
+      color: #fff;
+    }
+    height: 1px;
+    h1{
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-top: 0px;
+      @media #{$tablet} {
+        font-size: 6rem;
+      }
+    }
+
+  }
+}

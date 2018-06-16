@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *  {{ kint(content.field_background_color['0']['#markup'] | split (' ')[0]) }}
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--onecol',
+    'container'
+  ]
+%}
+{% if content %}
+  <div class="og-wrapper">
+    <div{{ attributes.addClass(classes) }}>
+      <div class="layout__region layout__region--content">
+        {{ content.content }}
+      </div>
+    </div>
+  </div>
+{% endif %}

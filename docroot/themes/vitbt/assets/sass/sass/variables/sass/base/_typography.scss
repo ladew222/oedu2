@@ -1,0 +1,84 @@
+/**
+ * $BASE-TYPOGRAPHY
+ */
+html {
+	@include adjust-font-size-to(17px);
+}
+
+body{
+  color: $child-black;
+}
+
+html, p, a {
+  font-family: $body;
+  @include adjust-font-size-to(17px);
+  font-feature-settings: "liga" 0;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-feature-settings: "liga" 0;
+}
+
+
+
+/*CUSTOM FONTS and FONT ICONS*/
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Expletus+Sans:600);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
+/**
+ * $HEADINGS
+ */
+
+
+
+
+.jumbotron h1{
+	@include adjust-font-size-to(85px);
+ 
+}
+
+.jumbotron h2{
+	@include adjust-font-size-to(65px);
+
+}
+
+.jumbotron h3{
+	@include adjust-font-size-to(45px);
+ 
+}
+
+.jumbotron h4{
+	@include adjust-font-size-to(35px);
+
+}
+
+.jumbotron h5{
+	@include adjust-font-size-to(25px);
+
+}
+
+h6 {
+
+ @include adjust-font-size-to(17px);
+}
+
+a{
+  color: $link;
+  &:hover{
+    color: $hover-link;
+  }
+}
+
+/*
+ * Non-standard font-sizing
+ */
+
+
+ .textreader {
+  display: none;
+ }
+
+

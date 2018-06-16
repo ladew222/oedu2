@@ -1,0 +1,194 @@
+{
+  "_links": {
+    "self": {
+      "href": "http:\/\/default\/directory?_format=hal_json"
+    },
+    "type": {
+      "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
+    },
+    "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+      {
+        "href": "http:\/\/default\/user\/1?_format=hal_json"
+      }
+    ],
+    "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+      {
+        "href": "http:\/\/default\/user\/1?_format=hal_json"
+      }
+    ]
+  },
+  "nid": [
+    {
+      "value": 117
+    }
+  ],
+  "uuid": [
+    {
+      "value": "efa78486-b18e-4e53-b275-5c226f3398f4"
+    }
+  ],
+  "vid": [
+    {
+      "value": 135
+    }
+  ],
+  "type": [
+    {
+      "target_id": "landing_page"
+    }
+  ],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "title": [
+    {
+      "value": "Directory"
+    }
+  ],
+  "_embedded": {
+    "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+      {
+        "_links": {
+          "self": {
+            "href": "http:\/\/default\/user\/1?_format=hal_json"
+          },
+          "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+          }
+        },
+        "uuid": [
+          {
+            "value": "8f25d125-0324-4ef0-b203-47050b9cb4b8"
+          }
+        ]
+      }
+    ],
+    "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+      {
+        "_links": {
+          "self": {
+            "href": "http:\/\/default\/user\/1?_format=hal_json"
+          },
+          "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+          }
+        },
+        "uuid": [
+          {
+            "value": "8f25d125-0324-4ef0-b203-47050b9cb4b8"
+          }
+        ]
+      }
+    ]
+  },
+  "created": [
+    {
+      "value": 1510073968
+    }
+  ],
+  "changed": [
+    {
+      "value": 1510075137
+    }
+  ],
+  "promote": [
+    {
+      "value": false
+    }
+  ],
+  "sticky": [
+    {
+      "value": false
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": true
+    }
+  ],
+  "moderation_state": [
+    {
+      "value": "published"
+    }
+  ],
+  "panelizer": [
+    {
+      "view_mode": "full",
+      "default": "__bundle_default__",
+      "panels_display": {
+        "blocks": {
+          "3c6d0210-a2f5-4e5f-912f-6cbc8b417cc6": {
+            "id": "system_breadcrumb_block",
+            "label": "Breadcrumbs",
+            "provider": "system",
+            "label_display": 0,
+            "context_mapping": [],
+            "region": "subsection",
+            "uuid": "3c6d0210-a2f5-4e5f-912f-6cbc8b417cc6",
+            "weight": 1
+          },
+          "c79ffcd0-b115-4a84-96db-c6e45653acfe": {
+            "id": "page_title_block",
+            "label": "Directory",
+            "provider": "core",
+            "label_display": "visible",
+            "context_mapping": [],
+            "region": "subsection",
+            "uuid": "c79ffcd0-b115-4a84-96db-c6e45653acfe",
+            "weight": 2
+          },
+          "4a5c464d-c00c-4bf3-9262-2ed32190e6ab": {
+            "id": "views_exposed_filter_block:profile_list-profile_listing_block",
+            "label": "",
+            "provider": "views",
+            "label_display": "visible",
+            "views_label": "",
+            "context_mapping": [],
+            "region": "subsection",
+            "uuid": "4a5c464d-c00c-4bf3-9262-2ed32190e6ab",
+            "weight": 3
+          },
+          "e5508612-dcc9-4747-a675-6a6ee1ee8da7": {
+            "id": "views_block:profile_list-profile_listing_block",
+            "label": "",
+            "provider": "views",
+            "label_display": 0,
+            "views_label": "",
+            "items_per_page": "none",
+            "context_mapping": [],
+            "region": "left",
+            "uuid": "e5508612-dcc9-4747-a675-6a6ee1ee8da7",
+            "weight": 1
+          },
+          "8cce4d6b-82f6-441a-90ca-5328b018f611": {
+            "id": "block_content:60e14c90-1021-4b1e-9aac-4d1b2fc9d1e6",
+            "label": "CTA Section Header",
+            "provider": "block_content",
+            "label_display": 0,
+            "status": true,
+            "info": "",
+            "view_mode": "full",
+            "context_mapping": [],
+            "region": "right",
+            "uuid": "8cce4d6b-82f6-441a-90ca-5328b018f611",
+            "weight": 1
+          }
+        },
+        "id": "panels_variant",
+        "uuid": "1a312aa0-75a2-4467-8421-33670a7bd039",
+        "label": "Single Column",
+        "weight": 0,
+        "layout": "oedu_twocol_with_subsection",
+        "layout_settings": [],
+        "page_title": "[node:title]",
+        "storage_type": "panelizer_field",
+        "storage_id": "node:117:full:135",
+        "pattern": "panelizer",
+        "builder": "ipe",
+        "static_context": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+    "name": "imagex/openedu",
+    "description": "Template for Drupal 8 sites built using the OpenEDU distribution.",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "drupal/coder": "~8.2.0",
+        "phing/phing": "^2.14",
+        "drupal/devel": "^1.0",
+        "squizlabs/php_codesniffer": "~2.0",
+        "drupal/console": "^1.7",
+        "drush/drush": "^9.2"
+    },
+    "require": {
+        "acquia/lightning": "3.1.3",
+        "drupal/admin_toolbar": "^1.18",
+        "drupal/date_recur": "^1.0@alpha",
+        "drupal/calendar": "1.x-dev",
+        "drupal/field_group": "^1.0@RC",
+        "drupal/name": "^1.0@beta",
+        "drupal/address": "^1.0@RC",
+        "drupal/better_exposed_filters": "3.x-dev",
+        "drupal/twig_field_value": "^1.1",
+        "drupal/addtoany": "^1.7",
+        "drupal/flickity": "1.x-dev",
+        "drupal/addtocal": "1.x-dev",
+        "drupal/link_attributes": "^1.0",
+        "drupal/facets": "~1.0",
+        "drupal/views_block_filter_block": "1.x-dev",
+        "drupal/better_normalizers": "~1.0",
+        "drupal/default_content": "~1.0",
+        "drupal/obfuscate_email": "~1.0",
+        "drupal/flexible_layout": "^1.0@beta",
+        "drupal/google_map_field": "^1.4",
+        "drupal/geocoder": "^2.0@alpha",
+        "drupal/search_api_sorts": "^1.0@beta",
+        "drupal/search_api_autocomplete": "1.0.0-rc2",
+        "drupal/simple_sitemap": "^2.11",
+        "drupal/sa11y": "1.x-dev",
+        "drupal/google_analytics": "^2.2",
+        "drupal/google_analytics_reports": "3.x-dev",
+        "drupal/yoast_seo": "^2.0",
+        "drupal/webform": "^5.0@RC"
+    },
+    "config": {
+        "bin-dir": "bin/",
+        "platform": {
+            "php": "7.0.15"
+        }
+    },
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "./bin/phing githooks",
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+            "./bin/phing push"
+        ],
+        "post-update-cmd": [
+            "./bin/phing push"
+        ],
+        "release-version": "ImageX\\OpenEDU\\Composer\\ReleaseVersion::execute"
+    },
+    "extra": {
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:bower-asset",
+                "type:npm-asset",
+                "type:drupal-library"
+            ]
+        },
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "drupal/core": {
+                "2699157 - Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/2699157-23.drupal.Plugin-Lazy-loading-can-cause-usort-warning.patch",
+                "The Views integration Datetime Range fields should extend the views integration for regular Datetime fields": "https://www.drupal.org/files/issues/the_views_integration-2786577-229.patch",
+                "2924112 - Support class definition on field_layout": "https://www.drupal.org/files/issues/dynamic-regions-2924112-2.patch",
+                "2888723 - ckeditor_stylesheets cache busting: use system.css_js_query_string": "https://www.drupal.org/files/issues/2888723-5.patch"
+            },
+            "drupal/addtocal": {
+                "Port to d8": "https://www.drupal.org/files/issues/portd7-2861672-4.patch"
+            },
+            "drupal/panels": {
+                "Page title empty": "https://www.drupal.org/files/issues/2018-03-19/panels--page_title_does_not_display--2869412-27.patch",
+                "2868828 - Support dynamic layout": "https://www.drupal.org/files/issues/2868828-dynamic-layout-plugin-definition-2.patch",
+                "2921415 - Use region labels for IPE": "https://www.drupal.org/files/issues/use_labels-2921415-2.patch",
+                "2930835 - Use Subformstate on settings form": "https://www.drupal.org/files/issues/2930835-subformstate-2.patch"
+            },
+            "drupal/panelizer": {
+                "Preview new entities": "https://www.drupal.org/files/issues/2750491-4.patch",
+                "Expose Panelizer through REST": "https://www.drupal.org/files/issues/panelizer-rest-2865575-5.patch"
+            },
+            "drupal/google_analytics_reports": {
+                "2846360 - Fix index of results": "https://www.drupal.org/files/issues/google_analytics_reports-view_omits_zero_index-2846360-2.patch",
+                "2850463 - Fix view definitions": "https://www.drupal.org/files/issues/2850463-missing-config-24.patch"
+            }
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "ImageX\\OpenEDU\\": "src"
+        }
+    }
+}

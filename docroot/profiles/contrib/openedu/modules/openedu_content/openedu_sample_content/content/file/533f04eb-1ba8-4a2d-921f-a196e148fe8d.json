@@ -1,0 +1,84 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/book_7_1.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 101
+        }
+    ],
+    "uuid": [
+        {
+            "value": "533f04eb-1ba8-4a2d-921f-a196e148fe8d"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "book.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/book_7_1.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 926
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": 1494259099
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494259106
+        }
+    ],
+    "data": [
+        {
+            "value": "iVBORw0KGgoAAAANSUhEUgAAADIAAAA\/CAYAAACioZtvAAAAAXNSR0IArs4c6QAAA1hJREFUaAXtWj1s00AUfs9xKRJCZGBCSBippEwQBkZE5jJQJKYyNIhWYms7tAgJCTEgRDs0bEgNIizQBRFmBiwmJghiobRDkBAwQZBYoI6Pd1eeE6e1kw7YZ+k85Luf59z3ve\/OieSH8O8qXLk7DhbeRMAij6WJQkALULgC4Nb6ykKjHxeUAYXpxYckoNwvOI15JUj4lz8+uFaPWx+lE2hZz+KC0p6TYv549tFmba4VxcWW24knBYifZOWsENjksbTQAighguJGmB+2vTJxqUTxsbvPhBRB+7EWFZzwuFuYWiqSiPNyXeJWIogUQsI7lw5OdNioVoP7iCLP7Z3Q3mkwC2NOeTk\/PLQ5ibn28w\/3rzdDjmRBAHPcM7T5EgArvme\/PX71jpNZIXy25YPA8+zsCmFnGDPrCAtgNEI4E7qgcUQXJ5iHcYQzoQsaR3RxgnkYRzgTuqBxRBcnmIdxhDOhCxpHdHGCeRhHOBO6oHFEFyeYh3GEM6ELGkd0cYJ5GEc4E7qgcUQXJ5iHcYQzoQsaR3RxgnkYRzgT\/xmdQb9fW0dGppZKJEIVC0gxVAPgSoy6tr1nl6962549Qy\/oS\/zmNOrmJMct26vFrRcSYqGYEW173FI1Q+oj7t4E58Q9WRQQt2Boa5ED43HBSc\/JIh8qQplbW1mY7bd2yJHuYCotegTCr\/totbrHk2xvVBfcQdfbJoSqcN5RJsrr1f5Va4MukkRcaGvJBZWIAUrvkiC3mzVCjsjtFHJi9etp2l5j4EO6Jx\/xPUwcehonLCREnokg+MmXM+D7r1Q\/XRlEgTb848+3YeLwjYBfTyO0tUIHW4iRnti0u0fiCNgk9hNtHBWUAyhSsKtuEPvqgL\/OUfug6qf5IXATwKrEUbDJNJd2zqQKoh9Ewq0bLuV\/UPti3M06zVk+QK1DCB1ZA9zpZ6eljvHo9KJLZXVnmTY9guvk1EAV0HxPkjg6tTRLx2GZ1\/RBnFJCZKEj1Qg26S\/KAZ5kJFENFNjiftpICZYltPmAB53xteq8EzxYj00vFklIjQZOBkEZaEg3ZO08Pai2ru9vXnzbf2JsNWf5v6m4nqzCvTynJZITbYAL9H\/steQXONJLVjnkCwfQKvbOpdknwi0S0NiozrvdPP4Cp5XctIt\/tIEAAAAASUVORK5CYII="
+        }
+    ]
+}

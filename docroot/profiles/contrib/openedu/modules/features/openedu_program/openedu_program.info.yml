@@ -1,0 +1,24 @@
+name: 'OpenEDU Program'
+description: 'Provides Program content type and related configuration. '
+type: module
+core: 8.x
+version: '8.x-3.0'
+dependencies:
+  - block_content
+  - field
+  - field_group
+  - inline_entity_form
+  - link
+  - menu_ui
+  - node
+  - openedu_core
+  - openedu_course
+  - openedu_grid_block
+  - openedu_story
+  - options
+  - panelizer
+  - path
+  - pathauto
+  - text
+  - user
+package: OpenEDU

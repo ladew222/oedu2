@@ -1,0 +1,161 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/story\/class-2017?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/field_story_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-212092_1.jpeg"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 2
+        }
+    ],
+    "uuid": [
+        {
+            "value": "457fccbb-3f6d-48f0-be60-c353443eb05e"
+        }
+    ],
+    "vid": [
+        {
+            "value": 2
+        }
+    ],
+    "type": [
+        {
+            "target_id": "story"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Class of 2017"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/field_story_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-212092_1.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bdcd48e3-7687-4b77-a3f8-218f4eb66d3d"
+                    }
+                ],
+                "alt": "H. Schultz",
+                "title": "",
+                "width": "1920",
+                "height": "1280"
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1492863175
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496157647
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/story\/class-2017",
+            "pid": 20
+        }
+    ],
+    "body": [
+        {
+            "value": "<h1><em>In ac posuere purus<\/em><\/h1>\r\n\r\n<p><em>Vivamus suscipit purus sit amet vulputate pretium. Vestibulum sit amet libero ut nisl ultrices tristique. Duis eget enim non elit eleifend lacinia. Aliquam erat volutpat. <\/em><\/p>\r\n\r\n<p><em>Maecenas risus justo, consequat at eros sed, imperdiet feugiat velit. Vestibulum sed orci erat. Vivamus dapibus efficitur odio, sit amet consequat mauris venenatis ut. Nulla consectetur nisl risus, ac feugiat erat commodo eget. Nullam eu nulla ac augue hendrerit fringilla vel a orci. Nunc sapien dolor, fringilla sed aliquet sit amet, posuere sit amet nibh. <\/em><\/p>\r\n\r\n<blockquote>\r\n<p><em>Ut dolor lacus, tempus id ex eget, varius dapibus leo.<\/em><\/p>\r\n<\/blockquote>\r\n\r\n<p><em>Etiam laoreet felis eget massa viverra, eu tempor orci vestibulum. Suspendisse potenti. Nam at ex in neque mattis scelerisque et id risus. Pellentesque suscipit metus iaculis urna iaculis, id lacinia est auctor. In vulputate blandit ullamcorper. In ligula arcu, ullamcorper sed aliquam sed, convallis quis nunc. Curabitur vel sapien pulvinar, sodales orci consequat, sollicitudin lectus. Nullam condimentum viverra lectus faucibus tempor.<\/em><\/p>\r\n\r\n<p><em>Aenean elementum fermentum scelerisque. Nunc non quam massa. Proin lacinia placerat ligula sit amet fringilla. Suspendisse potenti. Morbi laoreet imperdiet metus, in condimentum nibh mattis vel. Ut semper fringilla libero vitae tristique. Nam ut ornare est. Vivamus laoreet odio eget dolor pretium aliquam. Mauris ultricies fringilla nunc, ac interdum magna porttitor nec. Vivamus turpis lectus, finibus a lectus sit amet, vestibulum elementum erat. Morbi at justo accumsan, fermentum orci et, consectetur purus. Morbi cursus volutpat rhoncus. Aliquam vitae quam quis augue tristique elementum. Integer nec nunc quis nisl rutrum suscipit. Phasellus tellus felis, imperdiet quis risus et, eleifend volutpat ex.<\/em><\/p>\r\n\r\n<p><em>Aliquam sit amet ligula id nisi dapibus mollis. Phasellus quis dapibus ligula. Cras neque odio, dignissim non hendrerit id, lobortis at augue. Mauris porta ipsum vitae purus maximus auctor. Mauris a iaculis sem. Morbi sit amet ligula et quam tincidunt semper. Nunc ac purus non sapien semper condimentum. Aliquam erat volutpat.<\/em><\/p>\r\n\r\n<p class=\"text-align-right\">&nbsp;<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_story_caption": [
+        {
+            "value": "<p>'Keep your passion'<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_story_subtitle": [
+        {
+            "value": "'Keep your passion,' graduates are urged"
+        }
+    ]
+}

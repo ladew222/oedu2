@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/25?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+        }
+    },
+    "tid": [
+        {
+            "value": 25
+        }
+    ],
+    "uuid": [
+        {
+            "value": "7eb2e9f3-5dff-42b1-9bae-28cac076d16b"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "interests"
+        }
+    ],
+    "name": [
+        {
+            "value": "Design"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494277646
+        }
+    ]
+}

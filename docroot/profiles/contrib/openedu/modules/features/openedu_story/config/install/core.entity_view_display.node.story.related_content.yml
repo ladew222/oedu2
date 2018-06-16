@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.related_content
+    - field.field.node.story.body
+    - field.field.node.story.field_story_caption
+    - field.field.node.story.field_story_image
+    - field.field.node.story.field_story_subtitle
+    - node.type.story
+  module:
+    - image
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.story.related_content
+targetEntityType: node
+bundle: story
+mode: related_content
+content:
+  addtoany:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_story_caption:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_story_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: story_teaser
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_story_subtitle:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true

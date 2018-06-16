@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/23?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/interests"
+        }
+    },
+    "tid": [
+        {
+            "value": 23
+        }
+    ],
+    "uuid": [
+        {
+            "value": "cc2779d0-6f83-498f-b773-882d4ec68564"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "interests"
+        }
+    ],
+    "name": [
+        {
+            "value": "PHP"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494269783
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/4?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/openedu_stories_block"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/openedu_stories_block\/field_story_reference": [
+            {
+                "href": "http:\/\/default\/story\/class-2017?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/story\/growing-soil?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/story\/full-court-press?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/story\/high-skills-track?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/story\/s-bogor?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f65d0bc4-dfe6-4123-810d-14a5e22afbbe"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 9
+        }
+    ],
+    "type": [
+        {
+            "target_id": "openedu_stories_block"
+        }
+    ],
+    "info": [
+        {
+            "value": "Homepage Stories Block"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1495134382
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1495134382
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_stories_title": [
+        {
+            "value": "Our Stories"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/openedu_stories_block\/field_story_reference": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/story\/class-2017?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "457fccbb-3f6d-48f0-be60-c353443eb05e"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/story\/growing-soil?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "87b7d703-dbc5-4e0d-9ffb-2ce1b3bc8944"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/story\/full-court-press?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f953f8b5-0957-427a-a03e-be40fb126d03"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/story\/high-skills-track?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "66a183b0-d5ce-435d-b2a3-cb538d10b627"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/story\/s-bogor?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "41e0cd45-ed70-45c7-9b2b-1cf932a8bbfb"
+                    }
+                ]
+            }
+        ]
+    }
+}

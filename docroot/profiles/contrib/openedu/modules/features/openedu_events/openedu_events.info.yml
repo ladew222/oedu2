@@ -1,0 +1,40 @@
+name: 'OpenEDU Events'
+description: 'Provides a content type for upcoming events.'
+type: module
+core: 8.x
+version: '8.x-3.0'
+dependencies:
+  - address
+  - addtocal
+  - better_exposed_filters
+  - block_content
+  - content_moderation
+  - datetime
+  - datetime_range
+  - entity_browser
+  - facets
+  - field
+  - file
+  - flickity_views
+  - geocoder
+  - google_map_field
+  - image
+  - link
+  - menu_ui
+  - node
+  - openedu_course
+  - openedu_department
+  - openedu_news
+  - openedu_program
+  - panelizer
+  - panels
+  - path
+  - pathauto
+  - query_filter_cards
+  - search_api
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+package: OpenEDU

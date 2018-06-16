@@ -1,0 +1,200 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/7?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/profile_block"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/profile_block\/field_profile": [
+            {
+                "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/profile-list\/jane-doe?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/profile-list\/jane-doe?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "dbcc7653-8e93-4964-9794-3c27a2b3236c"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 10
+        }
+    ],
+    "type": [
+        {
+            "target_id": "profile_block"
+        }
+    ],
+    "info": [
+        {
+            "value": "Faculty"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1495573916
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1495573916
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/profile_block\/field_profile": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bed8e8ee-2fb9-4684-8b8e-e37200d3c2eb"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/jane-doe?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a0834f3c-ea3b-4572-944f-a5ea9f8acd8f"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/olesksandr-medvediev?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "e9609c3e-e7d3-4fa8-86d6-c10330a26759"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3ceb8009-22b3-4058-a7ed-9689805570de"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/jane-doe?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d805377d-07cd-4045-82bf-7000909d98fe"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/damian-daoust?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "86807111-5e7c-494c-809f-8bf5b4927d34"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/john-doe?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2b2eeb0c-2606-4e5a-97d5-ff0210f9d48e"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/profile-list\/glenn-hilton?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/profile"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c56794d5-df8f-47f0-9ed6-fd54c1848991"
+                    }
+                ]
+            }
+        ]
+    }
+}

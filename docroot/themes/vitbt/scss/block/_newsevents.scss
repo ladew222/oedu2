@@ -1,0 +1,45 @@
+.block--news-calendar{
+  .block-title{
+    display: none;
+  }
+  padding:36px;
+  background:
+          /* top, transparent red, faked with gradient */
+          linear-gradient(
+                          rgba(24, 170, 229, .85),
+                          rgba(227, 227, 227, 0.6)
+          ),
+            /* bottom, image */
+          url('/themes/vitbt/images/crissXcross.png');
+          background-attachment: fixed;
+  background:$brand-primary;
+
+  .field--name-dynamic-block-fieldblock-content-news {
+    padding-bottom: .5em;
+    header {
+      border-bottom: 1px solid #FFF;
+      padding-bottom: .5em;
+      margin-top: 0px;
+      DISPLAY: TABLE;
+      WIDTH: 100%;
+      h2 {
+        display: table-cell;
+        color: #FFF;
+        font-size: 2em;
+        padding-right: 45px;
+      }
+      a {
+        display: table-cell;
+        top: 2px;
+        right: 0;
+        padding: 5px 1em;
+        background: $gray-light;
+        text-transform: uppercase;
+        font-size: 16px;
+        WIDTH: 130PX;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,103 @@
+<?php
+
+/**
+ * @file
+ * Contains ixm_dashboard_seo.module.
+ */
+
+use Drupal\Core\Field\FieldConfigInterface;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_theme().
+ */
+function ixm_dashboard_seo_theme($existing, $type, $theme, $path) {
+  return [
+    'ixd_seo_snippet' => [
+      'variables' => [
+        'preview' => [],
+        'keyword' => '',
+        'root' => '',
+      ],
+    ],
+    'ixd_seo_compare' => [
+      'variables' => [
+        'type' => '',
+        'typeCompare' => 0,
+        'siteCompare' => 0,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function ixm_dashboard_seo_field_config_insert(FieldConfigInterface $field) {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  $moduleHandler = \Drupal::service('module_handler');
+
+  $content_types = [
+    'page',
+    'landing_page',
+    'department',
+    'event',
+    'news',
+    'profile',
+    'program',
+    'story',
+  ];
+
+  $component = [
+    'type' => 'yoast_seo_widget',
+    'region' => 'content',
+    'settings' => [
+      'edit_title' => TRUE,
+      'edit_description' => TRUE,
+    ],
+  ];
+
+  foreach ($content_types as $content_type) {
+    if ($field->id() == 'node.' . $content_type . '.field_seo') {
+      try {
+        entity_get_form_display('node', $content_type, 'default')
+          ->setComponent('field_seo', $component)
+          ->save();
+      }
+      catch (Exception $e) {
+        \Drupal::logger('ixm_dashboard_seo')
+          ->notice("Failed to update form config");
+      }
+
+      // Adds some SEO data to homepage/about pages for demo purposes.
+      if ($moduleHandler->moduleExists('openedu_sample_content')) {
+        if ($field->id() == 'node.landing_page.field_seo') {
+
+          if ($homepage = Node::load(1)) {
+            $homepage->set('field_seo',
+              [
+                'status' => 5.6,
+                'focus_keyword' => "OpenEDU Homepage",
+              ]
+            )->save();
+          }
+        }
+        elseif ($field->id() == 'node.page.field_seo') {
+          if ($about_page = Node::load(115)) {
+            $about_page->set('field_seo',
+              [
+                'status' => 7.6,
+                'focus_keyword' => "Sed ut perspiciatis",
+                'title' => 'About OpenEDU: Sed ut perspiciatis',
+              ]
+            )->save();
+          }
+        }
+      }
+    }
+  }
+}

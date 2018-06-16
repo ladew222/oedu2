@@ -1,0 +1,22 @@
+status: true
+dependencies:
+  config:
+    - webform.webform.join_our_newsletter_
+  module:
+    - webform
+  theme:
+    - oedu_sub
+id: webform
+theme: oedu_sub
+region: footer
+weight: -4
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Join Our Newsletter:'
+  provider: webform
+  label_display: visible
+  webform_id: join_our_newsletter_
+  default_data: ''
+visibility: {  }

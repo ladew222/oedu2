@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: utility-navigation
+label: 'Utility Navigation'
+description: 'Adds a utility navigation bar above the regular navigation and logo'
+locked: false

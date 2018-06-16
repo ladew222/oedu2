@@ -1,0 +1,67 @@
+#block-vitbt-nextsteps {
+  @extend .container;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  background: linear-gradient(rgba($brand-primary, 0.2), rgba($brand-primary, 0.2)), url("../images/next-steps-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  .wrapper {
+    margin: auto;
+    background: rgba($brand-primary, 0.8);
+    padding: 1em;
+  }
+
+  h2 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: white;
+  }
+
+  .menu.nav {
+    li {
+      padding: 1em 0;
+    }
+  }
+
+  .btn-cta {
+    display: block;
+    margin: 0 0.5em;
+    background-color: $brand-primary-darker;
+    box-shadow: none;
+    border-radius: 5px;
+    &.call-out {
+      background: $brand-info;
+      background: -webkit-linear-gradient(60deg, $brand-info 65%, rgba($brand-info, 0.8) 54%);
+      background: -webkit-linear-gradient(30deg, $brand-info 65%, rgba($brand-info, 0.8) 54%);
+      background: linear-gradient(60deg, $brand-info 65%, rgba($brand-info, 0.8) 54%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$brand-info, endColorstr=$brand-info, GradientType=1);
+    }
+  }
+
+  .action-links {
+    padding: 0;
+  }
+
+  // DESK / LAP
+  @media #{$tablet} {
+    padding: 4em;
+    .wrapper {
+      display: inline-block;
+      padding: 1em 4em;
+    }
+    h2 {
+      @include underlined-title(#fff);
+    }
+    .menu.nav {
+      li {
+        display: inline-block;
+        padding: 0;
+      }
+    }
+  }
+
+}

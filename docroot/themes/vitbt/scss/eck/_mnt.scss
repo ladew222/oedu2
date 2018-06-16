@@ -1,0 +1,53 @@
+.block--openedu-mnt {
+  @extend .container;
+  .block-title {
+    color: $brand-primary;
+    text-align: center;
+    &::after {
+      display: block;
+      content: "";
+      width: 100px;
+      height: 1px;
+      background: $gray-base;
+      background: rgba($gray-base, 0.2);
+      margin: 25px auto;
+    }
+  }
+
+  .field--name-body {
+    @extend .col-md-offset-2;
+    @extend .col-md-8;
+    text-align: center;
+    font-size: 1.571em;
+    color: $gray-dark;
+    padding-bottom: 3em;
+  }
+
+  .field--name-field-mnt-items {
+    & > .field--item {
+      @extend .row;
+      margin-top: 3em;
+      margin-bottom: 3em;
+
+      .field--name-field-mnt-media {
+        @extend .col-sm-8;
+      }
+
+      .field--name-field-mnt-text {
+        @extend .col-sm-4;
+      }
+
+      @media #{$tablet} {
+        &.block-mnt-text {
+          .field--name-field-mnt-media {
+            float: right;
+            img {
+              float: right;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

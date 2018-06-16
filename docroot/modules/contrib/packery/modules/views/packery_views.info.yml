@@ -1,0 +1,15 @@
+name: Packery Views
+type: module
+description: 'Provides Packery integration with Drupal Views.'
+package: Packery
+# version: VERSION
+# core: 8.x
+dependencies:
+  - packery
+  - views
+
+# Information added by Drupal.org packaging script on 2015-10-23
+version: '8.x-1.0'
+core: '8.x'
+project: 'packery'
+datestamp: 1445595543

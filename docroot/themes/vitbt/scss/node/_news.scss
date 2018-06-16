@@ -1,0 +1,336 @@
+.block-views-blocknews-featured-news-block {
+
+  .block-title {
+    font-size: 2.286em;
+    font-weight: normal;
+    margin: 0 auto 1em;
+    padding: 0.2em 0;
+    color: $brand-primary;
+  }
+
+  .form-group {
+    padding: 0 0 2em;
+    border-bottom: 3px solid lighten($gray-darker, 20%);
+    border-bottom: 3px solid rgba($gray-darker, 0.2);
+  }
+
+  .flickity-viewport {
+    font-size: 1.2em;
+    .gallery-cell {
+      article.news {
+
+        .image {
+          border-bottom: 5px solid $brand-info;
+          img {
+            width: 100%;
+          }
+        }
+        .wrapper {
+          color: $gray-darker;
+          h2 {
+            font-weight: bold;
+            font-size: 1.857em;
+            a {
+              color:$gray-darker;
+            }
+          }
+          .field--name-field-news-date {
+            margin-bottom: 0.6em;
+          }
+        }
+
+      }
+    }
+  }
+  .flickity-prev-next-button {
+    @media #{$small-device} {
+      top: 25%;
+    }
+  }
+}
+///this is for news page
+.block-views-blocknews-latest-news-block {
+  color: $gray-base;
+  .views-row {
+    @include box-shadow(none);
+    width: 100%;
+    .content {
+      @extend .row;
+      @media #{$tablet} {
+        border-right: 5px solid transparent;
+        &:hover {
+          border-right: 5px solid $brand-info;
+        }
+      }
+      .image {
+        @extend .col-sm-3;
+        @media #{$tablet} {
+          padding-right: 0;
+        }
+        margin-bottom: 1em;
+        img {
+          width: 100%;
+        }
+      }
+      .wrapper {
+        @extend .col-sm-9;
+        color: $gray-darker;
+
+        h2 {
+          margin: 5px auto;
+          font-size: 1.375em;
+          a {
+            color: $gray-darker;
+            text-decoration: none;
+            &:hover {
+              color: $brand-info;
+            }
+          }
+        }
+        .field--name-field-news-date {
+          font-style: italic;
+          font-size: 0.875em;
+          margin-bottom: 5px;
+        }
+        .field--name-body {
+          display: none;
+          @media #{$tablet} {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//this is for homepage
+.block--news-calendar .block-views-blocknews-latest-news-block,.block--news-calendar .field--name-dynamic-block-fieldblock-content-news {
+  color: #fff;
+  .views-row {
+    @include box-shadow(none);
+    width: 100%;
+    .content {
+      @extend .row;
+      @media #{$tablet} {
+        border-right: 5px solid transparent;
+        &:hover {
+          border-right: 5px solid $brand-info;
+        }
+      }
+      .image {
+        @extend .col-sm-3;
+        @media #{$tablet} {
+          padding-right: 0;
+        }
+        margin-bottom: 1em;
+        img {
+          width: 100%;
+        }
+      }
+      .wrapper {
+        @extend .col-sm-9;
+        color: #fff;
+
+        h2 {
+          margin: 5px auto;
+          font-size: 1.375em;
+          color:#fff;
+          a {
+            color:$brand-success;
+            text-decoration: none;
+            &:hover {
+              color: $brand-info;
+            }
+          }
+        }
+        .field--name-field-news-date {
+          font-style: italic;
+          font-size: 0.875em;
+          margin-bottom: 5px;
+        }
+        .field--name-body {
+          display: none;
+          @media #{$tablet} {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-news {
+
+  .region-container {
+
+    .panel-oedu-container {
+
+      .panel-oedu-1col {
+        @extend .container;
+      }
+
+      .panel-oedu-2col {
+
+        section.block-entity-fieldnodefield-profile-name {
+          font-size: 1.2em;
+          font-weight: 600;
+          padding-bottom: 0.4em;
+        }
+
+        .field--name-field-news-image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .block-entity-fieldnodebody {
+          padding: 1em 0 0;
+        }
+
+        .field--label {
+          color: $brand-primary;
+          font-size: 2em;
+          padding-bottom: 0.4em;
+          font-weight: normal;
+        }
+
+        .field--name-field-profile-courses,
+        .field--name-field-profile-program {
+          .field--item {
+            display: list-item;
+            margin-left: 1.5em;
+          }
+        }
+
+        .block-entity-fieldnodefield-news-categories {
+          padding-bottom: 2.75em;
+          margin-top: 1em;
+          border-bottom: 1px solid $gray-light;
+          .field--item {
+            @extend .site-tag-clr;
+          }
+        }
+
+        .block-addtoany-block {
+          margin: 0.875em auto 1.6em;
+          h2 {
+            margin: 0 0.5em 0 0;
+            font-size: 0.875em;
+            font-weight: normal;
+            display: inline-block;
+          }
+        }
+
+      }
+    }
+
+    .block-region-subsection {
+
+      .block-entity-fieldnodefield-news-date {
+        .field--name-field-news-date {
+          margin-top: 1em;
+        }
+      }
+
+      section.block {
+        margin: 0;
+        padding: 0;
+        .field--item {
+          font-size: 0.9em;
+          font-weight: 300;
+        }
+        .field--name-field-profile-office {
+          margin-top: 0.5em;
+        }
+        a {
+          color: white;
+        }
+      }
+
+    }
+  }
+
+  .block-region-bottom {
+    .block:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.block-entity-fieldnodefield-news-related,
+.block--news-related-content {
+  .field__label,
+  .field--label {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0.875em auto 1em;
+  }
+
+  .img-responsive {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.375em;
+    margin-bottom: 20px;
+    a {
+      color: $gray-darker;
+    }
+  }
+
+  .field--name-field-news-date {
+    color: $gray-darker;
+    font-size: 0.875em;
+    font-style: italic;
+  }
+
+  .content {
+    padding: 5px;
+    background: none;
+    background: rgba($gray-base, 0.05);
+    margin-bottom: 20px;
+  }
+
+}
+
+.block--news-related-content {
+  @extend .container;
+}
+
+.block-entity-fieldnodefield-news-related {
+  padding-bottom: 2em;
+  margin-bottom: none;
+  background: #2E75A0;
+
+  .field__label,
+  .field--label {
+    @extend .container;
+  }
+
+  article {
+    @media #{$tablet} {
+      padding-right: 10%;
+    }
+  }
+
+  h2 {
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: $brand-primary-lighter;
+      }
+    }
+  }
+
+  .field--label {
+    padding-left: 20px;
+    color: #fff;
+  }
+
+  .field--name-field-news-date {
+    opacity: 0.7;
+    color: #fff;
+  }
+}

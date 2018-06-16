@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * openedu_widget.module
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function openedu_widget_theme($existing, $type, $theme, $path) {
+  $templates['openedu_news_events_widget'] = [
+    'variables' => ['block_type' => NULL, 'results' => NULL],
+  ];
+  return $templates;
+}

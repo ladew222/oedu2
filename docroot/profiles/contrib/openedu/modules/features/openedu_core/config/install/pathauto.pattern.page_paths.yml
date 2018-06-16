@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - pathauto
+id: page_paths
+label: 'Page Paths'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  2f8a943c-ab08-4fa8-b17b-c2b999deeeb3:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2f8a943c-ab08-4fa8-b17b-c2b999deeeb3
+selection_logic: and
+weight: -5
+relationships: {  }

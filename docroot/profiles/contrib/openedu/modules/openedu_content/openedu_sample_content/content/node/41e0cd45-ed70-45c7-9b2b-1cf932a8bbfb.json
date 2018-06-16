@@ -1,0 +1,161 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/story\/s-bogor?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/story"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/field_story_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-57862_1.jpeg"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 113
+        }
+    ],
+    "uuid": [
+        {
+            "value": "41e0cd45-ed70-45c7-9b2b-1cf932a8bbfb"
+        }
+    ],
+    "vid": [
+        {
+            "value": 116
+        }
+    ],
+    "type": [
+        {
+            "target_id": "story"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "S. Bogor"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/story\/field_story_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-57862_1.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c59072f2-8067-4bfc-8318-dd2a5639980b"
+                    }
+                ],
+                "alt": "S. Bogor",
+                "title": "",
+                "width": "1920",
+                "height": "1240"
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494967738
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496099373
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/story\/s-bogor",
+            "pid": 31
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Phasellus sit amet metus a nisl fringilla auctor at lobortis mi. Nulla libero nulla, rutrum non mollis sed, aliquet vitae lacus. Duis ultrices lacus ac sem hendrerit, ac hendrerit elit finibus. Integer nunc ex, posuere non neque pretium, molestie tempus justo.<\/p>\r\n\r\n<blockquote>\r\n<p>Nunc faucibus tristique tellus, et fringilla lacus suscipit sit amet.<\/p>\r\n<\/blockquote>\r\n\r\n<p>Duis iaculis justo mauris, vitae faucibus nibh porttitor sit amet. In ac dapibus dui, a dapibus ipsum. Proin fermentum ante a pulvinar viverra. Quisque maximus leo vel justo porttitor, viverra euismod lectus porta. Nulla facilisi. Cras efficitur diam ac leo volutpat hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nisi ullamcorper, pulvinar erat eget, lacinia erat.<\/p>\r\n\r\n<h3>Duis finibus mauris dolor, vitae euismod diam ullamcorper sed<\/h3>\r\n\r\n<p>Fusce hendrerit, arcu eu dapibus ullamcorper, dolor nulla semper ante, vel mollis mauris metus ut libero.<\/p>\r\n\r\n<p>Pellentesque efficitur dictum luctus. Aliquam mi quam, malesuada sit amet dictum sed, consequat ac libero. In mollis faucibus mauris, eu efficitur sapien. Fusce id auctor lorem, accumsan ornare leo. Cras tristique metus quam, eu pulvinar tortor convallis eu. Proin et enim viverra, laoreet nibh sed, facilisis lorem.<\/p>\r\n\r\n<p>Donec auctor est sit amet purus dictum, a ornare mi feugiat. Integer id quam felis. Phasellus ligula sapien, varius vel porta in, pulvinar ut turpis. Curabitur vel felis a massa hendrerit tincidunt mattis non sem. Aliquam et sollicitudin lorem. Maecenas ac congue tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<\/p>\r\n\r\n<p class=\"text-align-right\">&nbsp;<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_story_caption": [
+        {
+            "value": "<p>Master\u2019s in public health from IXM<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_story_subtitle": [
+        {
+            "value": "Master\u2019s in public health from IXM"
+        }
+    ]
+}

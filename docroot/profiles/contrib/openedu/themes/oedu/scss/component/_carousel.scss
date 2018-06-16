@@ -1,0 +1,114 @@
+.carousel {
+  @include make-container();
+
+  max-width: (map-get($container-max-widths, lg) + 20);
+  padding: 2em 50px;
+
+  .gallery-cell {
+    width: 220px;
+    padding: 0 20px;
+    margin: 0;
+
+    article {
+      position: relative;
+      padding: 5px;
+      background: #fff;
+      box-shadow: 0 2px 5px 0 rgba($gray-base, 0.2);
+      margin-bottom: 0.675em;
+      min-height: 270px;
+
+      h2 {
+        font-weight: bold;
+        margin: 0.775em auto;
+        padding: 0 5px;
+        font-size: 16px;
+        line-height: 19px;
+
+        a {
+          color: $gray-darker;
+        }
+      }
+
+      .field--name-field-story-image img {
+        width: 100%;
+      }
+
+      .field--name-field-story-caption {
+        font-size: 0.875em;
+        padding: 0 5px;
+        color: rgba($gray-darker, 0.8);
+        margin-bottom: 30px;
+      }
+
+      .view-item-container {
+        position: absolute;
+        text-align: right;
+        bottom: 5px;
+        right: 5px;
+
+        .view-item {
+          position: relative;
+          bottom: -5px;
+          right: -5px;
+          font-size: 0.8em;
+          display: inline-block;
+          border: 1px solid $gray-300;
+          border-right: none;
+          border-bottom: none;
+          padding: 5px 10px;
+
+          i {
+            padding-left: 5px;
+            font-size: 1.35em;
+            line-height: 1.35;
+            vertical-align: middle;
+          }
+
+          a {
+            color: $gray-dark;
+          }
+
+          &:hover {
+            background-color: $info;
+            cursor: pointer;
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .flickity-prev-next-button {
+    opacity: 1 !important;
+    cursor: pointer;
+    border-radius: 0;
+    width: 30px;
+    height: 100px;
+    background: $gray-base;
+    background: rgba($gray-base, 0.1);
+    color: $gray-base;
+    padding: 0;
+
+    svg {
+      display: none;
+      opacity: 0;
+    }
+
+    &.previous {
+      @include icon(inherit, 'keyboard_arrow_left', 2em);
+    }
+
+    &.next {
+      @include icon(inherit, 'keyboard_arrow_right', 2em);
+    }
+
+    &:hover {
+      color: #fff;
+      background: $info;
+    }
+  }
+}

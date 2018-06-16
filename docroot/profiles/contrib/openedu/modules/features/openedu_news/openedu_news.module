@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * @file
+ * Contains news-specific functionality for the OpenEDU distribution.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function openedu_news_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form['#id'] === 'views-exposed-form-news-latest-news-block') {
+    $form['search']['#attributes']['placeholder'] = t("Search news...");
+    $form['categories']['#options']['All'] = t("Search By Category");
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function openedu_news_preprocess_views_view(&$variables) {
+  /** @var Drupal\views\ViewExecutable $view */
+  $view = $variables['view'];
+  if ($view->id() == 'news' && $view->current_display == 'latest_news_block') {
+    $view->element['#attached']['library'][] = 'openedu_news/news';
+
+    // Check to see if either categories or search have been triggered.
+    $args = $view->getExposedInput();
+    if (!empty($args)) {
+      foreach ($args as $filter => $value) {
+        if (
+          in_array($filter, ['search', 'categories'])
+          && $value != ""
+          && $value != 'All'
+        ) {
+          $variables['news_changed'] = TRUE;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Redirect taxonomy term links to filtered results.
+ */
+function openedu_news_preprocess_field(&$variables) {
+
+  // Get a few convenient handles.
+  $field_name = $variables['element']['#field_name'];
+  /** @var \Drupal\Core\Entity\Entity $entity */
+  $entity = $variables['element']['#object'];
+
+  if ($entity->bundle() == 'news' && $field_name == 'field_news_categories') {
+    foreach ($variables['items'] as $key => $item) {
+      /** @var Drupal\taxonomy\Entity\Term $term */
+      $term = $item['content']['#options']['entity'];
+      $variables['items'][$key]['content']['#url'] = Url::fromRoute(
+        'entity.node.canonical',
+        ['node' => 116],
+        [
+          'query' =>
+            ['categories' => $term->id()],
+        ]
+      );
+    }
+  }
+}

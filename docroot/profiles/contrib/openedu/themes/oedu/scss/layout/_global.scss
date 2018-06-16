@@ -1,0 +1,214 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  font-family: $font-family-sans-serif;
+}
+
+body.path-user .main-container {
+  margin: 3em auto 4em;
+}
+
+blockquote {
+  padding: 1em 2em;
+  border: none;
+  font-size: 1.25em;
+  font-weight: 600;
+  background: url("../images/blockquote.png") no-repeat top left;
+  background-position-y: 1em;
+}
+
+// image fix for img figure layout
+.img-fluid img {
+  max-width: 100%;
+  height: auto;
+}
+
+div.region.region-sidebar-second {
+  background: url("../images/next-steps-bg.jpg");
+  background-size: 100%;
+  padding: 4.5em 0;
+  text-align: center;
+}
+
+footer.footer {
+  padding-top: 0;
+
+  .container-fluid {
+    background-color: $primary-darker;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  section.block--basic {
+    background-color: $primary;
+    color: white;
+    padding: 4.5em 0 2.5em;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 300;
+
+    .container {
+      max-width: 550px;
+
+      .footer-social-links {
+        margin: 1.5em 0;
+        list-style: none;
+      }
+
+      i {
+        padding: 0 0.2em;
+      }
+    }
+  }
+}
+
+.region-container {
+  .block-region-subsection {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  .panel-oedu-container {
+    margin-bottom: 3em;
+  }
+
+  .block-region-middle,
+  .block-region-left {
+    .block-title {
+      color: $primary;
+    }
+
+    .block .field--label:first-of-type {
+      @extend h2;
+
+      color: $primary;
+    }
+  }
+}
+
+%site-tag {
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1.417em;
+  display: inline-block;
+  padding: 0.417em 0.833em;
+  border-radius: 1em;
+  color: white;
+
+  a {
+    color: $gray-base;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.site-tag-clr {
+  @extend %site-tag;
+
+  background: none;
+  border: 1px solid $gray-300;
+  color: $gray-base;
+
+  &:hover {
+    color: white;
+    background: $primary;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.site-tag-gry {
+  @extend %site-tag;
+
+  background-color: $gray-dark;
+}
+
+.site-tag-drk {
+  @extend %site-tag;
+
+  background-color: $primary-dark;
+}
+
+.site-tag-med {
+  @extend %site-tag;
+
+  background-color: $primary;
+}
+
+.region-content nav.tabs {
+  @include make-container();
+  @include make-container-max-widths();
+
+  .nav-tabs {
+    font-size: 0.875em;
+
+    li a {
+      padding: 5px 12px;
+    }
+  }
+}
+
+.flickity.flickity-enabled {
+  button {
+    transition: all 0.5s ease 0s;
+    opacity: 1;
+  }
+
+  &:not(:hover) {
+    .flickity-prev-next-button.previous,
+    .flickity-prev-next-button.next {
+      opacity: 0;
+    }
+  }
+}
+
+.align-center {
+  text-align: center;
+}
+
+.openedu-stat {
+  line-height: 0.95em;
+  text-align: center;
+  color: $primary-lighter;
+  margin: 10px 0;
+}
+
+.panel-1col .panel-panel {
+  width: auto !important;
+}
+
+figure.img-responsive {
+  display: inline-block;
+
+  img {
+    @extend .img-responsive;
+  }
+}
+
+figcaption {
+  padding: 15px;
+  font-size: 0.875em;
+  border-top: 2px solid $info;
+  background: $gray-300;
+  font-style: italic;
+}
+
+iframe body {
+  padding: 0 !important;
+}
+
+.ipe-form {
+  @include make-container();
+  @include make-container-max-widths();
+
+  max-width: none;
+}

@@ -1,0 +1,84 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/flag_7_1.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 102
+        }
+    ],
+    "uuid": [
+        {
+            "value": "ad8cd4ad-d8ab-497e-a9e5-02ecc1470064"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "flag.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/flag_7_1.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 1748
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": 1494259366
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494259370
+        }
+    ],
+    "data": [
+        {
+            "value": "iVBORw0KGgoAAAANSUhEUgAAAEYAAABDCAYAAAAh43M3AAAAAXNSR0IArs4c6QAABo5JREFUeAHtWk9PG0cUf7NEaiGq4hyDkbJIlXLoIe4nqPMJQo6YQ5a25+Iceuoh5thWUeATYA7GR0DKHfgEIfdKEBXDraFVsXOod\/p7M157Z+2x1\/EfGWVGMjvvzf\/f\/t6bebMIGleqXvkUyqckZJ5IZoiET0T8gyivSdApdPoZykNaW4I8u0mMNLX9Dxn6WN8gSQH68Yfs6xxglenLhW16dv96yLYTr\/5pwESAhLJIQoAdIyRmkye2aDW7OUIvY286PDB7lyuwjdeYiW+fjfwbZaapSOGDIQ+tbSTXl+uzYmLDAbN3AUBEsefiJB1iYQfkzR3T6oPznnWYaY1GHmUM7vOuOsoXeetUWDzoKpuyIh0wakE3+wAl3z0\/sQtzKlnB6G6gNeyspSxZAGLmlG1Np6EfDAyDUq8fwQxy5oTkCZxucWTqV6\/yFIblbjOTW1RYemGOOT1JfP3Dq2890SwKEn82G1\/89kflp3+M4Su1tz1A2cake5uU0TiloBl5DEY+NlpI7Fpr2XVDNylBEaDxnETo0\/zdzTtzovkGprDI43nzH5lBv7TH3rvE4qXJFKkcZLldZxwZ3q73P+Thf7YM0xI4BlRqNBVw2lYBCOr1ZS8CRa9PfGOuE+jF0yRAifpncAqLAVizG6nUU4OzY+jGLVRqO4ZVCJnx4mMIIf+LyyTmtuBH3ivdJEGJDzpNcNh8tKsI4lNA\/vROQmGKetv1TeUUJAZn7xIDxbZ0zZwcLSw8GctJmZ1+o85M6V4fCGEwZgpLTj9Eb+bkqH5zRnsX3WegtD3zMYFNR4ZHaOJ3N8NuC0LMLjA8YwZH0qYxeRWCiDLt1TRAbA5pUuUi1wLkDCwJrE3EXInL+puStfUUC9ayJZjVKRHOOiTuxUb2IZdhDgQGHWMTOVZl0ms9sZt6iPJDZoVcQflgANmfFh6o9rMPDK+WQ4TqVY5kswwwvmOVmXAil5TXulA\/BB4SP37qP5yJJY7nDKBRxidxnWbblKJZ8pM3gsJSnoT3BAs4iRcNlwcgyjy9ktGO2RILQ24PMNEqVkF1DdAyANpOBRIvWgW54hnaZrCz8UFyI+pSPYUZHN8OUzJW0BL0UaLYLuLtN0ph00eUf94SwbREtN+4KcGMfGonMLCQPWiLyNxeYOKr4DwzKU1iAGVosoWD4US6faaUWMBQIm\/tMtwx2rC\/6XH\/\/HkBwyddIr8DjHyn\/U1HE+XGY0r8Jho3T2G3K3BqmZb9+nB4p\/hqcA259XUA8sLCyViO9NEK0j4rtRKqYn6xxJf4lov40YCJ7LVRx4CiNWL0hKgut1qyxKQ4Gx3IiMq49zi0TSw2\/dGzlYsAY780OxIvcJ1xauo60qcBo64lmxxv5DtdDZPDgYwoj7jnGsd03BN7m0NfjaYdToEiTL\/CVxuFxa1+XQzvYyqXGxQ234IOvDhL4gOY+r2zVNBqPqZz3CLDMxXHMODjTNXaS4QCCVDgV1SA2n+g4RijLnRk0DGbVud8gBL4NiTEgfXNK7Nrso3n0f5xq2XnoQEKqForjfwRjn1evf4aPi7oDMA5gDJ\/N2\/qekvpgNEDHeHt5oxuGBCOL2JHaaM8LuhzxrFStb8QhAAqEa9IKsHEigAIVPd2rUDH+47n+UqifsMvKRNXt0GxOFuzbpoDnh2UQ+wwVq+eHMiQ9ak1wD0vv9kidq6iARAvigGisAQTK6PtQd\/djIHW383RD\/l4gYnEPiUbJJR9xcGMaeB7khA5sxf26P2dl1nfIum3VwJAWxqg5M6BdvruJIjtZnj54lz1KKSPCj58VA8wuAZH0AgWBzharplM\/YHRXwnyRiN195stG7pRhQig6lXZ+hFOjdFy+G1GtDM9ZgDnL+aCoU2x1dOAXQlvIp4mfSGurhZwaze\/cB+mtInf+\/jwqfIcRfPVBEfg2mRTNUtW6s8Y\/uAl1C50D5TlA1E52cFE5IhBBD\/DV5J8oub\/u5GCTeahMaYG7xRmo7+bJyNpo3J6oT8wOrjKpO9uAjX1HLDw6aYBpjTdyczSaA4Yy9twwDhgLAhY1I4xDhgLAha1Y4wDxoKARe0Y44CxIGBRO8Y4YCwIWNSOMQ4YCwIWtWOMA8aCgEXtGOOAsSBgUTvGOGAsCFjUjjEOGAsCFrVjjAPGgoBF7RjjgLEgYFE7xjhgLAhY1I4xDhgLAhY1M+bfqExK\/Ae3SwoBLyTxs8pJ+ktS+MrhEkPg0Y+\/Lz\/6\/tevYqrPPvs\/\/BpCfPcTOjMAAAAASUVORK5CYII="
+        }
+    ]
+}

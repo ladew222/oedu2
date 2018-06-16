@@ -1,0 +1,79 @@
+oedu_onecol_with_subsection:
+  label: Single column with subsection header
+  category: 'OpenEDU'
+  path: layouts/oedu_onecol_with_subsection
+  icon: oedu_onecol_with_subsection.png
+  template: panels-oedu-onecol-with-subsection
+  regions:
+    subsection:
+      label: Subsection
+    middle:
+      label: Middle column
+
+oedu_twocol_with_subsection:
+  label: Two columns with subsection header (main left)
+  category: 'OpenEDU'
+  path: layouts/oedu_twocol_with_subsection
+  icon: oedu_twocol_with_subsection.png
+  template: panels-oedu-twocol-with-subsection
+  regions:
+    subsection:
+      label: Subsection
+    left:
+      label: Left
+    right:
+      label: Right
+    bottom:
+      label: Bottom
+
+oedu_twocol_with_subsection_left:
+  label: Two columns with subsection header (main right)
+  category: 'OpenEDU'
+  path: layouts/oedu_twocol_with_subsection_left
+  icon: oedu_twocol_with_subsection_left.png
+  template: panels-oedu-twocol-with-subsection-left
+  regions:
+    subsection:
+      label: Subsection
+    left:
+      label: Left
+    right:
+      label: Right
+    bottom:
+      label: Bottom
+
+oedu_twocol_with_subsection_sidebar_first:
+  label: Two columns with subsection, stacked reverse
+  category: 'OpenEDU'
+  path: layouts/oedu_twocol_with_subsection_sidebar_first
+  icon: oedu_twocol_with_subsection_sidebar_first.png
+  template: panels-oedu-twocol-with-subsection-sidebar-first
+  regions:
+    subsection:
+      label: Subsection
+    right:
+      label: Right
+    left:
+      label: Left
+    bottom:
+      label: Bottom
+
+oedu_twocol_with_subsection_split_sidebar_first:
+  label: Two columns with a split subsection, main column stacked reverse
+  category: 'OpenEDU'
+  path: layouts/oedu_twocol_with_subsection_split_sidebar_first
+  icon: oedu_twocol_with_subsection_split_sidebar_first.png
+  template: panels-oedu-twocol-with-subsection-split-sidebar-first
+  regions:
+    top:
+      label: Top
+    subsection_left:
+      label: Left Subsection
+    subsection_right:
+      label: Right Subsection
+    right:
+      label: Right
+    left:
+      label: Left
+    bottom:
+      label: Bottom

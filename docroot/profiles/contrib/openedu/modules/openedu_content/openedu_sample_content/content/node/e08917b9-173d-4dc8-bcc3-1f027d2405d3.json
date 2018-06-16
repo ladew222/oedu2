@@ -1,0 +1,315 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/programs\/biological-sciences?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/program"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_courses": [
+            {
+                "href": "http:\/\/default\/node\/6?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/node\/7?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/node\/8?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/node\/9?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/node\/10?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/node\/11?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_faculty": [
+            {
+                "href": "http:\/\/default\/block\/7?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_grid_block": [
+            {
+                "href": "http:\/\/default\/block\/5?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_stories_block": [
+            {
+                "href": "http:\/\/default\/block\/4?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 12
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e08917b9-173d-4dc8-bcc3-1f027d2405d3"
+        }
+    ],
+    "vid": [
+        {
+            "value": 12
+        }
+    ],
+    "type": [
+        {
+            "target_id": "program"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Biological Sciences"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_courses": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/course"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fa345560-b323-4b08-bca6-421d541b6284"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/7?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/course"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2332e87f-2595-453a-804b-5e0c0577c63d"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/8?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/course"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "1d0aa44a-2fa0-48fd-9933-185164d7ec77"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/9?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/course"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3c73e7c8-1470-4af9-9d1d-c2fe40af226e"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/10?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/course"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "33d99dd7-3a40-4682-9227-dbe13081271d"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/node\/11?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/course"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d9af34ec-fada-444f-a176-f70ab8155e57"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_faculty": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/block\/7?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/block_content\/profile_block"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dbcc7653-8e93-4964-9794-3c27a2b3236c"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_grid_block": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/block\/5?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/block_content\/openedu_grid_block"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "cbe48e3a-c8ca-4442-a9a3-e89cc2964c0b"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/program\/field_program_stories_block": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/block\/4?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/block_content\/openedu_stories_block"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f65d0bc4-dfe6-4123-810d-14a5e22afbbe"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494224132
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496161463
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/programs\/biological-sciences",
+            "pid": 34
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Understand the complexities&nbsp;of cells and organisms and how the ecosystem operates.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_program_course_intro": [
+        {
+            "value": "<p>Aliquam sit amet ligula id nisi dapibus mollis. Phasellus quis dapibus ligula. Cras neque odio, dignissim non hendrerit id, lobortis at augue. Mauris porta ipsum vitae purus maximus auctor.&nbsp;<\/p>\r\n\r\n<p>Phasellus eu imperdiet tellus, ut tempus leo. Etiam hendrerit, odio vitae finibus ultrices, ipsum dolor pulvinar risus, id malesuada risus mi ut lacus. Pellentesque tincidunt gravida nunc sit amet dapibus. Nulla gravida accumsan neque, et dignissim libero egestas ac. Integer augue neque, lacinia et tincidunt in, aliquam ut urna.<\/p>\r\n",
+            "format": "rich_text"
+        }
+    ],
+    "field_programs_course_link": [
+        {
+            "uri": "https:\/\/www.google.com",
+            "title": "View More",
+            "options": []
+        }
+    ]
+}

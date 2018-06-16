@@ -1,0 +1,10 @@
+name: 'Query Filter Cards'
+type: module
+description: 'Breaks out a URL query into a card display.'
+package: Core
+version: '8.x-3.0'
+core: 8.x
+dependencies:
+  - views
+  - node
+  - block

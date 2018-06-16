@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains ixm_dashboard_analytics.module.
+ */
+
+/**
+ * Converts data returned from Google api.
+ *
+ * This is just duplicating functionality from the Google Analytics Reports
+ * module which is not enabled by default as it provides no other value to
+ * OpenEDU for now.
+ *
+ * Implements hook_google_analytics_reports_api_reported_data_alter().
+ */
+function ixm_dashboard_analytics_google_analytics_reports_api_reported_data_alter(&$name, &$value) {
+
+  $moduleHandler = \Drupal::service('module_handler');
+  if (!$moduleHandler->moduleExists('google_analytics_reports')) {
+    switch ($name) {
+      case 'userType':
+        $value = ($value == 'New Visitor') ? t('New Visitor') : t('Returning Visitor');
+        break;
+
+      case 'date':
+        $value = strtotime($value);
+        break;
+
+      case 'yearMonth':
+        $value = strtotime($value . '01');
+        break;
+
+      case 'userGender':
+        $value = ($value == 'male') ? t('Male') : t('Female');
+        break;
+    }
+  }
+}

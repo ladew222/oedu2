@@ -1,0 +1,57 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "dfeaf394-b019-4aac-a26e-17d384e0a184"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 1
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "info": [
+        {
+            "value": "Site Branding Footer"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1493311429
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1493249679
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "body": [
+        {
+            "value": "<div id=\"block-sitebranding-footer\">\r\n<div class=\"container\">\r\n<div class=\"row\">\r\n<div class=\"col-xs-12\">\r\n<p><a href=\"\/\"><img alt=\"Home\" data-entity-type=\"\" data-entity-uuid=\"\" src=\"\/profiles\/contrib\/openedu\/themes\/oedu\/logo_white.png\" \/><\/a><\/p>\r\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<\/p>\r\n<div class=\"footer-social-links\">\r\n<i class=\"material-icons-social mis_facebook\" aria-hidden=\"true\"><\/i>\r\n<i class=\"material-icons-social mis_twitter\" aria-hidden=\"true\"><\/i>\r\n<i class=\"material-icons-social mis_instagram\" aria-hidden=\"true\"><\/i>\r\n<i class=\"material-icons-social mis_youtube\" aria-hidden=\"true\"><\/i>\r\n<i class=\"material-icons-social mis_vimeo\" aria-hidden=\"true\"><\/i>\r\n<\/div>\r\n<p>\u00a9 2018 The President and Fellows of OpenEDU University<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ]
+}

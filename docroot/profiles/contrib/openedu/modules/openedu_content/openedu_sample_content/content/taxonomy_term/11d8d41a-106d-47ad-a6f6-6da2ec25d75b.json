@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/29?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+        }
+    },
+    "tid": [
+        {
+            "value": 29
+        }
+    ],
+    "uuid": [
+        {
+            "value": "11d8d41a-106d-47ad-a6f6-6da2ec25d75b"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "news_categories"
+        }
+    ],
+    "name": [
+        {
+            "value": "Personal"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494450289
+        }
+    ]
+}

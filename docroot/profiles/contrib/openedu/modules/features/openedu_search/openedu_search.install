@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for OpenEDU Search.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function openedu_search_install() {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  $config = Drupal::configFactory();
+
+  // Disable /search view.
+  $config
+    ->getEditable('views.view.search')
+    ->set('status', FALSE)
+    ->save();
+
+}

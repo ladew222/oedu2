@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/28?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+        }
+    },
+    "tid": [
+        {
+            "value": 28
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d843e4ef-fd99-4045-81d9-5033ec516ecf"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "news_categories"
+        }
+    ],
+    "name": [
+        {
+            "value": "Open Source"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494450268
+        }
+    ]
+}

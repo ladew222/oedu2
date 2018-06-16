@@ -1,0 +1,12 @@
+name: Flexible Layout
+description: 'Provides a layout plugin with configurable regions.'
+type: module
+# core: 8.x
+dependencies:
+  - layout_discovery
+
+# Information added by Drupal.org packaging script on 2017-12-15
+version: '8.x-1.0-beta2'
+core: '8.x'
+project: 'flexible_layout'
+datestamp: 1513358588

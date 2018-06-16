@@ -1,0 +1,118 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/node\/7?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/course"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/course\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/course\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2332e87f-2595-453a-804b-5e0c0577c63d"
+        }
+    ],
+    "vid": [
+        {
+            "value": 7
+        }
+    ],
+    "type": [
+        {
+            "target_id": "course"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Life Sciences (B.A.) "
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/course\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/course\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494054471
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496161463
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Aliquam sit amet ligula id nisi dapibus mollis. Phasellus quis dapibus ligula. Cras neque odio, dignissim non hendrerit id, lobortis at augue. Mauris porta ipsum vitae purus maximus auctor. Mauris a iaculis sem. Morbi sit amet ligula et quam tincidunt semper. Nunc ac purus non sapien semper condimentum. Aliquam erat volutpat.<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ]
+}

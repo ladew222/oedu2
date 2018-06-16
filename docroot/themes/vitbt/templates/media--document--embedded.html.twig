@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present a media entity.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes }}>
+    {% set mime = elements['#media'].field_document.entity.filemime.value %}
+    {% if mime in ['application/pdf', 'application/x-pdf', 'applications/vnd.pdf', 'text/pdf', 'text/x-pdf'] %}
+        <span class="file file--mime-application-pdf file--application-pdf"></span>
+    {% elseif mime in ['application/msword', 'application/vnd.ms-word.document.macroEnabled.12', 'application/vnd.oasis.opendocument.text', 'application/x-applix-word', 'application/vnd.oasis.opendocument.text-master'] %}
+        <span class="file file--mime-x-office-document file--x-office-document"></span>
+    {% elseif mime in ['application/vnd.ms-powerpoint', 'application/vnd.ms-powerpoint.presentation.macroEnabled.12', 'application/vnd.oasis.opendocument.presentation', 'application/vnd.oasis.opendocument.presentation-template', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'] %}
+        <span class="file file--mime-x-office-presentation file--x-office-presentation"></span>
+    {% else %}
+        <span class="icon glyphicon glyphicon-file text-primary" aria-hidden="true"></span>
+    {% endif %}
+    <a class="document-link" title="{{ name }}" href="{{ file_url(elements['#media'].field_document.entity.uri.value) }}" target="_blank" rel="noopener">{{ name }}</a>
+</div>
+
+{# <article{{ attributes }}>
+  {% if content %}
+    {{ content }}
+  {% endif %}
+</article>
+#}

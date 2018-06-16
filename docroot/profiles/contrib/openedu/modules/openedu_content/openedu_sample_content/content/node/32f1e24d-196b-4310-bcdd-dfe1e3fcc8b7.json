@@ -1,0 +1,240 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/news\/higher-education-students-receive-award-science-research?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/28?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-256541_7_1.jpeg"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "href": "http:\/\/default\/news\/faculty-groups-promote-increased-stem-research?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/news\/aumni-organize-promote-higher-education?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 16
+        }
+    ],
+    "uuid": [
+        {
+            "value": "32f1e24d-196b-4310-bcdd-dfe1e3fcc8b7"
+        }
+    ],
+    "vid": [
+        {
+            "value": 16
+        }
+    ],
+    "type": [
+        {
+            "target_id": "news"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Higher education: students receive award for science research"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5aef157e-2748-4e6d-8ee5-a7320424a21e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_categories": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b5f0fc09-bf3f-46f2-884f-3a6bd7aa417e"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/28?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/news_categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d843e4ef-fd99-4045-81d9-5033ec516ecf"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/pexels-photo-256541_7_1.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "569a9260-3b03-43c8-8d3f-764cd22dc062"
+                    }
+                ],
+                "alt": "Rows of books",
+                "title": "Concordia breaks ground on liturgical art center site",
+                "width": "1920",
+                "height": "1279"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/news\/field_news_related": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/faculty-groups-promote-increased-stem-research?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b8215089-cdf4-4d7d-8f12-e80c69a84f7b"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/news\/aumni-organize-promote-higher-education?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/news"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "050e140f-9e7a-4764-9d86-9940c555a667"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1493865156
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496157914
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/higher-education-students-receive-award-science-research",
+            "pid": 25
+        }
+    ],
+    "body": [
+        {
+            "value": "<h1>In ac posuere purus<\/h1>\r\n\r\n<p>Vivamus suscipit purus sit amet vulputate pretium. Vestibulum sit amet libero ut nisl ultrices tristique. Duis eget enim non elit eleifend lacinia. Aliquam erat volutpat. Maecenas risus justo, consequat at eros sed, imperdiet feugiat velit. Vestibulum sed orci erat.<\/p>\r\n\r\n<blockquote>\r\n<p>Vivamus dapibus efficitur odio, sit amet consequat mauris venenatis ut.<\/p>\r\n<\/blockquote>\r\n\r\n<p>Nulla consectetur nisl risus, ac feugiat erat commodo eget. Nullam eu nulla ac augue hendrerit fringilla vel a orci. Nunc sapien dolor, fringilla sed aliquet sit amet, posuere sit amet nibh. Ut dolor lacus, tempus id ex eget, varius dapibus leo.<\/p>\r\n\r\n<p>Etiam laoreet felis eget massa viverra, eu tempor orci vestibulum. Suspendisse potenti. Nam at ex in neque mattis scelerisque et id risus. Pellentesque suscipit metus iaculis urna iaculis, id lacinia est auctor. In vulputate blandit ullamcorper. In ligula arcu, ullamcorper sed aliquam sed, convallis quis nunc. Curabitur vel sapien pulvinar, sodales orci consequat, sollicitudin lectus. Nullam condimentum viverra lectus faucibus tempor.<\/p>\r\n\r\n<p>Aenean elementum fermentum scelerisque. Nunc non quam massa. Proin lacinia placerat ligula sit amet fringilla. Suspendisse potenti. Morbi laoreet imperdiet metus, in condimentum nibh mattis vel. Ut semper fringilla libero vitae tristique. Nam ut ornare est.<\/p>\r\n\r\n<p>Vivamus laoreet odio eget dolor pretium aliquam. Mauris ultricies fringilla nunc, ac interdum magna porttitor nec. Vivamus turpis lectus, finibus a lectus sit amet, vestibulum elementum erat. Morbi at justo accumsan, fermentum orci et, consectetur purus. Morbi cursus volutpat rhoncus. Aliquam vitae quam quis augue tristique elementum. Integer nec nunc quis nisl rutrum suscipit. Phasellus tellus felis, imperdiet quis risus et, eleifend volutpat ex.<\/p>\r\n\r\n<p>Aliquam sit amet ligula id nisi dapibus mollis. Phasellus quis dapibus ligula. Cras neque odio, dignissim non hendrerit id, lobortis at augue. Mauris porta ipsum vitae purus maximus auctor. Mauris a iaculis sem. Morbi sit amet ligula et quam tincidunt semper. Nunc ac purus non sapien semper condimentum. Aliquam erat volutpat.<\/p>\r\n\r\n<p class=\"text-align-right\">&nbsp;<\/p>\r\n",
+            "format": "rich_text",
+            "summary": ""
+        }
+    ],
+    "field_news_date": [
+        {
+            "value": "2017-04-16"
+        }
+    ],
+    "field_news_featured": [
+        {
+            "value": true
+        }
+    ]
+}

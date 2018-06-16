@@ -1,0 +1,63 @@
+status: true
+dependencies:
+  config:
+    - block_content.type.openedu_hero
+    - core.entity_form_mode.media.hero_image
+    - field.field.block_content.openedu_hero.body
+    - field.field.block_content.openedu_hero.field_hero_image
+  module:
+    - content_moderation
+    - datetime
+    - entity_browser_entity_form
+    - inline_entity_form
+    - text
+id: block_content.openedu_hero.default
+targetEntityType: block_content
+bundle: openedu_hero
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    type: inline_entity_form_complex
+    weight: 27
+    settings:
+      form_mode: hero_image
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: media_browser
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

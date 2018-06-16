@@ -1,0 +1,146 @@
+{#
+/**
+ * @file
+ * Default theme implementation for sa11y dashboard tabs.
+ *
+ * Available variables:
+ * - report: A report object.
+ * - violations: The violations of the report.
+ * - form: The sa11y form for the node.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="ixd-sa11y-results">
+
+  <!-- Rule Legend / Form -->
+  <div class="tab-container">
+    <ul class="nav nav-tabs" id="option-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#sa11y-report">{{ "Accessibility Report"|t }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#sa11y-form">{{ "Run New Report"|t }}</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+
+      <div class="tab-pane fade show active" id="sa11y-report">
+        <div class="widget-content">
+          <div class="widget-box">
+
+            <div class="last-run text-align-right">
+              {{ "DATE OF REPORT:"|t }} <span class="date">{{ report.timestamp|format_date('medium') }}</span>
+            </div>
+
+            <div class="legend my-3">
+              <div class="row header mb-2">
+                <div class="col-4">{{ "Rule"|t }}</div>
+                <div class="col-2">{{ "Status"|t }}</div>
+                <div class="col">{{ "Info"|t }}</div>
+              </div>
+
+              {% for id, rule in report.options['parameters']['rules'] %}
+                {% if rule %}
+                  <div class="row">
+                    <div class="col-4 rule">{{ id }}</div>
+                    <div class="col-2 status text-{{ violations['counts']['rules'][id] ? 'danger' : 'success' }}">
+                      <i class="material-icons">{{ violations['counts']['rules'][id] ? 'cancel' : 'check_circle' }}</i>
+                    </div>
+                    <div class="col info">
+                      {{ "@rule violation count: @num"|t({ '@num': violations['counts']['rules'][id] ?: 0, '@rule' : id }) }}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <div class="mt-3 mb-2 show-results text-align-right">
+              <a href="#" class="btn btn-danger" id="ixd-sa11y-toggle">{{ "VIEW ALL ISSUES ON PAGE"|t }}</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule Results -->
+        <div class="results">
+          {% for id, rule in report.options['parameters']['rules'] %}
+            {% if rule %}
+            <div class="widget-content">
+              <div class="widget-box rule-summary" id="rule-{{ rule }}">
+
+                <div class="rule-title">{{ rule|capitalize }}</div>
+                <div class="impact-toggles">
+                  {% set impactCounts = "You have "|t %}
+                  {% for impact, violationData in violations['sorted'][rule] %}
+                    {% set impactCounts = (loop.index > 1) ? impactCounts ~ 'and ' : impactCounts %}
+                    {% set impactCounts = impactCounts ~ "@count @impact "|t({'@count' : violations['counts']['impact'][rule][impact], '@impact': impact|capitalize}) %}
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input class="custom-control-input" id="impact-toggle-{{ rule }}-{{ impact }}" value="{{ impact }}" type="checkbox" checked="checked"/>
+                      <label class="custom-control-label" for="impact-toggle-{{ rule }}-{{ impact }}">{{ impact|capitalize }}</label>
+                    </div>
+                  {% endfor %}
+                  {% set impactCounts = impactCounts ~ "issues." %}
+                </div>
+
+                <div class="rule-counts">
+                  {{ violations['sorted'][rule]|length ? impactCounts : "No issues."|t }}
+                </div>
+
+                <div class="rule-results">
+                  {% for impact, violationData in violations['sorted'][rule] %}
+                    {% for id, violation in violationData %}
+                      <div class="violation violation-{{ impact }}">
+
+                        {# Set Bootstrap colors. #}
+                        {% if impact == "critical" %}
+                            {% set impactStatus = 'danger' %}
+                        {% elseif impact == "serious" or impact == "moderate" %}
+                            {% set impactStatus = 'warning' %}
+                        {% else %}
+                            {% set impactStatus = 'info' %}
+                        {% endif %}
+
+                        <div class="summary collapsed" data-toggle="collapse" data-target="#collapse-{{ rule }}-{{ violation.id }}" aria-expanded="false" aria-controls="collapse-{{ rule }}-{{ violation.id }}">
+                          <span class="toggle-arrow float-right">
+                            <i class="down material-icons">keyboard_arrow_down</i>
+                            <i class="up material-icons">keyboard_arrow_up</i>
+                          </span>
+                          <i class="material-icons text-{{ impactStatus }}">error</i>
+                          <span>
+                            {% if violation.message is empty %}
+                              {{ 'No information available.'|t }}
+                            {% else %}
+                              {% set text = violation.message|striptags|trim %}
+                              {{ (text|length > 120 ? text|slice(0, 121)|split(' ')|slice(0, -1)|join(' ') ~ '…' : text)|raw }}
+                            {% endif %}
+                          </span>
+                        </div>
+
+                        <div class="message collapse" id="collapse-{{ rule }}-{{ violation.id }}">
+                          {% if violation.message is empty %}
+                            <a href="{{ path('sa11y.report', {'report_id': report.id}) }}" target="_blank">{{ 'View Report'|t }}</a>
+                          {% else %}
+                            {{ violation.message }}
+                          {% endif %}
+                        </div>
+
+                      </div>
+                    {% endfor %}
+                  {% endfor %}
+                </div>
+
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- / Rule Results -->
+      </div>
+
+      <div class="widget-box tab-pane fade" id="sa11y-form">
+        {{ form }}
+      </div>
+    </div>
+  </div>
+
+</div>

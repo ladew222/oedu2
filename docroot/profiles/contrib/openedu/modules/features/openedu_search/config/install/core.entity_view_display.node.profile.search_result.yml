@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.profile.body
+    - field.field.node.profile.field_profile_courses
+    - field.field.node.profile.field_profile_cv
+    - field.field.node.profile.field_profile_department
+    - field.field.node.profile.field_profile_education
+    - field.field.node.profile.field_profile_email
+    - field.field.node.profile.field_profile_image
+    - field.field.node.profile.field_profile_job_title
+    - field.field.node.profile.field_profile_name
+    - field.field.node.profile.field_profile_office
+    - field.field.node.profile.field_profile_phone
+    - field.field.node.profile.field_profile_publications
+    - field.field.node.profile.field_profile_research_interests
+    - field.field.node.profile.field_profile_research_projects
+    - field.field.node.profile.field_profile_students
+    - field.field.node.profile.field_profile_type
+    - field.field.node.profile.panelizer
+    - image.style.thumbnail
+    - node.type.profile
+  module:
+    - image
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.profile.search_result
+targetEntityType: node
+bundle: profile
+mode: search_result
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_profile_department:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_profile_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_profile_job_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  addtoany: true
+  field_profile_courses: true
+  field_profile_cv: true
+  field_profile_education: true
+  field_profile_email: true
+  field_profile_name: true
+  field_profile_office: true
+  field_profile_phone: true
+  field_profile_publications: true
+  field_profile_research_interests: true
+  field_profile_research_projects: true
+  field_profile_students: true
+  field_profile_type: true
+  links: true
+  panelizer: true
+  scheduled_publication: true

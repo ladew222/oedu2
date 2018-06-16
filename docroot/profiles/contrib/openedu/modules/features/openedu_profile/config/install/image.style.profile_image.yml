@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: profile_image
+label: 'Profile Image (210x185)'
+effects:
+  05fba41e-bd45-4aa6-868a-d0cdfd862b93:
+    uuid: 05fba41e-bd45-4aa6-868a-d0cdfd862b93
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 185
+      height: 210

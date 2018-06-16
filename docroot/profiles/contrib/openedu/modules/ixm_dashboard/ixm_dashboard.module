@@ -1,0 +1,274 @@
+<?php
+
+/**
+ * @file
+ * Contains ixm_dashboard.module.
+ */
+
+use Drupal\Component\Utility\Unicode;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_help().
+ */
+function ixm_dashboard_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ixm_dashboard module.
+    case 'help.page.ixm_dashboard':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('An optimization dashboard for administrators.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_ixm_dashboard_exlusion().
+ *
+ * Don't show on node revisions view.
+ */
+function ixm_dashboard_ixm_dashboard_exlusion() {
+  return ['/node/*/latest'];
+}
+
+/**
+ * Implements hook_page_top().
+ *
+ * Adds the dashboard to the top of the page automatically if not an admin page
+ * or a page specified by a plugin.
+ *
+ * @TODO: Add plugin path check.
+ */
+function ixm_dashboard_page_top(array &$page_top) {
+
+  /** @var \Drupal\Core\Routing\AdminContext $admin_context */
+  $admin_context = \Drupal::service('router.admin_context');
+
+  /** @var \Drupal\ixm_dashboard\Utility\DisplayHelper $display_helper */
+  $display_helper = \Drupal::service('ixm_dashboard.display_helper');
+
+  if (!ixm_dashboard_is_excluded() && ($display_helper->isDashboardRoute() || !$admin_context->isAdminRoute())) {
+    $page_top['ixm_dashboard'] = [
+      '#type' => 'ixm_dashboard',
+      '#access' => \Drupal::currentUser()
+        ->hasPermission('access ixm dashboard'),
+      '#cache' => [
+        'keys' => ['ixm_dashboard'],
+        'contexts' => ['user.permissions'],
+      ],
+      '#weight' => 50,
+    ];
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ixm_dashboard_theme($existing, $type, $theme, $path) {
+  return [
+    'ixm_dashboard' => [
+      'render element' => 'element',
+    ],
+    'ixm_dashboard_display' => [
+      'variables' => [
+        'title' => NULL,
+        'display' => [],
+        'display_id' => NULL,
+      ],
+    ],
+    'ixm_dashboard_widgets' => [
+      'variables' => [
+        'displays' => [],
+      ],
+    ],
+    'ixm_dashboard_widget' => [
+      'variables' => [
+        'widget' => [],
+        'display_id' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ *
+ * Add plugin name to suggestions for widgets.
+ */
+function ixm_dashboard_theme_suggestions_ixm_dashboard_widget(array $variables) {
+  if (isset($variables['display_id'])) {
+    return [$variables['theme_hook_original'] . '__' . $variables['display_id']];
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ *
+ * Add plugin name to suggestions for displays.
+ */
+function ixm_dashboard_theme_suggestions_ixm_dashboard_display(array $variables) {
+  if (isset($variables['display_id'])) {
+    return [$variables['theme_hook_original'] . '__' . $variables['display_id']];
+  }
+}
+
+/**
+ * Prepares variables for IXM Dashboard templates.
+ *
+ * Default template: ixm-dashboard.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - element: An associative array containing the properties and children of
+ *     the dashboard.
+ */
+function template_preprocess_ixm_dashboard(array &$variables) {
+  $element = $variables['element'];
+
+  // Prepare the attributes.
+  $variables['attributes'] = $element['#attributes'];
+  $variables['navbar_attributes'] = new Attribute($element['#bar']['#attributes']);
+
+  $variables['items'] = [];
+  foreach (Element::children($element) as $key) {
+    if (!empty($element[$key])) {
+      Drupal::service('renderer')->render($element[$key]);
+    }
+
+    // Add the tab.
+    if (isset($element[$key]['item'])) {
+      $attributes = [];
+      // Pass the wrapper attributes along.
+      if (!empty($element[$key]['#wrapper_attributes'])) {
+        $attributes = $element[$key]['#wrapper_attributes'];
+      }
+
+      // Active class for pages.
+      $path = \Drupal::service('path.current')->getPath();
+      $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
+      if ($alias === $element[$key]['item']['#url']->toString()) {
+        $attributes['class'][] = 'active';
+        $attributes['class'][] = 'active-trail';
+      }
+
+      $variables['items'][$key] = [
+        'link' => $element[$key]['item'],
+        'attributes' => new Attribute($attributes),
+      ];
+    }
+  }
+
+}
+
+/**
+ * Adds attributes for the widgets template.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - displays: An associative array containing the widgets to be displayed.
+ */
+function template_preprocess_ixm_dashboard_widgets(array &$variables) {
+  $displays = $variables['displays'];
+  foreach (Element::children($displays) as $key) {
+    $attributes = $displays[$key]['#attributes'];
+    $variables['displays'][$key]['attributes'] = new Attribute($attributes);
+  }
+}
+
+/**
+ * Adds attributes for the widget template.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - widget: An associative array containing the widget boxes to be displayed.
+ */
+function template_preprocess_ixm_dashboard_widget(array &$variables) {
+  $widget = $variables['widget'];
+
+  $variables['rows'] = [];
+  foreach (Element::children($widget) as $row) {
+    $attributes = isset($widget[$row]['#attributes']) ? $widget[$row]['#attributes'] : [];
+    $variables['rows'][$row]['attributes'] = new Attribute($attributes);
+
+    // Loops children as columns.
+    foreach (Element::children($widget[$row]) as $col) {
+      $col_attributes = isset($widget[$row][$col]['#attributes']) ? $widget[$row][$col]['#attributes'] : [];
+      $variables['rows'][$row]['cols'][$col]['attributes'] = new Attribute($col_attributes);
+      $variables['rows'][$row]['cols'][$col]['box'] = $widget[$row][$col];
+
+      // Allow simple titles to prevent the need for more render arrays.
+      if (isset($widget[$row][$col]['#title'])) {
+        $variables['rows'][$row]['cols'][$col]['title'] = $widget[$row][$col]['#title'];
+      }
+
+      // Allow preventing adding box class.
+      if (isset($widget[$row][$col]['#no_widget'])) {
+        $variables['rows'][$row]['cols'][$col]['no_widget'] = $widget[$row][$col]['#no_widget'];
+      }
+    }
+
+    // Recover non-row renders.
+    if (empty($variables['rows'][$row]['cols'])) {
+      $variables['rows'][$row]['attributes'] = new Attribute([]);
+      $variables['rows'][$row]['cols'][] = [
+        'box' => $widget[$row],
+        'title' => isset($widget[$row]['#title']) ? $widget[$row]['#title'] : '',
+        'attributes' => new Attribute($attributes),
+      ];
+    }
+  }
+
+  // Take care of non-nested markup.
+  if (empty($variables['rows'])) {
+    $variables['rows'][] = ['cols' => [0 => ['box' => $widget]]];
+  }
+
+}
+
+/**
+ * Get all exluded paths for the dashboard.
+ */
+function ixm_dashboard_exluded_paths() {
+  $module_handler = \Drupal::moduleHandler();
+  // Get exclusions modules that implement hook_ixm_dashboard_exlusion().
+  $exclusions = $module_handler->invokeAll('ixm_dashboard_exlusion');
+  // Allow for altering of hook_ixm_dashboard_exlusion().
+  $module_handler->alter('ixm_dashboard_exlusion', $exclusions);
+
+  return $exclusions;
+}
+
+/**
+ * Check if the current path is excluded from showing the dashboard.
+ *
+ * @return bool
+ *   TRUE if path is in exclusions list, FALSE otherwise.
+ */
+function ixm_dashboard_is_excluded() {
+  $exclusions = ixm_dashboard_exluded_paths();
+
+  // Trim for errors and implode to format path matcher takes.
+  $exclusions = implode("\n", array_map("trim", array_filter($exclusions)));
+
+  // Convert path to lowercase. This allows comparison of the same path
+  // with different case. Ex: /Page, /page, /PAGE.
+  $pages = Unicode::strtolower($exclusions);
+  if (!$pages) {
+    return FALSE;
+  }
+
+  $request = \Drupal::requestStack()->getCurrentRequest();
+  // Compare the lowercase path alias (if any) and internal path.
+  $path = \Drupal::service('path.current')->getPath($request);
+  // Do not trim a trailing slash if that is the complete path.
+  $path = $path === '/' ? $path : rtrim($path, '/');
+  $path_alias = Unicode::strtolower(\Drupal::service('path.alias_manager')->getAliasByPath($path));
+
+  $path_matcher = \Drupal::service('path.matcher');
+
+  return $path_matcher->matchPath($path_alias, $pages) || (($path != $path_alias) && $path_matcher->matchPath($path, $pages));
+}
