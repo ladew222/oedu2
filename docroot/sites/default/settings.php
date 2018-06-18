@@ -794,3 +794,8 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
 }
 // </DDSETTINGS>
 $settings['install_profile'] = 'openedu';
+
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/viterbouniveristyd8/viterbouniveristyd8-settings.inc';
+}
+
