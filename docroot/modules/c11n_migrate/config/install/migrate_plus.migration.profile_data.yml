@@ -108,32 +108,12 @@ process:
   field_profile_job_title: Position
   field_profile_office: Location
   field_profile_email: Email
-  field_profile_image:
-    plugin: migration
-    migration: profile_image
-    source:
-  'field_profile_image/alt': Title
   # Similarly, we can define a default user for the imported nodes.
   uid: constants/uid_root
-  # Some fields have multiple properties! For example, the "body" field
-  # can have the actual full text, a summary, etc. Values can be
-  # assigned to specific properties using the syntax used below. We
-  # wrap the destination property name in quotes to comply with YAML
-  # specifications.
-  #
-  # Unfortunately, at the time of writing this code, there is no UI or
-  # drush migrate-fields-destination. Hence, one might have to refer
-  # to the structure of various field-types for determining the properties
-  # supported by various fields.
-  #
-  # Reference: https://www.drupal.org/node/2630732
   'field_profile_image/target_id':
     plugin: migration
     migration: profile_image
     source: FileName
-  # Now that we have the images in place, we also copy the alternate text
-  # for the images to the "alt" property of "field_image". Having "alt"
-  # would help improve accessibility and SEO.
   'field_profile_image/alt': Title
 # With the migration_dependencies, as the name suggests, we can specify
 # if this migration requires some other migrations to be run first.
